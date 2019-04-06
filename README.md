@@ -1,22 +1,21 @@
-# Windows Subsystem for Linux (WSL) Documentation
+# <a name="windows-subsystem-for-linux-wsl-documentation"></a><span data-ttu-id="d55bf-101">Windows-Subsystem für Linux (WSL) – Dokumentation</span><span class="sxs-lookup"><span data-stu-id="d55bf-101">Windows Subsystem for Linux (WSL) Documentation</span></span>
 
-## Issues
-If you find doc issues / errors or have an improvement you'd like to suggest, please file an issue and/or submit a pull-request - we greatly appreciate PR's in particular :)
+## <a name="issues"></a><span data-ttu-id="d55bf-102">Issues</span><span class="sxs-lookup"><span data-stu-id="d55bf-102">Issues</span></span>
+<span data-ttu-id="d55bf-103">Wenn Sie feststellen, dass Doc-Probleme / Fehler oder haben eine Verbesserung, die Sie vorschlagen, die Sie ein Problem und/oder eine Pull-Anforderung übermitteln möchten – wir erheblich Schätzen des PR insbesondere :)</span><span class="sxs-lookup"><span data-stu-id="d55bf-103">If you find doc issues / errors or have an improvement you'd like to suggest, please file an issue and/or submit a pull-request - we greatly appreciate PR's in particular :)</span></span>
 
-> **Note:** This repo's issue tracker is only for reporting issues with the WSL docs.
-> Other related issue repo's:
-> * WSL: https://github.com/Microsoft/WSL/
-> * Windows Console: https://github.com/Microsoft/Console/
+> <span data-ttu-id="d55bf-104">**Hinweis**: Problemverfolgung des Repositorys ist nur für das Melden von Problemen mit der WSL-Dokumentation. Andere verwandtes Problem des Repositorys:</span><span class="sxs-lookup"><span data-stu-id="d55bf-104">**Note:** This repo's issue tracker is only for reporting issues with the WSL docs. Other related issue repo's:</span></span>
+> * <span data-ttu-id="d55bf-105">WSL: https://github.com/Microsoft/WSL/</span><span class="sxs-lookup"><span data-stu-id="d55bf-105">WSL: https://github.com/Microsoft/WSL/</span></span>
+> * <span data-ttu-id="d55bf-106">Windows-Konsole: https://github.com/Microsoft/Console/</span><span class="sxs-lookup"><span data-stu-id="d55bf-106">Windows Console: https://github.com/Microsoft/Console/</span></span>
 
-## External Links
+## <a name="external-links"></a><span data-ttu-id="d55bf-107">Externe Links</span><span class="sxs-lookup"><span data-stu-id="d55bf-107">External Links</span></span>
 
-[Rendered documentation website](https://docs.microsoft.com/windows/wsl/) 
+[<span data-ttu-id="d55bf-108">Gerenderte Dokumentationswebsite</span><span class="sxs-lookup"><span data-stu-id="d55bf-108">Rendered documentation website</span></span>](https://docs.microsoft.com/windows/wsl/) 
 
-[Release notes for WSL](https://docs.microsoft.com/en-us/windows/wsl/release-notes)
+[<span data-ttu-id="d55bf-109">Anmerkungen zu dieser Version für WSL</span><span class="sxs-lookup"><span data-stu-id="d55bf-109">Release notes for WSL</span></span>](https://docs.microsoft.com/en-us/windows/wsl/release-notes)
 
-## Microsoft Open Source Code of Conduct
+## <a name="microsoft-open-source-code-of-conduct"></a><span data-ttu-id="d55bf-110">Microsoft Open Source Verhaltenskodex</span><span class="sxs-lookup"><span data-stu-id="d55bf-110">Microsoft Open Source Code of Conduct</span></span>
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+<span data-ttu-id="d55bf-111">Dieses Projekt folgt dem [Microsoft Open Source-Verhaltenskodex](https://opensource.microsoft.com/codeofconduct/).</span><span class="sxs-lookup"><span data-stu-id="d55bf-111">This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).</span></span>
+<span data-ttu-id="d55bf-112">Weitere Informationen finden Sie unter den [Code von durchführen – häufig gestellte Fragen](https://opensource.microsoft.com/codeofconduct/faq/) oder wenden Sie sich an [ opencode@microsoft.com ](mailto:opencode@microsoft.com) weitere Fragen und Kommentare.</span><span class="sxs-lookup"><span data-stu-id="d55bf-112">For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.</span></span>
 
-Welcome to the markdown source for Microsoft's command-line shells and console documentation.
+<span data-ttu-id="d55bf-113">Willkommen bei der markdownquelle für Microsoft Befehlszeilenshells und-Konsole Dokumentation.</span><span class="sxs-lookup"><span data-stu-id="d55bf-113">Welcome to the markdown source for Microsoft's command-line shells and console documentation.</span></span>
