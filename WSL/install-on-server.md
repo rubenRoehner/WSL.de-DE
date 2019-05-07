@@ -9,10 +9,10 @@ ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
 ms.openlocfilehash: c0b8af08a06428ebd292b8c6b9b275726988bdbe
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063618"
 ---
 # <a name="windows-server-installation-guide"></a>Windows Server-Installationshandbuch
@@ -61,6 +61,6 @@ Nun, da Sie eine Distribution heruntergeladen haben, extrahieren Sie den Inhalt,
     $userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
     [System.Environment]::SetEnvironmentVariable("PATH", $userenv + "C:\Users\Administrator\Ubuntu", "User")
     ```
-    Sie können jetzt Ihre Distribution von jedem beliebigen Pfad starten, indem Sie eingeben `<distro>.exe`. Zum Beispiel: `ubuntu.exe`
+    Sie können jetzt Ihre Distribution von jedem beliebigen Pfad starten, indem Sie eingeben `<distro>.exe`. Beispiel: `ubuntu.exe`
 
 Nun, da Ihre Linux-Distribution installiert ist, müssen Sie [initialisieren Sie die neue Instanz der Distribution](initialize-distro.md) vor der Verwendung von Ihrer Distribution.
