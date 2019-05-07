@@ -7,14 +7,27 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: 3eee7ff6d1f8302e98cde84fccabf5d9113c83f2
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.openlocfilehash: 2567e68ca0e9897a7b7bc7315760b81ff4923c1a
+ms.sourcegitcommit: 8c74868b8d8ff0106e15e4bce5e8337642883ec1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59063628"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64988263"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Anmerkungen zu dieser Version für Windows-Subsystem für Linux
+
+## <a name="build-18890"></a>Build 18890
+Allgemeine Windows Informationen zum Build 18890 finden Sie auf die [Windows Blog](https://blogs.windows.com/windowsexperience/2019/05/01/announcing-windows-10-insider-preview-build-18890/).
+
+### <a name="wsl"></a>WSL
+* Nicht blockierenden Socket Speicherverlusten [GH 2913]
+* EOF-Eingabe für Terminaldienste kann nachfolgende Lesevorgänge [GH 3421] blockieren.
+* Aktualisieren Sie "resolv.conf"-Header zum Verweisen auf wsl.conf [erläutert in GH 3928]
+* Deadlock in der Epoll Löschcode [GH 3922]
+* Behandeln von Leerzeichen in Argumente für "--" Import- /: [GH 3932]
+* Erweitern "mmap" bearbeiteten Dateien funktioniert nicht ordnungsgemäß [GH 3939]
+* Problem mit ARM64 behoben \\Wsl$ Zugriff funktioniert nicht ordnungsgemäß
+* Fügen Sie eine bessere Standardsymbol wsl.exe hinzu
 
 ## <a name="build-18342"></a>Build 18342
 Allgemeine Windows Informationen zum Build 18342 finden Sie auf die [Windows Blog](https://blogs.windows.com/windowsexperience/2019/02/20/announcing-windows-10-insider-preview-build-18342/).
@@ -349,8 +362,7 @@ Allgemeine Windows Informationen zum Build 17627 finden Sie auf die [Windows Blo
 * Hinzufügen von Unterstützung für die Pi-fähigen Futex-Vorgänge. [GH 1006]
     * Beachten Sie, dass Prioritäten nicht aktuell ein unterstütztes Feature von WSL sind daher Einschränkungen bestehen, aber die Standardverwendung muss aufgehoben werden.
 * Windows-Firewall-Unterstützung für die WSL-Prozesse. [GH 1852]
-    * Damit können die WSL verarbeiten, z. B. Python an einem beliebigen Port lauschen, verwenden Sie die Eingabeaufforderung mit erhöhten Windows:
-```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```
+    * Damit können die WSL verarbeiten, z. B. Python an einem beliebigen Port lauschen, verwenden Sie die Eingabeaufforderung mit erhöhten Windows: ```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```
     * Weitere Informationen zum Hinzufügen von Firewallregeln finden Sie unter [Link](https://support.microsoft.com/en-us/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)
 * Berücksichtigen Sie bei Verwendung von wsl.exe Standardshell des Benutzers. [GH 2372]
 * Melden Sie alle Netzwerkschnittstellen, als Ethernet. [GH 2996]
@@ -793,7 +805,7 @@ Im folgenden finden Sie eine Liste der neuen oder verbesserten Syscalls, die ein
 `prlimit64`<br/>
 
 ### <a name="known-issues"></a>Bekannte Probleme
-#### [<a name="github-issue-2392-windows-folders-not-recognized-by-wsl-"></a>GitHub-Problem 2392: Windows-Ordner, die nicht von WSL erkannt...](https://github.com/Microsoft/BashOnWindows/issues/2392)
+#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-httpsgithubcommicrosoftbashonwindowsissues2392"></a>[GitHub-Problem 2392: Windows-Ordner, die nicht von WSL erkannt...](https://github.com/Microsoft/BashOnWindows/issues/2392)
 Im Build 16257 WSL verfügt über Probleme beim Aufzählen von Windows-Dateien und Ordner über `/mnt/c/...`.
 Dieses Problem wurde behoben und freigegeben werden soll, im Insiders-build während der Woche ab ab 8/14/2017.
 
