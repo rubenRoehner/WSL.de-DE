@@ -9,4 +9,4 @@
 # [Erstellen einer benutzerdefinierten Distribution](./build-custom-distro.md)
 # [Häufig gestellte Fragen](./faq.md)
 # [Problembehandlung](./troubleshooting.md)
-# [Anmerkungen zu dieser Version](./release-notes.md)
+# [Versionshinweise](./release-notes.md)
