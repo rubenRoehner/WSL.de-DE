@@ -9,10 +9,10 @@ ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
 ms.openlocfilehash: 055bdc02dcf8f078caa014abd6dd755a47c99cfe
-ms.sourcegitcommit: ca08a78925880ed3eccf88edb30def16c83f2543
+ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59063298"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Problembehandlung bei Windows-Subsystem für Linux
@@ -114,11 +114,11 @@ Einige Benutzer haben Probleme mit der bestimmte Firewall-Anwendungen, die Zugri
 In einigen Fällen können durch das Deaktivieren der Firewalls für den Zugriff.  In einigen Fällen sucht das einfach dadurch, dass die installierte Firewall zum Blockieren des Zugriffs.
 
 ### <a name="permission-denied-error-when-using-ping"></a>Berechtigung verweigert bei Verwendung von ping
-#### [<a name="anniversary-update"></a>Anniversary Update](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14388-to-windows-10-anniversary-update) 
+#### <a name="anniversary-updatehttpsmsdnmicrosoftcomen-uscommandlinewslreleasenotesbuild-14388-to-windows-10-anniversary-update"></a>[Anniversary-Update](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14388-to-windows-10-anniversary-update) 
 
 Berechtigungen in Windows sind zum Ausführen von Ping in WSL erforderlich.  Führen Sie Ping, Ausführen von Bash unter Ubuntu unter Windows als Administrator oder bash.exe einer CMD/PowerShell-Eingabeaufforderung mit Administratorrechten ausführen.
 
-#### [<a name="build-14926"></a>Build 14926+](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14926)
+#### <a name="build-14926httpsmsdnmicrosoftcomen-uscommandlinewslreleasenotesbuild-14926"></a>[Build 14926+](https://msdn.microsoft.com/en-us/commandline/wsl/release_notes#build-14926)
   Administratorrechte mehr erforderlich.
 
 ### <a name="bash-is-hung"></a>Bash ist nicht reagiert.
