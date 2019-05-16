@@ -86,7 +86,7 @@ So deaktivieren legacy-Konsole ein:
 1. Auf "OK" klicken
 
 ### <a name="error-0x80040154-after-windows-update"></a>"Fehler: 0 x 80040154 "nach dem update von Windows
-Das Windows-Subsystem für Linux-Funktion möglicherweise deaktiviert, während eines Windows-Updates. In diesem Fall muss das Windows-Feature erneut aktiviert werden. Anweisungen zum Aktivieren der Windows-Subsystem für Linux Sie in finden der [Installationshandbuch](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+Das Windows-Subsystem für Linux-Funktion möglicherweise deaktiviert, während eines Windows-Updates. In diesem Fall muss das Windows-Feature erneut aktiviert werden. Anweisungen zum Aktivieren der Windows-Subsystem für Linux Sie in finden der [Installationshandbuch](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-guihttps://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
 ### <a name="changing-the-display-language"></a>Ändern der Anzeigesprache
 Installieren von WSL versucht, die automatisch das Ubuntu-Gebietsschema entsprechend das Gebietsschema des der Windows-Installation zu ändern.  Wenn Sie dieses Verhalten nicht wünschen, können Sie diesen Befehl, um die Ubuntu-Benutzergebietsschema ändern, nachdem die Installation abgeschlossen ist ausführen.  Sie müssen bash.exe für diese Änderung wirksam wird neu zu starten.
