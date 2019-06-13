@@ -7,12 +7,12 @@ ms.date: 12/20/2017
 ms.topic: article
 ms.assetid: 3cefe0db-7616-4848-a2b6-9296746a178b
 ms.custom: seodec18
-ms.openlocfilehash: 5dcfe0987ecb6615fbe1ab67d178679ac6ad9317
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: e4608c25c6bcc63413d53b2c808c16fe2a62dd5c
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063248"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040816"
 ---
 # <a name="windows-subsystem-for-linux-interoperability-with-windows"></a>Windows-Subsystem für Linux-Interoperabilität mit Windows
 
@@ -198,7 +198,7 @@ Deaktivieren von Interop zwischen den WSL-Sitzungen nicht beibehalten: Interop w
 
 ## <a name="creators-update-and-anniversary-update"></a>Creators Update und Anniversary-Update
 
-Interop-Umgebung vor Herbst Creators Update neuere Interop-Funktionen ähnelt, gibt es eine Handfull wesentliche Unterschiede.
+Während der Interop-Umgebung vor Herbst Creators Update neuere Interop-Funktionen ähnelt, gibt es jedoch einige wichtige Unterschiede.
 
 Zusammenfassung:
 

@@ -19,3 +19,6 @@ Dieses Projekt folgt dem [Microsoft Open Source-Verhaltenskodex](https://opensou
 Weitere Informationen finden Sie unter den [Code von durchführen – häufig gestellte Fragen](https://opensource.microsoft.com/codeofconduct/faq/) oder wenden Sie sich an [ opencode@microsoft.com ](mailto:opencode@microsoft.com) weitere Fragen und Kommentare.
 
 Willkommen bei der markdownquelle für Microsoft Befehlszeilenshells und-Konsole Dokumentation.
+
+## <a name="license"></a>Lizenz
+Verteilt unter der Creative Commons Attribution 4.0 International (CC von 4.0) Public-Lizenz.

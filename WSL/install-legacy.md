@@ -8,12 +8,12 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: b31bb3a542b8481c723df42292e20e364680722d
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: fbb5bdc401a013b0853774cff6ad2dc84a36e412
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063588"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040835"
 ---
 # <a name="guide-to-install-or-uninstall-windows-subsystem-for-linux-on-windows-10-anniversary-update-and-creators-update"></a>Anleitung zum Installieren oder Deinstallieren von Windows-Subsystem für Linux auf Windows 10 Anniversary Update und Creators Update 
 
@@ -38,7 +38,7 @@ Wenn Sie nicht auf Fall Creators Update oder höher aktualisieren können, führ
 
 1. Öffnen Sie eine Eingabeaufforderung.  Typ `bash` und die EINGABETASTE drücken
 
-    Beim ersten Ausführen von Bash auf Ubuntu unter Windows, werden Sie aufgefordert, Canonical Lizenz zu akzeptieren. Sobald Accpted, WSL heruntergeladen und installiert die Ubuntu-Instanz auf dem Computer, und eine "Bash auf Ubuntu unter Windows"-Verknüpfung Ihrem Startmenü hinzugefügt werden wird.
+    Beim ersten Ausführen von Bash auf Ubuntu unter Windows, werden Sie aufgefordert, Canonical Lizenz zu akzeptieren. Nachdem akzeptiert, WSL heruntergeladen und installiert die Ubuntu-Instanz auf dem Computer, und eine "Bash auf Ubuntu unter Windows"-Verknüpfung wird Ihrem Startmenü hinzugefügt werden.
 
     ![Aufforderung zur Installation von Ubuntu](media/bashShellInstall.png)
 

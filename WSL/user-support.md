@@ -8,12 +8,12 @@ ms.date: 09/11/2017
 ms.topic: article
 ms.assetid: f70e685f-24c6-4908-9546-bf4f0291d8fd
 ms.custom: seodec18
-ms.openlocfilehash: 5820d701d5c0e22f14bf76e3dc6fe70bacb5213a
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: 0d00b43d059e72edd4e2a5b9591c29441f461fca
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063598"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040825"
 ---
 # <a name="user-accounts-and-permissions-for-windows-subsystem-for-linux"></a>Benutzerkonten und Berechtigungen für Windows-Subsystem für Linux
 
@@ -128,11 +128,11 @@ Wenn Linux auf WSL ausführen zu können, müssen Linux die gleichen Windows-Ber
 * Normal (ohne erhöhte Rechte): Linux, die mit den Berechtigungen des angemeldeten Benutzers ausgeführt wird
 * Mit erhöhten Rechten/Admin: Linux, die mit erhöhten Windows/Administratorberechtigungen ausgeführt wird
 
-> Da, die erweiterte Prozesse können Änderung/Beschädigung systemweiten Einstellungen und Daten und können geschützten Zugriff/ändern, Dateien und Ordnern, **vermeiden** Prozesse starten erhöht werden, es sei denn, Sie absolut müssen – gibt an, ob sie Windows sind oder Linux-Anwendungen/Tools/Shells!
+> Da Prozesse mit erhöhten Rechten können Access/ändern (und daher beschädigen) systemweiten Einstellungen und System-Wide/geschützte Daten **vermeiden** Prozesse mit erhöhten Rechten starten, es sei denn, Sie unbedingt, ob sie Windows oder Linux sind Anwendungen/Tools/Shells!
 
 Die oben aufgeführten Windows-Berechtigungen werden unabhängig von Ihren Berechtigungen innerhalb einer Linux-Instanz: Linux "Stammberechtigungen" wirken sich nur auf die Rechte des Benutzers innerhalb des Linux-Umgebung & Filesystem; Sie haben keine Auswirkung auf die Windows-Berechtigungen erteilt. Daher einen Linux-Prozess ausgeführt, als Root-Benutzer (z.B. über die `sudo`) nur gewährt, die über Administratorrechte in der Linux-Umgebung zu verarbeiten.
 
-**Beispiel:**    
+**Beispiel:**     
 Eine Bash-Sitzung mit Administratorrechten für Windows möglicherweise Zugriff auf `cd /mnt/c/Users/Administrator` zwar eine Bash-Sitzung, ohne über Administratorrechte für einen Fehler "Zugriff verweigert" finden Sie unter würde.
 
 Unter Linux eingeben `sudo cd /mnt/c/Users/Administrator` Zugriff auf das Administratorkennwort Verzeichnis wird nicht gewährt werden, da Berechtigungen in Windows, die von Windows verwaltet werden.

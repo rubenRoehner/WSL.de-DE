@@ -8,12 +8,12 @@ ms.date: 02/7/2018
 ms.topic: article
 ms.assetid: 7ca59bd7-d9d3-4f6d-8b92-b8faa9bcf250
 ms.custom: seodec18
-ms.openlocfilehash: c806552750f413fcb75f989d868a57cc939af64a
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: a4f9649805051d9c1367fd5b0a5fe541d2d1e168
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063498"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040857"
 ---
 # <a name="manage-and-configure-windows-subsystem-for-linux"></a>Verwalten und Konfigurieren von Windows-Subsystem für Linux
 
@@ -23,7 +23,7 @@ ms.locfileid: "59063498"
 
 Es gibt viele Möglichkeiten zum Ausführen von Linux mit dem Windows-Subsystem für Linux.
 
-1. `[distro]` ie `ubuntu`
+1. `[distro]`Zum Beispiel `ubuntu`
 1. `wsl.exe` oder `bash.exe`
 1. `wsl [command]` oder `bash -c [command]`
 
@@ -270,10 +270,10 @@ Abschnitt: `[automount]`
 
 | key        | Wert                          | default      | Anmerkungen zu dieser Version                                                                                                                                                                                                                                                                                                                          |
 |:-----------|:-------------------------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| enabled    | boolean                        | true         | `true` bewirkt, dass Festplattenlaufwerke (d.h.) `C:/` oder `D:/`) mit DrvFs unter automatisch eingebunden werden `/mnt`.  `false` bedeutet, dass Laufwerke wird nicht automatisch bereitgestellt werden, aber Sie dennoch bereitstellen können, manuell oder über `fstab`.                                                                                                             |
+| aktiviert    | boolean                        | true         | `true` bewirkt, dass Festplattenlaufwerke (d.h.) `C:/` oder `D:/`) mit DrvFs unter automatisch eingebunden werden `/mnt`.  `false` bedeutet, dass Laufwerke wird nicht automatisch bereitgestellt werden, aber Sie dennoch bereitstellen können, manuell oder über `fstab`.                                                                                                             |
 | mountFsTab | boolean                        | true         | `true` Legt `/etc/fstab` zu verarbeitenden WSL starten. / etc/fstab handelt es sich um eine Datei, in dem Sie andere Dateisysteme, wie eine SMB-Freigabe deklarieren können. Daher können Sie diese Dateisysteme in WSL beim Start automatisch nach oben bereitstellen.                                                                                                                |
 | Stammverzeichnis       | Zeichenfolge                         | `/mnt/`      | Legt das Verzeichnis, in denen feste Laufwerke automatisch eingebunden werden. Für, wenn Sie z. B. ein Verzeichnis in WSL am `/windir/` und angeben, dass als Wurzel an, Sie Ihre Festplattenlaufwerke bereitgestellt erwarten: `/windir/c`                                                                                              |
-| Optionen    | durch Trennzeichen getrennte Liste von Werten | Leere Zeichenfolge | Dieser Wert wird an die standardmäßige DrvFs Mount-Optionen-Zeichenfolge angefügt. **Nur DrvFs-spezifische Optionen können angegeben werden.** Optionen, die die Bereitstellung, die binäre normalerweise in einem Flag analysieren würde, werden nicht unterstützt. Wenn Sie diese Optionen explizit angeben möchten, müssen Sie alle Laufwerke einschließen, die für die Sie dazu in/etc/fstab möchten. |
+| options    | durch Trennzeichen getrennte Liste von Werten | Leere Zeichenfolge | Dieser Wert wird an die standardmäßige DrvFs Mount-Optionen-Zeichenfolge angefügt. **Nur DrvFs-spezifische Optionen können angegeben werden.** Optionen, die die Bereitstellung, die binäre normalerweise in einem Flag analysieren würde, werden nicht unterstützt. Wenn Sie diese Optionen explizit angeben möchten, müssen Sie alle Laufwerke einschließen, die für die Sie dazu in/etc/fstab möchten. |
 
 Standardmäßig legt WSL die Uid und Gid auf den Wert des Standardbenutzers (im Ubuntu-Distribution, die Standardbenutzer ist mit einer Uid zwischen erstellt = 1000, Gid = 1000). Wenn der Benutzer eine Gruppen-ID oder die Uid-Option explizit über diesen Schlüssel angegeben ist, wird der zugehörige Wert überschrieben. Andernfalls wird der Standardwert immer angefügt.
 
@@ -296,5 +296,5 @@ Diese Optionen sind in Insider-Build 17713 und höher verfügbar.
 
 | key | Wert | default | Anmerkungen zu dieser Version|
 |:----|:----|:----|:----|
-| enabled | boolean | `true` | Einstellung, die diesem Schlüssel bestimmen, ob WSL beim Starten von Windows-Prozesse unterstützt wird. |
+| aktiviert | boolean | `true` | Einstellung, die diesem Schlüssel bestimmen, ob WSL beim Starten von Windows-Prozesse unterstützt wird. |
 | appendWindowsPath | boolean | `true` | Einstellung, die diesem Schlüssel bestimmen, ob WSL Windows Pfadelemente die Umgebungsvariable $PATH hinzufügen möchten. | 
