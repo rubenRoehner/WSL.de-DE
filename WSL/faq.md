@@ -7,12 +7,12 @@ ms.author: taraj
 ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
-ms.openlocfilehash: 80675d8452b626ebe1d235774167c5ff27e4b44d
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: 07461f7db4a351f5b79ab0c5179d3d917ef1bdf7
+ms.sourcegitcommit: bb88269eb37405192625fa81ff91162393fb491f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063268"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67035062"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Häufig gestellte Fragen zu Windows-Subsystem für Linux
 
@@ -82,7 +82,7 @@ Einer der Vorteile von WSL wird Zugriff auf Ihre Dateien sowohl Windows und Linu
 
 WSL bindet die Festplattenlaufwerke des Computers, unter dem `/mnt/<drive>` Ordner in Ihrem Linux-Distributionen. Angenommen, Ihre `C:` Laufwerk eingebunden ist, klicken Sie unter `/mnt/c/` 
 
-Verwenden die bereitgestellten Laufwerke, können Sie Code bearbeiten, z. B. `C:\dev\myproj\` mit [Visual Studio](https://visualstudio.microsoft.com/vs/) / oder [VS Code](https://code.visualstudio.com/), und erstellen/Testen dieses Codes in Linux durch den Zugriff auf die gleichen Dateien über `\mnt\c\dev\myproj`.
+Verwenden die bereitgestellten Laufwerke, können Sie Code bearbeiten, z. B. `C:\dev\myproj\` mit [Visual Studio](https://visualstudio.microsoft.com/vs/) / oder [VS Code](https://code.visualstudio.com/), und erstellen/Testen dieses Codes in Linux durch den Zugriff auf die gleichen Dateien über `/mnt/c/dev/myproj`.
 
 > **WICHTIGER HINWEIS**: Die Einschränkungen der Verwendung von WSL ist, dass direkt den Zugriff auf/Ändern von Dateien in Ihrer Linux-Distributionen Dateisystem mithilfe von Windows-apps oder Tools nicht unterstützt wird. Thema [Wirken Sie sich nicht auf Linux-Dateien, die mithilfe von Windows-apps und -tools](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/)
 
@@ -146,7 +146,7 @@ WSL unterstützt nicht die in einer legacy-Konsole ausgeführt wird. So deaktivi
 1. Auf "OK" klicken
 
 ## <a name="why-do-i-get-error-0x80040154-when-i-run-bashexe-after-upgrading-windows"></a>Warum erhalte ich "Fehler: 0 x 80040154 "beim bash.exe nach dem Upgrade von Windows ausführen?
-Die Funktion "Windows-Subsystem für Linux" möglicherweise deaktiviert werden, während eines Windows-Updates. In diesem Fall muss das Windows-Feature erneut aktiviert werden. Anweisungen zum Aktivieren des Features "Windows-Subsystem für Linux" finden Sie in der [Installationshandbuch](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-guihttps://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+Die Funktion "Windows-Subsystem für Linux" möglicherweise deaktiviert werden, während eines Windows-Updates. In diesem Fall muss das Windows-Feature erneut aktiviert werden. Anweisungen zum Aktivieren des Features "Windows-Subsystem für Linux" finden Sie in der [Installationshandbuch](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
 ## <a name="how-do-i-change-the-display-language-of-wsl"></a>Wie ändere ich die Anzeigesprache des WSL?
 Installieren von WSL versucht, die automatisch das Ubuntu-Gebietsschema entsprechend das Gebietsschema des der Windows-Installation zu ändern. Wenn Sie dieses Verhalten nicht wünschen, können Sie diesen Befehl, um die Ubuntu-Benutzergebietsschema ändern, nachdem die Installation abgeschlossen ist ausführen. Sie müssen bash.exe für diese Änderung wirksam wird neu zu starten.

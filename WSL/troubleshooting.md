@@ -8,12 +8,12 @@ ms.date: 11/15/2017
 ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
-ms.openlocfilehash: 055bdc02dcf8f078caa014abd6dd755a47c99cfe
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: feb9e25da73eeb0d7f0cef4014221a42e2ca179b
+ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59063298"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040843"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Problembehandlung bei Windows-Subsystem für Linux
 
@@ -86,7 +86,7 @@ So deaktivieren legacy-Konsole ein:
 1. Auf "OK" klicken
 
 ### <a name="error-0x80040154-after-windows-update"></a>"Fehler: 0 x 80040154 "nach dem update von Windows
-Das Windows-Subsystem für Linux-Funktion möglicherweise deaktiviert, während eines Windows-Updates. In diesem Fall muss das Windows-Feature erneut aktiviert werden. Anweisungen zum Aktivieren der Windows-Subsystem für Linux Sie in finden der [Installationshandbuch](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-guihttps://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+Das Windows-Subsystem für Linux-Funktion möglicherweise deaktiviert, während eines Windows-Updates. In diesem Fall muss das Windows-Feature erneut aktiviert werden. Anweisungen zum Aktivieren der Windows-Subsystem für Linux Sie in finden der [Installationshandbuch](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
 ### <a name="changing-the-display-language"></a>Ändern der Anzeigesprache
 Installieren von WSL versucht, die automatisch das Ubuntu-Gebietsschema entsprechend das Gebietsschema des der Windows-Installation zu ändern.  Wenn Sie dieses Verhalten nicht wünschen, können Sie diesen Befehl, um die Ubuntu-Benutzergebietsschema ändern, nachdem die Installation abgeschlossen ist ausführen.  Sie müssen bash.exe für diese Änderung wirksam wird neu zu starten.
@@ -149,7 +149,6 @@ systeminfo | Select-String "^OS Name","^OS Version"
 ### <a name="confirm-wsl-is-enabled"></a>Vergewissern Sie sich, dass WSL aktiviert ist
 Sie können bestätigen, dass die Windows-Subsystem für Linux durch Ausführen des folgenden Befehls in PowerShell aktiviert ist:  
 ``` PowerShell
-PowerShell
 Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
@@ -165,7 +164,22 @@ Ihre SSH-Server eine Verbindung herstellen möchten, ist mit folgendem Fehler fe
    sudo service ssh stop
    sudo /usr/sbin/sshd -d
    ```
-3. Überprüfen Sie die startaufgabenprotokolle, und stellen Sie sicher für Host-Schlüssel verfügbar sind und keine protokollmeldungen wie angezeigt werden: debug1: Sshd Version OpenSSH_7.2, OpenSSL 1.0.2g 1. März 2016 debug1: Key_load_private: falsche Passphrase zum Entschlüsseln des privaten Schlüssels debug1 angegeben: Key_load_public : Keine solche Datei oder das Verzeichnis konnte nicht geladen werden Hostschlüssel: /etc/ssh/ssh_host_rsa_key debug1: Key_load_private: Keine solche Datei oder Verzeichnis debug1: Key_load_public: Keine solche Datei oder das Verzeichnis konnte nicht geladen werden Hostschlüssel: /etc/ssh/ssh_host_dsa_key debug1: Key_load_private: Keine solche Datei oder Verzeichnis debug1: Key_load_public: Keine solche Datei oder das Verzeichnis konnte nicht geladen werden Hostschlüssel: /etc/ssh/ssh_host_ecdsa_key debug1: Key_load_private: Keine solche Datei oder Verzeichnis debug1: Key_load_public: Keine solche Datei oder das Verzeichnis konnte nicht geladen werden Hostschlüssel: /etc/ssh/ssh_host_ed25519_key
+3. Überprüfen Sie die startaufgabenprotokolle, und stellen Sie sicher für Host-Schlüssel verfügbar sind und keine protokollmeldungen wie angezeigt werden:
+   ```
+   debug1: sshd version OpenSSH_7.2, OpenSSL 1.0.2g  1 Mar 2016
+   debug1: key_load_private: incorrect passphrase supplied to decrypt private key
+   debug1: key_load_public: No such file or directory
+   Could not load host key: /etc/ssh/ssh_host_rsa_key
+   debug1: key_load_private: No such file or directory
+   debug1: key_load_public: No such file or directory
+   Could not load host key: /etc/ssh/ssh_host_dsa_key
+   debug1: key_load_private: No such file or directory
+   debug1: key_load_public: No such file or directory
+   Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+   debug1: key_load_private: No such file or directory
+   debug1: key_load_public: No such file or directory
+   Could not load host key: /etc/ssh/ssh_host_ed25519_key
+   ```
 
 Wenn Sie diese Nachrichten sehen und die Schlüssel unter fehlen `/etc/ssh/`, müssen Sie den Schlüssel neu generieren oder einfach löschen & Openssh-Server zu installieren:
 ```BASH
