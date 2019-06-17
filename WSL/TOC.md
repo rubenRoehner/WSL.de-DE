@@ -8,5 +8,11 @@
 # [Interoperabilität](./interop.md)
 # [Erstellen einer benutzerdefinierten Distribution](./build-custom-distro.md)
 # [Häufig gestellte Fragen](./faq.md)
+# [WSL 2](./wsl2-index.md)
+## [Informationen zu WSL 2](./wsl2-about.md)
+## [Installieren von WSL 2](./wsl2-install.md)
+## [Änderungen der Benutzererfahrung zwischen WSL 1 und WSL 2](./wsl2-ux-changes.md)
+## [Häufig gestellte Fragen](./wsl2-faq.md)
+
 # [Problembehandlung](./troubleshooting.md)
 # [Versionshinweise](./release-notes.md)
