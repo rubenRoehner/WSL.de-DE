@@ -1,3 +1,3 @@
-# <a name="af-unix-sample"></a>AF-Unix-Sample
+# <a name="af-unix-sample"></a>AF-UNIX-Sample
 
-Die Demo AF_UNIX Interop zwischen einem WSL und Windows-Prozess zu veranschaulichen. Weitere Informationen zum Feature finden Sie in den WSL Commandline-Blog.
+Demo, die das AF_UNIX-Interop zwischen einem WSL-und Windows-Prozess veranschaulicht. Weitere Informationen zu diesem Feature finden Sie im WSL commandline-Blog.

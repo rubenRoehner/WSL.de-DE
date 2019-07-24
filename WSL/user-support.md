@@ -1,7 +1,7 @@
 ---
-title: Linux-Benutzerkonto und Berechtigungen
-description: Referenz für die Benutzer- und berechtigungsverwaltung mit dem Windows-Subsystem für Linux.
-keywords: BashOnWindows, Bash, Wsl, Windows, Windows-Subsystem für Linux, Windowssubsystem, Ubuntu, Benutzerkonten
+title: Linux-Benutzerkonto und-Berechtigungen
+description: Referenz für Benutzerkonten und Berechtigungs Verwaltung mit dem Windows-Subsystem für Linux.
+keywords: Bashonwindows, bash, WSL, Windows, Windows-Subsystem für Linux, windowssubsystem, Ubuntu, Benutzerkonten
 author: scooley
 ms.author: scooley
 ms.date: 09/11/2017
@@ -9,61 +9,61 @@ ms.topic: article
 ms.assetid: f70e685f-24c6-4908-9546-bf4f0291d8fd
 ms.custom: seodec18
 ms.openlocfilehash: 0d00b43d059e72edd4e2a5b9591c29441f461fca
-ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
+ms.sourcegitcommit: cd239efc5c7c25ffbe5de25b2438d44181a838a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "67040825"
 ---
-# <a name="user-accounts-and-permissions-for-windows-subsystem-for-linux"></a>Benutzerkonten und Berechtigungen für Windows-Subsystem für Linux
+# <a name="user-accounts-and-permissions-for-windows-subsystem-for-linux"></a>Benutzerkonten und Berechtigungen für das Windows-Subsystem für Linux
 
-Erstellen Ihre Linux-Benutzer ist der erste Schritt zum Einrichten einer neuen Linux-Distribution für WSL.  Das erste Benutzerkonto an, die, das Sie erstellen, wird automatisch mit ein paar spezielle Attribute konfiguriert:
+Das Erstellen eines Linux-Benutzers ist der erste Schritt beim Einrichten einer neuen Linux-Distribution auf WSL.  Das erste Benutzerkonto, das Sie erstellen, wird automatisch mit einigen speziellen Attributen konfiguriert:
 
-1. Es ist Ihre Standardbenutzer – es meldet sich automatisch beim Start.
-1. Linux-Administrator (Mitglied der Gruppe "Sudo") in der Standardeinstellung ist.
+1. Dies ist der Standardbenutzer, der sich beim Start automatisch anmeldet.
+1. Standardmäßig ist dies der Linux-Administrator (Mitglied der Gruppe "sudo").
 
-Jede Linux-Distribution, die das Windows-Subsystem für Linux unter verfügt über einen eigenen Linux-Benutzerkonten und Kennwörter.  Sie müssen ein Linux-Benutzerkonto jederzeit konfigurieren, Sie fügen eine Verteilung, neu installieren oder zurücksetzen.  Linux-Benutzerkonten sind nicht nur pro Verteilung voneinander unabhängig, sie sind auch unabhängig von Ihrem Windows-Benutzerkonto.
+Jede Linux-Distribution, die unter dem Windows-Subsystem für Linux ausgeführt wird, verfügt über eigene Linux-Benutzerkonten und Kenn Wörter.  Sie müssen ein Linux-Benutzerkonto konfigurieren, wenn Sie eine Verteilung hinzufügen, neu installieren oder zurücksetzen.  Linux-Benutzerkonten sind nicht nur pro Verteilung unabhängig, sondern auch unabhängig von Ihrem Windows-Benutzerkonto.
 
-## <a name="resetting-your-linux-password"></a>Zurücksetzen Ihres Kennworts Linux
+## <a name="resetting-your-linux-password"></a>Zurücksetzen Ihres Linux-Kennworts
 
-Wenn Sie Zugriff auf Ihre Linux-Benutzerkonto haben und wissen Ihr aktuelle Kennwort ein, ändern Sie es unter Verwendung von Linux kennwortzurücksetzung Tools dieser Distribution – wahrscheinlich `passwd`.
+Wenn Sie Zugriff auf Ihr Linux-Benutzerkonto haben und Ihr aktuelles Kennwort kennen, ändern Sie es mit den Tools für die Linux-Kenn Wort `passwd`Zurücksetzung dieser Verteilung (höchstwahrscheinlich).
 
-Wenn dies nicht möglich, je nach der Verteilung ist können Sie zum Zurücksetzen Ihres Kennworts durch Standardbenutzer zurücksetzen können.
+Wenn dies nicht möglich ist, können Sie je nach Verteilung Ihr Kennwort zurücksetzen, indem Sie den Standardbenutzer zurücksetzen.
 
-WSL bietet, dass ein Standard-Benutzer-Tag, welches Benutzerkonto automatisch zu identifizieren anmeldet, wenn Sie eine WSL starten.  Da viele Verteilungen Befehle zum Festlegen von Standardbenutzer-Stamm und auch als Root-Benutzer mit kein Kennwort festgelegt sind, ist das Ändern der Stamm des Standardbenutzers ein nützliches Tool für Aufgaben wie das Zurücksetzen des Kennworts aus.
+WSL bietet ein Standard Benutzertag, um zu ermitteln, welches Benutzerkonto beim Starten eines WSL automatisch angemeldet wird.  Da viele Verteilungen Befehle enthalten, um den Standardbenutzer auf root festzulegen, und auch ein root-Benutzer ohne Kennwort festgelegt ist, ist das Ändern des Standard Benutzers in root ein praktisches Tool für die Kenn Wort Zurücksetzung.
 
-### <a name="for-creators-update-and-earlier"></a>Für Creators Update und frühere Versionen
-Wenn Sie ausführen, wird Windows 10 Creators update oder haben, können Sie den Bash-Standardbenutzer ändern, indem Sie die folgenden Befehle ausführen:
+### <a name="for-creators-update-and-earlier"></a>Für Creators Update und früher
+Wenn Sie Windows 10 Creators Update oder eine frühere Version ausführen, können Sie den Bash-Standardbenutzer ändern, indem Sie die folgenden Befehle ausführen:
 
-1. Ändern den standardmäßigen Benutzer `root`:
+1. Ändern Sie den Standardbenutzer `root`in:
 
     ```console
     C:\> lxrun /setdefaultuser root
     ```
 
-1. Führen Sie `bash.exe` , melden Sie sich jetzt als `root`:
+1. Führen `bash.exe` Sie aus, um `root`sich jetzt als anzumelden:
 
     ```console
     C:\> bash.exe
     ```
 
-1. Zurücksetzen Sie des Kennworts, mit der Distribution-Kennwort-Befehl aus, und schließen Sie die Linux-Konsole:
+1. Setzen Sie Ihr Kennwort mit dem Kenn Wort Befehl der Verteilung zurück, und schließen Sie die Linux-Konsole:
 
     ```BASH
     $ passwd username
     $ exit
     ```
 
-1. Über Windows-CMD den Standardbenutzer auf Ihre normalen Linux-Benutzerkonto zurückgesetzt werden:
+1. Setzen Sie Ihren Standardbenutzer von Windows CMD zurück auf Ihr normales Linux-Benutzerkonto:
 
     ```console
     C:\> lxrun.exe /setdefaultuser username
     ```
 
-### <a name="for-fall-creators-update-and-later"></a>Für den Fall Creators Update und höher
-Um festzustellen, welche Befehle für eine bestimmte Verteilung verfügbar sind, führen `[distro.exe] /?`.
+### <a name="for-fall-creators-update-and-later"></a>Für Fall Creators Update und höher
+Um anzuzeigen, welche Befehle für eine bestimmte Verteilung verfügbar sind, `[distro.exe] /?`führen Sie aus.
     
-Z. B. mit Ubuntu installiert:
+Beispielsweise bei installiertem Ubuntu:
 
 ```console
 C:\> ubuntu.exe /?
@@ -93,24 +93,24 @@ Usage:
       - Print this usage message.
 ```
 
-Schritt-für-Schritt-Anweisungen, die mit Ubuntu:
+Schritt-für-Schritt-Anleitungen unter Verwendung von Ubuntu:
 
-1. Open CMD
-1. Legen Sie den Standard-Linux-Benutzer auf `root`:
+1. Cmd öffnen
+1. Legen Sie den Standard-Linux `root`-Benutzer auf fest:
 
     ```console
     C:\> ubuntu config --default-user root
     ```    
 
-1. Starten Sie Ihre Linux-Distribution (`ubuntu`).  Sie werden automatisch melden Sie sich als `root`:
+1. Starten Sie Ihre Linux-`ubuntu`Distribution ().  Sie werden automatisch wie `root`folgt anmelden:
 
-1. Zurücksetzen, Ihr Kennwort mithilfe der `passwd` Befehl:
+1. Setzen Sie Ihr Kennwort `passwd` mit dem folgenden Befehl zurück:
 
     ```BASH
     $ passwd username
     ```
 
-1. Über Windows-CMD wird zurücksetzen Sie den Standardbenutzer auf Ihre normalen Linux-Benutzerkonto.
+1. Setzen Sie Ihren Standardbenutzer von Windows cmd auf Ihr normales Linux-Benutzerkonto zurück.
 
     ```console
     C:\> ubuntu config --default-user username
@@ -118,26 +118,26 @@ Schritt-für-Schritt-Anweisungen, die mit Ubuntu:
 
 ## <a name="permissions"></a>Berechtigungen
 
-Es gibt zwei wichtige Konzepte zu bedenken, wenn es um die Berechtigungen in WSL geht:
+Es gibt zwei wichtige Konzepte, die Sie beachten sollten, wenn es um Berechtigungen in WSL geht:
 
-1. Das Windows-Berechtigungsmodell regelt eines Prozesses Rechte für die Windows-Ressourcen
-2. Das Linux-Berechtigungsmodell steuert eines Prozesses Rechte für die Linux-Ressourcen
+1. Mit dem Windows-Berechtigungs Modell wird eine Prozess Berechtigung für Windows-Ressourcen geregelt.
+2. Das Linux-Berechtigungs Modell steuert die Rechte eines Prozesses für Linux-Ressourcen.
 
-Wenn Linux auf WSL ausführen zu können, müssen Linux die gleichen Windows-Berechtigungen wie der Prozess, das es startet. Linux kann in einem der beiden Berechtigungsstufen gestartet werden:
+Bei der Ausführung von Linux auf WSL hat Linux dieselben Windows-Berechtigungen wie der Prozess, von dem die Anwendung gestartet wird. Linux kann mit einer von zwei Berechtigungsstufen gestartet werden:
 
-* Normal (ohne erhöhte Rechte): Linux, die mit den Berechtigungen des angemeldeten Benutzers ausgeführt wird
-* Mit erhöhten Rechten/Admin: Linux, die mit erhöhten Windows/Administratorberechtigungen ausgeführt wird
+* Normal (ohne erhöhte Rechte): Linux wird mit den Berechtigungen des angemeldeten Benutzers ausgeführt.
+* Erhöht/admin: Linux wird mit erhöhten/Administrator-Windows-Berechtigungen ausgeführt.
 
-> Da Prozesse mit erhöhten Rechten können Access/ändern (und daher beschädigen) systemweiten Einstellungen und System-Wide/geschützte Daten **vermeiden** Prozesse mit erhöhten Rechten starten, es sei denn, Sie unbedingt, ob sie Windows oder Linux sind Anwendungen/Tools/Shells!
+> Da erweiterte Prozesse auf systemweite Einstellungen und systemweite/geschützte Daten zugreifen bzw. diese ändern (und dadurch beschädigen) können, **vermeiden** Sie das Starten von erweiterten Prozessen, es sei denn, Sie müssen unbedingt die Windows-oder Linux-Anwendungen/Tools/ Bomben!
 
-Die oben aufgeführten Windows-Berechtigungen werden unabhängig von Ihren Berechtigungen innerhalb einer Linux-Instanz: Linux "Stammberechtigungen" wirken sich nur auf die Rechte des Benutzers innerhalb des Linux-Umgebung & Filesystem; Sie haben keine Auswirkung auf die Windows-Berechtigungen erteilt. Daher einen Linux-Prozess ausgeführt, als Root-Benutzer (z.B. über die `sudo`) nur gewährt, die über Administratorrechte in der Linux-Umgebung zu verarbeiten.
+Die obigen Windows-Berechtigungen sind unabhängig von den Berechtigungen innerhalb einer Linux-Instanz: Linux-"Root-Berechtigungen" wirken sich nur auf die Rechte des Benutzers in der Linux-Umgebung & File System aus; Sie haben keine Auswirkung auf die gewährten Windows-Berechtigungen. Folglich werden durch das Ausführen eines Linux-Prozesses als Stamm ( `sudo`z. b. via) nur die Administratorrechte innerhalb der Linux-Umgebung erteilt.
 
 **Beispiel:**     
-Eine Bash-Sitzung mit Administratorrechten für Windows möglicherweise Zugriff auf `cd /mnt/c/Users/Administrator` zwar eine Bash-Sitzung, ohne über Administratorrechte für einen Fehler "Zugriff verweigert" finden Sie unter würde.
+Eine bash-Sitzung mit Windows-Administrator Berechtigungen `cd /mnt/c/Users/Administrator` kann auf zugreifen, während einer bash-Sitzung ohne Administratorrechte der Fehler "Berechtigung verweigert" angezeigt wird.
 
-Unter Linux eingeben `sudo cd /mnt/c/Users/Administrator` Zugriff auf das Administratorkennwort Verzeichnis wird nicht gewährt werden, da Berechtigungen in Windows, die von Windows verwaltet werden.
+Unter Linux gewährt die `sudo cd /mnt/c/Users/Administrator` Eingabe keinen Zugriff auf das Administrator Verzeichnis, da Berechtigungen in Windows von Windows verwaltet werden.
 
-Das Linux-Berechtigungsmodell ist wichtig, in die Linux-Umgebung, in denen der Benutzer die Berechtigungen, die basierend auf dem aktuellen Linux-Benutzer verfügt.
+Das Linux-Berechtigungs Modell ist wichtig, wenn der Benutzer in der Linux-Umgebung über Berechtigungen verfügt, die auf dem aktuellen Linux-Benutzer basiert.
 
 **Beispiel:**  
-Ein Benutzer in der Gruppe "sudo" ausgeführt `sudo apt update`.
+Ein Benutzer in der sudo-Gruppe kann `sudo apt update`ausführen.

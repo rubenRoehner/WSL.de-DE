@@ -1,47 +1,47 @@
 ---
 title: Verwalten von Linux-Distributionen
-description: Verweisen auf auflisten und Konfigurieren von mehreren Linux-Distributionen, die auf dem Windows-Subsystem für Linux ausführen.
-keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu, wsl.conf, wslconfig
+description: Referenz zum Auflisten und Konfigurieren mehrerer Linux-Distributionen, die auf dem Windows-Subsystem für Linux ausgeführt werden.
+keywords: Bashonwindows, bash, WSL, Windows, Windows-Subsystem für Linux, windowssubsystem, Ubuntu, WSL. conf, wslconfig
 author: scooley
 ms.author: scooley
 ms.date: 02/7/2018
 ms.topic: article
 ms.assetid: 7ca59bd7-d9d3-4f6d-8b92-b8faa9bcf250
 ms.custom: seodec18
-ms.openlocfilehash: a4f9649805051d9c1367fd5b0a5fe541d2d1e168
-ms.sourcegitcommit: db69625e26bc141ea379a830790b329e51ed466b
+ms.openlocfilehash: 0c9f9315b17d5156aa111e7619ee25534653b27e
+ms.sourcegitcommit: 5844c6dbf692780b86b30bd65e11820fff43b3bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040857"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67499276"
 ---
-# <a name="manage-and-configure-windows-subsystem-for-linux"></a>Verwalten und Konfigurieren von Windows-Subsystem für Linux
+# <a name="manage-and-configure-windows-subsystem-for-linux"></a>Verwalten und Konfigurieren des Windows-Subsystems für Linux
 
-> Gilt für Windows 10 Fall Creators Update und höher.  Finden Sie in unserer aktualisierten [Installationshandbuch](./install_guide.md) , neue Features zu starten, Ausführen von mehreren Linux-Distributionen aus dem Windows Store.
+> Gilt für Windows 10 Fall Creators Update und höher.  Weitere Informationen zu neuen Verwaltungs Features und zum Ausführen mehrerer Linux-Distributionen aus dem Microsoft Store finden Sie in unserem aktualisierten [Installationshandbuch](./install_guide.md) .
 
 ## <a name="ways-to-run-wsl"></a>Möglichkeiten zum Ausführen von WSL
 
-Es gibt viele Möglichkeiten zum Ausführen von Linux mit dem Windows-Subsystem für Linux.
+Es gibt viele Möglichkeiten, Linux mit dem Windows-Subsystem für Linux auszuführen.
 
-1. `[distro]`Zum Beispiel `ubuntu`
+1. `[distro]`Zum Beispiel`ubuntu`
 1. `wsl.exe` oder `bash.exe`
 1. `wsl [command]` oder `bash -c [command]`
 
-Welche Methode Sie verwenden sollten, hängt davon ab, was Sie tun.
+Welche Methode Sie verwenden sollten, hängt davon ab, was Sie gerade tun.
 
-### <a name="launch-wsl-by-distribution"></a>Starten Sie von der Verteilung von WSL
+### <a name="launch-wsl-by-distribution"></a>Starten von WSL nach Verteilung
 
-Eine Distribution mit distributionsspezifische Anwendung ausführt, wird dieser Verteilung in seinem eigenen Konsolenfenster gestartet.
+Durch das Ausführen einer Verteilung mit der IT-spezifischen Anwendung wird diese Distribution im eigenen Konsolenfenster gestartet.
 
-![Starten Sie im Startmenü WSL](media/start-launch.png)
+![Starten von WSL über das Startmenü](media/start-launch.png)
 
-Es ist identisch mit dem "Start" klicken, in der Windows Store.
+Dies entspricht dem Klicken auf "starten" im Microsoft Store.
 
-![Starten Sie die WSL aus dem Windows Store](media/store-launch.png)
+![Starten von WSL aus dem Microsoft Store](media/store-launch.png)
 
-Sie können auch die Verteilung über die Befehlszeile ausführen, mit `[distribution].exe`.
+Sie können die Verteilung auch über die Befehlszeile ausführen, indem `[distribution].exe`Sie ausführen.
 
-Der Nachteil der Ausführung einer Verteilungs über die Befehlszeile auf diese Weise ist, dass es automatisch Ihrem Arbeitsverzeichnis aus dem aktuellen Verzeichnis in der Distribution-Basisverzeichnis ändert.
+Der Nachteil der Ausführung einer Verteilung von der Befehlszeile auf diese Weise besteht darin, dass das Arbeitsverzeichnis automatisch vom aktuellen Verzeichnis in das Basisverzeichnis der Distribution geändert wird.
 
 **Beispiel:**
 
@@ -62,9 +62,9 @@ logout
 PS C:\Users\sarah>
 ```
 
-### <a name="wsl-and-wsl-command"></a>Wsl und Wsl [Befehl]
+### <a name="wsl-and-wsl-command"></a>WSL und WSL [Befehl]
 
-Die beste Möglichkeit zum Ausführen von WSL über die Befehlszeile verwendet `wsl.exe`.
+Die beste Methode zum Ausführen von WSL von der Befehlszeile aus `wsl.exe`ist die Verwendung von.
 
 **Beispiel:**
 
@@ -81,7 +81,7 @@ scooley@scooley-elmer:/mnt/c/Users/sarah$ pwd
 /mnt/c/Users/sarah
 ```
 
-Nicht nur `wsl` behalten Sie das aktuelle Arbeitsverzeichnis vorhanden, sie können einen einzelnen Befehl auf der Seite Windows-Befehle ausführen.
+Das aktuelle Arbeits `wsl` Verzeichnis wird nicht nur auf dem neuesten Stand gehalten, sondern Sie können auch einen einzelnen Befehl entlang von Windows-Befehlszeilen ausführen.
 
 **Beispiel:**
 
@@ -120,70 +120,70 @@ PS C:\Users\sarah>
 ```
 
 
-## <a name="managing-multiple-linux-distributions"></a>Verwalten von mehreren Linux-Distributionen
+## <a name="managing-multiple-linux-distributions"></a>Verwalten mehrerer Linux-Distributionen
 
-### <a name="windows-10-version-1903-and-later"></a>Windows 10-Version 1903 und höher
+### <a name="windows-10-version-1903-and-later"></a>Windows 10, Version 1903 und höher
 
-Sie können `wsl.exe` Ihre Distributionen im Windows-Subsystem für Linux (WSL), einschließlich der verfügbare Distributionen auflisten, Festlegen von einer standardverteilung und Deinstallieren von Verteilungen zu verwalten.
+Sie können verwenden `wsl.exe` , um die Verteilungen im Windows-Subsystem für Linux (WSL) zu verwalten, einschließlich der Auflistung verfügbarer Verteilungen, dem Festlegen einer Standardverteilung und der Deinstallieren von Verteilungen.
 
-Jede Linux-Distribution verwaltet unabhängig voneinander eine eigene Konfigurationen. Führen Sie zum Anzeigen der Verteilung spezifischen Befehle `[distro.exe] /?`.  Beispiel: `ubuntu /?`.
+Jede Linux-Distribution verwaltet unabhängig seine eigenen Konfigurationen. Führen `[distro.exe] /?`Sie aus, um Verteilungs spezifische Befehle anzuzeigen.  Beispiel: `ubuntu /?`.
 
-#### <a name="list-distributions"></a>Liste von Verteilungen
+#### <a name="list-distributions"></a>Verteilungen auflisten
 
-`wsl -l` , `wsl --list`  
-Listet die verfügbaren Linux-Distributionen für WSL verfügbar.  Wenn eine Verteilung aufgeführt ist, wird installiert und bereit für die Verwendung.
+`wsl -l`,`wsl --list`  
+Listet verfügbare Linux-Distributionen für WSL auf.  Wenn eine Distribution aufgeführt ist, ist Sie installiert und einsatzbereit.
 
 `wsl --list --all`   
-Listet alle Verteilungen, einschließlich jener, die nicht derzeit verwendbar sind.  Sie möglicherweise während der Installation, Deinstallation oder in einem fehlerhaften Zustand befinden.  
+Listet alle Verteilungen auf, einschließlich derjenigen, die derzeit nicht verwendbar sind.  Sie werden möglicherweise gerade installiert, deinstalliert oder sind beschädigt.  
 
 `wsl --list --running`   
-Listet alle Verteilungen, die derzeit ausgeführt werden.
+Listet alle Verteilungen auf, die zurzeit ausgeführt werden.
 
-#### <a name="set-a-default-distribution"></a>Legen Sie eine standardverteilung
+#### <a name="set-a-default-distribution"></a>Festlegen einer Standardverteilung
 
-Die standardverteilung von WSL ist diejenige, die ausgeführt, beim Ausführen von wird `wsl` in einer Befehlszeile.
+Die standardmäßige WSL-Verteilung ist die, die ausgeführt wird `wsl` , wenn Sie in einer Befehlszeile ausführen.
 
 `wsl -s <DistributionName>`, `wsl --setdefault <DistributionName>`
 
-Legt die standardverteilung auf `<DistributionName>`.
+Legt die Standardverteilung auf `<DistributionName>`fest.
 
 **Beispiel:**  
-`wsl -s Ubuntu` Meine standardverteilung würde auf Ubuntu festgelegt werden.  Wenn ich jetzt ausführen `wsl npm init` wird es in Ubuntu ausgeführt.  Wenn ich ausführe `wsl` eine Ubuntu-Sitzung wird geöffnet.
+`wsl -s Ubuntu`legt die Standardverteilung auf Ubuntu fest.  Wenn die Anwendung ausgeführt `wsl npm init` wird, wird Sie jetzt in Ubuntu ausgeführt.  Wenn ich das `wsl` ausführen, wird eine Ubuntu-Sitzung geöffnet.
 
-#### <a name="unregister-and-reinstall-a-distribution"></a>Aufheben der Registrierung, und installieren Sie eine Verteilung neu.
+#### <a name="unregister-and-reinstall-a-distribution"></a>Aufheben der Registrierung und Neuinstallation einer Verteilung
 
-Speichern bei Linux, auf die Verteilungen, die durch die Windows installiert werden können, sie können nicht deinstalliert werden, über den Store.  WSL Config können Verteilungen, deren Registrierung aufgehoben/deinstalliert werden.
+Obwohl Linux-Distributionen über den Microsoft Store installiert werden können, können Sie nicht über den Store deinstalliert werden.  Die WSL-Konfiguration ermöglicht die Registrierung/Deinstallieren von Distributionen.
 
-Aufheben der Registrierung können auch Distributionen neu installiert werden.
+Durch die Aufhebung der Registrierung können auch Verteilungen erneut installiert werden.
 
-> **Vorsicht:** Nach deren Registrierung aufgehoben wird, werden alle Daten, Einstellungen und Software, die dieser Verteilung zugeordneten dauerhaft verloren.  Neu aus dem Store installieren, installieren Sie eine Neuinstallation der Verteilung.
+> **Vorsicht:** Nachdem die Registrierung aufgehoben wurde, gehen alle Daten, Einstellungen und Software, die dieser Verteilung zugeordnet sind, dauerhaft verloren.  Bei der erneuten Installation aus dem Speicher wird eine saubere Kopie der Verteilung installiert.
 
 `wsl --unregister <DistributionName>`  
-Hebt die Registrierung auf der Verteilung von WSL, damit sie neu installiert oder bereinigt werden kann.
+Hebt die Registrierung der Verteilung bei WSL auf, damit Sie erneut installiert oder bereinigt werden kann.
 
-Zum Beispiel: `wsl -unregister Ubuntu` Ubuntu die Verteilungen in WSL verfügbar entfernt.  Beim Ausführen `wsl --list` wird es nicht aufgeführt werden.
+Beispiel: `wsl --unregister Ubuntu` würde Ubuntu aus den in WSL verfügbaren Verteilungen entfernen.  Beim Ausführen `wsl --list` wird der Dienst nicht aufgelistet.
 
-Suchen Sie die Verteilung in der Windows Store, und wählen Sie die "Start", um erneut zu installieren.
+Zum erneuten Installieren suchen Sie die Distribution im Microsoft Store, und wählen Sie "starten" aus.
 
-#### <a name="run-as-a-specific-user"></a>Führen Sie als ein bestimmter Benutzer
+#### <a name="run-as-a-specific-user"></a>Ausführen als bestimmter Benutzer
 
 `wsl -u <Username>`, `wsl --user <Username>`
 
-Führen Sie WSL, als der angegebene Benutzer. Beachten Sie, dass dieser Benutzer in der Verteilung WSL vorhanden sein muss.
+Führen Sie WSL als den angegebenen Benutzer aus. Beachten Sie, dass der Benutzer in der WSL-Distribution vorhanden sein muss.
 
-#### <a name="run-a-specific-distribution"></a>Führen Sie eine bestimmte Verteilung
+#### <a name="run-a-specific-distribution"></a>Ausführen einer bestimmten Verteilung
 
 `wsl --d <DistributionName>`, `wsl --distribution <DistributionName>`
 
-Führen Sie eine angegebene Verteilung von WSL, können verwendet werden, um Befehle an einer bestimmten Verteilung zu senden, ohne den Standardwert zu ändern.
+Führen Sie eine angegebene Distribution von WSL aus, die zum Senden von Befehlen an eine bestimmte Distribution verwendet werden kann, ohne den Standardwert ändern zu müssen.
 
-### <a name="versions-earlier-than-windows-10-version-1903"></a>Versionen vor Windows 10, Version 1903
+### <a name="versions-earlier-than-windows-10-version-1903"></a>Frühere Versionen als Windows 10, Version 1903
 
-WSL Config (`wslconfig.exe`) ist ein Befehlszeilentool zum Verwalten von Linux-Distributionen, die auf dem Windows-Subsystem für Linux (WSL) ausgeführt wird.  Sie können Sie die Liste der verfügbaren Distributionen, legen Sie eine standardverteilung und Deinstallieren von Verteilungen.
+WSL config (`wslconfig.exe`) ist ein Befehlszeilen Tool zum Verwalten von Linux-Distributionen, die unter dem Windows-Subsystem für Linux (WSL) ausgeführt werden.  Damit können Sie verfügbare Distributionen auflisten, eine Standardverteilung festlegen und Verteilungen deinstallieren.
 
-Während die WSL-Konfiguration für Einstellungen hilfreich ist, umfassen oder Verteilungen zu koordinieren, verwaltet jede Linux-Distribution unabhängig eigene Konfigurationen.  Führen Sie zum Anzeigen der Verteilung spezifischen Befehle `[distro.exe] /?`.  Beispiel: `ubuntu /?`.
+Während die WSL-Konfiguration für Einstellungen nützlich ist, die Verteilungen überspannen oder koordinieren, verwaltet jede Linux-Distribution unabhängig seine eigenen Konfigurationen.  Führen `[distro.exe] /?`Sie aus, um Verteilungs spezifische Befehle anzuzeigen.  Beispiel: `ubuntu /?`.
 
-Um alle verfügbaren Optionen für Wslconfig anzuzeigen, führen Sie Folgendes aus:  `wslconfig /?`
+Um alle verfügbaren Optionen für wslconfig anzuzeigen, führen Sie Folgendes aus:`wslconfig /?`
 
 ```console
 wslconfig.exe
@@ -197,51 +197,51 @@ Usage:
     /u, /unregister <DistributionName> - Unregisters a distribution.
 ```
 
-#### <a name="list-distributions"></a>Liste von Verteilungen
+#### <a name="list-distributions"></a>Verteilungen auflisten
 
 `wslconfig /list`  
-Listet die verfügbaren Linux-Distributionen für WSL verfügbar.  Wenn eine Verteilung aufgeführt ist, wird installiert und bereit für die Verwendung.
+Listet verfügbare Linux-Distributionen für WSL auf.  Wenn eine Distribution aufgeführt ist, ist Sie installiert und einsatzbereit.
 
 `wslconfig /list /all`  
-Listet alle Verteilungen, einschließlich jener, die nicht derzeit verwendbar sind.  Sie möglicherweise während der Installation, Deinstallation oder in einem fehlerhaften Zustand befinden.  
+Listet alle Verteilungen auf, einschließlich derjenigen, die derzeit nicht verwendbar sind.  Sie werden möglicherweise gerade installiert, deinstalliert oder sind beschädigt.  
 
-#### <a name="set-a-default-distribution"></a>Legen Sie eine standardverteilung
+#### <a name="set-a-default-distribution"></a>Festlegen einer Standardverteilung
 
-Die standardverteilung von WSL ist diejenige, die ausgeführt, beim Ausführen von wird `wsl` in einer Befehlszeile.
+Die standardmäßige WSL-Verteilung ist die, die ausgeführt wird `wsl` , wenn Sie in einer Befehlszeile ausführen.
 
 `wslconfig /setdefault <DistributionName>`
 
-Legt die standardverteilung auf `<DistributionName>`.
+Legt die Standardverteilung auf `<DistributionName>`fest.
 
 **Beispiel:**  
-`wslconfig /setdefault Ubuntu` Meine standardverteilung würde auf Ubuntu festgelegt werden.  Wenn ich jetzt ausführen `wsl npm init` wird es in Ubuntu ausgeführt.  Wenn ich ausführe `wsl` eine Ubuntu-Sitzung wird geöffnet.
+`wslconfig /setdefault Ubuntu`legt die Standardverteilung auf Ubuntu fest.  Wenn die Anwendung ausgeführt `wsl npm init` wird, wird Sie jetzt in Ubuntu ausgeführt.  Wenn ich das `wsl` ausführen, wird eine Ubuntu-Sitzung geöffnet.
 
-#### <a name="unregister-and-reinstall-a-distribution"></a>Aufheben der Registrierung, und installieren Sie eine Verteilung neu.
+#### <a name="unregister-and-reinstall-a-distribution"></a>Aufheben der Registrierung und Neuinstallation einer Verteilung
 
-Speichern bei Linux, auf die Verteilungen, die durch die Windows installiert werden können, sie können nicht deinstalliert werden, über den Store.  WSL Config können Verteilungen, deren Registrierung aufgehoben/deinstalliert werden.
+Obwohl Linux-Distributionen über den Microsoft Store installiert werden können, können Sie nicht über den Store deinstalliert werden.  Die WSL-Konfiguration ermöglicht die Registrierung/Deinstallieren von Distributionen.
 
-Aufheben der Registrierung können auch Distributionen neu installiert werden.
+Durch die Aufhebung der Registrierung können auch Verteilungen erneut installiert werden.
 
-> **Vorsicht:** Nach deren Registrierung aufgehoben wird, werden alle Daten, Einstellungen und Software, die dieser Verteilung zugeordneten dauerhaft verloren.  Neu aus dem Store installieren, installieren Sie eine Neuinstallation der Verteilung.
+> **Vorsicht:** Nachdem die Registrierung aufgehoben wurde, gehen alle Daten, Einstellungen und Software, die dieser Verteilung zugeordnet sind, dauerhaft verloren.  Bei der erneuten Installation aus dem Speicher wird eine saubere Kopie der Verteilung installiert.
 
 `wslconfig /unregister <DistributionName>`  
-Hebt die Registrierung auf der Verteilung von WSL, damit sie neu installiert oder bereinigt werden kann.
+Hebt die Registrierung der Verteilung bei WSL auf, damit Sie erneut installiert oder bereinigt werden kann.
 
-Zum Beispiel: `wslconfig /unregister Ubuntu` Ubuntu die Verteilungen in WSL verfügbar entfernt.  Beim Ausführen `wslconfig /list` wird es nicht aufgeführt werden.
+Beispiel: `wslconfig /unregister Ubuntu` würde Ubuntu aus den in WSL verfügbaren Verteilungen entfernen.  Beim Ausführen `wslconfig /list` wird der Dienst nicht aufgelistet.
 
-Suchen Sie die Verteilung in der Windows Store, und wählen Sie die "Start", um erneut zu installieren.
+Zum erneuten Installieren suchen Sie die Distribution im Microsoft Store, und wählen Sie "starten" aus.
 
-## <a name="set-wsl-launch-settings"></a>Starteinstellungen für den WSL festlegen
+## <a name="set-wsl-launch-settings"></a>Festlegen der WSL-Start Einstellungen
 
-> **In Windows-Insider-Build-17093 und höher verfügbar**
+> **Verfügbar in Windows Insider Build 17093 und höher**
 
-Konfigurieren Sie automatisch bestimmte Funktionen in WSL, die jedes Mal, wenn Sie das Subsystem mit starten angewendet werden `wsl.conf`. 
+Konfigurieren Sie automatisch bestimmte Funktionen in WSL, die jedes Mal angewendet werden, wenn Sie das `wsl.conf`Subsystem mithilfe von starten. 
 
-Rechts umfasst dies nun, automatische Optionen und Netzwerkkonfiguration.
+Zurzeit umfasst dies automatische Optionen und Netzwerkkonfiguration.
 
-`wsl.conf` befindet sich im einzelnen Linux-Distribution `/etc/wsl.conf`. Wenn die Datei nicht vorhanden ist, können Sie ihn selbst erstellen. WSL erkennt, dass das Vorhandensein der Datei und liest den Inhalt. Wenn die Datei fehlt oder ist falsch formatiert ist (d. h. eine ungültige Markup formatieren), WSL weiterhin normal zu starten.
+`wsl.conf`befindet sich in jeder Linux-Distribution `/etc/wsl.conf`in. Wenn die Datei nicht vorhanden ist, können Sie Sie selbst erstellen. WSL erkennt das vorhanden sein der Datei und liest ihren Inhalt. Wenn die Datei fehlt oder falsch formatiert ist (d. h. eine falsche Markup Formatierung), wird WSL weiterhin normal gestartet.
 
-Hier ist ein Beispiel `wsl.conf` Datei, die Sie in Ihrem Distributionen hinzufügen können:
+Im folgenden finden Sie `wsl.conf` eine Beispieldatei, die Sie ihren Distributionen hinzufügen können:
 
 ```console
 # Enable extra metadata options by default
@@ -259,42 +259,42 @@ generateResolvConf = true
 
 ### <a name="configuration-options"></a>Konfigurationsoptionen
 
-Gemäß der INI-Konventionen werden die Schlüssel unter einem Abschnitt deklariert. 
+In Übereinstimmung mit ini-Konventionen werden Schlüssel in einem Abschnitt deklariert. 
 
-WSL unterstützt zwei Abschnitte: `automount` und `network`.
+WSL unterstützt zwei Abschnitte `automount` : `network`und.
 
-#### <a name="automount"></a>Automatische Bereitstellung
+#### <a name="automount"></a>automatischen Bereitstellung
 
-Abschnitt: `[automount]`
+Sektions`[automount]`
 
 
-| key        | Wert                          | default      | Anmerkungen zu dieser Version                                                                                                                                                                                                                                                                                                                          |
+| Key        | Wert                          | default      | Anmerkungen                                                                                                                                                                                                                                                                                                                          |
 |:-----------|:-------------------------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| aktiviert    | boolean                        | true         | `true` bewirkt, dass Festplattenlaufwerke (d.h.) `C:/` oder `D:/`) mit DrvFs unter automatisch eingebunden werden `/mnt`.  `false` bedeutet, dass Laufwerke wird nicht automatisch bereitgestellt werden, aber Sie dennoch bereitstellen können, manuell oder über `fstab`.                                                                                                             |
-| mountFsTab | boolean                        | true         | `true` Legt `/etc/fstab` zu verarbeitenden WSL starten. / etc/fstab handelt es sich um eine Datei, in dem Sie andere Dateisysteme, wie eine SMB-Freigabe deklarieren können. Daher können Sie diese Dateisysteme in WSL beim Start automatisch nach oben bereitstellen.                                                                                                                |
-| Stammverzeichnis       | Zeichenfolge                         | `/mnt/`      | Legt das Verzeichnis, in denen feste Laufwerke automatisch eingebunden werden. Für, wenn Sie z. B. ein Verzeichnis in WSL am `/windir/` und angeben, dass als Wurzel an, Sie Ihre Festplattenlaufwerke bereitgestellt erwarten: `/windir/c`                                                                                              |
-| options    | durch Trennzeichen getrennte Liste von Werten | Leere Zeichenfolge | Dieser Wert wird an die standardmäßige DrvFs Mount-Optionen-Zeichenfolge angefügt. **Nur DrvFs-spezifische Optionen können angegeben werden.** Optionen, die die Bereitstellung, die binäre normalerweise in einem Flag analysieren würde, werden nicht unterstützt. Wenn Sie diese Optionen explizit angeben möchten, müssen Sie alle Laufwerke einschließen, die für die Sie dazu in/etc/fstab möchten. |
+| aktiviert    | boolean                        | true         | `true`verursacht Festplattenlaufwerke (d. h. `C:/`oder `D:/`) für die automatische Bereitstellung mit drvfs `/mnt`unter.  `false`bedeutet, dass Laufwerke nicht automatisch bereitgestellt werden, aber Sie können Sie trotzdem manuell `fstab`oder über bereitstellen.                                                                                                             |
+| mountfstab | boolean                        | true         | `true`auf `/etc/fstab` dem WSL-Start zu verarbeitende Sätze. bei "/etc/fstab" handelt es sich um eine Datei, in der Sie andere Dateisysteme wie eine SMB-Freigabe deklarieren können. Daher können Sie diese Dateisysteme beim Start automatisch in WSL einbinden.                                                                                                                |
+| fasst       | Zeichenfolge                         | `/mnt/`      | Legt das Verzeichnis fest, in dem Festplattenlaufwerke automatisch bereitgestellt werden. Wenn Sie z. b. ein Verzeichnis in WSL bei `/windir/` haben und Sie als Stammverzeichnis angeben, erwarten Sie, dass die Festplattenlaufwerke unter`/windir/c`                                                                                              |
+| options    | durch Trennzeichen getrennte Liste von Werten | leere Zeichenfolge | Dieser Wert wird an die Standard Zeichenfolge der drvfs-Einfügeoptionen angehängt. **Es können nur drvfs-spezifische Optionen angegeben werden.** Optionen, die die Einbindungs Binärdatei normalerweise in ein Flag analysieren würde, werden nicht unterstützt. Wenn Sie diese Optionen explizit angeben möchten, müssen Sie jedes Laufwerk, für das Sie dies tun möchten, in "/etc/fstab" einschließen. |
 
-Standardmäßig legt WSL die Uid und Gid auf den Wert des Standardbenutzers (im Ubuntu-Distribution, die Standardbenutzer ist mit einer Uid zwischen erstellt = 1000, Gid = 1000). Wenn der Benutzer eine Gruppen-ID oder die Uid-Option explizit über diesen Schlüssel angegeben ist, wird der zugehörige Wert überschrieben. Andernfalls wird der Standardwert immer angefügt.
+Standardmäßig legt WSL die UID und die gid auf den Wert des Standard Benutzers fest (in Ubuntu-Distribution wird der Standardbenutzer mit UID = 1000, gid = 1000 erstellt). Wenn der Benutzer eine GID-oder UID-Option explizit über diesen Schlüssel angibt, wird der zugehörige Wert überschrieben. Andernfalls wird der Standardwert immer angefügt.
 
-**Hinweis**: Diese Optionen werden als die Bereitstellungsoption für alle automatisch bereitgestellte Laufwerke angewendet. Um die Optionen für die nur ein bestimmtes Laufwerk ändern möchten, verwenden Sie stattdessen/etc/fstab.
+**Hinweis**: Diese Optionen werden als Einstellungsoptionen für alle automatisch bereitgestellten Laufwerke angewendet. Verwenden Sie stattdessen "/etc/fstab", um die Optionen für ein bestimmtes Laufwerk zu ändern.
 
 #### <a name="network"></a>Netzwerk
 
-Abschnittsbeschriftung: `[network]`
+Abschnitts Bezeichnung:`[network]`
 
-| key | Wert | default | Anmerkungen zu dieser Version|
+| Key | Wert | default | Anmerkungen|
 |:----|:----|:----|:----|
-| generateHosts | boolean | `true` | `true` Legt die WSL generieren `/etc/hosts`. Die `hosts` -Datei enthält von Hostnamen entsprechende IP-Adresse eine statische Karte. |
-| generateResolvConf | boolean | `true` | `true` Legen Sie die WSL generieren `/etc/resolv.conf`. Die `resolv.conf` enthält eine DNS-Serverliste, die einen bestimmten Hostnamen in seine IP-Adresse auflösen können. | 
+| generatehosts | boolean | `true` | `true`legt fest, dass WSL generiert `/etc/hosts`wird. Die `hosts` Datei enthält eine statische Zuordnung der Hostnamen der entsprechenden IP-Adresse. |
+| generateresolvconf | boolean | `true` | `true`Legen Sie WSL auf `/etc/resolv.conf`Generate fest. Die `resolv.conf` enthält eine DNS-Liste, die einen angegebenen Hostnamen in seine IP-Adresse auflösen können. | 
 
 #### <a name="interop"></a>Interop
 
-Abschnittsbeschriftung: `[interop]`
+Abschnitts Bezeichnung:`[interop]`
 
-Diese Optionen sind in Insider-Build 17713 und höher verfügbar.
+Diese Optionen sind in Insider Build 17713 und höher verfügbar.
 
-| key | Wert | default | Anmerkungen zu dieser Version|
+| Key | Wert | default | Anmerkungen|
 |:----|:----|:----|:----|
-| aktiviert | boolean | `true` | Einstellung, die diesem Schlüssel bestimmen, ob WSL beim Starten von Windows-Prozesse unterstützt wird. |
-| appendWindowsPath | boolean | `true` | Einstellung, die diesem Schlüssel bestimmen, ob WSL Windows Pfadelemente die Umgebungsvariable $PATH hinzufügen möchten. | 
+| aktiviert | boolean | `true` | Durch Festlegen dieses Schlüssels wird festgelegt, ob WSL das Starten von Windows-Prozessen unterstützt. |
+| appendwindowspath | boolean | `true` | Wenn dieser Schlüssel festgelegt wird, wird festgelegt, ob WSL der $PATH-Umgebungsvariablen Windows-Pfad Elemente hinzufügt. | 

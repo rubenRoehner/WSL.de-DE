@@ -1,177 +1,185 @@
 ---
 title: Häufig gestellte Fragen
 description: Häufig gestellte Fragen zum Windows-Subsystem für Linux.
-keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, faq
+keywords: Bashonwindows, bash, WSL, Windows, windowssubsystem, FAQ
 author: taraj
 ms.author: taraj
 ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
-ms.openlocfilehash: 07461f7db4a351f5b79ab0c5179d3d917ef1bdf7
-ms.sourcegitcommit: bb88269eb37405192625fa81ff91162393fb491f
+ms.openlocfilehash: 2bbcec661146fcb570209fd895e6543657e98996
+ms.sourcegitcommit: 939fe561d178454219adbee96c0ad3f768db2208
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67035062"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237387"
 ---
-# <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Häufig gestellte Fragen zu Windows-Subsystem für Linux
+# <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Häufig gestellte Fragen zum Windows-Subsystem für Linux
 
-## <a name="what-is-windows-subsystem-for-linux-wsl"></a>Was ist Windows-Subsystem für Linux (WSL)?
-Das Windows-Subsystem für Linux (WSL) ist eine neue Windows 10-Funktion, mit der Sie native Linux-Befehlszeilentools direkt auf Windows auszuführen, die zusammen mit dem herkömmlichen Windows-Desktop und moderne store-apps.
+## <a name="what-is-windows-subsystem-for-linux-wsl"></a>Was ist das Windows-Subsystem für Linux (WSL)?
+Das Windows-Subsystem für Linux (WSL) ist ein neues Feature von Windows 10, mit dem Sie native Linux-Befehlszeilen Tools direkt auf Windows ausführen können, zusammen mit herkömmlichen Windows Desktop-und modernen Store-Apps.
 
-Finden Sie unter den [Infoseite](./about.md) Weitere Details.
+Weitere Informationen finden Sie auf der [Seite](./about.md) "Info".
 
-## <a name="who-is-wsl-for"></a>Wer ist WSL für?
-Dies ist in erster Linie ein Tool für Entwickler – insbesondere Webentwickler und diejenigen, die auf oder mit open Source-Projekten arbeiten. Dadurch können diejenigen, die möchten/müssen, verwenden Sie Bash, häufig verwendete Linux-Tools (`sed`, `awk`usw.) und viele Linux-First-Tools (Ruby, Python usw.), ihre toolkette auf Windows zu verwenden.
+## <a name="who-is-wsl-for"></a>Für wen gilt WSL?
+Dies ist in erster Linie ein Tool für Entwickler, insbesondere Webentwickler und Anwendungen, die an oder mit Open Source-Projekten arbeiten. Dies ermöglicht es Benutzern, die bash, gängige Linux-Tools (`sed`, `awk`usw.) und viele Linux-First-Tools (Ruby, python usw.) verwenden möchten, um Ihre Toolkette unter Windows zu verwenden.
 
 ## <a name="what-can-i-do-with-wsl"></a>Was kann ich mit WSL tun?
-WSL bietet die eine Anwendung Bash.exe, die beim Starten, öffnet einer Windows-Konsole die Bash-Shell ausgeführt. Bei Verwendung von Bash, können Sie Linux-Befehlszeilenprogramme und apps ausführen. Geben Sie z. B. `lsb_release -a` , und drücken Sie die EINGABETASTE; Sie sehen die Details der Linux-Distribution, die derzeit ausgeführt wird:
+WSL bietet eine Anwendung mit dem Namen bash. exe, die eine Windows-Konsole mit der bash-Shell öffnet, wenn Sie gestartet wird. Mithilfe von bash können Sie Befehlszeilen-Linux-Tools und-apps ausführen. Geben Sie z `lsb_release -a` . b. ein, und drücken Sie die EINGABETASTE. es werden Details zu der derzeit laufenden Linux-Distribution angezeigt:
 
-![Screenshot der Distribution-details](media/distro.png)
+![Screenshot der Details der Distribution](media/distro.png)
 
-Sie können auch Ihr Dateisystem des lokalen Computers aus in der Linux-Bash-Shell zugreifen – finden Sie Ihren lokalen Laufwerken, die die Bereitstellung unter der `/mnt` Ordner. Angenommen, Ihre `C:` Laufwerk erfolgt die Bereitstellung unter `/mnt/c`:  
+Sie können auch über die Linux bash-Shell auf das Dateisystem des lokalen Computers zugreifen – Sie finden die lokalen Laufwerke, die `/mnt` im Ordner bereitgestellt werden. Das `C:` Laufwerk wird beispielsweise unter `/mnt/c`:  
 
-![Screenshot der bereitgestellten C-Laufwerk](media/ls.png)
+![Screenshot des eingebundenen C-Laufwerks](media/ls.png)
 
-## <a name="what-is-bash"></a>Was ist Bash?
-[Bash-](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) ist eine beliebte textorientierten Shell und Befehlssprache. Es ist die Standardshell enthalten, innerhalb von Ubuntu und andere Linux-Distributionen und in MacOS. Benutzer geben Sie Befehle in einer Shell zum Ausführen von Skripts und/oder die Ausführung von Befehlen und Tools, um viele Aufgaben ausgeführt werden.
+## <a name="what-is-bash"></a>Was ist bash?
+[Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) ist eine beliebte, textbasierte Shell und Befehlssprache. Dabei handelt es sich um die Standardshell, die in Ubuntu und anderen Linux-Distributionen und macOS enthalten ist. Benutzer geben Befehle in eine Shell ein, um Skripts auszuführen und/oder Befehle und Tools auszuführen, um viele Aufgaben auszuführen.
 
 ## <a name="how-does-this-work"></a>Wie funktioniert das?
-Sehen Sie sich unsere [Blog](https://blogs.msdn.microsoft.com/wsl/) wobei wir uns in die Details der zugrunde liegende Technologie.
+Sehen Sie sich unseren [Blog](https://blogs.msdn.microsoft.com/wsl/) an, in dem wir uns ausführlich über die zugrunde liegende Technologie informieren.
 
 ## <a name="why-would-i-use-wsl-rather-than-linux-in-a-vm"></a>Warum sollte ich WSL anstelle von Linux auf einem virtuellen Computer verwenden?
-WSL erfordert weniger Ressourcen (CPU, Arbeitsspeicher und Speicher) als einen vollständigen virtuellen Computer. WSL können Sie die zum Ausführen von Linux-Befehlszeilentools und apps gemeinsam mit Ihren Windows-Befehlszeile, Desktop und Store-apps, und klicken Sie auf Ihrem Windows-Dateien in Linux. Dadurch können Sie apps für Windows und Linux-Befehlszeilenprogramme auf den gleichen Satz von Dateien verwenden, wenn Sie möchten.
+WSL erfordert weniger Ressourcen (CPU, Arbeitsspeicher und Speicher) als ein vollständiger virtueller Computer. WSL ermöglicht Ihnen außerdem das Ausführen von Linux-Befehlszeilen Tools und-apps neben Ihren Windows-Befehlszeilen-, Desktop-und Store-Apps und den Zugriff auf Ihre Windows-Dateien aus Linux. Auf diese Weise können Sie Windows-apps und Linux-Befehlszeilen Tools für denselben Satz von Dateien verwenden, wenn Sie möchten.
 
-## <a name="why-would-i-use-for-example-ruby-on-linux-instead-of-on-windows"></a>Warum sollte ich, z. B. Ruby unter Linux nicht in Windows verwenden?
-Einige plattformübergreifende Tools erstellt wurden, vorausgesetzt, dass die Umgebung, in der sie ausgeführt werden, wie Linux verhält. Nehmen wir beispielsweise an einige Tools, oder, dass sie sehr lange Dateipfade zugreifen können, dass bestimmte Dateien bzw. Ordner vorhanden sind. Dies bewirkt, dass häufig Probleme auf Windows, die häufig verhält sich unterschiedlich unter Linux.
+## <a name="why-would-i-use-for-example-ruby-on-linux-instead-of-on-windows"></a>Warum würde ich beispielsweise Ruby on Linux anstelle von Windows verwenden?
+Einige plattformübergreifende Tools wurden unter der Annahme erstellt, dass sich die Umgebung, in der Sie ausgeführt werden, wie Linux verhält. Einige Tools nehmen z. b. an, dass Sie in der Lage sind, auf sehr lange Dateipfade zuzugreifen, oder dass bestimmte Dateien/Ordner vorhanden sind. Dies verursacht häufig Probleme unter Windows, die sich häufig anders als Linux Verhalten.
 
-Viele Sprachen wie Ruby und Knoten werden häufig zu portiert, und Sie gut auf Windows führen. Allerdings nicht alle Ruby, Gem oder Besitzer von Knoten und NPM-Bibliothek Portieren ihrer Bibliotheken zur Unterstützung von Windows, und viele Linux-spezifische Abhängigkeiten aufweisen. Dies kann häufig in Systemen, die mithilfe von Tools und Bibliotheken, die aus dem Build und manchmal Laufzeitfehler oder unerwünschte Verhaltensweisen auf Windows leidet erstellt führen.
+Viele Sprachen wie Ruby und Node werden häufig in Windows portiert und hervorragend ausgeführt. Allerdings portieren nicht alle ruby Gem oder Node/NPM-Bibliotheks Besitzer ihre Bibliotheken, um Windows zu unterstützen, und viele verfügen über Linux-spezifische Abhängigkeiten. Dies kann häufig dazu führen, dass Systeme erstellt werden, die mit Tools und Bibliotheken erstellt werden, die von Build und manchmal Laufzeitfehlern oder unerwünschten Verhalten unter Windows erstellt werden
 
-Dies sind nur einige der Probleme, die viele Leute Fragen von Microsoft zur Verbesserung der Windows Befehlszeilentools und was wir mit Canonical, um native Bash als auch Linux-Befehlszeilentools zur Ausführung auf Windows aktivieren einen verursacht.
+Dies sind nur einige Probleme, die dazu geführt haben, dass viele Benutzer Microsoft aufgefordert haben, die Befehlszeilen Tools von Windows zu verbessern, und was wir an Partner mit Canonical weitergeleitet haben, um native bash-und Linux-Befehlszeilen Tools für die Unterstützung von Windows zu aktivieren
 
 ## <a name="what-does-this-mean-for-powershell"></a>Was bedeutet dies für PowerShell?
-Beim Arbeiten mit Projekte (OSS), gibt es zahlreiche Szenarios, in denen es immens nützlich zum Löschen in Bash aus einem PowerShell Eingabeaufforderung. Bash-Unterstützung ist eine Ergänzung und erhöht den Wert von der Befehlszeile auf Windows, sodass PowerShell und der PowerShell-Community andere gängigen Technologien nutzen.
+Beim Arbeiten mit OSS-Projekten gibt es viele Szenarios, in denen es äußerst nützlich ist, in bash von einer PowerShell-Eingabeaufforderung zu löschen. Die bash-Unterstützung ist ergänzend und stärkt den Wert der Befehlszeile unter Windows, sodass PowerShell und die PowerShell-Community andere gängige Technologien nutzen können.
 
-Erfahren Sie mehr im PowerShell-Teamblog – [Bash für Windows: Warum ist es großartig, und was es bedeutet für PowerShell](https://blogs.msdn.microsoft.com/powershell/2016/04/01/bash-for-windows-why-its-awesome-and-what-it-means-for-powershell/)
+Weitere Informationen finden Sie im PowerShell- [Teamblog: bash für Windows: Warum es großartig ist und was es für PowerShell bedeutet](https://blogs.msdn.microsoft.com/powershell/2016/04/01/bash-for-windows-why-its-awesome-and-what-it-means-for-powershell/)
 
 ## <a name="can-i-run-all-linux-apps-in-wsl"></a>Kann ich alle Linux-apps in WSL ausführen?
-Nein! WSL ist ein Tool zur ermöglicht den Benutzern, die sie zum Ausführen von Bash sowie der wichtigsten Linux-Befehlszeilenprogramme für Windows. 
+Nein! WSL ist ein Tool zum Aktivieren von Benutzern, die diese benötigen, um bash-und Core Linux-Befehlszeilen Tools unter Windows auszuführen. 
 
-Wird von WSL **nicht** GUI-Desktops und Anwendungen (z. B. Gnome, KDE usw.) unterstützen.  
+WSL zielt **nicht** darauf ab, GUI-Desktops oder-Anwendungen (z. b. gnome, KDE usw.) zu unterstützen.  
 
-Darüber hinaus, obwohl Sie werden zu viele beliebte serveranwendungen ausgeführt werden (z. B. Redis), wir empfehlen nicht WSL für das Hosten von Produktionsdienste – Microsoft bietet eine Vielzahl von Lösungen für die Produktion Linux-Workloads in Azure ausgeführt wird, Hyper-V und Docker. 
+Auch wenn Sie viele beliebte Server Anwendungen (z. b. redis) ausführen können, empfiehlt es sich nicht, WSL zum Hosten von Produktions Diensten zu verwenden – Microsoft bietet eine Vielzahl von Lösungen für die Ausführung von Linux-Workloads in Azure, Hyper-V und Docker. 
 
-## <a name="what-windows-skus-is-wsl-included-in"></a>Welche Windows-SKUs umfasst WSL?
-Windows-Subsystem für Linux ist auf die desktop-Version von Windows für Windows 10 Anniversary- und Creators Update oder höher verfügbar.
+## <a name="what-windows-skus-is-wsl-included-in"></a>In welchen Windows-SKUs ist WSL enthalten?
+Das Windows-Subsystem für Linux ist in der Desktop Version von Windows für Windows 10 Anniversary und Creators Update oder höher verfügbar.
 
-Ab dem Fall Creators werden Update WSL auf dem Desktop und dem Server-SKUs von Windows verfügbar.
+Beginnend mit dem Fall Creators Update ist WSL auf den Desktop-und Server-SKUs von Windows verfügbar.
 
-## <a name="what-processors-does-wsl-support"></a>Welche Prozessoren unterstützt WSL?
-WSL unterstützt X64 und ARM-CPUs.
+## <a name="what-processors-does-wsl-support"></a>Welche Prozessoren werden von WSL unterstützt?
+WSL unterstützt x64-und ARM-CPUs.
 
-## <a name="how-do-i-access-my-c-drive"></a>Wie greife ich auf Mein Laufwerk "c:"?
-Bereitstellungspunkte für die Festplatten auf dem lokalen Computer werden automatisch erstellt und bieten einfachen Zugriff auf das Windows-Dateisystem. 
+## <a name="how-do-i-access-my-c-drive"></a>Gewusst wie auf mein Laufwerk "C:" zugreifen?
+Einstellungspunkte für Festplatten auf dem lokalen Computer werden automatisch erstellt und ermöglichen einen einfachen Zugriff auf das Windows-Dateisystem. 
  
-**/mnt/\<Laufwerkbuchstabe > /**
+**im\<Laufwerk Buchstabe >/**
  
-Beispiel für die Verwendung wäre `cd /mnt/c` auf c:\
+`cd /mnt/c` Beispiel für den Zugriff auf c:\
 
-## <a name="how-do-i-use-a-windows-file-with-a-linux-app"></a>Wie verwende ich eine Windows-Datei mit einer Linux-app?
+## <a name="how-do-i-use-a-windows-file-with-a-linux-app"></a>Gewusst wie eine Windows-Datei mit einer Linux-App verwenden?
 
-Einer der Vorteile von WSL wird Zugriff auf Ihre Dateien sowohl Windows und Linux-Anwendungen oder Tools. 
+Einer der Vorteile von WSL besteht darin, dass Sie über Windows-und Linux-Apps oder-Tools auf Ihre Dateien zugreifen können. 
 
-WSL bindet die Festplattenlaufwerke des Computers, unter dem `/mnt/<drive>` Ordner in Ihrem Linux-Distributionen. Angenommen, Ihre `C:` Laufwerk eingebunden ist, klicken Sie unter `/mnt/c/` 
+WSL stellt die Festplattenlaufwerke Ihres Computers unter dem `/mnt/<drive>` Ordner in Ihren Linux-Distributionen bereit. Beispielsweise wird das `C:` Laufwerk unter`/mnt/c/` 
 
-Verwenden die bereitgestellten Laufwerke, können Sie Code bearbeiten, z. B. `C:\dev\myproj\` mit [Visual Studio](https://visualstudio.microsoft.com/vs/) / oder [VS Code](https://code.visualstudio.com/), und erstellen/Testen dieses Codes in Linux durch den Zugriff auf die gleichen Dateien über `/mnt/c/dev/myproj`.
+Mit den bereitgestellten Laufwerken können Sie Code in `C:\dev\myproj\` z. b. mithilfe von [Visual Studio](https://visualstudio.microsoft.com/vs/) /oder [vs Code](https://code.visualstudio.com/)bearbeiten und den Code in Linux erstellen und testen, indem Sie über `/mnt/c/dev/myproj`auf die gleichen Dateien zugreifen.
 
-> **WICHTIGER HINWEIS**: Die Einschränkungen der Verwendung von WSL ist, dass direkt den Zugriff auf/Ändern von Dateien in Ihrer Linux-Distributionen Dateisystem mithilfe von Windows-apps oder Tools nicht unterstützt wird. Thema [Wirken Sie sich nicht auf Linux-Dateien, die mithilfe von Windows-apps und -tools](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/)
+> **WICHTIGER HINWEIS**: Eine der wichtigsten Einschränkungen bei der Verwendung von WSL besteht darin, dass der direkte Zugriff auf/das Ändern von Dateien im Dateisystem von Linux-Distributionen mithilfe von Windows-Apps oder-Tools nicht unterstützt wird. Thema [Ändern Sie Linux-Dateien nicht mithilfe von Windows-apps und-Tools.](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/)
 
-## <a name="are-files-in-the-linux-drive-different-from-the-mounted-windows-drive"></a>Unterscheiden sich Dateien in das Linux-Laufwerk aus dem bereitgestellten Windows-Laufwerk?
+## <a name="are-files-in-the-linux-drive-different-from-the-mounted-windows-drive"></a>Unterscheiden sich die Dateien im Linux-Laufwerk vom bereitgestellten Windows-Laufwerk?
 
-1. Dateien unter dem Linux-Stamm (d. h. `/`) werden von WSL die Linux bestimmtes Verhalten führen, einschließlich aber nicht beschränkt auf imitiert gesteuert:
-   * Dateien, die ungültige Zeichen im Dateinamen Windows enthalten.
-   * Symbolische Verknüpfungen erstellt, die für Benutzer ohne Administratorrechte
-   * Ändern die Attribute der Datei durch Chmod und chown
-   * Datei/Ordner Groß-/Kleinschreibung
+1. Dateien unter dem Linux-Stamm (d.h. `/`) werden von WSL gesteuert, was das Linux-spezifische Verhalten imitiert, einschließlich, aber nicht beschränkt auf:
+   * Dateien, die ungültige Windows-Dateinamen Zeichen enthalten
+   * Für Benutzer ohne Administratorrechte erstellte symlinks
+   * Ändern von Dateiattributen über chmod und chown
+   * Unterscheidung nach Groß-/Kleinschreibung
 
-2. Dateien in die bereitgestellten Laufwerke werden durch Windows gesteuert, und weisen folgende Verhaltensweisen:
-   * Unterstützung von Groß-/Kleinschreibung
-   * Alle Berechtigungen sind entsprechend der am besten die Windows-Berechtigungen festgelegt
+2. Dateien in bereitgestellten Laufwerken werden von Windows gesteuert und weisen folgendes Verhalten auf:
+   * Unterscheidung von Unterstützung
+   * Alle Berechtigungen sind so festgelegt, dass Sie die Windows-Berechtigungen bestmöglich
 
-## <a name="why-are-there-so-many-errors-when-i-run-apt-get-upgrade"></a>Warum gibt es so viele Fehler beim Upgrade von apt-Get ausführen?
-Einige Pakete verwenden Funktionen, die wir noch nicht implementiert haben. `udev`, z. B. wird nicht noch unterstützt und bewirkt, dass mehrere `apt-get upgrade` Fehler.
+## <a name="why-are-there-so-many-errors-when-i-run-apt-get-upgrade"></a>Warum gibt es so viele Fehler, wenn ich apt-get-Upgrade führe?
+In einigen Paketen werden Features verwendet, die noch nicht implementiert wurden. `udev`wird z. b. noch nicht unterstützt und `apt-get upgrade` verursacht mehrere Fehler.
 
-Zum Beheben von Problemen im Zusammenhang mit `udev`, befolgen Sie die folgenden Schritte aus:
+Führen Sie die folgenden Schritte `udev`aus, um Probleme im Zusammenhang mit zu beheben:
 
-1. Schreiben Sie folgenden Code zum `/usr/sbin/policy-rc.d` und die Änderungen zu speichern.
+1. Schreiben Sie Folgendes in `/usr/sbin/policy-rc.d` , und speichern Sie die Änderungen.
 
     ```bash
     #!/bin/sh
     exit 101
     ```
 
-2. Hinzufügen Ausführungsberechtigungen `/usr/sbin/policy-rc.d`
+2. Ausführungs Berechtigungen hinzufügen zu`/usr/sbin/policy-rc.d`
 
     ```bash
     chmod +x /usr/sbin/policy-rc.d
     ```
   
-2. Führen Sie die folgenden Befehle
+2. Führen Sie die folgenden Befehle aus:
 
     ```bash
     dpkg-divert --local --rename --add /sbin/initctl
     ln -s /bin/true /sbin/initctl
     ```
 
-## <a name="how-do-i-uninstall-a-wsl-distribution"></a>Wie deinstalliere ich eine Verteilung WSL?
+## <a name="how-do-i-uninstall-a-wsl-distribution"></a>Gewusst wie Deinstallieren einer WSL-Distribution?
 
-Auf builds vor 1709 (16299) öffnen eine Eingabeaufforderung, und führen Sie aus:
+Öffnen Sie in Builds vor 1709 (16299) eine Eingabeaufforderung, und führen Sie Folgendes aus:
   ```batchfile
   lxrun /uninstall /full
   ```
   
-WSL-Verteilungen aus dem Store installiert können wie jede andere Windows-app deinstalliert werden, mit der rechten Maustaste auf die Kachel der app, und klicken Sie auf Deinstallieren oder über PowerShell mit der [ `Remove-AppxPackage` Cmdlet](https://technet.microsoft.com/en-us/library/hh856038.aspx).
+WSL-Distributionen, die aus dem Speicher installiert werden, können wie jede andere Windows-APP deinstalliert werden, indem Sie mit der rechten Maustaste auf die APP-Kachel klicken und auf Deinstallieren oder mithilfe des [ `Remove-AppxPackage` -Cmdlets](https://technet.microsoft.com/en-us/library/hh856038.aspx)über PowerShell klicken.
 
-## <a name="why-does-ping-generate-permission-denied-errors"></a>Warum wird Ping Zugriff verweigert-Fehler generiert?
-In WSL builds < 14926, Ping erforderlich WSL, über eine Konsole mit erhöhten Rechten auszuführen. Dieses Problem wurde in Build 14926 und höher behoben.
+## <a name="why-does-ping-generate-permission-denied-errors"></a>Warum werden bei der Ping-Berechtigung Fehler verweigert?
+In WSL-Builds < 14926 erforderte der Ping-Befehl, dass WSL über eine Konsole mit erhöhten Rechten ausgeführt wird. Dieses Problem wurde in Build 14926 und höher behoben.
 
-## <a name="how-do-i-run-an-openssh-server"></a>Wie führe ich ein OpenSSH-Server aus?
-Berechtigungen in Windows sind erforderlich, OpenSSH in WSL ausgeführt wird. Klicken Sie zum Ausführen eines OpenSSH-Servers Ausführen von Bash unter Ubuntu unter Windows als Administrator, oder führen Sie bash.exe CMD/PowerShell-Eingabeaufforderung mit Administratorrechten aus.
+## <a name="how-do-i-run-an-openssh-server"></a>Gewusst wie einen OpenSSH-Server ausführen?
+Zum Ausführen von OpenSSH in WSL sind Administrator Rechte in Windows erforderlich. Wenn Sie einen OpenSSH-Server ausführen möchten, führen Sie bash unter Ubuntu unter Windows als Administrator aus, oder führen Sie bash. exe von einer cmd-/PowerShell-Eingabeaufforderung mit Administratorrechten aus.
 
-## <a name="why-do-i-get-error-0x80040306-when-i-try-to-install"></a>Warum erhalte ich "Fehler: 0x80040306 "beim versuch, Sie installieren?
-WSL unterstützt nicht die in einer legacy-Konsole ausgeführt wird. So deaktivieren legacy-Konsole ein:
+## <a name="why-do-i-get-error-0x80040306-when-i-try-to-install"></a>Warum erhalte ich einen Fehler: 0x80040306 "beim Versuch, zu installieren?
+WSL unterstützt die Ausführung in einer Legacy Konsole nicht. So deaktivieren Sie die Legacy Konsole:
 
-1. Öffnen Sie WSL, PowerShell oder Cmd
-1. Klicken Sie mit der rechten Maustaste auf Title bar -> Eigenschaften -> deaktivieren Sie "Legacykonsole verwenden"
+1. Öffnen von WSL, PowerShell oder cmd
+1. Klicken Sie mit der rechten Maustaste auf Titelleiste-> Eigenschaften > deaktivieren Sie die Option "Legacy Konsole verwenden".
 1. Auf "OK" klicken
 
-## <a name="why-do-i-get-error-0x80040154-when-i-run-bashexe-after-upgrading-windows"></a>Warum erhalte ich "Fehler: 0 x 80040154 "beim bash.exe nach dem Upgrade von Windows ausführen?
-Die Funktion "Windows-Subsystem für Linux" möglicherweise deaktiviert werden, während eines Windows-Updates. In diesem Fall muss das Windows-Feature erneut aktiviert werden. Anweisungen zum Aktivieren des Features "Windows-Subsystem für Linux" finden Sie in der [Installationshandbuch](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
+## <a name="why-do-i-get-error-0x80040154-when-i-run-bashexe-after-upgrading-windows"></a>Warum erhalte ich einen Fehler: 0x80040154 "beim Ausführen von bash. exe nach dem Upgrade von Windows?
+Das Feature "Windows-Subsystem für Linux" ist möglicherweise während eines Windows-Updates deaktiviert. Wenn dies der Fall ist, muss das Windows-Feature erneut aktiviert werden. Anweisungen zum Aktivieren des Features "Windows-Subsystem für Linux" finden Sie im [Installationshandbuch](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#enable-the-windows-subsystem-for-linux-feature-gui).
 
-## <a name="how-do-i-change-the-display-language-of-wsl"></a>Wie ändere ich die Anzeigesprache des WSL?
-Installieren von WSL versucht, die automatisch das Ubuntu-Gebietsschema entsprechend das Gebietsschema des der Windows-Installation zu ändern. Wenn Sie dieses Verhalten nicht wünschen, können Sie diesen Befehl, um die Ubuntu-Benutzergebietsschema ändern, nachdem die Installation abgeschlossen ist ausführen. Sie müssen bash.exe für diese Änderung wirksam wird neu zu starten.
+## <a name="how-do-i-change-the-display-language-of-wsl"></a>Gewusst wie die Anzeige Sprache von WSL ändern?
+Die WSL-Installation versucht, das Ubuntu-Gebiets Schema automatisch so zu ändern, dass es dem Gebiets Schema Ihrer Windows-Installation entspricht. Wenn Sie dieses Verhalten nicht wünschen, können Sie diesen Befehl ausführen, um das Ubuntu-Gebiets Schema zu ändern, nachdem die Installation abgeschlossen wurde. Sie müssen bash. exe neu starten, damit diese Änderung wirksam wird.
 
-Das folgenden Beispiel ändert sich auf dem Gebietsschema En-US:
+Im folgenden Beispiel wird "locale" in "en-US" geändert:
 ```bash
 sudo update-locale LANG=en_US.UTF8
 ```
 
-## <a name="why-do-i-not-have-internet-access-from-wsl"></a>Warum habe ich kein Internetzugriff von WSL?
-Einige Benutzer haben Probleme mit der bestimmte Firewall-Anwendungen, die Zugriff auf das Internet in WSL blockieren gemeldet. Die Firewalls, die gemeldet werden:
+## <a name="why-do-i-not-have-internet-access-from-wsl"></a>Warum habe ich keinen Internet Zugriff von WSL?
+Einige Benutzer haben Probleme mit bestimmten Firewallanwendungen gemeldet, die den Internet Zugriff in WSL blockieren. Die gemeldeten Firewalls lauten wie folgt:
 
 1. Kaspersky
 1. AVG
 1. Avast
 
-In einigen Fällen können durch das Deaktivieren der Firewalls für den Zugriff. In einigen Fällen sucht das einfach dadurch, dass die installierte Firewall zum Blockieren des Zugriffs.
+In einigen Fällen ermöglicht das Ausschalten der Firewall den Zugriff. In einigen Fällen, in denen die Firewall einfach installiert ist, wird der Zugriff von blockiert.
 
-## <a name="how-do-i-access-a-port-from-wsl-in-windows"></a>Wie greife ich auf einen Port aus WSL in Windows?
-WSL gibt Windows, die IP-Adresse an, wie sie auf dem Windows ausgeführt wird. Daher es stehen keine Ports auf "localhost" z. B. Wenn Sie Web-Inhalte an Port 1234 haben, Sie können https://localhost:1234 in Ihren Windows-Browser.
+## <a name="how-do-i-access-a-port-from-wsl-in-windows"></a>Gewusst wie auf einen Port von WSL in Windows zugreifen?
+WSL nutzt die IP-Adresse von Windows, da Sie unter Windows ausgeführt wird. Daher können Sie auf alle Ports auf "localhost" zugreifen, z. b. Wenn Sie Webinhalte an https://localhost:1234 Port 1234 haben, können Sie in Ihren Windows-Browser gelangen.
 
-## <a name="where-can-i-provide-feedback"></a>Wo kann ich Feedback Geben?
+## <a name="how-can-i-back-up-my-wsl-distros"></a>Wie kann ich meine WSL-Distributionen sichern?
 
-Sie können die Teilen Sie uns Feedback und fragen sich über mehrere Kanäle: Feedback und Ihre Fragen bitte an:
-* Unsere [GitHub-problemverfolgung](https://github.com/Microsoft/BashOnWindows/issues)
-* Unsere [Befehlszeilen UserVoice-Portal](https://wpdev.uservoice.com/forums/266908-command-prompt/filters/top)
-* Unsere [Befehlszeilen-Teamblog](https://blogs.msdn.microsoft.com/commandline/)
-* Via Twitter. Führen Sie [ @richturn_ms ](https://twitter.com/richturn_MS) usw. auf Twitter, um Neuigkeiten, Updates, Informationen zu.
+Die beste Möglichkeit zum Sichern Ihrer Distributionen ist in Windows Version 1809 und höher verfügbar. Sie können die gesamte Verteilung mithilfe des `wsl --export` Befehls in einen Tarball exportieren. Anschließend können Sie diese Distribution mithilfe des Befehls wieder in WSL importieren `wsl --import` , sodass Sie die Zustände ihrer WSL-Distributionen sichern und speichern können. 
+
+Beachten Sie, dass herkömmliche Sicherungsdienste, die Dateien in ihren APPDATA-Ordnern (z. b. Windows-Sicherung) sichern, Ihre Linux-Dateien nicht beschädigen. 
+
+
+
+## <a name="where-can-i-provide-feedback"></a>Wo kann ich Feedback geben?
+
+Sie können Feedback freigeben und Fragen über mehrere Kanäle stellen: Feedback und Fragen sollten wie folgt geleitet werden:
+* Unsere [GitHub-Problem](https://github.com/Microsoft/BashOnWindows/issues) Verfolgung
+* Unser [Befehlszeilen-UserVoice-Portal](https://wpdev.uservoice.com/forums/266908-command-prompt/filters/top)
+* Unser [Befehlszeilen-Teamblog](https://blogs.msdn.microsoft.com/commandline/)
+* Über Twitter. Weitere Informationen zu Neuigkeiten, Updates usw. finden Sie [unterTwitter.@richturn_ms](https://twitter.com/richturn_MS)

@@ -1,6 +1,6 @@
-Beachten Sie, dass problemverfolgung des Repositorys nur für das Melden von Problemen mit der WSL-Dokumentation.
+Beachten Sie, dass die Problemverfolgung dieses Repository nur zum Melden von Problemen mit der WSL-Dokumentation dient.
 
-Andere verwandtes Problem des Repositorys:
+Weitere verwandte Issue-Themen:
 
-* WSL: https://github.com/Microsoft/BashOnWindows/
+* WSL https://github.com/Microsoft/BashOnWindows/
 * Windows-Konsole: https://github.com/Microsoft/Console/

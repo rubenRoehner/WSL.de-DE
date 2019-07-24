@@ -1,66 +1,66 @@
 ---
-title: Initialisiert eine neue WSL-Linux-Distribution
-description: Schließen Sie nach der Installation einer Linux-Distribution für WSL Initialisierung, indem Sie die folgenden einfachen Schritte
-keywords: BashOnWindows, Bash, Wsl, Windows, Windows-Subsystem für Linux, Windowssubsystem, Ubuntu, Debian, Suse, Windows 10
+title: Initialisieren einer neuen WSL-Linux-Distribution
+description: Nach dem Installieren einer Linux-Distribution für WSL führen Sie die folgenden einfachen Schritte aus, um die Initialisierung abzuschließen.
+keywords: Bashonwindows, bash, WSL, Windows, Windows-Subsystem für Linux, windowssubsystem, Ubuntu, Debian, SuSE, Windows 10
 author: taraj
 ms.author: taraj
 ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 7f1ce521b248c873fa7f81c6363eb506c0363fed
-ms.sourcegitcommit: ae0956bc0543b1c45765f3620ce9a55c9afe55da
+ms.openlocfilehash: 30cb1de0a01fd46bc434061cd36794f4ece77e4b
+ms.sourcegitcommit: 5844c6dbf692780b86b30bd65e11820fff43b3bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59902047"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67499295"
 ---
-# <a name="initializing-a-newly-installed-distro"></a>Initialisiert eine neu installierte Distribution
-Nachdem Ihre Distribution heruntergeladen und installiert wurde, müssen Sie zum Abschließen der Initialisierung der neuen Distribution:
+# <a name="initializing-a-newly-installed-distro"></a>Initialisieren einer neu installierten Distribution
+Nachdem Sie Ihre Distribution heruntergeladen und installiert haben, müssen Sie die Initialisierung der neuen Distribution abgeschlossen haben:
 
-## <a name="launch-a-distro"></a>Starten Sie eine Distribution
-Um die Initialisierung von Ihrer Distribution, die neu installierte abgeschlossen haben, starten Sie eine neue Instanz. Sie erreichen dies durch Klicken auf die Startschaltfläche "" in der Windows Store-app, oder starten Sie den-Distribution, die über das Startmenü zugreifen:
+## <a name="launch-a-distro"></a>Hiermit wird eine Distribution gestartet.
+Um die Initialisierung der neu installierten Distribution abzuschließen, starten Sie eine neue-Instanz. Klicken Sie hierzu in der Microsoft Store-App auf die Schaltfläche "starten", oder starten Sie die Distribution über das Startmenü:
 
-> Tipp: Sie möchten Ihre am häufigsten verwendeten Distributionen Startmenü und/oder die Taskleiste anheften.
+> Tipp: Möglicherweise möchten Sie Ihre am häufigsten verwendeten Distributionen an das Startmenü und/oder an die Taskleiste anheften.
 
-![Distributionen über das Startmenü starten](media/start-menu.png)
+![Starten von Distributionen über das Startmenü](media/start-menu.png)
 
-> In Windows Server, starten Sie Ihre Distribution des-Startprogramms `<distro>.exe` aus dem Installationsordner der Distribution.
+> Unter Windows Server können Sie die ausführbare Datei des ausführbaren `<distro>.exe` Programms Ihrer Distribution über den Installationsordner "Distribution" starten.
 
-Erstmals eine neu installierte Distribution ausgeführt wird, eine Konsole Fenster geöffnet wird, und werden Sie aufgefordert, ein oder zwei Minuten zum Abschluss der Installation warten.
+Wenn eine neu installierte Distribution zum ersten Mal ausgeführt wird, wird ein Konsolenfenster geöffnet, und Sie werden aufgefordert, bis zum Abschluss der Installation eine Minute oder zwei Minuten zu warten.
 
-> In dieser letzten Phase der Installation werden die Distribution Dateien aufheben komprimiert und gespeichert, die auf Ihrem PC, die zur Verwendung bereit. Dies kann zu eine Minute oder länger, je nach die Leistung Ihres Computers Speichergeräte dauern. In dieser Phase der Erstinstallation ist nur erforderlich, wenn eine Distribution, die neu installierten - ist alle auf zukünftig gestartete dauert weniger als eine Sekunde.
+> In dieser letzten Phase der Installation werden die Dateien der Distribution dekomprimiert und auf Ihrem PC gespeichert, einsatzbereit. Dies kann je nach Leistung der Speichergeräte Ihres PCs etwa eine Minute oder länger dauern. Diese erste Installationsphase ist nur erforderlich, wenn eine Distribution bereinigt ist. alle zukünftigen Starts sollten weniger als eine Sekunde in Anspruch nehmen.
 
-## <a name="setting-up-a-new-linux-user-account"></a>Das Einrichten eines neuen Linux-Benutzerkontos
+## <a name="setting-up-a-new-linux-user-account"></a>Einrichten eines neuen Linux-Benutzerkontos
 
-Nach Abschluss der Installation werden Sie aufgefordert werden, erstellen Sie ein neues Benutzerkonto (und das Kennwort). 
+Nach Abschluss der Installation werden Sie aufgefordert, ein neues Benutzerkonto (und das zugehörige Kennwort) zu erstellen. 
 
-![Ubuntu, die in der Windows-Konsole Entpacken](media/UbuntuInstall.png)
+![Ubuntu-Entpacken in der Windows-Konsole](media/UbuntuInstall.png)
 
-Dieses Benutzerkonto ist für den normalen nicht-Admin-Benutzer, dass Sie angemeldet als standardmäßig beim Starten von einer Distribution.
+Dieses Benutzerkonto gilt für den normalen Benutzer ohne Administratorrechte, bei dem Sie beim Starten einer Distribution standardmäßig angemeldet werden.
 
-> Sie können einen beliebigen Benutzernamen und das Kennwort werden sollen – sie haben keinen Einfluss auf Ihren Windows-Benutzernamen. 
+> Sie können einen beliebigen Benutzernamen und ein Kennwort auswählen, und Sie haben keinen Einfluss auf Ihren Windows-Benutzernamen. 
 
-Wenn Sie eine neue Instanz der Distribution öffnen, werden Sie nicht aufgefordert für Ihr Kennwort jedoch **, wenn Sie einen Prozess mit erhöhen `sudo`, Sie müssen Ihr Kennwort eingeben**, stellen Sie sicher, dass ein Kennwort wählen Sie Sie leicht merken können! Finden Sie unter den [Benutzersupport](user-support.md) Seite Weitere Informationen.
+Wenn Sie eine neue Instanz von Distribution öffnen, werden Sie nicht zur Eingabe Ihres Kennworts aufgefordert. **Wenn Sie jedoch einen Prozess mit `sudo`herauf Stufen, müssen Sie Ihr Kennwort eingeben**. Stellen Sie also sicher, dass Sie ein Kennwort auswählen, das Sie sich leicht merken können. Weitere Informationen finden Sie auf der Seite [Benutzer Support](user-support.md) .
 
-## <a name="update--upgrade-your-distros-packages"></a>Aktualisieren und Ihre Distribution Pakete aktualisieren
+## <a name="update--upgrade-your-distros-packages"></a>Aktualisieren & Aktualisieren der Pakete Ihrer Distribution
 
-Die meisten Distributionen, die mit einer leeren/minimale Paketkatalog ausgeliefert werden. Es wird dringend empfohlen, Ihr Paketkatalog regelmäßig aktualisiert, und aktualisieren Ihre installierten Pakete, die mit Ihrer Distribution des bevorzugten Paket-Manager. Unter Debian/Ubuntu verwenden Sie apt:
+Die meisten Distributionen werden mit einem leeren/minimalen Paket Katalog ausgeliefert. Es wird dringend empfohlen, den Paket Katalog regelmäßig zu aktualisieren und die installierten Pakete mit dem bevorzugten Paket-Manager Ihrer Distribution zu aktualisieren. Unter Debian/Ubuntu verwenden Sie APT:
 
 ```bash
 sudo apt update && sudo apt upgrade
 ```
 
-> Windows nicht automatisch zu aktualisieren oder aktualisieren Sie Ihre Linux-Distro(s): Dies ist eine Aufgabe, die das Linux-Benutzer lieber selbst steuern.
+> Ihre Linux-Distributionen werden von Windows nicht automatisch aktualisiert oder aktualisiert: Dies ist eine Aufgabe, die die Linux-Benutzer vorziehen, sich selbst zu steuern.
 
-Fertig! Nutzen Sie Ihre neue Linux-Distribution für WSL! Weitere Informationen zu WSL finden Sie in den anderen [WSL-Dokumentation](https://aka.ms/wsldocs), oder die [WSL Lernressourcenseite](https://aka.ms/learnwsl).
+Fertig! Profitieren Sie von der Verwendung ihrer neuen Linux-Distribution auf WSL! Weitere Informationen zu WSL finden Sie unter WSL [docs](https://aka.ms/wsldocs)(WSL-Dokumentation) oder auf der Seite mit den [WSL-Lernressourcen](https://aka.ms/learnwsl).
 
-![Profitieren Sie mit Linux in WSL](media/linux-on-wsl.png)
+![Nutzen Sie Linux auf WSL](media/linux-on-wsl.png)
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Im folgenden finden Sie zugehörige Fehler und Vorschläge zur Behebung. Finden Sie in der [WSL Problembehandlungsseite](troubleshooting.md) andere häufig auftretende Fehler und ihre Lösungen.
+Im folgenden finden Sie verwandte Fehler und empfohlene Korrekturen. Weitere häufige Fehler und deren Lösungen finden Sie auf der [WSL-Seite zur Problem](troubleshooting.md) Behandlung.
 
-> **Fehler bei der Installation Fehler 0x8007007e** dieser Fehler tritt auf, wenn es sich bei Ihrem System Linux aus dem Speicher nicht unterstützt.  Stellen Sie Folgendes sicher:
-> * Sie können Windows Build 16215 oder höher ausführen. [Überprüfen Sie Ihren Build](troubleshooting.md#check-your-build-number).
-> * Das Windows-Subsystem für Linux optionale Komponente aktiviert ist, und der Computer neu gestartet wurde.  [WSL aktiviert](troubleshooting.md#confirm-wsl-is-enabled).
+> **Fehler bei der Installation (Fehler 0x8007007e** ). Dieser Fehler tritt auf, wenn das System Linux nicht aus dem Store unterstützt.  Stellen Sie Folgendes sicher:
+> * Sie führen Windows Build 16215 oder höher aus. [Überprüfen Sie den Build](troubleshooting.md#check-your-build-number).
+> * Die optionale Komponente des Windows-Subsystems für Linux ist aktiviert, und der Computer wurde neu gestartet.  [Stellen Sie sicher, dass WSL aktiviert ist](troubleshooting.md#confirm-wsl-is-enabled).
