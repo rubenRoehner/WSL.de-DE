@@ -7,15 +7,49 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: e2d9d5fc70c173e9b516ab7af01599b623b40b39
-ms.sourcegitcommit: cd239efc5c7c25ffbe5de25b2438d44181a838a9
+ms.openlocfilehash: d2d91db24c12fc674d695ccffc79eb5781a0721d
+ms.sourcegitcommit: be00abbb170aa569e008b804f15949344b378999
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67042427"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501584"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Versions Hinweise für das Windows-Subsystem für Linux
 
+
+## <a name="build-18947"></a>Build 18947
+Allgemeine Windows-Informationen zu Build 18947 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18947/).
+
+### <a name="wsl"></a>WSL
+* [WSL2] Ermöglicht den Zugriff auf das lauschen von TCP-Sockets in WSL2 über den Host mithilfe von "localhost: Port".
+* [WSL2] Fehlerbehebungen für Installations-und Konvertierungs Fehler und zusätzliche Diagnose zur Verfolgung zukünftiger Probleme [GH 4105] 
+* [WSL2] Verbessern der Diagnose von Netzwerkproblemen WSL2
+* [WSL2] Kernel Version auf 4.19.55 aktualisieren
+* [WSL2] Aktualisieren des Kernels mit Konfigurationsoptionen, die für docker erforderlich sind [GH 4165]
+* [WSL2] Erhöhen Sie die Anzahl der CPUs, die dem Lightweight-Hilfsprogramm-VM zugewiesen sind, damit Sie mit dem Host identisch ist (zuvor auf 8 durch CONFIG_NR_CPUS in der Kernelkonfiguration begrenzt) [GH 4137]
+* [WSL2] Erstellen einer Auslagerungs Datei für die WSL2-Lightweight-VM
+* [WSL2] Zulassen, dass Benutzer Bereitstellungen über \\ \\WSL $\\Distribution (z. b. sshfs) sichtbar sind [GH 4172]
+* [WSL2] Verbessern der Systemleistung von 9P
+* [WSL2] Sicherstellen, dass die VHD-ACL nicht unbegrenzt wächst [GH 4126]
+* [WSL2] Aktualisieren der Kernelkonfiguration zur Unterstützung von "squashfs" und "xt_conntrack" [GH 4107, 4123]
+* [WSL2] Behebung für Interop. aktivierte/etc/WSL.conf Option [GH 4140]
+* [WSL2] Rückgabe von "umotsup", wenn das Dateisystem EAS nicht unterstützt
+* [WSL2] Korrigieren von CopyFile- \\hängen mit \\WSL $
+* Standard umask in 0022 umschalten und File System. umask-Einstellung zu/etc/WSL.conf hinzufügen
+* Korrigieren von wslpath, um symlinks ordnungsgemäß aufzulösen, dies wurde in 19h1 zurückgegangen [GH 4078]
+* Führen Sie die Datei "\.% User Profile% wslconfig" für die Optimierung der WSL2-Einstellungen ein.
+```
+[wsl2]
+kernel=<path>              # An absolute Windows path to a custom Linux kernel.
+memory=<size>              # How much memory to assign to the WSL2 VM.
+processors=<number>        # How many processors to assign to the WSL2 VM.
+swap=<size>                # How much swap space to add to the WSL2 VM. 0 for no swap file.
+swapFile=<path>            # An absolute Windows path to the swap vhd.
+localhostForwarding=<bool> # Boolean specifying if ports bound to wildcard or localhost in the WSL2 VM should be connectable from the host via localhost:port (default true).
+
+# <path> entries must be absolute Windows paths with escaped backslashes, for example C:\\Users\\Ben\\kernel
+# <size> entries must be size followed by unit, for example 8GB or 512MB
+```
 
 ## <a name="build-18917"></a>Build 18917
 Allgemeine Windows-Informationen zu Build 18917 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/06/12/announcing-windows-10-insider-preview-build-18917/).
