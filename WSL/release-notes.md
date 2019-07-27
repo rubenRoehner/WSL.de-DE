@@ -7,18 +7,18 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: d2d91db24c12fc674d695ccffc79eb5781a0721d
-ms.sourcegitcommit: be00abbb170aa569e008b804f15949344b378999
+ms.openlocfilehash: c262ddb359507c1654f0089050bfd15ec16402f9
+ms.sourcegitcommit: 44da0f435986598e6067e36ddca9369d27064793
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68501584"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523784"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Versions Hinweise für das Windows-Subsystem für Linux
 
 
-## <a name="build-18947"></a>Build 18947
-Allgemeine Windows-Informationen zu Build 18947 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18947/).
+## <a name="build-18945"></a>Build 18945
+Allgemeine Windows-Informationen zu Build 18945 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/).
 
 ### <a name="wsl"></a>WSL
 * [WSL2] Ermöglicht den Zugriff auf das lauschen von TCP-Sockets in WSL2 über den Host mithilfe von "localhost: Port".
@@ -398,7 +398,7 @@ Allgemeine Windows-Informationen zu Build 17133 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 17128 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2018/03/23/announcing-windows-10-insider-preview-build-17128-for-fast/).
 
 ### <a name="wsl"></a>WSL
-* Keine
+* None
 
 ## <a name="build-17627-skip-ahead"></a>Build 17627 (überspringen)
 Allgemeine Windows-Informationen zu Build 17627 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2018/03/21/announcing-windows-10-insider-preview-build-17627-for-skip-ahead/).

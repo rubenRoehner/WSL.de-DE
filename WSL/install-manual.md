@@ -8,16 +8,16 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: 55cea2c4b7087f3dd8a29986aaddc8c313763448
-ms.sourcegitcommit: b07769a3140db9ac63e42c7d7d1290c0bad8c40d
+ms.openlocfilehash: bf2f2e24fb8a2db49270fb77558d4fda1828dedf
+ms.sourcegitcommit: 44da0f435986598e6067e36ddca9369d27064793
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67467548"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523771"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Manuelles Herunterladen von Windows-Subsystem für Linux-Distribution-Pakete
 
-Es gibt mehrere Szenarios, in denen Sie möglicherweise nicht in der Lage sind, WSL-Linux-Distributionen über die Microsoft Store zu installieren (oder möchten). Insbesondere führen Sie möglicherweise eine Desktop Betriebssystem-SKU für Windows Server oder eine langfristige Wartung (ltsb/LTSC) aus, die Microsoft Store nicht unterstützt, oder Ihre Unternehmensnetzwerk Richtlinien und/oder Administratoren, um Microsoft Store Verwendung in Ihrer Umgebung nicht zuzulassen.
+Es gibt mehrere Szenarios, in denen Sie möglicherweise nicht in der Lage sind, WSL-Linux-Distributionen über die Microsoft Store zu installieren (oder möchten). Vor allem können Sie eine Windows Server-oder eine LTSC-Desktop-SKU (Long-Term Wartung) ausführen, die keine Microsoft Store unterstützt, oder Ihre Unternehmensnetzwerk Richtlinien und/oder Administratoren, um die Verwendung von Microsoft Store in Ihrer Umgebung nicht zuzulassen.
 
 Wie können Sie in diesen Fällen, während WSL selbst verfügbar ist, Linux-Distributionen in WSL herunterladen und installieren, wenn Sie nicht auf den Store zugreifen können?
 
