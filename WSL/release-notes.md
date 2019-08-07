@@ -7,12 +7,12 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: c262ddb359507c1654f0089050bfd15ec16402f9
-ms.sourcegitcommit: 44da0f435986598e6067e36ddca9369d27064793
+ms.openlocfilehash: b03d837e0ab3a371fd676e37b5c65a173824f84c
+ms.sourcegitcommit: 9175a28f04573f25338358faf61d73b1a5d1ade6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523784"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832117"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Versions Hinweise für das Windows-Subsystem für Linux
 
@@ -37,7 +37,7 @@ Allgemeine Windows-Informationen zu Build 18945 finden Sie im [Windows-Blog](htt
 * [WSL2] Korrigieren von CopyFile- \\hängen mit \\WSL $
 * Standard umask in 0022 umschalten und File System. umask-Einstellung zu/etc/WSL.conf hinzufügen
 * Korrigieren von wslpath, um symlinks ordnungsgemäß aufzulösen, dies wurde in 19h1 zurückgegangen [GH 4078]
-* Führen Sie die Datei "\.% User Profile% wslconfig" für die Optimierung der WSL2-Einstellungen ein.
+* Führen Sie die Datei "\\% User Profile%. wslconfig" für die Optimierung der WSL2-Einstellungen ein.
 ```
 [wsl2]
 kernel=<path>              # An absolute Windows path to a custom Linux kernel.
@@ -398,7 +398,7 @@ Allgemeine Windows-Informationen zu Build 17133 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 17128 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2018/03/23/announcing-windows-10-insider-preview-build-17128-for-fast/).
 
 ### <a name="wsl"></a>WSL
-* None
+* Keine
 
 ## <a name="build-17627-skip-ahead"></a>Build 17627 (überspringen)
 Allgemeine Windows-Informationen zu Build 17627 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2018/03/21/announcing-windows-10-insider-preview-build-17627-for-skip-ahead/).
@@ -506,7 +506,7 @@ Wenn Sie WSL zum ersten Mal nach dem Upgrade auf diesen Build starten, müssen S
 #### <a name="wsl-is-more-configurable-with-wslconf"></a>WSL ist mit "WSL. conf" konfigurierbar.
 Wir haben eine Methode hinzugefügt, mit der Sie bestimmte Funktionen in WSL automatisch konfigurieren können, die bei jedem Start des Subsystems angewendet werden. Dies umfasst die automatischen Optionen und die Netzwerkkonfiguration. Weitere Informationen hierzu finden Sie in unserem Blogbeitrag unter: https://aka.ms/wslconf
 
-#### <a name="afunix-allows-socket-connections-between-linux-processes-on-wsl-and-windows-native-processes"></a>AF_UNIX ermöglicht Socketverbindungen zwischen Linux-Prozessen auf WSL-und nativen Windows-Prozessen.
+#### <a name="af_unix-allows-socket-connections-between-linux-processes-on-wsl-and-windows-native-processes"></a>AF_UNIX ermöglicht Socketverbindungen zwischen Linux-Prozessen auf WSL-und nativen Windows-Prozessen.
 WSL-und Windows-Anwendungen können nun über Unix-Sockets miteinander kommunizieren. Stellen Sie sich vor, Sie möchten einen Dienst in Windows ausführen und sowohl für Windows-als auch für WSL-apps verfügbar machen. Das ist mit UNIX-Sockets möglich. Weitere Informationen finden Sie in unserem Blogbeitrag unter https://aka.ms/afunixinterop
 
 ### <a name="wsl"></a>WSL
