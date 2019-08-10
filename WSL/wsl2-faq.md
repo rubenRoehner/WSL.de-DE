@@ -8,12 +8,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: a74f5e3f5879d0af274d2e2b10aaf05e95a97a6f
-ms.sourcegitcommit: 44da0f435986598e6067e36ddca9369d27064793
+ms.openlocfilehash: 760ca61f77f12509224458f1b44a1329d7225600
+ms.sourcegitcommit: 00e4d12bfcd0dcd53c7445ddb2f8f0d0739d20af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "67587139"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915559"
 ---
 # <a name="wsl-2-faq"></a>FAQ ZU WSL 2
 
@@ -45,7 +45,7 @@ Ja, in der Regel sind Netzwerkanwendungen schneller und können besser funktioni
 
 ## <a name="can-i-run-wsl-2-in-a-virtual-machine"></a>Kann ich WSL 2 auf einem virtuellen Computer ausführen?
 
-Ja! Sie müssen sicherstellen, dass die aktivierte aktivierte Virtualisierung auf dem virtuellen Computer aktiviert ist. Dies kann in Hyper-V aktiviert werden, indem Sie den folgenden Befehl in einem PowerShell-Fenster mit Administrator Rechten ausführen:
+Ja! Sie müssen sicherstellen, dass die aktivierte aktivierte Virtualisierung auf dem virtuellen Computer aktiviert ist. Dies kann in ihrem übergeordneten Hyper-V-Host aktiviert werden, indem Sie den folgenden Befehl in einem PowerShell-Fenster mit Administrator Rechten ausführen:
 
 `Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true`
 
