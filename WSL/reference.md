@@ -8,78 +8,84 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 82908295-a6bd-483c-a995-613674c2677e
 ms.custom: seodec18
-ms.openlocfilehash: 465f55f8ba210cd366adc66d433f1873e295136f
-ms.sourcegitcommit: ead64b13501d6cb7170adafbb5624f4984a0af16
+ms.openlocfilehash: 018b02b43e859476f7ee38f54df8efa0ca0e652b
+ms.sourcegitcommit: 62c49d435a91f2e390c3c495f3e09e62b5ada13c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67307654"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69578836"
 ---
 # <a name="command-reference-for-windows-subsystem-for-linux"></a>Befehlsreferenz für Windows-Subsystem für Linux
 
 Die beste Möglichkeit, mit dem Windows-Subsystem für Linux zu interagieren, ist `wsl.exe` die Verwendung des-Befehls. 
 
-## `wsl.exe` 
+
+## `wsl.exe`
 
 Im folgenden finden Sie eine Liste mit allen Optionen `wsl.exe` , wenn Sie ab Windows Version 1903 verwenden.
 
-* Argumente für das Ausführen von Linux-Binärdateien:
+Genutzt`wsl [Argument] [Options...] [CommandLine]`
 
-    * Wenn keine Befehlszeile angegeben wird, wird die Standardshell von WSL. exe gestartet.
+### <a name="arguments-for-running-linux-binaries"></a>Argumente für das Ausführen von Linux-Binärdateien
 
-    * --Exec,-e<CommandLine>
-        * Führen Sie den angegebenen Befehl ohne die Linux-Standard Shell aus.
+* **Ohne Argumente**
 
-    * --
-        * Übergeben Sie die verbleibende Befehlszeile unverändert.
+  Wenn keine Befehlszeile angegeben wird, wird die Standardshell von WSL. exe gestartet.
 
-* Optionen:
-    * --Distribution,-d<Distro>
-        * Führt die angegebene Verteilung aus.
+* **--Exec,-e \<commandline >**
+  
+  Führen Sie den angegebenen Befehl ohne die Linux-Standard Shell aus.
 
-    * --Benutzer,-u<UserName>
-        * Ausführen als angegebener Benutzer.
+* **--**
+  
+  Übergeben Sie die verbleibende Befehlszeile unverändert.
 
-* Argumente für die Verwaltung des Windows-Subsystems für Linux:
+Die obigen Befehle akzeptieren außerdem die folgenden Optionen:
 
-    * --Export <Distro><FileName>
-        * Exportiert die Verteilung in eine tar-Datei.
-        Der Dateiname kann für die Standardausgabe sein.
+* **--Distribution,-d \<Distribution >**
 
-    * --Import <Distro> <InstallLocation>[Optionen <FileName> ]
-        * Importiert die angegebene tar-Datei als neue Verteilung.
-        Der Dateiname kann für die Standardeingabe sein.
+  Führt die angegebene Verteilung aus.
 
-        * Optionen:
-            * --Version <Version> gibt die Version an, die für die neue Verteilung verwendet werden soll.
+* **--Benutzer,-u \<Benutzername >**
 
-    * --List,-l [Optionen]
-        * Listet Verteilungen auf.
+  Ausführen als angegebener Benutzer.
 
-        * Optionen:
-            * --Alle
-                * Auflisten aller Verteilungen, einschließlich Verteilungen, die zurzeit installiert oder deinstalliert werden.
+### <a name="arguments-for-managing-windows-subsystem-for-linux"></a>Argumente für die Verwaltung des Windows-Subsystems für Linux
 
-            * --wird ausgeführt
-                * Listet nur Verteilungen auf, die zurzeit ausgeführt werden.
+* **--> \< \<Dateiname "Distribution" Exportieren >**
+  
+  Exportiert die Verteilung in eine tar-Datei. Der Dateiname kann für die Standardausgabe sein.
 
-    * --Set-Default,-s<Distro>
-        * Legt die Verteilung als Standard fest.
+* **--> \< \<INSTALLLOCATION > \<Dateinamen importieren >**
+  
+  Importiert die angegebene tar-Datei als neue Verteilung. Der Dateiname kann für die Standardeingabe sein.
 
-    * --Set-Default-Version<Version>
-        * Ändert die Standard Installationsversion für neue Verteilungen.
+* **--List,-l [Optionen]**
+  
+  Listet Verteilungen auf.
 
-    * --Set-Version <Distro><Version>
-        * Ändert die Version der angegebenen Verteilung.
+  Optionen:
+  * **--Alle**
+      
+    Auflisten aller Verteilungen, einschließlich Verteilungen, die zurzeit installiert oder deinstalliert werden.
 
-    * --beenden,-t<Distro>
-        * Beendet die angegebene Verteilung.
+  * **--wird ausgeführt**
+      
+    Listet nur Verteilungen auf, die zurzeit ausgeführt werden.
 
-    * --Registrierung aufheben<Distro>
-        * Hebt die Registrierung der Verteilung auf.
+* **--Set-Default,-s \<-Distribution >**
+  
+  Legt die Verteilung als Standard fest.
 
-    * --help
-        * Anzeigen von Nutzungsinformationen.
+* **--beenden,-t \<Distribution >**
+  
+  Beendet die angegebene Verteilung.
+
+* **--Aufheben der \<Registrierung von Distribution->**
+  
+  Hebt die Registrierung der Verteilung auf.
+   
+* **--Hilfe** Anzeigen von Nutzungsinformationen.
 
 ## <a name="additional-commands"></a>Weitere Befehle
 
@@ -89,33 +95,57 @@ Es gibt auch historische Befehle für die Interaktion mit dem Windows-Subsystem 
 
 Mit diesem Befehl können Sie Ihre WSL-Verteilung konfigurieren. Im folgenden finden Sie eine Liste der zugehörigen Optionen.
 
-* /l,/List [Option]
-    * Listet registrierte Verteilungen auf.
-        * /All: Optional können Sie alle Distributionen auflisten, einschließlich Verteilungen, die zurzeit installiert oder deinstalliert werden.
+Genutzt`wslconfig [Argument] [Options...]`
 
-        * /Running: nur Verteilungen auflisten, die zurzeit ausgeführt werden.
+#### <a name="arguments"></a>Argumente
+* **/l,/List [Optionen]**
+  
+  Listet registrierte Verteilungen auf.
+  
+  Optionen:
+    * **/All**
+    
+      Optional können Sie alle Distributionen auflisten, einschließlich Verteilungen, die zurzeit installiert oder deinstalliert werden.
 
-* /s,/SetDefault<DistributionName>
-    * Legt die Verteilung als Standard fest.
+    * **/running**
+      
+      Listet nur Verteilungen auf, die zurzeit ausgeführt werden.
 
-* /t,/Terminate<DistributionName>
-    * Beendet die Verteilung.
+* **/s,/SetDefault \<Distribution >**
+  
+  Legt die Verteilung als Standard fest.
 
-* /u,/Unregister<DistributionName>
-    * Hebt die Registrierung der Verteilung auf.
+* **/t,/Terminate \<Distribution >**
+  
+  Beendet die Verteilung.
+
+* **/u,/Unregister \<Distribution >**
+  
+  Hebt die Registrierung der Verteilung auf.
+   
+* **/Upgrade \<Distribution->**
+  
+  Führt ein Upgrade der Verteilung auf das wslfs-Dateisystem Format durch.
 
 ### `bash.exe`
 
 Dieser Befehl wird verwendet, um eine bash-Shell zu starten. Im folgenden finden Sie die Optionen, die Sie mit diesem Befehl verwenden können.
 
-* Keine Option angegeben.
-    * Starten der bash-Shell im aktuellen Verzeichnis. Wenn die bash-Shell nicht installiert ist, wird automatisch ausgeführt.`lxrun /install`
+Genutzt`bash [Options...]`
 
-* bash ~
-    * Hiermit wird die bash-Shell in das Basisverzeichnis des Benutzers gestartet.  Vergleichbar mit dem `cd ~`Ausführen von.
+* **Keine Option angegeben.**
+  
+  Starten der bash-Shell im aktuellen Verzeichnis. Wenn die bash-Shell nicht installiert ist, wird automatisch ausgeführt.`lxrun /install`
 
-* bash-c "&lt;Befehl&gt;"
-    * Führt den Befehl aus, druckt die Ausgabe und wird zurück zur Windows-Eingabeaufforderung. <br/> <br/> Beispiel`bash -c "ls"`
+* **~**
+  
+  `bash ~`Hiermit wird die bash-Shell in das Basisverzeichnis des Benutzers gestartet.  Vergleichbar mit dem `cd ~`Ausführen von.
+
+* **-c "\<Command >"**
+  
+  Führt den Befehl aus, druckt die Ausgabe und wird zurück zur Windows-Eingabeaufforderung.
+    
+  Beispiel: `bash -c "ls"`.
 
 ## <a name="deprecated-commands"></a>Als veraltet markierte Befehle
 
