@@ -7,12 +7,13 @@ ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
-ms.openlocfilehash: b03d837e0ab3a371fd676e37b5c65a173824f84c
-ms.sourcegitcommit: 9175a28f04573f25338358faf61d73b1a5d1ade6
+ms.localizationpriority: high
+ms.openlocfilehash: 56a596c39b0d07e75d0beb381b80af5a14612e00
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832117"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122754"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Versions Hinweise für das Windows-Subsystem für Linux
 
@@ -398,7 +399,7 @@ Allgemeine Windows-Informationen zu Build 17133 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 17128 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2018/03/23/announcing-windows-10-insider-preview-build-17128-for-fast/).
 
 ### <a name="wsl"></a>WSL
-* Keine
+* None
 
 ## <a name="build-17627-skip-ahead"></a>Build 17627 (überspringen)
 Allgemeine Windows-Informationen zu Build 17627 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2018/03/21/announcing-windows-10-insider-preview-build-17627-for-skip-ahead/).

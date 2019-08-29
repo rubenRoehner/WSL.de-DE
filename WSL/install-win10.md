@@ -8,12 +8,13 @@ ms.date: 07/23/2018
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 82b5c0ccba7a444f13f186a2e33f210ac2cf48da
-ms.sourcegitcommit: 5844c6dbf692780b86b30bd65e11820fff43b3bd
+ms.localizationpriority: high
+ms.openlocfilehash: 218e3e652d0849f944e8aaceef3fb954294222be
+ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67499284"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122770"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Windows-Subsystem für Linux-Installationshandbuch für Windows 10
 
@@ -76,4 +77,4 @@ Im folgenden finden Sie verwandte Fehler und empfohlene Korrekturen. Weitere hä
     
  * **Wslregisterdistribution ist mit Fehler 0x8007019e fehlgeschlagen.**   
   * Die optionale Komponente des Windows-Subsystems für Linux ist nicht aktiviert: 
-   * Öffnen Sie **Systemsteuerung** -> **Programme und Features** -> * * Windows-Funktion ein-oder ausschalten * *-> Überprüfen Sie das **Windows-Subsystem für Linux** , oder verwenden Sie das PowerShell-Cmdlet, das am Anfang dieses Artikels erwähnt wurde.
+   * Öffnen Sie **Systemsteuerung** -> **Programme und Features** -> , und aktivieren**oder deaktivieren** Sie das Windows-Feature > Überprüfen Sie **Windows-Subsystem für Linux** , oder verwenden Sie das PowerShell-Cmdlet, das am Anfang dieses Artikels erwähnt wurde.
