@@ -21,7 +21,7 @@ Führen Sie die folgenden Schritte aus, um WSL 2 zu installieren und mit dessen 
 
 - Stellen Sie sicher, dass WSL installiert ist ( [hier](./install-win10.md)finden Sie entsprechende Anweisungen) und dass Windows 10 Build 18917 oder höher ausgeführt wird.
    - Um sicherzustellen, dass Sie Build 18917 oder höher verwenden, fügen Sie [das Windows Insider-Programm](https://insider.windows.com/en-us/) an, und wählen Sie den Ring "fast" aus. 
-   - Sie können Ihre Windows-Version überprüfen, indem Sie die Eingabe Aufforderung öffnen und den Befehl `ver` ausführen.
+   - Sie können Ihre Windows-Version überprüfen, indem Sie die Eingabeaufforderung öffnen und den Befehl `ver` ausführen.
 - Aktivieren Sie die optionale Komponente „Virtual Machine Platform“.
 - Legen Sie über die Befehlszeile eine Distribution fest, die sich auf WSL 2 stützen soll.
 - Überprüfen Sie, welche Versionen von WSL Ihre Distributionen verwenden.
