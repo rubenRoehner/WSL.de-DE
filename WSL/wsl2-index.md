@@ -2,18 +2,18 @@
 title: WSL 2
 description: Windows-Subsystem für Linux 2
 keywords: BashOnWindows, Bash, WSL, WSL2, Windows, Windows-Subsystem für Linux, Windows-Subsystem, Ubuntu, Debian, Suse, Windows 10, Installation, installieren
-author: mscraigloewen
-ms.author: mscraigloewen
+author: craigloewen-msft
+ms.author: crloewen
 ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 8b37a77d773e4dc0de688740ddf6a984cbe97ca9
-ms.sourcegitcommit: cd239efc5c7c25ffbe5de25b2438d44181a838a9
+ms.openlocfilehash: 921ce7cbc4c64998d64638a049df4e1b21fb5182
+ms.sourcegitcommit: ed5cf72d5ceb92edd50cf9260ac31fd4d95a02c8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67038070"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71020949"
 ---
 # <a name="wsl-2"></a>WSL 2
 
