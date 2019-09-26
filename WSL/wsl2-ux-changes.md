@@ -2,18 +2,16 @@
 title: UX-Änderungen zwischen WSL 1 und WSL 2
 description: Änderungen der Benutzeroberflächen zwischen WSL 1 und WSL 2
 keywords: Bashonwindows, bash, WSL, wsl2, Windows, Windows-Subsystem für Linux, windowssubsystem, Ubuntu, Debian, SuSE, Windows 10
-author: craigloewen-msft
-ms.author: crloewen
 ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 347c965dbbc2a328590d3a8149a8316979d6793d
-ms.sourcegitcommit: ebc6ae7e7546a6d33644e68788fa0215028859b2
+ms.openlocfilehash: 1af9646b9b5bb845dd60e5bf2312f8d806fca5dc
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070319"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269882"
 ---
 # <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>Änderungen der Benutzeroberflächen zwischen WSL 1 und WSL 2
 

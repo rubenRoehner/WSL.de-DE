@@ -2,18 +2,16 @@
 title: Manuelles Herunterladen von Windows-Subsystem für Linux (WSL)
 description: Anweisungen zum manuellen Herunterladen des Windows-Subsystems für Linux-Distributionen.
 keywords: Bashonwindows, bash, WSL, Windows, Windows-Subsystem für Linux, WSL, Windows-Subsystem, Distribution, Ubuntu, openSUSE, SLES, Debian, Kali
-author: taraj
-ms.author: taraj
 ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: ded81ec9672d75203e0d289c551c86cd90bde606
-ms.sourcegitcommit: 9175a28f04573f25338358faf61d73b1a5d1ade6
+ms.openlocfilehash: df47e656cf83e0b13aa8eb3f210e010d6a85bfd8
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832098"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269790"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Manuelles Herunterladen von Windows-Subsystem für Linux-Distribution-Pakete
 
@@ -35,7 +33,7 @@ Wenn die Microsoft Store-App nicht verfügbar ist, können Sie Linux-Distributio
 * [SUSE Linux Enterprise Server 12](https://aka.ms/wsl-sles-12)
 * [Fedora Remix für WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix/releases/)
 
-Dies bewirkt, dass `<distro>.appx` die Pakete in einen Ordner Ihrer Wahl heruntergeladen werden. Befolgen Sie die [Installationsanweisungen](#Installing-your-distro) , um die heruntergeladenen Distributionen zu installieren.
+Dies bewirkt, dass `<distro>.appx` die Pakete in einen Ordner Ihrer Wahl heruntergeladen werden. Befolgen Sie die [Installationsanweisungen](#installing-your-distro) , um die heruntergeladenen Distributionen zu installieren.
 
 ## <a name="downloading-distros-via-the-command-line"></a>Herunterladen von Distributionen über die Befehlszeile
 Wenn Sie möchten, können Sie Ihre bevorzugten Distributionen auch über die Befehlszeile herunterladen:
