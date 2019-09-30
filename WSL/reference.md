@@ -1,7 +1,7 @@
 ---
-title: Windows-Subsystem für Linux (Befehlsreferenz)
+title: 'Windows-Subsystem für Linux: Befehlsreferenz'
 description: Liste der Befehle, mit denen das Windows-Subsystem für Linux verwaltet wird
-keywords: Bashonwindows, bash, WSL, Windows, Windows-Subsystem für Linux, windowssubsystem, Ubuntu
+keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu
 author: scooley
 ms.author: scooley
 ms.date: 07/31/2017
@@ -11,153 +11,153 @@ ms.custom: seodec18
 ms.localizationpriority: high
 ms.openlocfilehash: edd4b8216a25f519e36b8b99b626b0a4315f6039
 ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/28/2019
 ms.locfileid: "70122739"
 ---
-# <a name="command-reference-for-windows-subsystem-for-linux"></a>Befehlsreferenz für Windows-Subsystem für Linux
+# <a name="command-reference-for-windows-subsystem-for-linux"></a>Befehlsreferenz für das Windows-Subsystem für Linux
 
-Die beste Möglichkeit, mit dem Windows-Subsystem für Linux zu interagieren, ist `wsl.exe` die Verwendung des-Befehls. 
+Die beste Möglichkeit, mit dem Windows-Subsystem für Linux zu interagieren, ist die Verwendung des Befehls `wsl.exe`. 
 
 
 ## `wsl.exe`
 
-Im folgenden finden Sie eine Liste mit allen Optionen `wsl.exe` , wenn Sie ab Windows Version 1903 verwenden.
+Unten finden Sie eine Liste mit allen Optionen, wenn Sie `wsl.exe` ab Windows Version 1903 verwenden.
 
-Genutzt`wsl [Argument] [Options...] [CommandLine]`
+Syntax: `wsl [Argument] [Options...] [CommandLine]`
 
 ### <a name="arguments-for-running-linux-binaries"></a>Argumente für das Ausführen von Linux-Binärdateien
 
 * **Ohne Argumente**
 
-  Wenn keine Befehlszeile angegeben wird, wird die Standardshell von WSL. exe gestartet.
+  Wenn keine Befehlszeile angegeben wird, startet „wsl.exe“ die Standardshell.
 
-* **--Exec,-e \<commandline >**
+* **--exec, -e \<BefehlsZeile>**
   
-  Führen Sie den angegebenen Befehl ohne die Linux-Standard Shell aus.
+  Führt den angegebenen Befehl ohne Verwendung der Linux-Standardshell aus.
 
 * **--**
   
-  Übergeben Sie die verbleibende Befehlszeile unverändert.
+  Übergibt die verbleibende Befehlszeile unverändert.
 
-Die obigen Befehle akzeptieren außerdem die folgenden Optionen:
+Die oben genannten Befehle akzeptieren außerdem die folgenden Optionen:
 
-* **--Distribution,-d \<Distribution >**
+* **--distribution, -d \<Distribution>**
 
-  Führt die angegebene Verteilung aus.
+  Führt die angegebene Distribution aus.
 
-* **--Benutzer,-u \<Benutzername >**
+* **--user, -u \<BenutzerName>**
 
-  Ausführen als angegebener Benutzer.
+  Ausführung als der angegebene Benutzer.
 
 ### <a name="arguments-for-managing-windows-subsystem-for-linux"></a>Argumente für die Verwaltung des Windows-Subsystems für Linux
 
-* **--> \< \<Dateiname "Distribution" Exportieren >**
+* **--export \<Distribution> \<DateiName>**
   
-  Exportiert die Verteilung in eine tar-Datei. Der Dateiname kann für die Standardausgabe sein.
+  Exportiert die Distribution in eine TAR-Datei. Der Dateiname kann „-“ für Standardausgabe sein.
 
-* **--> \< \<INSTALLLOCATION > \<Dateinamen importieren >**
+* **--import \<Distribution> \<InstallationsOrt> \<DateiName>**
   
-  Importiert die angegebene tar-Datei als neue Verteilung. Der Dateiname kann für die Standardeingabe sein.
+  Importiert die angegebene TAR-Datei als neue Distribution. Der Dateiname kann „-“ für Standardeingabe sein.
 
-* **--List,-l [Optionen]**
+* **--list, -l [Optionen]**
   
-  Listet Verteilungen auf.
+  Listet Distributionen auf.
 
   Optionen:
-  * **--Alle**
+  * **--all**
       
-    Auflisten aller Verteilungen, einschließlich Verteilungen, die zurzeit installiert oder deinstalliert werden.
+    Listet alle Distributionen auf, einschließlich Distributionen, die zurzeit installiert oder deinstalliert werden.
 
-  * **--wird ausgeführt**
+  * **--running**
       
-    Listet nur Verteilungen auf, die zurzeit ausgeführt werden.
+    Listet nur Distributionen auf, die zurzeit ausgeführt werden.
 
-* **--Set-Default,-s \<-Distribution >**
+* **--set-default, -s \<Distribution>**
   
-  Legt die Verteilung als Standard fest.
+  Legt die Distribution als Standard fest.
 
-* **--beenden,-t \<Distribution >**
+* **--terminate, -t \<Distribution>**
   
-  Beendet die angegebene Verteilung.
+  Beendet die angegebene Distribution.
 
-* **--Aufheben der \<Registrierung von Distribution->**
+* **--unregister \<Distribution>**
   
-  Hebt die Registrierung der Verteilung auf.
+  Hebt die Registrierung der Distribution auf.
    
-* **--Hilfe** Anzeigen von Nutzungsinformationen.
+* **--help**: Zeigt Syntaxinformationen an.
 
 ## <a name="additional-commands"></a>Weitere Befehle
 
-Es gibt auch historische Befehle für die Interaktion mit dem Windows-Subsystem für Linux. Ihre Funktionalität ist in `wsl.exe`enthalten, Sie sind jedoch weiterhin zur Verwendung verfügbar. 
+Es gibt auch historische Befehle für die Interaktion mit dem Windows-Subsystem für Linux. Ihre Funktionalität ist in `wsl.exe` enthalten, sie sind jedoch weiterhin zur Verwendung verfügbar. 
 
 ### `wslconfig.exe`
 
-Mit diesem Befehl können Sie Ihre WSL-Verteilung konfigurieren. Im folgenden finden Sie eine Liste der zugehörigen Optionen.
+Mit diesem Befehl können Sie Ihre WSL-Distribution konfigurieren. Es folgt eine Liste der zugehörigen Optionen.
 
-Genutzt`wslconfig [Argument] [Options...]`
+Syntax: `wslconfig [Argument] [Options...]`
 
 #### <a name="arguments"></a>Argumente
-* **/l,/List [Optionen]**
+* **/l, /list [Optionen]**
   
-  Listet registrierte Verteilungen auf.
+  Listet registrierte Distributionen auf.
   
   Optionen:
-    * **/All**
+    * **/all**
     
-      Optional können Sie alle Distributionen auflisten, einschließlich Verteilungen, die zurzeit installiert oder deinstalliert werden.
+      Listet optional alle Distributionen auf, einschließlich Distributionen, die zurzeit installiert oder deinstalliert werden.
 
     * **/running**
       
-      Listet nur Verteilungen auf, die zurzeit ausgeführt werden.
+      Listet nur Distributionen auf, die zurzeit ausgeführt werden.
 
-* **/s,/SetDefault \<Distribution >**
+* **/s, /setdefault \<Distribution>**
   
-  Legt die Verteilung als Standard fest.
+  Legt die Distribution als Standard fest.
 
-* **/t,/Terminate \<Distribution >**
+* **/t, /terminate \<Distribution>**
   
-  Beendet die Verteilung.
+  Beendet die Distribution.
 
-* **/u,/Unregister \<Distribution >**
+* **/u, /unregister \<Distribution>**
   
-  Hebt die Registrierung der Verteilung auf.
+  Hebt die Registrierung der Distribution auf.
    
-* **/Upgrade \<Distribution->**
+* **/upgrade \<Distribution>**
   
-  Führt ein Upgrade der Verteilung auf das wslfs-Dateisystem Format durch.
+  Führt ein Upgrade der Distribution auf das WslFs-Dateisystemformat durch.
 
 ### `bash.exe`
 
-Dieser Befehl wird verwendet, um eine bash-Shell zu starten. Im folgenden finden Sie die Optionen, die Sie mit diesem Befehl verwenden können.
+Dieser Befehl wird verwendet, um eine Bash-Shell zu starten. Unten finden Sie die Optionen, die Sie mit diesem Befehl verwenden können.
 
-Genutzt`bash [Options...]`
+Syntax: `bash [Options...]`
 
-* **Keine Option angegeben.**
+* **Keine Option angegeben**
   
-  Starten der bash-Shell im aktuellen Verzeichnis. Wenn die bash-Shell nicht installiert ist, wird automatisch ausgeführt.`lxrun /install`
+  Startet die Bash-Shell im aktuellen Verzeichnis. Wenn die Bash-Shell nicht installiert ist, wird automatisch `lxrun /install` ausgeführt.
 
 * **~**
   
-  `bash ~`Hiermit wird die bash-Shell in das Basisverzeichnis des Benutzers gestartet.  Vergleichbar mit dem `cd ~`Ausführen von.
+  `bash ~` startet die Bash-Shell im Basisverzeichnis des Benutzers.  Vergleichbar mit der Ausführung von `cd ~`.
 
-* **-c "\<Command >"**
+* **-c "\<Befehl>"**
   
-  Führt den Befehl aus, druckt die Ausgabe und wird zurück zur Windows-Eingabeaufforderung.
+  Führt den Befehl aus, gibt die Ausgabe aus, und kehrt zur Windows-Eingabeaufforderung zurück.
     
   Beispiel: `bash -c "ls"`.
 
-## <a name="deprecated-commands"></a>Als veraltet markierte Befehle
+## <a name="deprecated-commands"></a>Veraltete Befehle
 
-`lxrun.exe` War der erste Befehl, der zum Installieren und Verwalten des Windows-Subsystems für Linux verwendet wurde. Sie ist ab Windows 10 1803 und höher veraltet.
+`lxrun.exe` war der erste Befehl, der zum Installieren und Verwalten des Windows-Subsystems für Linux verwendet wurde. Er gilt ab Windows 10 Version 1803 und höher als veraltet.
 
-Der Befehl `lxrun.exe` kann verwendet werden, um direkt mit dem [Windows-Subsystem für Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/faq#what-windows-subsystem-for-linux-wsl-) zu interagieren.  Diese Befehle werden im `\Windows\System32` Verzeichnis installiert und können in einer Windows-Eingabeaufforderung oder in PowerShell ausgeführt werden.
+Der Befehl `lxrun.exe` kann verwendet werden, um direkt mit dem [Windows-Subsystem für Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/faq#what-windows-subsystem-for-linux-wsl-) zu interagieren.  Diese Befehle werden im Verzeichnis `\Windows\System32` installiert und können in einer Windows-Eingabeaufforderung oder in PowerShell ausgeführt werden.
 
 | Befehl                     | Beschreibung                     |
 |:----------------------------|:---------------------------|
 | `lxrun`                     | Der lxrun-Befehl wird verwendet, um die WSL-Instanz zu verwalten. |
-| `lxrun /install`            | Startet den Download-und Installationsvorgang. <br/> **/y** kann hinzugefügt werden, um alle Eingabe Aufforderungen zu umgehen.  Die Bestätigungsaufforderung wird automatisch akzeptiert, und der Standardbenutzer ist auf root festgelegt.          |
-| `lxrun /uninstall`          | Deinstalliert und löscht das Ubuntu-Image.  Standardmäßig wird hierdurch nicht das Ubuntu-Basisverzeichnis des Benutzers entfernt. <br/> **/y** kann hinzugefügt werden, um die Bestätigungsaufforderung automatisch zu akzeptieren. <br/>**/Full** deinstalliert und löscht das Ubuntu-Basisverzeichnis des Benutzers.         |
-| `lxrun /setdefaultuser <userName>`     | Legt den Standard-bash on Ubuntu-Benutzer fest. Fordert zur Eingabe eines Kennworts auf, wenn der angegebene Benutzer nicht vorhanden ist.  Weitere Informationen finden Sie unter https://aka.ms/wslusers:. <br/> **/y** Umgeht das Kennwort.  Der Benutzer wird ohne Kennwort erstellt.|
-| `lxrun /update`            | Aktualisiert den Paket Index des Subsystems.          |
+| `lxrun /install`            | Startet den Download- und Installationsvorgang. <br/> **/y** kann hinzugefügt werden, um alle Eingabeaufforderungen zu umgehen.  Die Bestätigungsaufforderung wird automatisch akzeptiert, und der Standardbenutzer wird auf „root“ festgelegt.          |
+| `lxrun /uninstall`          | Deinstalliert und löscht das Ubuntu-Image.  Standardmäßig wird hierdurch nicht das Ubuntu-Basisverzeichnis des Benutzers entfernt. <br/> **/y** kann hinzugefügt werden, um die Bestätigungsaufforderung automatisch zu akzeptieren. <br/>**/full** deinstalliert und löscht das Ubuntu-Basisverzeichnis des Benutzers.         |
+| `lxrun /setdefaultuser <userName>`     | Legt die Standard-Bash für den Ubuntu-Benutzer fest. Fordert zur Eingabe eines Kennworts auf, wenn der angegebene Benutzer nicht vorhanden ist.  Weitere Informationen finden Sie unter https://aka.ms/wslusers. <br/> **/y** umgeht die Eingabeaufforderung für das Kennwort.  Der Benutzer wird ohne Kennwort erstellt.|
+| `lxrun /update`            | Aktualisiert den Paketindex des Subsystems.          |
