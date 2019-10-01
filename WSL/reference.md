@@ -2,162 +2,160 @@
 title: 'Windows-Subsystem für Linux: Befehlsreferenz'
 description: Liste der Befehle, mit denen das Windows-Subsystem für Linux verwaltet wird
 keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu
-author: scooley
-ms.author: scooley
 ms.date: 07/31/2017
 ms.topic: article
 ms.assetid: 82908295-a6bd-483c-a995-613674c2677e
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: edd4b8216a25f519e36b8b99b626b0a4315f6039
-ms.sourcegitcommit: 7af6b7a3f8cfa66cb25115bc26f44aa64ef22811
+ms.openlocfilehash: d74a6926fd797f2e1ede0fd5d8d080d0f1ce3f6b
+ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122739"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71269840"
 ---
-# <a name="command-reference-for-windows-subsystem-for-linux"></a><span data-ttu-id="eaaef-104">Befehlsreferenz für das Windows-Subsystem für Linux</span><span class="sxs-lookup"><span data-stu-id="eaaef-104">Command Reference for Windows Subsystem for Linux</span></span>
+# <a name="command-reference-for-windows-subsystem-for-linux"></a><span data-ttu-id="8a5c1-104">Befehlsreferenz für das Windows-Subsystem für Linux</span><span class="sxs-lookup"><span data-stu-id="8a5c1-104">Command Reference for Windows Subsystem for Linux</span></span>
 
-<span data-ttu-id="eaaef-105">Die beste Möglichkeit, mit dem Windows-Subsystem für Linux zu interagieren, ist die Verwendung des Befehls `wsl.exe`.</span><span class="sxs-lookup"><span data-stu-id="eaaef-105">The best way to interact with the Windows Subsystem for Linux is to use the `wsl.exe` command.</span></span> 
+<span data-ttu-id="8a5c1-105">Die beste Möglichkeit, mit dem Windows-Subsystem für Linux zu interagieren, ist die Verwendung des Befehls `wsl.exe`.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-105">The best way to interact with the Windows Subsystem for Linux is to use the `wsl.exe` command.</span></span> 
 
 
 ## `wsl.exe`
 
-<span data-ttu-id="eaaef-106">Unten finden Sie eine Liste mit allen Optionen, wenn Sie `wsl.exe` ab Windows Version 1903 verwenden.</span><span class="sxs-lookup"><span data-stu-id="eaaef-106">Below is a list containing all options when using `wsl.exe` as of Windows Version 1903.</span></span>
+<span data-ttu-id="8a5c1-106">Unten finden Sie eine Liste mit allen Optionen, wenn Sie `wsl.exe` ab Windows Version 1903 verwenden.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-106">Below is a list containing all options when using `wsl.exe` as of Windows Version 1903.</span></span>
 
-<span data-ttu-id="eaaef-107">Syntax: `wsl [Argument] [Options...] [CommandLine]`</span><span class="sxs-lookup"><span data-stu-id="eaaef-107">Using: `wsl [Argument] [Options...] [CommandLine]`</span></span>
+<span data-ttu-id="8a5c1-107">Syntax: `wsl [Argument] [Options...] [CommandLine]`</span><span class="sxs-lookup"><span data-stu-id="8a5c1-107">Using: `wsl [Argument] [Options...] [CommandLine]`</span></span>
 
-### <a name="arguments-for-running-linux-binaries"></a><span data-ttu-id="eaaef-108">Argumente für das Ausführen von Linux-Binärdateien</span><span class="sxs-lookup"><span data-stu-id="eaaef-108">Arguments for running Linux binaries</span></span>
+### <a name="arguments-for-running-linux-binaries"></a><span data-ttu-id="8a5c1-108">Argumente für das Ausführen von Linux-Binärdateien</span><span class="sxs-lookup"><span data-stu-id="8a5c1-108">Arguments for running Linux binaries</span></span>
 
-* <span data-ttu-id="eaaef-109">**Ohne Argumente**</span><span class="sxs-lookup"><span data-stu-id="eaaef-109">**Without arguments**</span></span>
+* <span data-ttu-id="8a5c1-109">**Ohne Argumente**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-109">**Without arguments**</span></span>
 
-  <span data-ttu-id="eaaef-110">Wenn keine Befehlszeile angegeben wird, startet „wsl.exe“ die Standardshell.</span><span class="sxs-lookup"><span data-stu-id="eaaef-110">If no command line is provided, wsl.exe launches the default shell.</span></span>
+  <span data-ttu-id="8a5c1-110">Wenn keine Befehlszeile angegeben wird, startet „wsl.exe“ die Standardshell.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-110">If no command line is provided, wsl.exe launches the default shell.</span></span>
 
-* <span data-ttu-id="eaaef-111">**--exec, -e \<BefehlsZeile>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-111">**--exec, -e \<CommandLine>**</span></span>
+* <span data-ttu-id="8a5c1-111">**--exec, -e \<BefehlsZeile>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-111">**--exec, -e \<CommandLine>**</span></span>
   
-  <span data-ttu-id="eaaef-112">Führt den angegebenen Befehl ohne Verwendung der Linux-Standardshell aus.</span><span class="sxs-lookup"><span data-stu-id="eaaef-112">Execute the specified command without using the default Linux shell.</span></span>
+  <span data-ttu-id="8a5c1-112">Führt den angegebenen Befehl ohne Verwendung der Linux-Standardshell aus.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-112">Execute the specified command without using the default Linux shell.</span></span>
 
 * **--**
   
-  <span data-ttu-id="eaaef-113">Übergibt die verbleibende Befehlszeile unverändert.</span><span class="sxs-lookup"><span data-stu-id="eaaef-113">Pass the remaining command line as is.</span></span>
+  <span data-ttu-id="8a5c1-113">Übergibt die verbleibende Befehlszeile unverändert.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-113">Pass the remaining command line as is.</span></span>
 
-<span data-ttu-id="eaaef-114">Die oben genannten Befehle akzeptieren außerdem die folgenden Optionen:</span><span class="sxs-lookup"><span data-stu-id="eaaef-114">The above commands also accept the following options:</span></span>
+<span data-ttu-id="8a5c1-114">Die oben genannten Befehle akzeptieren außerdem die folgenden Optionen:</span><span class="sxs-lookup"><span data-stu-id="8a5c1-114">The above commands also accept the following options:</span></span>
 
-* <span data-ttu-id="eaaef-115">**--distribution, -d \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-115">**--distribution, -d \<Distro>**</span></span>
+* <span data-ttu-id="8a5c1-115">**--distribution, -d \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-115">**--distribution, -d \<Distro>**</span></span>
 
-  <span data-ttu-id="eaaef-116">Führt die angegebene Distribution aus.</span><span class="sxs-lookup"><span data-stu-id="eaaef-116">Run the specified distribution.</span></span>
+  <span data-ttu-id="8a5c1-116">Führt die angegebene Distribution aus.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-116">Run the specified distribution.</span></span>
 
-* <span data-ttu-id="eaaef-117">**--user, -u \<BenutzerName>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-117">**--user, -u \<UserName>**</span></span>
+* <span data-ttu-id="8a5c1-117">**--user, -u \<BenutzerName>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-117">**--user, -u \<UserName>**</span></span>
 
-  <span data-ttu-id="eaaef-118">Ausführung als der angegebene Benutzer.</span><span class="sxs-lookup"><span data-stu-id="eaaef-118">Run as the specified user.</span></span>
+  <span data-ttu-id="8a5c1-118">Ausführung als der angegebene Benutzer.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-118">Run as the specified user.</span></span>
 
-### <a name="arguments-for-managing-windows-subsystem-for-linux"></a><span data-ttu-id="eaaef-119">Argumente für die Verwaltung des Windows-Subsystems für Linux</span><span class="sxs-lookup"><span data-stu-id="eaaef-119">Arguments for managing Windows Subsystem for Linux</span></span>
+### <a name="arguments-for-managing-windows-subsystem-for-linux"></a><span data-ttu-id="8a5c1-119">Argumente für die Verwaltung des Windows-Subsystems für Linux</span><span class="sxs-lookup"><span data-stu-id="8a5c1-119">Arguments for managing Windows Subsystem for Linux</span></span>
 
-* <span data-ttu-id="eaaef-120">**--export \<Distribution> \<DateiName>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-120">**--export \<Distro> \<FileName>**</span></span>
+* <span data-ttu-id="8a5c1-120">**--export \<Distribution> \<DateiName>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-120">**--export \<Distro> \<FileName>**</span></span>
   
-  <span data-ttu-id="eaaef-121">Exportiert die Distribution in eine TAR-Datei.</span><span class="sxs-lookup"><span data-stu-id="eaaef-121">Exports the distribution to a tar file.</span></span> <span data-ttu-id="eaaef-122">Der Dateiname kann „-“ für Standardausgabe sein.</span><span class="sxs-lookup"><span data-stu-id="eaaef-122">The filename can be - for standard output.</span></span>
+  <span data-ttu-id="8a5c1-121">Exportiert die Distribution in eine TAR-Datei.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-121">Exports the distribution to a tar file.</span></span> <span data-ttu-id="8a5c1-122">Der Dateiname kann „-“ für Standardausgabe sein.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-122">The filename can be - for standard output.</span></span>
 
-* <span data-ttu-id="eaaef-123">**--import \<Distribution> \<InstallationsOrt> \<DateiName>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-123">**--import \<Distro> \<InstallLocation> \<FileName>**</span></span>
+* <span data-ttu-id="8a5c1-123">**--import \<Distribution> \<InstallationsOrt> \<DateiName>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-123">**--import \<Distro> \<InstallLocation> \<FileName>**</span></span>
   
-  <span data-ttu-id="eaaef-124">Importiert die angegebene TAR-Datei als neue Distribution.</span><span class="sxs-lookup"><span data-stu-id="eaaef-124">Imports the specified tar file as a new distribution.</span></span> <span data-ttu-id="eaaef-125">Der Dateiname kann „-“ für Standardeingabe sein.</span><span class="sxs-lookup"><span data-stu-id="eaaef-125">The filename can be - for standard input.</span></span>
+  <span data-ttu-id="8a5c1-124">Importiert die angegebene TAR-Datei als neue Distribution.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-124">Imports the specified tar file as a new distribution.</span></span> <span data-ttu-id="8a5c1-125">Der Dateiname kann „-“ für Standardeingabe sein.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-125">The filename can be - for standard input.</span></span>
 
-* <span data-ttu-id="eaaef-126">**--list, -l [Optionen]**</span><span class="sxs-lookup"><span data-stu-id="eaaef-126">**--list, -l [Options]**</span></span>
+* <span data-ttu-id="8a5c1-126">**--list, -l [Optionen]**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-126">**--list, -l [Options]**</span></span>
   
-  <span data-ttu-id="eaaef-127">Listet Distributionen auf.</span><span class="sxs-lookup"><span data-stu-id="eaaef-127">Lists distributions.</span></span>
+  <span data-ttu-id="8a5c1-127">Listet Distributionen auf.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-127">Lists distributions.</span></span>
 
-  <span data-ttu-id="eaaef-128">Optionen:</span><span class="sxs-lookup"><span data-stu-id="eaaef-128">Options:</span></span>
-  * <span data-ttu-id="eaaef-129">**--all**</span><span class="sxs-lookup"><span data-stu-id="eaaef-129">**--all**</span></span>
+  <span data-ttu-id="8a5c1-128">Optionen:</span><span class="sxs-lookup"><span data-stu-id="8a5c1-128">Options:</span></span>
+  * <span data-ttu-id="8a5c1-129">**--all**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-129">**--all**</span></span>
       
-    <span data-ttu-id="eaaef-130">Listet alle Distributionen auf, einschließlich Distributionen, die zurzeit installiert oder deinstalliert werden.</span><span class="sxs-lookup"><span data-stu-id="eaaef-130">List all distributions, including distributions that are currently being installed or uninstalled.</span></span>
+    <span data-ttu-id="8a5c1-130">Listet alle Distributionen auf, einschließlich Distributionen, die zurzeit installiert oder deinstalliert werden.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-130">List all distributions, including distributions that are currently being installed or uninstalled.</span></span>
 
-  * <span data-ttu-id="eaaef-131">**--running**</span><span class="sxs-lookup"><span data-stu-id="eaaef-131">**--running**</span></span>
+  * <span data-ttu-id="8a5c1-131">**--running**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-131">**--running**</span></span>
       
-    <span data-ttu-id="eaaef-132">Listet nur Distributionen auf, die zurzeit ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="eaaef-132">List only distributions that are currently running.</span></span>
+    <span data-ttu-id="8a5c1-132">Listet nur Distributionen auf, die zurzeit ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-132">List only distributions that are currently running.</span></span>
 
-* <span data-ttu-id="eaaef-133">**--set-default, -s \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-133">**--set-default, -s \<Distro>**</span></span>
+* <span data-ttu-id="8a5c1-133">**--set-default, -s \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-133">**--set-default, -s \<Distro>**</span></span>
   
-  <span data-ttu-id="eaaef-134">Legt die Distribution als Standard fest.</span><span class="sxs-lookup"><span data-stu-id="eaaef-134">Sets the distribution as the default.</span></span>
+  <span data-ttu-id="8a5c1-134">Legt die Distribution als Standard fest.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-134">Sets the distribution as the default.</span></span>
 
-* <span data-ttu-id="eaaef-135">**--terminate, -t \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-135">**--terminate, -t \<Distro>**</span></span>
+* <span data-ttu-id="8a5c1-135">**--terminate, -t \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-135">**--terminate, -t \<Distro>**</span></span>
   
-  <span data-ttu-id="eaaef-136">Beendet die angegebene Distribution.</span><span class="sxs-lookup"><span data-stu-id="eaaef-136">Terminates the specified distribution.</span></span>
+  <span data-ttu-id="8a5c1-136">Beendet die angegebene Distribution.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-136">Terminates the specified distribution.</span></span>
 
-* <span data-ttu-id="eaaef-137">**--unregister \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-137">**--unregister \<Distro>**</span></span>
+* <span data-ttu-id="8a5c1-137">**--unregister \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-137">**--unregister \<Distro>**</span></span>
   
-  <span data-ttu-id="eaaef-138">Hebt die Registrierung der Distribution auf.</span><span class="sxs-lookup"><span data-stu-id="eaaef-138">Unregisters the distribution.</span></span>
+  <span data-ttu-id="8a5c1-138">Hebt die Registrierung der Distribution auf.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-138">Unregisters the distribution.</span></span>
    
-* <span data-ttu-id="eaaef-139">**--help**: Zeigt Syntaxinformationen an.</span><span class="sxs-lookup"><span data-stu-id="eaaef-139">**--help** Display usage information.</span></span>
+* <span data-ttu-id="8a5c1-139">**--help**: Zeigt Syntaxinformationen an.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-139">**--help** Display usage information.</span></span>
 
-## <a name="additional-commands"></a><span data-ttu-id="eaaef-140">Weitere Befehle</span><span class="sxs-lookup"><span data-stu-id="eaaef-140">Additional Commands</span></span>
+## <a name="additional-commands"></a><span data-ttu-id="8a5c1-140">Weitere Befehle</span><span class="sxs-lookup"><span data-stu-id="8a5c1-140">Additional Commands</span></span>
 
-<span data-ttu-id="eaaef-141">Es gibt auch historische Befehle für die Interaktion mit dem Windows-Subsystem für Linux.</span><span class="sxs-lookup"><span data-stu-id="eaaef-141">There are also historic commands to interact with the Windows Subsystem for Linux.</span></span> <span data-ttu-id="eaaef-142">Ihre Funktionalität ist in `wsl.exe` enthalten, sie sind jedoch weiterhin zur Verwendung verfügbar.</span><span class="sxs-lookup"><span data-stu-id="eaaef-142">Their functionality is encompassed within `wsl.exe`, but they are still available for use.</span></span> 
+<span data-ttu-id="8a5c1-141">Es gibt auch historische Befehle für die Interaktion mit dem Windows-Subsystem für Linux.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-141">There are also historic commands to interact with the Windows Subsystem for Linux.</span></span> <span data-ttu-id="8a5c1-142">Ihre Funktionalität ist in `wsl.exe` enthalten, sie sind jedoch weiterhin zur Verwendung verfügbar.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-142">Their functionality is encompassed within `wsl.exe`, but they are still available for use.</span></span> 
 
 ### `wslconfig.exe`
 
-<span data-ttu-id="eaaef-143">Mit diesem Befehl können Sie Ihre WSL-Distribution konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="eaaef-143">This command lets you configure your WSL distribution.</span></span> <span data-ttu-id="eaaef-144">Es folgt eine Liste der zugehörigen Optionen.</span><span class="sxs-lookup"><span data-stu-id="eaaef-144">Below is a list of its options.</span></span>
+<span data-ttu-id="8a5c1-143">Mit diesem Befehl können Sie Ihre WSL-Distribution konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-143">This command lets you configure your WSL distribution.</span></span> <span data-ttu-id="8a5c1-144">Es folgt eine Liste der zugehörigen Optionen.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-144">Below is a list of its options.</span></span>
 
-<span data-ttu-id="eaaef-145">Syntax: `wslconfig [Argument] [Options...]`</span><span class="sxs-lookup"><span data-stu-id="eaaef-145">Using: `wslconfig [Argument] [Options...]`</span></span>
+<span data-ttu-id="8a5c1-145">Syntax: `wslconfig [Argument] [Options...]`</span><span class="sxs-lookup"><span data-stu-id="8a5c1-145">Using: `wslconfig [Argument] [Options...]`</span></span>
 
-#### <a name="arguments"></a><span data-ttu-id="eaaef-146">Argumente</span><span class="sxs-lookup"><span data-stu-id="eaaef-146">Arguments</span></span>
-* <span data-ttu-id="eaaef-147">**/l, /list [Optionen]**</span><span class="sxs-lookup"><span data-stu-id="eaaef-147">**/l, /list [Options]**</span></span>
+#### <a name="arguments"></a><span data-ttu-id="8a5c1-146">Argumente</span><span class="sxs-lookup"><span data-stu-id="8a5c1-146">Arguments</span></span>
+* <span data-ttu-id="8a5c1-147">**/l, /list [Optionen]**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-147">**/l, /list [Options]**</span></span>
   
-  <span data-ttu-id="eaaef-148">Listet registrierte Distributionen auf.</span><span class="sxs-lookup"><span data-stu-id="eaaef-148">Lists registered distributions.</span></span>
+  <span data-ttu-id="8a5c1-148">Listet registrierte Distributionen auf.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-148">Lists registered distributions.</span></span>
   
-  <span data-ttu-id="eaaef-149">Optionen:</span><span class="sxs-lookup"><span data-stu-id="eaaef-149">Options:</span></span>
-    * <span data-ttu-id="eaaef-150">**/all**</span><span class="sxs-lookup"><span data-stu-id="eaaef-150">**/all**</span></span>
+  <span data-ttu-id="8a5c1-149">Optionen:</span><span class="sxs-lookup"><span data-stu-id="8a5c1-149">Options:</span></span>
+    * <span data-ttu-id="8a5c1-150">**/all**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-150">**/all**</span></span>
     
-      <span data-ttu-id="eaaef-151">Listet optional alle Distributionen auf, einschließlich Distributionen, die zurzeit installiert oder deinstalliert werden.</span><span class="sxs-lookup"><span data-stu-id="eaaef-151">Optionally list all distributions, including distributions that are currently being installed or uninstalled.</span></span>
+      <span data-ttu-id="8a5c1-151">Listet optional alle Distributionen auf, einschließlich Distributionen, die zurzeit installiert oder deinstalliert werden.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-151">Optionally list all distributions, including distributions that are currently being installed or uninstalled.</span></span>
 
-    * <span data-ttu-id="eaaef-152">**/running**</span><span class="sxs-lookup"><span data-stu-id="eaaef-152">**/running**</span></span>
+    * <span data-ttu-id="8a5c1-152">**/running**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-152">**/running**</span></span>
       
-      <span data-ttu-id="eaaef-153">Listet nur Distributionen auf, die zurzeit ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="eaaef-153">List only distributions that are currently running.</span></span>
+      <span data-ttu-id="8a5c1-153">Listet nur Distributionen auf, die zurzeit ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-153">List only distributions that are currently running.</span></span>
 
-* <span data-ttu-id="eaaef-154">**/s, /setdefault \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-154">**/s, /setdefault \<Distro>**</span></span>
+* <span data-ttu-id="8a5c1-154">**/s, /setdefault \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-154">**/s, /setdefault \<Distro>**</span></span>
   
-  <span data-ttu-id="eaaef-155">Legt die Distribution als Standard fest.</span><span class="sxs-lookup"><span data-stu-id="eaaef-155">Sets the distribution as the default.</span></span>
+  <span data-ttu-id="8a5c1-155">Legt die Distribution als Standard fest.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-155">Sets the distribution as the default.</span></span>
 
-* <span data-ttu-id="eaaef-156">**/t, /terminate \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-156">**/t, /terminate \<Distro>**</span></span>
+* <span data-ttu-id="8a5c1-156">**/t, /terminate \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-156">**/t, /terminate \<Distro>**</span></span>
   
-  <span data-ttu-id="eaaef-157">Beendet die Distribution.</span><span class="sxs-lookup"><span data-stu-id="eaaef-157">Terminates the distribution.</span></span>
+  <span data-ttu-id="8a5c1-157">Beendet die Distribution.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-157">Terminates the distribution.</span></span>
 
-* <span data-ttu-id="eaaef-158">**/u, /unregister \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-158">**/u, /unregister \<Distro>**</span></span>
+* <span data-ttu-id="8a5c1-158">**/u, /unregister \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-158">**/u, /unregister \<Distro>**</span></span>
   
-  <span data-ttu-id="eaaef-159">Hebt die Registrierung der Distribution auf.</span><span class="sxs-lookup"><span data-stu-id="eaaef-159">Unregisters the distribution.</span></span>
+  <span data-ttu-id="8a5c1-159">Hebt die Registrierung der Distribution auf.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-159">Unregisters the distribution.</span></span>
    
-* <span data-ttu-id="eaaef-160">**/upgrade \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="eaaef-160">**/upgrade \<Distro>**</span></span>
+* <span data-ttu-id="8a5c1-160">**/upgrade \<Distribution>**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-160">**/upgrade \<Distro>**</span></span>
   
-  <span data-ttu-id="eaaef-161">Führt ein Upgrade der Distribution auf das WslFs-Dateisystemformat durch.</span><span class="sxs-lookup"><span data-stu-id="eaaef-161">Upgrades the distribution to the WslFs file system format.</span></span>
+  <span data-ttu-id="8a5c1-161">Führt ein Upgrade der Distribution auf das WslFs-Dateisystemformat durch.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-161">Upgrades the distribution to the WslFs file system format.</span></span>
 
 ### `bash.exe`
 
-<span data-ttu-id="eaaef-162">Dieser Befehl wird verwendet, um eine Bash-Shell zu starten.</span><span class="sxs-lookup"><span data-stu-id="eaaef-162">This command is used to start a bash shell.</span></span> <span data-ttu-id="eaaef-163">Unten finden Sie die Optionen, die Sie mit diesem Befehl verwenden können.</span><span class="sxs-lookup"><span data-stu-id="eaaef-163">Below are the options you can use with this command.</span></span>
+<span data-ttu-id="8a5c1-162">Dieser Befehl wird verwendet, um eine Bash-Shell zu starten.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-162">This command is used to start a bash shell.</span></span> <span data-ttu-id="8a5c1-163">Unten finden Sie die Optionen, die Sie mit diesem Befehl verwenden können.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-163">Below are the options you can use with this command.</span></span>
 
-<span data-ttu-id="eaaef-164">Syntax: `bash [Options...]`</span><span class="sxs-lookup"><span data-stu-id="eaaef-164">Using: `bash [Options...]`</span></span>
+<span data-ttu-id="8a5c1-164">Syntax: `bash [Options...]`</span><span class="sxs-lookup"><span data-stu-id="8a5c1-164">Using: `bash [Options...]`</span></span>
 
-* <span data-ttu-id="eaaef-165">**Keine Option angegeben**</span><span class="sxs-lookup"><span data-stu-id="eaaef-165">**No Option given**</span></span>
+* <span data-ttu-id="8a5c1-165">**Keine Option angegeben**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-165">**No Option given**</span></span>
   
-  <span data-ttu-id="eaaef-166">Startet die Bash-Shell im aktuellen Verzeichnis.</span><span class="sxs-lookup"><span data-stu-id="eaaef-166">Launches the Bash shell in the current directory.</span></span> <span data-ttu-id="eaaef-167">Wenn die Bash-Shell nicht installiert ist, wird automatisch `lxrun /install` ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="eaaef-167">If the Bash shell is not installed automatically runs `lxrun /install`</span></span>
+  <span data-ttu-id="8a5c1-166">Startet die Bash-Shell im aktuellen Verzeichnis.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-166">Launches the Bash shell in the current directory.</span></span> <span data-ttu-id="8a5c1-167">Wenn die Bash-Shell nicht installiert ist, wird automatisch `lxrun /install` ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-167">If the Bash shell is not installed automatically runs `lxrun /install`</span></span>
 
 * **~**
   
-  <span data-ttu-id="eaaef-168">`bash ~` startet die Bash-Shell im Basisverzeichnis des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="eaaef-168">`bash ~` launches the bash shell into the user's home directory.</span></span>  <span data-ttu-id="eaaef-169">Vergleichbar mit der Ausführung von `cd ~`.</span><span class="sxs-lookup"><span data-stu-id="eaaef-169">Similar to running `cd ~`.</span></span>
+  <span data-ttu-id="8a5c1-168">`bash ~` startet die Bash-Shell im Basisverzeichnis des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-168">`bash ~` launches the bash shell into the user's home directory.</span></span>  <span data-ttu-id="8a5c1-169">Vergleichbar mit der Ausführung von `cd ~`.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-169">Similar to running `cd ~`.</span></span>
 
-* <span data-ttu-id="eaaef-170">**-c "\<Befehl>"**</span><span class="sxs-lookup"><span data-stu-id="eaaef-170">**-c "\<command>"**</span></span>
+* <span data-ttu-id="8a5c1-170">**-c "\<Befehl>"**</span><span class="sxs-lookup"><span data-stu-id="8a5c1-170">**-c "\<command>"**</span></span>
   
-  <span data-ttu-id="eaaef-171">Führt den Befehl aus, gibt die Ausgabe aus, und kehrt zur Windows-Eingabeaufforderung zurück.</span><span class="sxs-lookup"><span data-stu-id="eaaef-171">Runs the command, prints the output and exits back to the Windows command prompt.</span></span>
+  <span data-ttu-id="8a5c1-171">Führt den Befehl aus, gibt die Ausgabe aus, und kehrt zur Windows-Eingabeaufforderung zurück.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-171">Runs the command, prints the output and exits back to the Windows command prompt.</span></span>
     
-  <span data-ttu-id="eaaef-172">Beispiel: `bash -c "ls"`.</span><span class="sxs-lookup"><span data-stu-id="eaaef-172">Example:  `bash -c "ls"`.</span></span>
+  <span data-ttu-id="8a5c1-172">Beispiel: `bash -c "ls"`.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-172">Example:  `bash -c "ls"`.</span></span>
 
-## <a name="deprecated-commands"></a><span data-ttu-id="eaaef-173">Veraltete Befehle</span><span class="sxs-lookup"><span data-stu-id="eaaef-173">Deprecated Commands</span></span>
+## <a name="deprecated-commands"></a><span data-ttu-id="8a5c1-173">Veraltete Befehle</span><span class="sxs-lookup"><span data-stu-id="8a5c1-173">Deprecated Commands</span></span>
 
-<span data-ttu-id="eaaef-174">`lxrun.exe` war der erste Befehl, der zum Installieren und Verwalten des Windows-Subsystems für Linux verwendet wurde.</span><span class="sxs-lookup"><span data-stu-id="eaaef-174">The `lxrun.exe` was the first command used to install and manage the Windows Subsystem for Linux.</span></span> <span data-ttu-id="eaaef-175">Er gilt ab Windows 10 Version 1803 und höher als veraltet.</span><span class="sxs-lookup"><span data-stu-id="eaaef-175">It is deprecated as of Windows 10 1803 and later.</span></span>
+<span data-ttu-id="8a5c1-174">`lxrun.exe` war der erste Befehl, der zum Installieren und Verwalten des Windows-Subsystems für Linux verwendet wurde.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-174">The `lxrun.exe` was the first command used to install and manage the Windows Subsystem for Linux.</span></span> <span data-ttu-id="8a5c1-175">Er gilt ab Windows 10 Version 1803 und höher als veraltet.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-175">It is deprecated as of Windows 10 1803 and later.</span></span>
 
-<span data-ttu-id="eaaef-176">Der Befehl `lxrun.exe` kann verwendet werden, um direkt mit dem [Windows-Subsystem für Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/faq#what-windows-subsystem-for-linux-wsl-) zu interagieren.</span><span class="sxs-lookup"><span data-stu-id="eaaef-176">The command `lxrun.exe` can be used to interact with the [Windows Subsystem for Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/faq#what-windows-subsystem-for-linux-wsl-) directly.</span></span>  <span data-ttu-id="eaaef-177">Diese Befehle werden im Verzeichnis `\Windows\System32` installiert und können in einer Windows-Eingabeaufforderung oder in PowerShell ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="eaaef-177">These commands are installed into the `\Windows\System32` directory and may be run within a Windows command prompt or in PowerShell.</span></span>
+<span data-ttu-id="8a5c1-176">Der Befehl `lxrun.exe` kann verwendet werden, um direkt mit dem [Windows-Subsystem für Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/faq#what-windows-subsystem-for-linux-wsl-) zu interagieren.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-176">The command `lxrun.exe` can be used to interact with the [Windows Subsystem for Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/faq#what-windows-subsystem-for-linux-wsl-) directly.</span></span>  <span data-ttu-id="8a5c1-177">Diese Befehle werden im Verzeichnis `\Windows\System32` installiert und können in einer Windows-Eingabeaufforderung oder in PowerShell ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-177">These commands are installed into the `\Windows\System32` directory and may be run within a Windows command prompt or in PowerShell.</span></span>
 
-| <span data-ttu-id="eaaef-178">Befehl</span><span class="sxs-lookup"><span data-stu-id="eaaef-178">Command</span></span>                     | <span data-ttu-id="eaaef-179">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="eaaef-179">Description</span></span>                     |
+| <span data-ttu-id="8a5c1-178">Befehl</span><span class="sxs-lookup"><span data-stu-id="8a5c1-178">Command</span></span>                     | <span data-ttu-id="8a5c1-179">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8a5c1-179">Description</span></span>                     |
 |:----------------------------|:---------------------------|
-| `lxrun`                     | <span data-ttu-id="eaaef-180">Der lxrun-Befehl wird verwendet, um die WSL-Instanz zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="eaaef-180">The lxrun command is used to manage the WSL instance.</span></span> |
-| `lxrun /install`            | <span data-ttu-id="eaaef-181">Startet den Download- und Installationsvorgang.</span><span class="sxs-lookup"><span data-stu-id="eaaef-181">Starts the download and install process.</span></span> <br/> <span data-ttu-id="eaaef-182">**/y** kann hinzugefügt werden, um alle Eingabeaufforderungen zu umgehen.</span><span class="sxs-lookup"><span data-stu-id="eaaef-182">**/y** may be added to bypass all prompts.</span></span>  <span data-ttu-id="eaaef-183">Die Bestätigungsaufforderung wird automatisch akzeptiert, und der Standardbenutzer wird auf „root“ festgelegt.</span><span class="sxs-lookup"><span data-stu-id="eaaef-183">The confirmation prompt is automatically accepted and the default user is set to root.</span></span>          |
-| `lxrun /uninstall`          | <span data-ttu-id="eaaef-184">Deinstalliert und löscht das Ubuntu-Image.</span><span class="sxs-lookup"><span data-stu-id="eaaef-184">Uninstalls and deletes the Ubuntu image.</span></span>  <span data-ttu-id="eaaef-185">Standardmäßig wird hierdurch nicht das Ubuntu-Basisverzeichnis des Benutzers entfernt.</span><span class="sxs-lookup"><span data-stu-id="eaaef-185">By default this does not remove the user's Ubuntu home directory.</span></span> <br/> <span data-ttu-id="eaaef-186">**/y** kann hinzugefügt werden, um die Bestätigungsaufforderung automatisch zu akzeptieren.</span><span class="sxs-lookup"><span data-stu-id="eaaef-186">**/y** may be added to automatically accept the confirmation prompt</span></span> <br/><span data-ttu-id="eaaef-187">**/full** deinstalliert und löscht das Ubuntu-Basisverzeichnis des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="eaaef-187">**/full** uninstalls and deletes the user's Ubuntu home directory</span></span>         |
-| `lxrun /setdefaultuser <userName>`     | <span data-ttu-id="eaaef-188">Legt die Standard-Bash für den Ubuntu-Benutzer fest.</span><span class="sxs-lookup"><span data-stu-id="eaaef-188">Sets the default Bash on Ubuntu user.</span></span> <span data-ttu-id="eaaef-189">Fordert zur Eingabe eines Kennworts auf, wenn der angegebene Benutzer nicht vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="eaaef-189">Will prompt for a password if the specified user does not exist.</span></span>  <span data-ttu-id="eaaef-190">Weitere Informationen finden Sie unter https://aka.ms/wslusers.</span><span class="sxs-lookup"><span data-stu-id="eaaef-190">For more information visit: https://aka.ms/wslusers.</span></span> <br/> <span data-ttu-id="eaaef-191">**/y** umgeht die Eingabeaufforderung für das Kennwort.</span><span class="sxs-lookup"><span data-stu-id="eaaef-191">**/y** Bypasses promping for the password.</span></span>  <span data-ttu-id="eaaef-192">Der Benutzer wird ohne Kennwort erstellt.</span><span class="sxs-lookup"><span data-stu-id="eaaef-192">The user will be created without a password.</span></span>|
-| `lxrun /update`            | <span data-ttu-id="eaaef-193">Aktualisiert den Paketindex des Subsystems.</span><span class="sxs-lookup"><span data-stu-id="eaaef-193">Updates the subsystem's package index</span></span>          |
+| `lxrun`                     | <span data-ttu-id="8a5c1-180">Der lxrun-Befehl wird verwendet, um die WSL-Instanz zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-180">The lxrun command is used to manage the WSL instance.</span></span> |
+| `lxrun /install`            | <span data-ttu-id="8a5c1-181">Startet den Download- und Installationsvorgang.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-181">Starts the download and install process.</span></span> <br/> <span data-ttu-id="8a5c1-182">**/y** kann hinzugefügt werden, um alle Eingabeaufforderungen zu umgehen.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-182">**/y** may be added to bypass all prompts.</span></span>  <span data-ttu-id="8a5c1-183">Die Bestätigungsaufforderung wird automatisch akzeptiert, und der Standardbenutzer wird auf „root“ festgelegt.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-183">The confirmation prompt is automatically accepted and the default user is set to root.</span></span>          |
+| `lxrun /uninstall`          | <span data-ttu-id="8a5c1-184">Deinstalliert und löscht das Ubuntu-Image.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-184">Uninstalls and deletes the Ubuntu image.</span></span>  <span data-ttu-id="8a5c1-185">Standardmäßig wird hierdurch nicht das Ubuntu-Basisverzeichnis des Benutzers entfernt.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-185">By default this does not remove the user's Ubuntu home directory.</span></span> <br/> <span data-ttu-id="8a5c1-186">**/y** kann hinzugefügt werden, um die Bestätigungsaufforderung automatisch zu akzeptieren.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-186">**/y** may be added to automatically accept the confirmation prompt</span></span> <br/><span data-ttu-id="8a5c1-187">**/full** deinstalliert und löscht das Ubuntu-Basisverzeichnis des Benutzers.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-187">**/full** uninstalls and deletes the user's Ubuntu home directory</span></span>         |
+| `lxrun /setdefaultuser <userName>`     | <span data-ttu-id="8a5c1-188">Legt die Standard-Bash für den Ubuntu-Benutzer fest.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-188">Sets the default Bash on Ubuntu user.</span></span> <span data-ttu-id="8a5c1-189">Fordert zur Eingabe eines Kennworts auf, wenn der angegebene Benutzer nicht vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-189">Will prompt for a password if the specified user does not exist.</span></span>  <span data-ttu-id="8a5c1-190">Weitere Informationen finden Sie unter https://aka.ms/wslusers.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-190">For more information visit: https://aka.ms/wslusers.</span></span> <br/> <span data-ttu-id="8a5c1-191">**/y** umgeht die Eingabeaufforderung für das Kennwort.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-191">**/y** Bypasses promping for the password.</span></span>  <span data-ttu-id="8a5c1-192">Der Benutzer wird ohne Kennwort erstellt.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-192">The user will be created without a password.</span></span>|
+| `lxrun /update`            | <span data-ttu-id="8a5c1-193">Aktualisiert den Paketindex des Subsystems.</span><span class="sxs-lookup"><span data-stu-id="8a5c1-193">Updates the subsystem's package index</span></span>          |
