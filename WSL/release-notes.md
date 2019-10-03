@@ -8,14 +8,22 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 9dfd4704eee537c053d874d6fcee47b70efbc33c
-ms.sourcegitcommit: 212d3e0092dbc584a8422de47599a4ce46f0f016
+ms.openlocfilehash: 0dcf4519877fac5b838d4542dfd088cb6d233353
+ms.sourcegitcommit: 0fa3b02b36dc49779e165e689dfded4f3b727124
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70902421"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71249186"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Anmerkungen zu dieser Version des Windows-Subsystems für Linux
+
+## <a name="build-18990"></a>Build 18990
+Allgemeine Windows-Informationen zu Build 18990 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/09/24/announcing-windows-10-insider-preview-build-18990/).
+
+* Verbessern der Leistung für Verzeichnisauflistungen in \\wsl$
+* [WSL2] Einführen zusätzlicher Entropie beim Systemstart [GH 4416]
+* [WSL2] Problembehebung für Windows-Interop bei der Verwendung von „su“ / „sudo“ [GH 4465]
+
 
 ## <a name="build-18980"></a>Build 18980
 Allgemeine Windows-Informationen zu Build 18980 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/09/11/announcing-windows-10-insider-preview-build-18980/).
@@ -672,7 +680,7 @@ Tests werden zurzeit ausgeführt.
 
 Allgemeine Windows-Informationen zu Build 17046 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/11/22/announcing-windows-10-insider-preview-build-17046-pc).
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Ermöglicht das Ausführen von Prozessen ohne ein aktives Terminal. [GH 709, 1007, 1511, 2252, 2391 usw.]
 - Bessere Unterstützung von CLONE_VFORK und CLONE_VM. [GH 1878, 2615]
@@ -705,7 +713,7 @@ Tests werden zurzeit ausgeführt.
 Allgemeine Windows-Informationen zu Build 17040 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/11/16/announcing-windows-10-insider-preview-build-17040-pc).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Keine Korrekturen seit 17035.
 
@@ -720,7 +728,7 @@ Tests werden zurzeit ausgeführt.
 Allgemeine Windows-Informationen zu Build 17035 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/11/08/announcing-windows-10-insider-preview-build-17035-pc).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Der Zugriff auf Dateien auf DrvFs kann gelegentlich mit EINVAL fehlschlagen. [GH 2448]
 
@@ -735,7 +743,7 @@ Tests werden zurzeit ausgeführt.
 Allgemeine Windows-Informationen zu Build 17025 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/10/25/announcing-windows-10-insider-preview-build-17025-pc).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Starten anfänglicher Prozesse in einer neuen Vordergrundprozessgruppe [GH 1653, 2510].
 - Korrekturen der SIGHUP-Übermittlung [GH 2496].
@@ -755,7 +763,7 @@ Tests werden zurzeit ausgeführt.
 Allgemeine Windows-Informationen zu Build 17017 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/10/13/announcing-windows-10-insider-preview-build-17017-pc).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Ignorieren leerer ELF-Programmheader [GH 330].
 - Ermöglichen, dass LxssManager WSL-Instanzen für nicht interaktive Benutzer erstellt (Unterstützung für SSH und geplante Aufgaben) [GH 777, 1602].
@@ -783,7 +791,7 @@ Tests werden zurzeit ausgeführt.
 Allgemeine Windows-Informationen zu Build 16288 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/09/12/announcing-windows-10-insider-preview-build-16288-pc-build-15250-mobile/#7pLWQbj23JisfzV5.97/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Ordnungsgemäße Initialisierung und Meldung von uid, gid und Modus für Socketdateideskriptoren [GH 2490]
 - Weitere Verbesserungen und Fehlerbehebungen
@@ -799,7 +807,7 @@ Keine Änderung seit 16273
 Allgemeine Windows-Informationen zu Build 162738 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/08/29/announcing-windows-10-insider-preview-build-16278-pc/#HMz6Xq7Su68WKi0t.97/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Explizite Aufhebung der Zuordnung zugeordneter Ansichten von dateigestützten Abschnitten beim Beenden des LX MM-Status [GH 2415]
 - Weitere Verbesserungen und Fehlerbehebungen
@@ -815,7 +823,7 @@ Keine Änderung seit 16273
 Allgemeine Windows-Informationen zu Build 162735 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/08/25/announcing-windows-10-insider-preview-build-16275-pc-build-15245-mobile/#8QkxWqQbY37yZslV.97/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - In diesem Release gibt es keine WSL-bezogenen Änderungen.
 
@@ -830,7 +838,7 @@ Keine Änderung seit 16273
 Allgemeine Windows-Informationen zu Build 16273 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/08/23/announcing-windows-10-insider-preview-build-16273-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Korrektur eines Problems, bei dem DrvFs manchmal den falschen Dateityp für Verzeichnisse gemeldet hat [GH 2392]
 - Ermöglichen der Erstellung von NETLINK_KOBJECT_UEVENT-Sockets zum Entsperren von Programmen, die uevent verwenden [GH 1121, 2293, 2242, 2295, 2235, 648, 637]
@@ -864,7 +872,7 @@ Fehler gesamt: 229<br/>
 Allgemeine Windows-Informationen zu Build 16257 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/08/02/announcing-windows-10-insider-preview-build-16257-pc-build-15237-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Implementieren des prlimit64-Systemaufrufs
 - Hinzufügen von Unterstützung für ulimit -n (setrlimit RLIMIT_NOFILE) [GH 1688]
@@ -902,7 +910,7 @@ Dieses Problem wurde behoben und sollte im Insider-Builds in der Woche ab dem 14
 Allgemeine Windows-Informationen zu Build 16251 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/07/26/announcing-windows-10-insider-preview-build-16251-pc-build-15235-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - Entfernen des Beta-Tags aus der optionalen WSL-Komponente. Weitere Informationen finden Sie im [Blogbeitrag](https://blogs.msdn.microsoft.com/commandline/2017/07/28/windows-subsystem-for-linux-out-of-beta/).
 - Ordnungsgemäße Initialisierung der saved-set uid und gid für set-user-ID- and set-group-ID-Binärdateien bei der Ausführung [GH 962, 1415, 2072]
@@ -927,7 +935,7 @@ Anzahl übersprungener Tests: 96</br>
 Allgemeine Windows-Informationen zu Build 16241 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/07/13/announcing-windows-10-insider-preview-build-16241-pc-build-15230-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 #### <a name="wsl"></a>WSL
 - In diesem Release gibt es keine WSL-bezogenen Änderungen.
 
@@ -952,7 +960,7 @@ Allgemeine Windows-Informationen zu Build 16241 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 16237 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/07/07/announcing-windows-10-insider-preview-build-16237-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Verwenden von Standardattributen für Dateien ohne E/As in lxfs (root, root, 0000)
 - Hinzufügen von Unterstützung für Distributionen, die erweiterte Attribute verwenden
 - Korrektur des Auffüllens für von getdents und getdents64 zurückgegebene Einträge
@@ -972,7 +980,7 @@ Allgemeine Windows-Informationen zu Build 16237 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 16232 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - In diesem Release gibt es keine WSL-bezogenen Änderungen.
 
 </br>
@@ -982,7 +990,7 @@ Allgemeine Windows-Informationen zu Build 16232 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 16226 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/06/21/announcing-windows-10-insider-preview-build-16226-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Unterstützung von auf xattr bezogenen Systemaufrufen (getxattr, setxattr, listxattr, removexattr).
 - xattr-Unterstützung für security.capablity.
 - Verbesserte Kompatibilität mit bestimmten Dateisystemen und Filtern, einschließlich Nicht-MS-SMB-Servern. [GH #1952]
@@ -996,7 +1004,7 @@ Allgemeine Windows-Informationen zu Build 16226 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 16215 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/06/08/announcing-windows-10-insider-preview-build-16215-pc-build-15222-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Für WSL ist der Entwicklermodus nicht mehr erforderlich.
 - Unterstützung von Verzeichnisverbindungen in drvfs.
 - Verarbeiten der Deinstallation von appx-Paketen der WSL-Distribution.
@@ -1013,7 +1021,7 @@ Allgemeine Windows-Informationen zu Build 16215 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 16199 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/05/17/announcing-windows-10-insider-preview-build-16199-pc-build-15215-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - In diesen Releases gibt es keine WSL-bezogenen Änderungen.
 
 </br>
@@ -1023,7 +1031,7 @@ Allgemeine Windows-Informationen zu Build 16199 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 16193 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/05/11/announcing-windows-10-insider-preview-build-16193-pc-build-15213-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Racebedingung zwischen dem Senden von SIGCONT und einer Threadgruppe, die beendet wird [GH 1973]
 - Ändern von TTY-und PTY-Geräten zum Melden von FILE_DEVICE_NAMED_PIPE anstelle von FILE_DEVICE_CONSOLE [GH 1840]
 - SSH-Korrektur für IP_OPTIONS
@@ -1037,7 +1045,7 @@ Allgemeine Windows-Informationen zu Build 16193 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 16184 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/04/28/announcing-windows-10-insider-preview-build-16184-pc-build-15208-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Entfernen des apt-Paketverwaltungstasks (lxrun.exe /update) wurde entfernt.
 - Korrektur der Nichtanzeige der Ausgabe aus Windows-Prozessen in node.js [GH 1840]
 - Lockern der Ausrichtungsanforderungen in lxcore [GH 1794]
@@ -1052,7 +1060,7 @@ Allgemeine Windows-Informationen zu Build 16184 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 16179 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/04/19/announcing-windows-10-insider-preview-build-16179-pc-build-15205-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Keine WSL-Änderungen in dieser Woche.
 
 </br>
@@ -1062,7 +1070,7 @@ Allgemeine Windows-Informationen zu Build 16179 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 16176 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/04/14/announcing-windows-10-insider-preview-build-16176-pc-build-15204-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - [Aktivierte serielle Unterstützung](https://blogs.msdn.microsoft.com/wsl/2017/04/14/serial-support-on-the-windows-subsystem-for-linux/)
 - Hinzufügen der IP-Socketoption IP_OPTIONS [GH 1116]
@@ -1090,7 +1098,7 @@ Allgemeine Windows-Informationen zu Build 16170 finden Sie im [Windows-Blog](htt
 
 Wir haben einen neuen [Blogbeitrag](https://blogs.msdn.microsoft.com/wsl/2017/04/11/testing-the-windows-subsystem-for-linux/) veröffentlicht, in dem unsere Anstrengungen beim Testen von WSL erläutert werden.
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Unterstützung für Socketoption IP_ADD_MEMBERSHIP und IPV6_ADD_MEMBERSHIP [GH 1678]
 - Hinzufügen von Unterstützung für PTRACE_OLDSETOPTIONS. [GH 1692]
@@ -1110,7 +1118,7 @@ Es gibt keine weiteren WSL-Korrekturen oder-Funktionen, die für die Einbindung 
 Allgemeine Windows-Informationen zu Build 15042 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/02/24/announcing-windows-10-insider-preview-build-15042-pc-build-15043-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Korrektur eines Deadlocks beim Entfernen eines Pfades, der auf „..“ endet
 - Korrektur eines Problems, bei dem FIONBIO bei Erfolg 0 zurückgibt [GH 1683]
@@ -1130,7 +1138,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 255
 Allgemeine Windows-Informationen zu Build 15031 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/02/08/announcing-windows-10-insider-preview-build-15031-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Korrektur eines Fehlers, bei dem sich time(2) sporadisch falsch verhielt.
 - Korrektur eines Problems, bei dem *SIGPROCMASK-Systemaufrufe die Signalmaske beschädigen konnten.
@@ -1153,7 +1161,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 255 </br>
 Allgemeine Windows-Informationen zu Build 15025 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/02/01/announcing-windows-10-insider-preview-build-15025-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Korrektur eines Fehlers, bei dem grep 2.27 nicht mehr funktioniert [GH 1578]
 - Implementierung des EFD_SEMAPHORE-Flags für den eventfd2-Systemaufruf [GH 452]
@@ -1183,7 +1191,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 255 </br>
 Allgemeine Windows-Informationen zu Build 15019 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/01/27/announcing-windows-10-insider-preview-build-15019-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Korrektur eines Fehlers, der fälschlicherweise die CPU-Auslastung in procfs für Tools wie htop gemeldet hat [GH 823, 945, 971]
 - Beim Aufrufen von open() mit O_TRUNC für eine vorhandene Datei „inotify“ wird nun IN_MODIFY vor IN_OPEN generiert
@@ -1205,7 +1213,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 249 </br>
 Allgemeine Windows-Informationen zu Build 15014 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2017/01/19/announcing-windows-10-insider-preview-build-15014-for-pc-and-mobile-hello-windows-insiders-today-we-are-excited-to-be-releasing-windows-10-insider-preview-build-15014-for-pc-and-mobile).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - STRG+C funktioniert nun wie beabsichtigt
 - htop und ps auxw zeigen jetzt die richtige Ressourcenverwendung an (GH #516)
@@ -1242,7 +1250,7 @@ Allgemeine Windows-Informationen zu Build 15007 finden Sie im [Windows-Blog]( ht
 
   - Problemumgehung: Ordnen Sie STRG+C eine alternative Taste zu. Gehen Sie beispielsweise folgendermaßen vor, um STRG+K der Tastenkombination STRG+C zuzuordnen: `stty intr \^k`.  Diese Zuordnung erfolgt pro Terminal und muss *jedes* Mal ausgeführt werden, wenn Bash gestartet wird. Benutzer können die Option zum Einbeziehen in ihre `.bashrc`-Datei untersuchen
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Korrektur eines Problems, bei dem die Ausführung von WSL 100 % eines CPU-Kerns verbraucht
 - Socketoption IP_PKTINFO, IPV6_RECVPKTINFO wird jetzt unterstützt. (GH #851, 987)
@@ -1270,7 +1278,7 @@ Zwei bekannte Probleme:
 
 - Während der Ausführung von WSL werden von einem Systemthread 100 % eines CPU-Kerns beansprucht.  Die Ursache wurde untersucht und intern behoben.
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Alle Bash-Sitzungen müssen jetzt auf derselben Berechtigungsebene erstellt werden.  Der Versuch, eine Sitzung auf einer anderen Ebene zu starten, wird blockiert.  Dies bedeutet, dass Administrator-und Nicht-Administratorkonsolen nicht gleichzeitig ausgeführt werden können. (GH #626)
 <br/>
@@ -1328,7 +1336,7 @@ Im folgenden finden Sie eine Liste der neuen oder verbesserten Systemaufrufe, di
 Allgemeine Windows-Informationen zu Build 14986 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/12/07/announcing-windows-10-insider-preview-build-14986-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Korrektur von Fehlerüberprüfungen mit Netlink und Pty IOCTLs
 - Kernel Version meldet nun 4.4.0-43 aus Gründen der Konsistenz mit Xenial
@@ -1363,7 +1371,7 @@ Im folgenden finden Sie eine Liste der neuen oder verbesserten Systemaufrufe, di
 Allgemeine Windows-Informationen zu Build 14971 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/11/17/announcing-windows-10-insider-preview-build-14971-for-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
  - Aufgrund von Umständen, die sich unserer Kontrolle entziehen, gibt es in diesem Build keine Updates für das Windows-Subsystem für Linux.  Regelmäßig geplante Updates werden mit dem nächsten Release fortgesetzt.
 
@@ -1380,7 +1388,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 263 </br>
 Allgemeine Windows-Informationen zu Build 14965 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/11/09/announcing-windows-10-insider-preview-build-14965-for-mobile-and-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Unterstützung für Netlink-Sockets RTM_GETLINK und RTM_GETADDR des NETLINK_ROUTE-Protokolls (GH #468)
   - Aktiviert ifconfig- und ip-Befehle für die Netzwerkenumeration.
@@ -1418,7 +1426,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 263 </br>
 Allgemeine Windows-Informationen zu Build 14959 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/11/03/announcing-windows-10-insider-preview-build-14959-for-mobile-and-pc/#iI82GufJxMF3POU1.97).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Verbesserte Pico-Prozessbenachrichtigung für Windows.  Weitere Informationen finden Sie im [WSL-Blog](https://blogs.msdn.microsoft.com/wsl/2016/11/01/wsl-antivirus-and-firewall-compatibility/).
 - Verbesserte Stabilität mit Windows-Interoperabilität
@@ -1437,7 +1445,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 263 </br>
 Allgemeine Windows-Informationen zu Build 14955 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/10/25/announcing-windows-10-insider-preview-build-14955-for-mobile-and-pc/#guGXQzKVFrZIDUYR.97).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
  - Aufgrund von Umständen, die sich unserer Kontrolle entziehen, gibt es in diesem Build keine Updates für das Windows-Subsystem für Linux.  Regelmäßig geplante Updates werden mit dem nächsten Release fortgesetzt.
 
@@ -1469,7 +1477,7 @@ Weitere Informationen finden Sie hier:
 - [WSL-Teamblog für Interop](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/)<br/>
 - [MSDN-Interop-Dokumentation](https://msdn.microsoft.com/en-us/commandline/wsl/interop)<br/>
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Ubuntu 16.04 (Xenial) wird jetzt für alle neuen WSL-Instanzen installiert.  Benutzer mit vorhandenen 14.04-Instanzen (Trusty) erhalten kein automatisches Upgrade.
 - Das während der Installation festgelegte Gebietsschema wird jetzt angezeigt
@@ -1490,7 +1498,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 263 </br>
 Allgemeine Windows-Informationen zu Build 14946 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/10/13/announcing-windows-10-insider-preview-build-14946-for-pc-and-mobile/#xj8GdVooEqo4H7H7.97).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Korrektur eines Problems, das das Erstellen von WSL-Benutzerkonten für Benutzer mit NT-Benutzernamen verhindert hat, die Leerzeichen oder Anführungszeichen enthalten. 
 - Änderung von VolFs und DrvFs, damit 0 für die Verknüpfungsanzahl des Verzeichnisses im Status zurückgegeben wird
@@ -1515,7 +1523,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 263 </br>
 Allgemeine Windows-Informationen zu Build 14942 finden Sie im [Windows-Blog](https://aka.ms/onefourninefourtwoooooo).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Eine Reihe von Fehlerüberprüfungen, einschließlich des Netzwerkabsturzes durch „ATTEMPTED EXECUTE OF NOEXECUTE MEMORY“, der SSH blockiert hat
 - inotify-Unterstützung für Benachrichtigungen, die von Windows-Anwendungen auf DrvFs generiert werden
@@ -1546,7 +1554,7 @@ Hinweis: WSL wird in einem zukünftigen Release Ubuntu Version 16.04 (Xenial) an
 ### <a name="known-issue"></a>Bekanntes Problem
 Bei WSL treten Probleme mit einigen Socketimplementierungen auf.  Die Fehlerüberprüfung manifestiert sich als Absturz mit dem Fehler „ATTEMPTED EXECUTE OF NOEXECUTE MEMORY“.  Die häufigste Variante dieses Problems ist ein Absturz bei der Verwendung von SSH.  Die Ursache ist bei internen Builds korrigiert und wird so bald wie möglich in Insider gepusht.
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Der chroot-Systemaufruf wurde implementiert.
 - Verbesserungen in inotify ~~einschließlich Unterstützung für Benachrichtigungen, die von Windows-Anwendungen auf DrvFs generiert werden~~
@@ -1577,7 +1585,7 @@ Im folgenden finden Sie eine Liste der neuen oder verbesserten Systemaufrufe, di
 Allgemeine Windows-Informationen zu Build 14931 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/09/21/announcing-windows-10-insider-preview-build-14931-for-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
  - Aufgrund von Umständen, die sich unserer Kontrolle entziehen, gibt es in diesem Build keine Updates für das Windows-Subsystem für Linux.  Regelmäßig geplante Updates werden mit dem nächsten Release fortgesetzt.
 
@@ -1588,7 +1596,7 @@ Allgemeine Windows-Informationen zu Build 14931 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 14926 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/09/14/announcing-windows-10-insider-preview-build-14926-for-pc-and-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 
 - Ping funktioniert nun in Konsolen, die nicht über Administratorberechtigungen verfügen.
 - Ping6 wird jetzt auch ohne Administratorberechtigungen unterstützt.
@@ -1613,7 +1621,7 @@ Anzahl nicht bestandener Tests (fehlerhaft, übersprungen usw.): 258 </br>
 Allgemeine Windows-Informationen zu Build 14915 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/08/31/announcing-windows-10-insider-preview-build-14915-for-pc-and-mobile).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 -  Socketpair für Unix-Datagrammsockets (GH #262)
 - Unix-Socketunterstützung für SO_REUSEADDR
 - Unix-Socketunterstützung für SO_BROADCAST (GH #568)
@@ -1637,7 +1645,7 @@ Allgemeine Windows-Informationen zu Build 14915 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 14905 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/08/17/announcing-windows-10-insider-preview-build-14905-for-pc-mobile/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Erneut startbare Systemaufrufe werden jetzt unterstützt (GH #349, GH #520)
 - Symbolische Verknüpfungen mit Verzeichnissen, die auf / wenden, sind jetzt funktionstüchtig (GH #650)
 - Implementierung von RNDGETENTCNT ioctl für „/dev/random“
@@ -1652,7 +1660,7 @@ Der erste Insider-Build für das Windows 10 Anniversary Update-Release.
 Allgemeine Windows-Informationen zu Build 14901 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/08/11/announcing-windows-10-insider-preview-build-14901-for-pc/).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Korrektur eines Problems mit nachfolgenden Schrägstrichen
     - Befehle wie `$ mv a/c/ a/b/` funktionieren jetzt
 - Installation von Eingabeaufforderungen, wenn das Ubuntu-Gebietsschema auf das Windows-Gebietsschema festgelegt werden soll
@@ -1685,7 +1693,7 @@ Im folgenden finden Sie eine Liste der neuen oder verbesserten Systemaufrufe, di
 ## <a name="build-14388-to-windows-10-anniversary-update"></a>Update von Build 14388 auf Windows 10 Anniversary Update
 Allgemeine Windows-Informationen zu Build 14388 finden Sie im [Windows-Blog](https://aka.ms/14388wip). <br/>
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Korrekturen als Vorbereitung auf das Windows 10 Anniversary Update am 02.08.
   - Weitere Informationen zu WSL im Anniversary Update finden Sie in unserem [Blog](https://blogs.msdn.microsoft.com/wsl/).
 
@@ -1694,7 +1702,7 @@ Allgemeine Windows-Informationen zu Build 14388 finden Sie im [Windows-Blog](htt
 ## <a name="build-14376"></a>Build 14376
 Allgemeine Windows-Informationen zu Build 14376 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/06/28/announcing-windows-10-insider-preview-build-14376-for-pc-and-mobile/). <br/>
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Entfernen einiger Instanzen, in denen apt-get nicht mehr reagiert (GH #493)
 - Korrektur eines Problems, bei dem leere Einbindungen nicht ordnungsgemäß verarbeitet wurden
 - Korrektur eines Problems, bei dem Ramdisks nicht ordnungsgemäß eingebunden wurden
@@ -1709,7 +1717,7 @@ Allgemeine Windows-Informationen zu Build 14376 finden Sie im [Windows-Blog](htt
 ## <a name="build-14371"></a>Build 14371
 Allgemeine Windows-Informationen zu Build 14371 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/06/22/announcing-windows-10-insider-preview-build-14371-for-pc/). <br/>
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Korrektur der Timingracebedingung mit SIGCHLD und wait() bei Verwendung von ptrace
 - Korrektur von Verhalten, wenn Pfade ein nachfolgendes Zeichen / aufweisen (GH #432)
 - Korrektur eines Problems, bei dem Umbenennen/Aufheben der Verknüpfung aufgrund von geöffneten Handles für untergeordnete Elemente fehlschlägt
@@ -1720,7 +1728,7 @@ Allgemeine Windows-Informationen zu Build 14371 finden Sie im [Windows-Blog](htt
 ## <a name="build-14366"></a>Build 14366
 Allgemeine Windows-Informationen zu Build 14366 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2016/06/14/announcing-windows-10-insider-preview-build-14366-mobile-build-14364/). <br/>
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Korrektur der Dateierstellung durch symbolische Verknüpfungen
 -   Hinzugefügter von listxattr für Python (GH 385)
 -   Weitere Fehlerbehebungen und Verbesserungen
@@ -1734,7 +1742,7 @@ Allgemeine Windows-Informationen zu Build 14366 finden Sie im [Windows-Blog](htt
 ## <a name="build-14361"></a>Build 14361
 Allgemeine Windows-Informationen zu Build 14361 finden Sie im [Windows-Blog](https://aka.ms/wip14361). <br/>
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Für DrvFs wird nun bei der Ausführung in Bash unter Ubuntu unter Windows die Groß-/Kleinschreibung beachtet.
   - Benutzer können case.txt und CASE.TXT auf Ihren /mnt/c-Laufwerken verwenden
   - Die Beachtung von Groß-/Kleinschreibung wird nur in Bash unter Ubuntu unter Windows unterstützt. Außerhalb von Bash zeigt NTFS die Dateien richtig an, aber es kann zu unerwartetem Verhalten bei der Interaktion mit den Dateien von Windows kommen.
@@ -1780,7 +1788,7 @@ Im folgenden finden Sie eine Liste der neuen oder verbesserten Systemaufrufe, di
 Allgemeine Windows-Informationen zu Build 14352 finden Sie im [Windows-Blog](https://aka.ms/wip14352).<br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Korrektur eines Problems, bei dem große Dateien nicht ordnungsgemäß heruntergeladen bzw. ordnungsgemäß erstellt wurden.  Dadurch sollte die Blockierung von npm und anderen Szenarien aufgehoben werden (GH #3, GH #313)
 - Entfernen einiger Instanzen, in denen Sockets nicht mehr reagieren
 - Korrektur einiger ptrace-Fehler
@@ -1808,7 +1816,7 @@ Allgemeine Windows-Informationen zu Build 14342 finden Sie im [Windows-Blog](htt
 
 Informationen zu VolFs und DriveFs finden Sie im [WSL-Blog](https://blogs.msdn.microsoft.com/wsl). <br/>
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Korrektur eines Installationsproblems, wenn der Windows-Benutzer Unicode-Zeichen im Benutzernamen enthielt
 - Die Problemumgehung „apt-get update udev“ in den FAQ wird jetzt standardmäßig bei der ersten Ausführung bereitgestellt
 - Aktivierte symbolische Verknüpfungen in DriveFs-Verzeichnissen (/mnt/<drive>)
@@ -1854,7 +1862,7 @@ Im folgenden finden Sie eine Liste der neuen oder verbesserten Systemaufrufe, di
 Allgemeine Windows-Informationen zu Build 14332 finden Sie im [Windows-Blog](https://aka.ms/wip14332). <br/>
 
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 - Bessere resolv.conf-Generierung einschließlich Priorisieren von DNS-Einträgen
 - Problem beim Verschieben von Dateien und Verzeichnissen zwischen/mnt- und Nicht-/mnt-Laufwerken
 - TAR-Dateien können jetzt mit symbolischen Verknüpfungen erstellt werden.
@@ -1880,7 +1888,7 @@ Allgemeine Windows-Informationen zu Build 14332 finden Sie im [Windows-Blog](htt
 * Der Hostname ist jetzt auf den Windows-Computernamen festgelegt, nicht mehr auf @localhost
 * Weitere Informationen zu Build 14328 finden Sie unter: https://aka.ms/wip14328
 
-### <a name="fixed"></a>Behoben
+### <a name="fixed"></a>Fest
 * Verbesserungen von symbolischen Verknüpfungen für Nicht-/mnt/<drive>-Dateien
     * Die npm-Installation funktioniert jetzt
     * jdk/jre kann nun mithilfe der Anweisungen installiert werden, die Sie [hier](https://xubuntugeek.blogspot.com/2012/09/how-to-install-oracle-jdk-7-manually-in.html) finden.
