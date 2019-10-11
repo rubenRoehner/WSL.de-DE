@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 7ca59bd7-d9d3-4f6d-8b92-b8faa9bcf250
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 51099f21fe44fd8c7e8682332c939fbe6d5e5827
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: e69810625d08baf734683ff06231f79132ce1519
+ms.sourcegitcommit: e1cc2fe4de0fa03d5aea14f6b328f1bb9d0c59be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269869"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999392"
 ---
 # <a name="manage-and-configure-windows-subsystem-for-linux"></a>Verwalten und Konfigurieren des Windows-Subsystems für Linux
 
@@ -277,6 +277,20 @@ Abschnitt: `[automount]`
 Standardmäßig legt WSL die UID und die GID auf den Wert des Standardbenutzers fest (in der Ubuntu-Distribution wird der Standardbenutzer mit „uid=1000,gid=1000“ erstellt). Wenn der Benutzer eine GID-oder UID-Option explizit über diesen Schlüssel angibt, wird der zugehörige Wert überschrieben. Andernfalls wird der Standardwert immer angefügt.
 
 **Hinweis:** Diese Optionen werden als Einbindungsoptionen für alle automatisch eingebundenen Laufwerke angewendet. Verwenden Sie stattdessen „/etc/fstab“, um die Optionen nur für ein bestimmtes Laufwerk zu ändern.
+
+##### <a name="mount-options"></a>Einbindungsoptionen
+
+Durch Festlegen verschiedener Einbindungsoptionen für Windows-Laufwerke (DrvFs) kann gesteuert werden, wie Dateiberechtigungen für Windows-Dateien berechnet werden. Die folgenden Optionen sind verfügbar:
+
+| Schlüssel | Beschreibung | Standard |
+|:----|:----|:----|
+|uid| Die Benutzer-ID, die für den Besitzer aller Dateien verwendet wird | Die Standard-Benutzer-ID Ihrer WSL-Distribution (bei der erstmaligen Installation ist der Standardwert 1000)
+|gid| Die Gruppen-ID, die für den Besitzer aller Dateien verwendet wird | Die Standard-Gruppen-ID Ihrer WSL-Distribution (bei der erstmaligen Installation ist der Standardwert 1000)
+|umask | Eine oktale Maske mit Berechtigungen, die für alle Dateien und Verzeichnisse ausgeschlossen werden sollen | 000
+|fmask | Eine oktale Maske mit Berechtigungen, die für alle Dateien ausgeschlossen werden sollen | 000
+|dmask | Eine oktale Maske mit Berechtigungen, die für alle Verzeichnisse ausgeschlossen werden sollen | 000
+
+**Hinweis:** Die Berechtigungsmasken werden durch eine logische ODER-Operation festgelegt, bevor sie auf Dateien oder Verzeichnisse angewendet werden. 
 
 #### <a name="network"></a>Netzwerk
 
