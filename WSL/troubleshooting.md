@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 6753f1b2-200e-49cc-93a5-4323e1117246
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 7b7938e7a6a636b012f4b84a8c93d5dfc0a4a4cf
-ms.sourcegitcommit: aef7bb1e851089b3311d497a3be0da79558feb4e
+ms.openlocfilehash: 24a899df78e705630c6cb95f8719594aec340c5c
+ms.sourcegitcommit: 600853005bd2b42d6e47bf36ebed4b868ff2af26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71279249"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72987523"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Problembehandlung des Windows-Subsystems für Linux
 
@@ -124,7 +124,7 @@ Zum Ausführen von Ping in WSL sind Administratorberechtigungen in Windows erfor
 Wenn Sie beim Arbeiten mit Bash feststellen, dass Bash hängt (oder blockiert ist) und nicht mehr auf Eingaben reagiert, helfen Sie uns, das Problem zu diagnostizieren, indem Sie ein Speicherabbild erfassen und melden. Beachten Sie, dass diese Schritte zu einem Absturz Ihres Systems führen. Unterlassen Sie dies, wenn Sie damit nicht einverstanden sind, oder speichern Sie Ihre Arbeit zuvor.  <br/>
 So erfassen Sie ein Speicherabbild:
 1. Ändern Sie den Typ des Speicherabbilds in „Vollständiges Speicherabbild“. Notieren Sie sich den aktuellen Typ, bevor Sie den Speicherabbildtyp ändern.
-2. Verwenden Sie diese [Schritte](https://blogs.technet.microsoft.com/askpfeplat/2015/04/05/how-to-force-a-diagnostic-memory-dump-when-a-computer-hangs/) zum Konfigurieren von Abstürzen mithilfe der Tastatursteuerung.
+2. Verwenden Sie diese [Schritte](https://techcommunity.microsoft.com/t5/Core-Infrastructure-and-Security/How-to-Force-a-Diagnostic-Memory-Dump-When-a-Computer-Hangs/ba-p/257809) zum Konfigurieren von Abstürzen mithilfe der Tastatursteuerung.
 3. Reproduzieren Sie das Hängen oder die Blockade.
 4. Lassen Sie das System mithilfe der Tastensequenz aus (2) abstürzen.
 5. Das System stürzt ab und erfasst das Speicherabbild.
