@@ -8,14 +8,27 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: dbc041c98081563d4f77b9fc186698fad8299c0d
-ms.sourcegitcommit: 4beb93f80749ab4c8c6f0e6920ab7f809567e243
+ms.openlocfilehash: 63c0e14dab73faf7f835e9ae1eb23eb490b13c44
+ms.sourcegitcommit: 48ca05ce1ac8bf35408af3bc2a2b92a43adba0af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549580"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73166658"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Anmerkungen zu dieser Version des Windows-Subsystems für Linux
+
+## <a name="build-19013"></a>Build 19013
+Allgemeine Windows-Informationen zu Build 19013 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/10/29/announcing-windows-10-insider-preview-build-19013/).
+
+* [WSL2] Verbesserte Arbeitsspeicherleistung der VM des WSL-Hilfsprogramms Arbeitsspeicher, der nicht mehr verwendet wird, wird an den Host zurückgegeben.
+* [WSL2] Aktualisieren der Kernelversion auf 4.19.79 (CONFIG_HIGH_RES_TIMERS, CONFIG_TASK_XACCT, CONFIG_TASK_IO_ACCOUNTING, CONFIG_SCHED_HRTICK und CONFIG_BRIDGE_VLAN_FILTERING hinzugefügt).
+* [WSL2] Korrigiertes Eingaberelay zur Behandlung von Fällen, in denen stdin ein nicht geschlossenes Pipehandle ist [GH 4424]
+* Die Überprüfung auf \\\\wsl$ unterscheidet nicht mehr zwischen Groß- und Kleinschreibung.
+```
+[wsl2]
+pageReporting = <bool>    # Enable or disable the free memory page reporting feature (default true).
+idleThreshold = <integer> # Set the idle threshold for memory compaction, 0 disables the feature (default 1).
+```
 
 ## <a name="build-19002"></a>Build 19002
 Allgemeine Windows-Informationen zu Build 19002 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/10/17/announcing-windows-10-insider-preview-build-19002/).
@@ -38,7 +51,6 @@ Allgemeine Windows-Informationen zu Build 18995 finden Sie im [Windows-Blog](htt
 ```
 [wsl2]
 kernelCommandLine = <string> # Additional kernel command line arguments
-
 ```
 
 ## <a name="build-18990"></a>Build 18990
