@@ -8,14 +8,22 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 63c0e14dab73faf7f835e9ae1eb23eb490b13c44
-ms.sourcegitcommit: 48ca05ce1ac8bf35408af3bc2a2b92a43adba0af
+ms.openlocfilehash: 299b939383a98752cb54cafa23bb8b7662d53e0a
+ms.sourcegitcommit: ac6029d7d7440b8ed0e866fcea5b693edfdc163e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73166658"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73633854"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Anmerkungen zu dieser Version des Windows-Subsystems für Linux
+
+## <a name="build-19018"></a>Build 19018
+Allgemeine Windows-Informationen zu Build 19018 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/11/05/announcing-windows-10-insider-preview-build-19018/).
+
+* [WSL2] Verwenden Sie cache=mmap als Standardeinstellung für 9p-Einbindungen, um Probleme mit Dotnet-Apps zu beheben
+* [WSL2] Korrekturen für localhost-Relay [GH 4340]
+* [WSL2] Einführen einer distributionsübergreifenden, gemeinsam genutzten tmpfs-Einbindung für den Freigabezustand zwischen Distributionen
+* Korrektur der Wiederherstellung des permanenten Netzwerklaufwerks für \\\\wsl$
 
 ## <a name="build-19013"></a>Build 19013
 Allgemeine Windows-Informationen zu Build 19013 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/10/29/announcing-windows-10-insider-preview-build-19013/).
