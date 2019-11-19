@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 9ed24b185ad6aef3589b23a114853b6f78b5899f
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: 7122fcbd73e064871eba2ac80c727178aaf3ca7b
+ms.sourcegitcommit: 5c92b820f84de57a04ab11faf4dd0d24fff6b320
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269828"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161482"
 ---
 # <a name="about-wsl-2"></a>Informationen zu WSL 2
 
@@ -25,11 +25,11 @@ Außerdem ist dieser Kernel Open Source. Den vollständigen Quellcode für den L
 
 ## <a name="brief-overview-of-the-wsl-2-architecture"></a>Kurze Übersicht über die Architektur von WSL 2
 
-WSL 2 verwendet die neueste und größte in der Virtualisierungstechnologie, um den Linux-Kernel innerhalb eines virtuellen Lightweight-Hilfsprogramms (Virtual Machine, VM) auszuführen. WSL 2 ist jedoch keine herkömmliche VM-Darstellung. Eine herkömmliche VM-Benutzeroberflächen kann langsam gestartet werden, ist isoliert, beansprucht viele Ressourcen und benötigt Ihre Zeit für deren Verwaltung. WSL 2 verfügt nicht über diese Attribute. Sie bietet weiterhin die bemerkenswerten Vorteile von WSL 1: Ein hohes Maß an Integration zwischen Windows und Linux, extrem schnelle Startzeiten, geringem Ressourcenbedarf und das beste daran, dass keine VM-Konfiguration oder-Verwaltung erforderlich ist. Während WSL 2 einen virtuellen Computer verwendet, wird er verwaltet und im Hintergrund ausgeführt, sodass Sie die gleiche Benutzer Darstellung wie WSL 1 haben.
+WSL 2 verwendet die neueste und größte in der Virtualisierungstechnologie, um den Linux-Kernel innerhalb eines virtuellen Lightweight-Hilfsprogramms (Virtual Machine, VM) auszuführen. WSL 2 ist jedoch keine herkömmliche VM-Darstellung. Eine herkömmliche VM-Benutzeroberflächen kann langsam gestartet werden, ist isoliert, beansprucht viele Ressourcen und benötigt Ihre Zeit für deren Verwaltung. WSL 2 verfügt nicht über diese Attribute. Sie bietet weiterhin die bemerkenswerten Vorteile von WSL 1: ein hohes Maß an Integration zwischen Windows und Linux, extrem schnelle Startzeiten, geringen Ressourcenbedarf und das beste daran, dass keine VM-Konfiguration oder-Verwaltung erforderlich ist. Während WSL 2 einen virtuellen Computer verwendet, wird er verwaltet und im Hintergrund ausgeführt, sodass Sie die gleiche Benutzer Darstellung wie WSL 1 haben.
 
 ## <a name="increased-file-io-performance"></a>Erweiterte Datei-e/a
 
-Datei intensive Vorgänge wie git-Klon, NPM-Installation, apt Update, apt Upgrade und vieles mehr werden deutlich schneller. Die tatsächliche Geschwindigkeitssteigerung hängt davon ab, welche app Sie ausführen und wie Sie mit dem Dateisystem interagiert. Anfängliche Versionen von WSL 2 sind im Vergleich zu WSL 1 bis zu 20-mal schneller ausgeführt, wenn ein gezippte Tarball entpackt wurde, und um 2-5x schneller, wenn git-Klon, NPM install und cmake für verschiedene Projekte verwendet werden.
+Datei intensive Vorgänge wie `git clone`, `npm install`, `apt update`, `apt upgrade`und vieles mehr werden deutlich schneller. Die tatsächliche Geschwindigkeitssteigerung hängt davon ab, welche app Sie ausführen und wie Sie mit dem Dateisystem interagiert. Anfängliche Versionen von WSL 2 werden im Vergleich zu WSL 1 bis zu 20-mal schneller ausgeführt, wenn ein gezippte Tarball entpackt und bei Verwendung von `git clone`, `npm install` und `cmake` in verschiedenen Projekten um 2-5x beschleunigt werden.
 
 ## <a name="full-system-call-compatibility"></a>Vollständige System aufrufskompatibilität
 
