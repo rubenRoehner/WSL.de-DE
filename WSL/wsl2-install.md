@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 8af5ffeffdeedc5298af8125cea5c7428c8f29f8
-ms.sourcegitcommit: 3c9ebe5f9ef5fb64070e21b479c2f2d31243f310
+ms.openlocfilehash: a53e6a986813809d0c355b80b3fe3028adb21375
+ms.sourcegitcommit: 73f4cc6ac9482ea9727f3cda0ec5c3572e164256
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74248766"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74309045"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Installationsanweisungen für WSL 2
 
@@ -53,7 +53,7 @@ Ersetzen Sie hierbei `<Distro>` durch den tatsächlichen Namen Ihrer Distributio
 Wenn Sie WSL 2 als Ihre Standardarchitektur festlegen möchten, ist dies über diesen Befehl möglich:
 
 ```
-wsl --set-default-version 2`
+wsl --set-default-version 2
 ```
 
 Hierdurch wird jede neue Distribution, die Sie installieren, als WSL 2-Distribution initialisiert.
