@@ -8,14 +8,22 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 299b939383a98752cb54cafa23bb8b7662d53e0a
-ms.sourcegitcommit: ac6029d7d7440b8ed0e866fcea5b693edfdc163e
+ms.openlocfilehash: 2e1b8a2ae37568af273ac311572881daa8b55d4b
+ms.sourcegitcommit: 3be576f946611cf36e27745bdb7c4c52af1b9928
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73633854"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74200228"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Anmerkungen zu dieser Version des Windows-Subsystems für Linux
+
+## <a name="build-19028"></a>Build 19028
+Allgemeine Windows-Informationen zu Build 19028 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/11/19/announcing-windows-10-insider-preview-build-19028/).
+
+* [WSL2] Aktualisieren des Linux-Kernels auf 4.19.81
+* [WSL2] Ändern der Standardberechtigung von /dev/net/tun in 0666 [GH 4629]
+* [WSL2] Optimieren der Standard-Arbeitsspeichergröße, die dem virtuellen Linux-Computer zugewiesen ist, auf 80% des Hostarbeitsspeichers
+* [WSL2] Fehlerbehebung für den Interop-Server, um Anforderungen mit einem Timeout zu verarbeiten, damit sich der Server bei ungültigen Aufrufern nicht aufhängt
 
 ## <a name="build-19018"></a>Build 19018
 Allgemeine Windows-Informationen zu Build 19018 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/11/05/announcing-windows-10-insider-preview-build-19018/).
