@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: a53e6a986813809d0c355b80b3fe3028adb21375
-ms.sourcegitcommit: 73f4cc6ac9482ea9727f3cda0ec5c3572e164256
+ms.openlocfilehash: 65c0440a95637708881c00558cba6c7985f89ec0
+ms.sourcegitcommit: 522af20edfba4d4a9e429327389967a83e6d1156
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309045"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74881378"
 ---
 # <a name="installation-instructions-for-wsl-2"></a>Installationsanweisungen für WSL 2
 
@@ -20,7 +20,7 @@ Führen Sie die folgenden Schritte aus, um WSL 2 zu installieren und mit dessen 
 > WSL 2 ist nur in Windows 10-Builds 18917 oder höher verfügbar.
 
 - Stellen Sie sicher, dass WSL installiert ist ( [hier](./install-win10.md)finden Sie entsprechende Anweisungen) und dass Windows 10 **Build 18917** oder höher ausgeführt wird.
-   - Um sicherzustellen, dass Sie Build 18917 oder höher verwenden, fügen Sie [das Windows Insider-Programm](https://insider.windows.com/en-us/) an, und wählen Sie den Ring "fast" aus. 
+   - Um sicherzustellen, dass Sie Build 18917 oder höher verwenden, fügen Sie [das Windows Insider-Programm](https://insider.windows.com/en-us/) an, und wählen Sie den "schnellen" Ring oder den "langsamen" Ring aus. 
    - Sie können Ihre Windows-Version überprüfen, indem Sie die Eingabeaufforderung öffnen und den Befehl `ver` ausführen.
 - Aktivieren Sie die optionale Komponente „Virtual Machine Platform“.
 - Legen Sie über die Befehlszeile eine Distribution fest, die sich auf WSL 2 stützen soll.
