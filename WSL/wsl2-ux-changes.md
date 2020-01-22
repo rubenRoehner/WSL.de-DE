@@ -49,7 +49,7 @@ Wenn Sie über einen Server in einer WSL-Distribution verfügen, müssen Sie die
    - Dies können Sie leichter finden, indem Sie die Ausgabe des Befehls mit grep wie folgt filtern: `ip addr | grep eth0`.
 - Stellen Sie mithilfe der oben gefundenen IP-Adresse eine Verbindung mit dem Linux-Server her.
 
-Die folgende Abbildung zeigt ein Beispiel dafür, dass Sie mithilfe des Edge-Browsers eine Verbindung mit einem Node. js-Server herstellen.
+Die folgende Abbildung zeigt ein Beispiel dafür, dass Sie mithilfe des Microsoft Edge-Browsers eine Verbindung mit einem Node. js-Server herstellen.
 
 ![Zugreifen auf Linux-Netzwerkanwendungen über Windows](media/wsl2-network-w2l.jpg)
 
