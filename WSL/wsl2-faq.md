@@ -6,14 +6,14 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: c4a8c02db6563d7ad572917578c1a49d419f1756
-ms.sourcegitcommit: 0b5a9f8982dfff07fc8df32d74d97293654f8e12
+ms.openlocfilehash: c694b3476976241422d079eb65e72beca415ff62
+ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71269568"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520569"
 ---
-# <a name="wsl-2-faq"></a>FAQ ZU WSL 2
+# <a name="wsl-2-faq"></a>FAQ zu WSL 2
 
 Im folgenden finden Sie eine Liste mit häufig gestellten Fragen (FAQ) zum Windows-Subsystem für Linux 2.
 
@@ -35,11 +35,11 @@ Wir untersuchen Möglichkeiten, dieses Problem zu beheben. Wir stellen beispiels
 
 ## <a name="can-i-access-the-gpu-in-wsl-2-are-there-plans-to-increase-hardware-support"></a>Kann ich auf die GPU in WSL 2 zugreifen? Gibt es Pläne, den Hardware Support zu erhöhen?
 
-In den ersten Releases des WSL 2 ist die Hardwarezugriffsunterstützung eingeschränkt. Sie können z. B. nicht auf die GPU, die serielle Schnittstelle oder die USB-Schnittstelle zugreifen. Das Hinzufügen verbesserter Geräteunterstützung steht jedoch in unserem Backlog ganz oben, da sich dadurch viele weitere Anwendungsfälle für Entwickler eröffnen, die mit diesen Geräten interagieren möchten. In der Zwischenzeit können Sie weiterhin das WSL 1 verwenden, das einen seriellen Anschluss und USB-Zugriff bietet. Verfolgen Sie diesen Blog, und folgen Sie den Mitgliedern des WSL-Teams auf Twitter, um sich über die neuesten Features von Insider-Builds zu informieren und uns mitzuteilen, mit welchen Geräten Sie interagieren möchten.
+In den ersten Releases von WSL 2 ist die Hardware Zugriffs Unterstützung eingeschränkt, z. b. können Sie nicht auf GPU-, serielle oder USB-Geräte zugreifen. Das Hinzufügen verbesserter Geräteunterstützung steht jedoch in unserem Backlog ganz oben, da sich dadurch viele weitere Anwendungsfälle für Entwickler eröffnen, die mit diesen Geräten interagieren möchten. In der Zwischenzeit können Sie immer WSL 1 verwenden, das über seriellen Anschluss Zugriff verfügt. Verfolgen Sie diesen Blog, und folgen Sie den Mitgliedern des WSL-Teams auf Twitter, um sich über die neuesten Features von Insider-Builds zu informieren und uns mitzuteilen, mit welchen Geräten Sie interagieren möchten.
 
 ## <a name="will-wsl-2-be-able-to-use-networking-applications"></a>Kann WSL 2 Netzwerkanwendungen verwenden?
 
-Ja, in der Regel sind Netzwerkanwendungen schneller und können besser funktionieren, da wir eine vollständige System aufrufskompatibilität haben. Die neue Architektur verwendet jedoch virtualisierte Netzwerkkomponenten. Dies bedeutet, dass sich WSL 2 in der ersten Vorschau ähnlich wie ein virtueller Computer verhält, z. b.: WSL 2 hat eine andere IP-Adresse als der Host Computer. Wir sind bestrebt, das Aussehen von WSL 2 mit WSL 1 und das verbessern unserer Netzwerk Geschichte zu vereinfachen. Wir erwarten, dass Sie Verbesserungen so schnell wie möglich hinzufügen, z. b. durch den Zugriff auf alle Netzwerk-apps unter Linux oder Windows mithilfe von localhost. Wir werden weitere Details über unsere Netzwerk Geschichte und Verbesserungen veröffentlichen, wenn wir uns mit der Veröffentlichung von WSL 2 in Verbindung treten.
+Ja, in der Regel sind Netzwerkanwendungen schneller und können besser funktionieren, da wir eine vollständige System aufrufskompatibilität haben. Die neue Architektur verwendet jedoch virtualisierte Netzwerkkomponenten. Dies bedeutet, dass sich WSL 2 in der ersten Vorschau ähnlich wie ein virtueller Computer verhält, z. b.: WSL 2 weist eine andere IP-Adresse als der Host Computer auf. Wir sind bestrebt, das Aussehen von WSL 2 mit WSL 1 und das verbessern unserer Netzwerk Geschichte zu vereinfachen. Wir erwarten, dass Sie Verbesserungen so schnell wie möglich hinzufügen, z. b. durch den Zugriff auf alle Netzwerk-apps unter Linux oder Windows mithilfe von localhost. Wir werden weitere Details über unsere Netzwerk Geschichte und Verbesserungen veröffentlichen, wenn wir uns mit der Veröffentlichung von WSL 2 in Verbindung treten.
 
 ## <a name="can-i-run-wsl-2-in-a-virtual-machine"></a>Kann ich WSL 2 auf einem virtuellen Computer ausführen?
 
@@ -47,7 +47,7 @@ Ja! Sie müssen sicherstellen, dass die aktivierte aktivierte Virtualisierung au
 
 `Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true`
 
-Stellen Sie sicher, dass&lt;Sie "&gt;VMName" durch den Namen des virtuellen Computers ersetzen.
+Stellen Sie sicher, dass Sie "&lt;VMName&gt;" durch den Namen des virtuellen Computers ersetzen.
 
 ## <a name="can-i-use-wslconf-in-wsl-2"></a>Kann ich WSL. conf in WSL 2 verwenden?
 

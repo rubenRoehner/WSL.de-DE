@@ -6,12 +6,12 @@ ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
-ms.openlocfilehash: 635e4335bd3fe5dd1629faba0168ec4fa331e190
-ms.sourcegitcommit: 6f6b7b67dd35b5fc7b582bb7ac27b9936dedb23d
+ms.openlocfilehash: a8f298a69acf44f152da626a0ba571f6bba1970c
+ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681645"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520559"
 ---
 # <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>Änderungen der Benutzeroberflächen zwischen WSL 1 und WSL 2
 
@@ -42,18 +42,21 @@ Die folgende Abbildung zeigt ein Beispiel hierfür, indem eine Verbindung mit ei
 
 ![Zugreifen auf Linux-Netzwerkanwendungen über Windows](media/wsl2-network-l2w.png)
 
-### <a name="accessing-linux-applications-from-windows-only-in-builds-lower-than-18945"></a>Zugreifen auf Linux-Anwendungen von Windows (nur in Builds, die kleiner als 18945 sind)
+### <a name="accessing-linux-applications-from-windows"></a>Zugreifen auf Linux-Anwendungen von Windows aus
+
+Je nachdem, welche Windows-Version Sie verwenden, müssen Sie möglicherweise die IP-Adresse des virtuellen Computers abrufen. Wenn Ihr Build 18945 oder höher ist, können Sie `localhost` wie gewohnt verwenden. 
+
+#### <a name="accessing-linux-on-builds-lower-than-18945httpsblogswindowscomwindowsexperience20190726announcing-windows-10-insider-preview-build-18945"></a>Der Zugriff auf Linux auf Builds unter [18945](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/)
+
 Wenn Sie über einen Server in einer WSL-Distribution verfügen, müssen Sie die IP-Adresse des virtuellen Computers ermitteln, der Ihre Distribution verwendet, und mit dieser IP-Adresse eine Verbindung mit ihm herstellen. Führen Sie dazu die folgenden Schritte aus:
 
 - Rufen Sie die IP-Adresse Ihrer Distribution ab, indem Sie den Befehl `ip addr` in ihrer WSL-Distribution ausführen und ihn unter dem `inet` Wert der `eth0`-Schnittstelle finden.
    - Dies können Sie leichter finden, indem Sie die Ausgabe des Befehls mit grep wie folgt filtern: `ip addr | grep eth0`.
 - Stellen Sie mithilfe der oben gefundenen IP-Adresse eine Verbindung mit dem Linux-Server her.
 
-Die folgende Abbildung zeigt ein Beispiel dafür, dass Sie mithilfe des Microsoft Edge-Browsers eine Verbindung mit einem Node. js-Server herstellen.
+Die folgende Abbildung zeigt ein Beispiel dafür, dass Sie mithilfe des Edge-Browsers eine Verbindung mit einem Node. js-Server herstellen.
 
 ![Zugreifen auf Linux-Netzwerkanwendungen über Windows](media/wsl2-network-w2l.jpg)
-
-Wenn Ihr Build 18945 oder höher ist, können Sie localhost wie gewohnt verwenden. 
 
 ### <a name="other-networking-considerations"></a>Weitere Netzwerk Aspekte
 
