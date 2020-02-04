@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: f70e685f-24c6-4908-9546-bf4f0291d8fd
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 85bd8f05d041181c2cfb16f6fb55aaeea15b332c
-ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
+ms.openlocfilehash: 30dea11adb68639f645ca800a695b0404661845a
+ms.sourcegitcommit: e5fb773dd44abab7bcf289340da00f59528b88f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520579"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973680"
 ---
 # <a name="create-and-update-user-accounts-for-wsl-distributions"></a>Erstellen und Aktualisieren von Benutzerkonten für WSL-Verteilungen
 
@@ -38,7 +38,7 @@ Wenn Sie das Kennwort für Ihre Linux-Verteilung vergessen haben:
 
 1. Öffnen Sie PowerShell, und geben Sie mit dem Befehl `wsl -u root` das Stammverzeichnis Ihrer Standard-WSL-Verteilung ein.
 
-– Wenn Sie das vergessene Kennwort für eine Verteilung aktualisieren müssen, die nicht Ihre Standardverteilung ist, verwenden Sie den Befehl `wsl -d Debian -u root`, wobei Sie `Debian` durch den Namen Ihrer Zielverteilung ersetzen.
+> Wenn Sie das vergessene Kennwort für eine Verteilung aktualisieren müssen, die nicht Ihre Standardverteilung ist, verwenden Sie den Befehl `wsl -d Debian -u root`, wobei Sie `Debian` durch den Namen Ihrer Zielverteilung ersetzen.
 
 2. Sobald Ihre WSL-Verteilung auf der Root-Ebene innerhalb von PowerShell geöffnet wurde, können Sie den Befehl `passwd` verwenden, um Ihr Kennwort zu aktualisieren.
 

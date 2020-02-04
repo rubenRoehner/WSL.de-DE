@@ -8,14 +8,32 @@ ms.topic: article
 ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 2e1b8a2ae37568af273ac311572881daa8b55d4b
-ms.sourcegitcommit: 3be576f946611cf36e27745bdb7c4c52af1b9928
+ms.openlocfilehash: 31bf975afb202a6cfd9a2879cff29a77b2969fce
+ms.sourcegitcommit: 7069b8d452308c32cc7fa31d1158fcb130d42e06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74200228"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76911704"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Anmerkungen zu dieser Version des Windows-Subsystems für Linux
+
+## <a name="build-19555"></a>Build 19555
+Allgemeine Windows-Informationen zu Build 19555 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2020/01/30/announcing-windows-10-insider-preview-build-19555/).
+
+* [WSL2] Verwenden einer Arbeitsspeicher-cgroup, um den von Installations- und Konvertierungsvorgängen verwendeten Speicherplatz zu begrenzen [GH 4669]
+* Verfügbarmachen von „wsl.exe“, wenn die optionale Komponente „Windows-Subsystem für Linux“ (WSL) nicht aktiviert ist, um die Auffindbarkeit von Features zu verbessern.
+* Ändern von „wsl.exe“, um Hilfetext auszugeben, wenn die optionale Komponente WSL nicht installiert ist
+* Fehlerbehebung für die Racebedingung beim Erstellen von Instanzen
+* Erstellen von „wslclient.dll“ mit allen Befehlszeilenfunktionen
+* Verhindern eines Absturzes bei angehaltenem LxssManagerUser-Dienst
+* Fehlerbehebung für ein wslapi.dll-Fast-Fail, wenn der distroName-Parameter NULL ist
+
+## <a name="build-19041"></a>Build 19041
+Allgemeine Windows-Informationen zu Build 19041 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/12/10/announcing-windows-10-insider-preview-build-19041/).
+
+* [WSL2] Löschen der Signalmaske vor dem Starten der Prozesse
+* [WSL2] Aktualisieren des Linux-Kernels auf 4.19.84
+* Verarbeiten der Erstellung der symbolischen Verknüpfung „/etc/resolv.conf“, wenn die symbolische Verknüpfung nicht relativ ist
 
 ## <a name="build-19028"></a>Build 19028
 Allgemeine Windows-Informationen zu Build 19028 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2019/11/19/announcing-windows-10-insider-preview-build-19028/).
@@ -513,7 +531,7 @@ Allgemeine Windows-Informationen zu Build 17627 finden Sie im [Windows-Blog](htt
 * Melden aller Netzwerkschnittstellen als Ethernet. [GH 2996]
 * Bessere Verarbeitung von beschädigten /etc/passwd-Dateien. [GH 3001]
 
-### <a name="console"></a>Console
+### <a name="console"></a>Konsole
 * Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -526,7 +544,7 @@ Allgemeine Windows-Informationen zu Build 17618 finden Sie im [Windows-Blog](htt
 * Einführung in Pseudoconsolenfunktionalität für NT-Interop [GH 988, 1366, 1433, 1542, 2370, 2406].
 * Der Legacyinstallationsmechanismus („lxrun.exe“) ist veraltet. Der unterstützte Mechanismus zum Installieren von Distributionen ist der Microsoft Store.
 
-### <a name="console"></a>Console
+### <a name="console"></a>Konsole
 * Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -542,7 +560,7 @@ Allgemeine Windows-Informationen zu Build 17110 finden Sie im [Windows-Blog](htt
     * Wenn Sie über vorhandene Verzeichnisse verfügen, die mit WSL in einer älteren Version von Windows erstellt wurden, bei denen die Groß-/Kleinschreibung beachtet werden muss, verwenden Sie „fsutil.exe“, um sie für Unterscheidung von Groß-/Kleinschreibung zu markieren: fsutil.exe file setcasesensitiveinfo <path> enable
 * NULL-Beendigungszeichenfolgen werden vom uname-Systemaufruf zurückgegeben.
 
-### <a name="console"></a>Console
+### <a name="console"></a>Konsole
 * Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -558,7 +576,7 @@ Allgemeine Windows-Informationen zu Build 17107 finden Sie im [Windows-Blog](htt
 * Korrektur der Racebedingung, bei der kurzlebige Prozesse, die mit den CLEARTID- und SETTID-Flags geklont wurden, ohne Löschen der TID-Adresse beendet werden konnten.
 * Anzeigen einer Meldung beim Aktualisieren der Linux-Dateisystemverzeichnisse beim Umstieg von einem Build vor 17093. Weitere Informationen zu den Änderungen für das 17093-Dateisystem finden Sie in den Anmerkungen zur Version für [17093](https://github.com/MicrosoftDocs/WSL/blob/live/WSL/release-notes.md#build-17093).
 
-### <a name="console"></a>Console
+### <a name="console"></a>Konsole
 * Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -576,7 +594,7 @@ Allgemeine Windows-Informationen zu Build 17101 finden Sie im [Windows-Blog](htt
 * Korrektur eines Problems, das dazu führen kann, dass der Dienst in eine Endlosschleife übergeht, wenn die Registrierung manipuliert wurde oder beschädigt ist.
 * Korrektur von Netlink-Nachrichten, sodass sie mit neueren Versionen von iproute2 (upstream 4.14) funktionieren.
 
-### <a name="console"></a>Console
+### <a name="console"></a>Konsole
 * Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -618,7 +636,7 @@ WSL- und Windows-Anwendungen können nun über Unix-Sockets miteinander kommuniz
 * Eliminieren von nachfolgenden Seitenbytes beim Laden von Images.
 * Verringern der Fälle, in denen execve den Prozess automatisch beendet
 
-### <a name="console"></a>Console
+### <a name="console"></a>Konsole
 * Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -632,7 +650,7 @@ Allgemeine Windows-Informationen zu Build 17083 finden Sie im [Windows-Blog](htt
 * Korrektur von Hängern beim Deaktivieren von ASLR [GH 1185, 2870]
 * Sicherstellen, dass mmap-Vorgänge atomarisch erscheinen [GH 2732]
 
-### <a name="console"></a>Console
+### <a name="console"></a>Konsole
 * Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -646,7 +664,7 @@ Allgemeine Windows-Informationen zu Build 17074 finden Sie im [Windows-Blog](htt
 **Wichtig:** Die vor diesem Build erstellten DrvFs-Metadaten werden falsch oder überhaupt nicht angezeigt. Um betroffene Dateien zu korrigieren, verwenden Sie chmod und chown zum erneuten Anwenden der Metadaten.
 * Korrektur eines Problems mit mehreren Signalen und neu startbaren Systemaufrufen.
 
-### <a name="console"></a>Console
+### <a name="console"></a>Konsole
 * Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -674,7 +692,7 @@ Allgemeine Windows-Informationen zu Build 17063 finden Sie im [Windows-Blog](htt
   * fmask: Eine oktale Maske mit Berechtigungen, die für alle regulären Dateien ausgeschlossen werden sollen.
   * dmask: Eine oktale Maske mit Berechtigungen, die für alle Verzeichnisse ausgeschlossen werden sollen.
 
-  Zum Beispiel:
+  Beispiel:
   ```
   mount -t drvfs C: /mnt/c -o uid=1000,gid=1000,umask=22,fmask=111
   ```
@@ -683,7 +701,7 @@ Allgemeine Windows-Informationen zu Build 17063 finden Sie im [Windows-Blog](htt
 
 * Wird in einer neuen Umgebungsvariablen (`WSLENV`) eingeführt, um zu konfigurieren, wie Umgebungsvariablen zwischen WSL und Win32 ausgetauscht werden.
 
-  Zum Beispiel:
+  Beispiel:
 
   ``` bash
   WSLENV=GOPATH/l:USERPROFILE/pu:DISPLAY
@@ -720,7 +738,7 @@ Allgemeine Windows-Informationen zu Build 17063 finden Sie im [Windows-Blog](htt
 *   `AF_UNIX` ist im Windows Insider SDK (17061 und höher) verfügbar.
   Lesen Sie [diesen Blog](https://blogs.msdn.microsoft.com/commandline/2017/12/19/af_unix-comes-to-windows/), um weitere Informationen zu `AF_UNIX` zu erhalten und mehr über die Verwendung in Windows durch Entwickler zu erfahren.
 
-### <a name="console"></a>Console
+### <a name="console"></a>Konsole
 * Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -752,7 +770,7 @@ Allgemeine Windows-Informationen zu Build 17046 finden Sie im [Windows-Blog](htt
 
       EX: wslpath ‘c:\users’
   ```
-  #### <a name="console"></a>Console
+  #### <a name="console"></a>Konsole
 - Keine Korrekturen.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -768,7 +786,7 @@ Allgemeine Windows-Informationen zu Build 17040 finden Sie im [Windows-Blog](htt
 #### <a name="wsl"></a>WSL
 - Keine Korrekturen seit 17035.
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Keine Korrekturen seit 17035.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -783,7 +801,7 @@ Allgemeine Windows-Informationen zu Build 17035 finden Sie im [Windows-Blog](htt
 #### <a name="wsl"></a>WSL
 - Der Zugriff auf Dateien auf DrvFs kann gelegentlich mit EINVAL fehlschlagen. [GH 2448]
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Farbverlust beim Einfügen/Löschen von Zeilen im VT-Modus.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -803,7 +821,7 @@ Allgemeine Windows-Informationen zu Build 17025 finden Sie im [Windows-Blog](htt
 - Weitere Interop-Pipekorrekturen für stdout/stderr.
 - Stub für syncfs-Systemaufruf.
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Korrektur der VT-Eingabeübersetzung für Drittanbieterkonsolen [GH 111]
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -829,7 +847,7 @@ Allgemeine Windows-Informationen zu Build 17017 finden Sie im [Windows-Blog](htt
 - O_ASYNC-Unterstützung für tty/pty-Dateien.
 - Weitere Verbesserungen und Fehlerbehebungen
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Keine konsolenbezogenen Änderungen in diesem Release.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -847,7 +865,7 @@ Allgemeine Windows-Informationen zu Build 16288 finden Sie im [Windows-Blog](htt
 - Ordnungsgemäße Initialisierung und Meldung von uid, gid und Modus für Socketdateideskriptoren [GH 2490]
 - Weitere Verbesserungen und Fehlerbehebungen
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Keine konsolenbezogenen Änderungen in diesem Release.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -863,7 +881,7 @@ Allgemeine Windows-Informationen zu Build 162738 finden Sie im [Windows-Blog](ht
 - Explizite Aufhebung der Zuordnung zugeordneter Ansichten von dateigestützten Abschnitten beim Beenden des LX MM-Status [GH 2415]
 - Weitere Verbesserungen und Fehlerbehebungen
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Keine konsolenbezogenen Änderungen in diesem Release.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -878,7 +896,7 @@ Allgemeine Windows-Informationen zu Build 162735 finden Sie im [Windows-Blog](ht
 #### <a name="wsl"></a>WSL
 - In diesem Release gibt es keine WSL-bezogenen Änderungen.
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Keine konsolenbezogenen Änderungen in diesem Release.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -909,7 +927,7 @@ Allgemeine Windows-Informationen zu Build 16273 finden Sie im [Windows-Blog](htt
 - Korrektur des Hängens des Python-Sockettests von udp::msg_peek
 - Weitere Verbesserungen und Fehlerbehebungen
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Keine konsolenbezogenen Änderungen in diesem Release.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -936,7 +954,7 @@ Allgemeine Windows-Informationen zu Build 16257 finden Sie im [Windows-Blog](htt
 - /dev/ptmx wird nach hoher Auslastung gesperrt [GH 1882]
 - Weitere Verbesserungen und Fehlerbehebungen
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Korrektur für horizontale Linien/Unterstriche überall [GH 2168]
 - Korrektur der Änderung der Prozessreihenfolge, wodurch das Schließen von NPM erschwert wird [GH 2170]
 - Hinzufügen des neuen Farbschemas: https://blogs.msdn.microsoft.com/commandline/2017/08/02/updating-the-windows-console-colors/
@@ -970,7 +988,7 @@ Allgemeine Windows-Informationen zu Build 16251 finden Sie im [Windows-Blog](htt
 - Korrektur von ptrace, um bei ignorierten Signalen anzuhalten
 - Weitere Verbesserungen und Fehlerbehebungen
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Keine konsolenbezogenen Änderungen in diesem Release.
 
 ### <a name="ltp-results"></a>LTP-Ergebnisse:
@@ -990,7 +1008,7 @@ Allgemeine Windows-Informationen zu Build 16241 finden Sie im [Windows-Blog](htt
 #### <a name="wsl"></a>WSL
 - In diesem Release gibt es keine WSL-bezogenen Änderungen.
 
-#### <a name="console"></a>Console
+#### <a name="console"></a>Konsole
 - Korrektur für die Ausgabe des falschen Zeichens für Schnittlinien-DEC, ursprünglich [hier](https://www.reddit.com/r/Windows10/comments/6in82t/i_believe_ive_found_the_most_obscure_bug_ever/) gemeldet
 - Korrektur, dass kein Ausgabetext in Codepage 65001 (UTF8) angezeigt wird
 - Übertragen Sie an den RGB-Werten einer Farbe vorgenommene Änderungen nicht an andere Teile der Palette bei Änderungen der Auswahl. Dadurch wird die Verwendung des Konsoleneigenschaftenblatts erheblich vereinfacht.
@@ -1821,7 +1839,7 @@ Allgemeine Windows-Informationen zu Build 14361 finden Sie im [Windows-Blog](htt
 - Aktualisierte anfängliche Threadstapelgröße, um der standardmäßigen Ubuntu-Einstellung zu entsprechen und die Größe ordnungsgemäß an den get_rlimit-Systemaufruf zu melden (GH #172, #258)
 - Verbesserte Berichterstellung von Pico-Prozessimagenamen (z.B. für die Überwachung)
 - Implementierung von /proc/mountinfo für df-Befehl
-- Korrektur des Fehlercodes der symbolischen Verknüpfung für den untergeordneten Namen . und ..
+- Korrektur des Fehlercodes der symbolischen Verknüpfung für den untergeordneten Namen . und .
 - Weitere optimierende Fehlerbehebungen und Verbesserungen
 
 ### <a name="syscall-support"></a>Unterstützung von Systemaufrufen
