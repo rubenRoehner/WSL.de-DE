@@ -46,7 +46,7 @@ Die folgende Abbildung zeigt ein Beispiel hierfür, indem eine Verbindung mit ei
 
 Je nachdem, welche Windows-Version Sie verwenden, müssen Sie möglicherweise die IP-Adresse des virtuellen Computers abrufen. Wenn Ihr Build 18945 oder höher ist, können Sie `localhost` wie gewohnt verwenden. 
 
-#### <a name="accessing-linux-on-builds-lower-than-18945httpsblogswindowscomwindowsexperience20190726announcing-windows-10-insider-preview-build-18945"></a>Der Zugriff auf Linux auf Builds unter [18945](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/)
+#### <a name="accessing-linux-on-builds-lower-than-18945"></a>Der Zugriff auf Linux auf Builds unter [18945](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/)
 
 Wenn Sie über einen Server in einer WSL-Distribution verfügen, müssen Sie die IP-Adresse des virtuellen Computers ermitteln, der Ihre Distribution verwendet, und mit dieser IP-Adresse eine Verbindung mit ihm herstellen. Führen Sie dazu die folgenden Schritte aus:
 
@@ -54,7 +54,7 @@ Wenn Sie über einen Server in einer WSL-Distribution verfügen, müssen Sie die
    - Dies können Sie leichter finden, indem Sie die Ausgabe des Befehls mit grep wie folgt filtern: `ip addr | grep eth0`.
 - Stellen Sie mithilfe der oben gefundenen IP-Adresse eine Verbindung mit dem Linux-Server her.
 
-Die folgende Abbildung zeigt ein Beispiel dafür, dass Sie mithilfe des Edge-Browsers eine Verbindung mit einem Node. js-Server herstellen.
+Die folgende Abbildung zeigt ein Beispiel dafür, dass Sie mithilfe des Microsoft Edge-Browsers eine Verbindung mit einem Node. js-Server herstellen.
 
 ![Zugreifen auf Linux-Netzwerkanwendungen über Windows](media/wsl2-network-w2l.jpg)
 
