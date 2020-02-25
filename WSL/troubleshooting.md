@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windowssubsystem, ubuntu
 ms.date: 01/20/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: ec456c314ac4a1588ccb5c1aa35e22a2d33a39b0
-ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
+ms.openlocfilehash: b66392f6ad37af9d61e8b4fb6bb477d0d774ccb6
+ms.sourcegitcommit: f1e471bca7a65073135365e49c0d4e59227bdf25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520529"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575289"
 ---
 # <a name="troubleshooting-windows-subsystem-for-linux"></a>Problembehandlung des Windows-Subsystems für Linux
 
@@ -247,3 +247,24 @@ Dieser Fehler bezieht sich auf einen fehlerhaften Installationsstatus. Führen S
 - Aktualisieren Sie Ihre Windows-Version, indem Sie zu „Einstellungen“, „Updates“ wechseln und dann auf „Nach Updates suchen“ klicken
 
 - Wenn beide Versuche erfolglos bleiben und Sie auf WSL zugreifen müssen, erwägen Sie, ein lokales Upgrade auszuführen, indem Sie Windows 10 mithilfe der Installationsmedien erneut installieren und „Alles beibehalten“ auswählen, um sicherzustellen, dass Ihre Apps und Dateien erhalten bleiben. Anweisungen dazu finden Sie auf der Seite [Erneutes Installieren von Windows 10](https://support.microsoft.com/help/4000735/windows-10-reinstall).
+
+### <a name="correct-ssh-related-permission-errors"></a>Beheben von (SSH-bezogenen) Berechtigungsfehlern
+
+Wenn dieser Fehler angezeigt wird:
+
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0777 for '/home/artur/.ssh/private-key.pem' are too open.
+```
+
+Um dieses Problem zu beheben, fügen Sie Folgendes an die ```/etc/wsl.conf```-Datei an:
+
+```
+[automount]
+enabled = true
+options = metadata,uid=1000,gid=1000,umask=0022
+```
+
+Beachten Sie, dass durch Hinzufügen dieses Befehls Metadaten hinzugefügt und die in WSL angezeigten Dateiberechtigungen für die Windows-Dateien geändert werden. Weitere Informationen finden Sie in den [Dateisystemberechtigungen](./file-permissions.md).
