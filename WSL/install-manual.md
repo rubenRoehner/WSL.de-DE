@@ -6,12 +6,12 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.assetid: 9281ffa2-4fa9-4078-bf6f-b51c967617e3
 ms.custom: seodec18
-ms.openlocfilehash: 99215a3bccc3d0b07e8ed4b7629913af3765aec0
-ms.sourcegitcommit: d35870009477813aa4c8fe4e401af4bddef4a47c
+ms.openlocfilehash: aa0b42748115045105bb4e6eae91493bfee11d09
+ms.sourcegitcommit: 467b6c8e9716d1a60dbf9f7658fd9579da365b58
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72778822"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77624924"
 ---
 # <a name="manually-download-windows-subsystem-for-linux-distro-packages"></a>Manuelles Herunterladen von Windows-Subsystem für Linux-Distribution-Pakete
 
@@ -24,8 +24,10 @@ Wie können Sie in diesen Fällen, während WSL selbst verfügbar ist, Linux-Dis
 ## <a name="downloading-distros"></a>Herunterladen von Distributionen
 
 Wenn die Microsoft Store-App nicht verfügbar ist, können Sie Linux-Distributionen herunterladen und manuell installieren, indem Sie auf die folgenden Links klicken:
-* [Ubuntu 18,04](https://aka.ms/wsl-ubuntu-1804)
-* [Ubuntu 18,04 Arm](https://aka.ms/wsl-ubuntu-1804-arm)
+<!-- * [Ubuntu 18.04](https://aka.ms/wsl-ubuntu-1804)
+* [Ubuntu 18.04 ARM](https://aka.ms/wsl-ubuntu-1804-arm) -->
+* Ubuntu 18,04
+* Ubuntu 18,04 Arm
 * [Ubuntu 16,04](https://aka.ms/wsl-ubuntu-1604)
 * [Debian GNU/Linux](https://aka.ms/wsl-debian-gnulinux)
 * [Kali Linux](https://aka.ms/wsl-kali-linux-new)
@@ -57,7 +59,7 @@ curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
 
 Im obigen Beispiel wird `curl.exe` (nicht nur `curl`) ausgeführt, um sicherzustellen, dass in PowerShell die ausführbare Datei "Real curl" aufgerufen wird, nicht der PowerShell-curl-Alias für " [Aufruf-WebRequest](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-6) ".
 
-> Hinweis: das Verwenden von `curl` ist möglicherweise vorzuziehen, wenn Sie Download Schritte mithilfe der CMD-Shell und/oder `.bat`  /  `.cmd` Skripts aufrufen/ausführen müssen.
+> Hinweis: das Verwenden von `curl` ist möglicherweise vorzuziehen, wenn Sie Download Schritte mithilfe der CMD-Shell und/oder `.bat` / `.cmd` Skripts aufrufen/ausführen müssen.
 
 ## <a name="installing-your-distro"></a>Installieren der Distribution
 Wenn Sie Windows 10 verwenden, können Sie Ihre Distribution mit PowerShell installieren. Navigieren Sie einfach zum Ordner, der die zuvor heruntergeladene Distribution enthält, und führen Sie in diesem Verzeichnis den folgenden Befehl aus, wobei `app_name` der Name der Datei "Distribution. AppX" ist.  
