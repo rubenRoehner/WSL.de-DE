@@ -27,7 +27,7 @@ Dies ist in erster Linie ein Tool für Entwickler, insbesondere Webentwickler un
 
 ## <a name="what-can-i-do-with-wsl"></a>Welche Aufgaben kann ich mit WSL erledigen?
 
-WSL bietet eine Anwendung namenss „Bash. exe“, die eine Windows-Konsole mit der Bash-Shell öffnet, wenn sie gestartet wird. Mithilfe von Bash können Sie Linux-Befehlszeilentools und -Apps ausführen. Geben Sie z.B. `lsb_release -a` ein, und drücken Sie die EINGABETASTE. Es werden Details zu der derzeit ausgeführten Linux-Distribution angezeigt:
+WSL bietet eine Anwendung namens „Bash. exe“, die eine Windows-Konsole mit der Bash-Shell öffnet, wenn sie gestartet wird. Mithilfe von Bash können Sie Linux-Befehlszeilentools und -Apps ausführen. Geben Sie z.B. `lsb_release -a` ein, und drücken Sie die EINGABETASTE. Es werden Details zu der derzeit ausgeführten Linux-Distribution angezeigt:
 
 ![Screenshot der Details der Distribution](media/distro.png)
 
