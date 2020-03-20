@@ -13,39 +13,39 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/25/2019
 ms.locfileid: "71269802"
 ---
-# <a name="windows-subsystem-for-linux-interoperability-with-windows"></a><span data-ttu-id="03353-103">Windows-Subsystem für Linux: Interoperabilität mit Windows</span><span class="sxs-lookup"><span data-stu-id="03353-103">Windows Subsystem for Linux interoperability with Windows</span></span>
+# <a name="windows-subsystem-for-linux-interoperability-with-windows"></a><span data-ttu-id="642e1-103">Windows-Subsystem für Linux: Interoperabilität mit Windows</span><span class="sxs-lookup"><span data-stu-id="642e1-103">Windows Subsystem for Linux interoperability with Windows</span></span>
 
-> <span data-ttu-id="03353-104">**Aktualisiert für Fall Creators Update.**</span><span class="sxs-lookup"><span data-stu-id="03353-104">**Updated for Fall Creators Update.**</span></span>  
-<span data-ttu-id="03353-105">Wenn Sie Creators Update oder Anniversary Update ausführen, fahren Sie mit dem Abschnitt [Creators/Anniversary Update](interop.md#creators-update-and-anniversary-update) fort.</span><span class="sxs-lookup"><span data-stu-id="03353-105">If you're running Creators Update or Anniversary Update, jump to the [Creators/Anniversary Update section](interop.md#creators-update-and-anniversary-update).</span></span>
+> <span data-ttu-id="642e1-104">**Aktualisiert für Fall Creators Update.**</span><span class="sxs-lookup"><span data-stu-id="642e1-104">**Updated for Fall Creators Update.**</span></span>  
+<span data-ttu-id="642e1-105">Wenn Sie Creators Update oder Anniversary Update ausführen, fahren Sie mit dem Abschnitt [Creators/Anniversary Update](interop.md#creators-update-and-anniversary-update) fort.</span><span class="sxs-lookup"><span data-stu-id="642e1-105">If you're running Creators Update or Anniversary Update, jump to the [Creators/Anniversary Update section](interop.md#creators-update-and-anniversary-update).</span></span>
 
-<span data-ttu-id="03353-106">Das Windows-Subsystem für Linux (WSL) verbessert die Integration zwischen Windows und Linux kontinuierlich.</span><span class="sxs-lookup"><span data-stu-id="03353-106">The Windows Subsystem for Linux (WSL) is continuously improving integration between Windows and Linux.</span></span>  <span data-ttu-id="03353-107">Sie haben folgende Möglichkeiten:</span><span class="sxs-lookup"><span data-stu-id="03353-107">You can:</span></span>
+<span data-ttu-id="642e1-106">Das Windows-Subsystem für Linux (WSL) verbessert die Integration zwischen Windows und Linux kontinuierlich.</span><span class="sxs-lookup"><span data-stu-id="642e1-106">The Windows Subsystem for Linux (WSL) is continuously improving integration between Windows and Linux.</span></span>  <span data-ttu-id="642e1-107">Sie haben folgende Möglichkeiten:</span><span class="sxs-lookup"><span data-stu-id="642e1-107">You can:</span></span>
 
-1. <span data-ttu-id="03353-108">Aufrufen von Windows-Binärdateien über die Linux-Konsole.</span><span class="sxs-lookup"><span data-stu-id="03353-108">Invoke Windows binaries from the Linux console.</span></span>
-1. <span data-ttu-id="03353-109">Aufrufen von Linux-Binärdateien über eine Windows-Konsole.</span><span class="sxs-lookup"><span data-stu-id="03353-109">Invoke Linux binaries from a Windows console.</span></span>
-1. <span data-ttu-id="03353-110">**Windows Insider Build 17063 und höher**: Freigeben von Umgebungsvariablen zwischen Linux und Windows.</span><span class="sxs-lookup"><span data-stu-id="03353-110">**Windows Insiders Builds 17063+** Share environment variables between Linux and Windows.</span></span>
+1. <span data-ttu-id="642e1-108">Aufrufen von Windows-Binärdateien über die Linux-Konsole.</span><span class="sxs-lookup"><span data-stu-id="642e1-108">Invoke Windows binaries from the Linux console.</span></span>
+1. <span data-ttu-id="642e1-109">Aufrufen von Linux-Binärdateien über eine Windows-Konsole.</span><span class="sxs-lookup"><span data-stu-id="642e1-109">Invoke Linux binaries from a Windows console.</span></span>
+1. <span data-ttu-id="642e1-110">**Windows Insider Build 17063 und höher**: Freigeben von Umgebungsvariablen zwischen Linux und Windows.</span><span class="sxs-lookup"><span data-stu-id="642e1-110">**Windows Insiders Builds 17063+** Share environment variables between Linux and Windows.</span></span>
 
-<span data-ttu-id="03353-111">Dies bietet eine nahtlose Benutzererfahrung zwischen Windows und WSL.</span><span class="sxs-lookup"><span data-stu-id="03353-111">This delivers a seamless experience between Windows and WSL.</span></span>  <span data-ttu-id="03353-112">Technische Details finden Sie im [WSL-Blog](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/).</span><span class="sxs-lookup"><span data-stu-id="03353-112">Technical details are on the [WSL blog](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/).</span></span>
+<span data-ttu-id="642e1-111">Dies bietet eine nahtlose Benutzererfahrung zwischen Windows und WSL.</span><span class="sxs-lookup"><span data-stu-id="642e1-111">This delivers a seamless experience between Windows and WSL.</span></span>  <span data-ttu-id="642e1-112">Technische Details finden Sie im [WSL-Blog](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/).</span><span class="sxs-lookup"><span data-stu-id="642e1-112">Technical details are on the [WSL blog](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/).</span></span>
 
-## <a name="run-linux-tools-from-a-windows-command-line"></a><span data-ttu-id="03353-113">Ausführen von Linux-Tools über eine Windows-Befehlszeile</span><span class="sxs-lookup"><span data-stu-id="03353-113">Run Linux tools from a Windows command line</span></span>
+## <a name="run-linux-tools-from-a-windows-command-line"></a><span data-ttu-id="642e1-113">Ausführen von Linux-Tools über eine Windows-Befehlszeile</span><span class="sxs-lookup"><span data-stu-id="642e1-113">Run Linux tools from a Windows command line</span></span>
 
-<span data-ttu-id="03353-114">Führen Sie Linux-Binärdateien über die Windows-Eingabeaufforderung (CMD oder PowerShell) mithilfe von `wsl.exe <command>` aus.</span><span class="sxs-lookup"><span data-stu-id="03353-114">Run Linux binaries from the Windows Command Prompt (CMD or PowerShell) using `wsl.exe <command>`.</span></span>
+<span data-ttu-id="642e1-114">Führen Sie Linux-Binärdateien über die Windows-Eingabeaufforderung (CMD oder PowerShell) mithilfe von `wsl.exe <command>` aus.</span><span class="sxs-lookup"><span data-stu-id="642e1-114">Run Linux binaries from the Windows Command Prompt (CMD or PowerShell) using `wsl.exe <command>`.</span></span>
 
-<span data-ttu-id="03353-115">Auf diese Weise aufgerufene Binärdateien:</span><span class="sxs-lookup"><span data-stu-id="03353-115">Binaries invoked in this way:</span></span>
+<span data-ttu-id="642e1-115">Auf diese Weise aufgerufene Binärdateien:</span><span class="sxs-lookup"><span data-stu-id="642e1-115">Binaries invoked in this way:</span></span>
 
-1. <span data-ttu-id="03353-116">Verwenden das gleiche Arbeitsverzeichnis wie die aktuelle CMD- oder PowerShell-Eingabeaufforderung.</span><span class="sxs-lookup"><span data-stu-id="03353-116">Use the same working directory as the current CMD or PowerShell prompt.</span></span>
-1. <span data-ttu-id="03353-117">Werden als WSL-Standardbenutzer aus geführt.</span><span class="sxs-lookup"><span data-stu-id="03353-117">Run as the WSL default user.</span></span>
-1. <span data-ttu-id="03353-118">Verfügen über dieselben Windows-Administratorrechte wie der aufrufende Prozess und das Terminal.</span><span class="sxs-lookup"><span data-stu-id="03353-118">Have the same Windows administrative rights as the calling process and terminal.</span></span>
+1. <span data-ttu-id="642e1-116">Verwenden das gleiche Arbeitsverzeichnis wie die aktuelle CMD- oder PowerShell-Eingabeaufforderung.</span><span class="sxs-lookup"><span data-stu-id="642e1-116">Use the same working directory as the current CMD or PowerShell prompt.</span></span>
+1. <span data-ttu-id="642e1-117">Werden als WSL-Standardbenutzer aus geführt.</span><span class="sxs-lookup"><span data-stu-id="642e1-117">Run as the WSL default user.</span></span>
+1. <span data-ttu-id="642e1-118">Verfügen über dieselben Windows-Administratorrechte wie der aufrufende Prozess und das Terminal.</span><span class="sxs-lookup"><span data-stu-id="642e1-118">Have the same Windows administrative rights as the calling process and terminal.</span></span>
 
-<span data-ttu-id="03353-119">Zum Beispiel:</span><span class="sxs-lookup"><span data-stu-id="03353-119">For example:</span></span>
+<span data-ttu-id="642e1-119">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="642e1-119">For example:</span></span>
 
 ```console
 C:\temp> wsl ls -la
 <- contents of C:\temp ->
 ```
 
-<span data-ttu-id="03353-120">Der auf `wsl.exe` folgende Linux-Befehl wird wie ein beliebiger Befehl verarbeitet, der in WSL ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="03353-120">The Linux command following `wsl.exe` is handled like any command run in WSL.</span></span>  <span data-ttu-id="03353-121">Dinge wie sudo, Piping und Dateiumleitung funktionieren.</span><span class="sxs-lookup"><span data-stu-id="03353-121">Things such as sudo, piping, and file redirection work.</span></span>
+<span data-ttu-id="642e1-120">Der auf `wsl.exe` folgende Linux-Befehl wird wie ein beliebiger Befehl verarbeitet, der in WSL ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="642e1-120">The Linux command following `wsl.exe` is handled like any command run in WSL.</span></span>  <span data-ttu-id="642e1-121">Dinge wie sudo, Piping und Dateiumleitung funktionieren.</span><span class="sxs-lookup"><span data-stu-id="642e1-121">Things such as sudo, piping, and file redirection work.</span></span>
 
-<span data-ttu-id="03353-122">Beispiel für die Verwendung von sudo:</span><span class="sxs-lookup"><span data-stu-id="03353-122">Example using sudo:</span></span>
+<span data-ttu-id="642e1-122">Beispiel für die Verwendung von sudo:</span><span class="sxs-lookup"><span data-stu-id="642e1-122">Example using sudo:</span></span>
 
 ```console
 C:\temp> wsl sudo apt-get update
@@ -54,7 +54,7 @@ Hit:1 https://archive.ubuntu.com/ubuntu xenial InRelease
 Get:2 https://security.ubuntu.com/ubuntu xenial-security InRelease [94.5 kB]
 ```
 
-<span data-ttu-id="03353-123">Beispiele für das Mischen von WSL- und Windows-Befehlen:</span><span class="sxs-lookup"><span data-stu-id="03353-123">Examples mixing WSL and Windows commands:</span></span>
+<span data-ttu-id="642e1-123">Beispiele für das Mischen von WSL- und Windows-Befehlen:</span><span class="sxs-lookup"><span data-stu-id="642e1-123">Examples mixing WSL and Windows commands:</span></span>
 
 ```console
 C:\temp> wsl ls -la | findstr "foo"
@@ -66,9 +66,9 @@ C:\temp> dir | wsl grep foo
 C:\temp> wsl ls -la > out.txt
 ```
 
-<span data-ttu-id="03353-124">Die an `wsl.exe` übergebenen Befehle werden ohne Änderung an den WSL-Prozess weitergeleitet.</span><span class="sxs-lookup"><span data-stu-id="03353-124">The commands passed into `wsl.exe` are forwarded to the WSL process without modification.</span></span>  <span data-ttu-id="03353-125">Dateipfade müssen im WSL-Format angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="03353-125">File paths must be specified in the WSL format.</span></span>
+<span data-ttu-id="642e1-124">Die an `wsl.exe` übergebenen Befehle werden ohne Änderung an den WSL-Prozess weitergeleitet.</span><span class="sxs-lookup"><span data-stu-id="642e1-124">The commands passed into `wsl.exe` are forwarded to the WSL process without modification.</span></span>  <span data-ttu-id="642e1-125">Dateipfade müssen im WSL-Format angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="642e1-125">File paths must be specified in the WSL format.</span></span>
 
-<span data-ttu-id="03353-126">Beispiel mit Pfaden:</span><span class="sxs-lookup"><span data-stu-id="03353-126">Example with paths:</span></span>
+<span data-ttu-id="642e1-126">Beispiel mit Pfaden:</span><span class="sxs-lookup"><span data-stu-id="642e1-126">Example with paths:</span></span>
 
 ```console
 C:\temp> wsl ls -la /proc/cpuinfo
@@ -78,26 +78,26 @@ C:\temp> wsl ls -la "/mnt/c/Program Files"
 <- contents of C:\Program Files ->
 ```
 
-## <a name="run-windows-tools-from-wsl"></a><span data-ttu-id="03353-127">Ausführen von Windows-Tools aus WSL</span><span class="sxs-lookup"><span data-stu-id="03353-127">Run Windows tools from WSL</span></span>
+## <a name="run-windows-tools-from-wsl"></a><span data-ttu-id="642e1-127">Ausführen von Windows-Tools aus WSL</span><span class="sxs-lookup"><span data-stu-id="642e1-127">Run Windows tools from WSL</span></span>
 
-<span data-ttu-id="03353-128">WSL kann Windows-Binärdateien direkt über die WSL-Befehlszeile mithilfe von `[binary name].exe` aufrufen.</span><span class="sxs-lookup"><span data-stu-id="03353-128">WSL can invoke Windows binaries directly from the WSL command line using `[binary name].exe`.</span></span>  <span data-ttu-id="03353-129">Beispiel: `notepad.exe`.</span><span class="sxs-lookup"><span data-stu-id="03353-129">For example, `notepad.exe`.</span></span>  <span data-ttu-id="03353-130">Damit ausführbare Windows-Dateien einfacher ausgeführt werden können, ist der Windows-Pfad im Fall Creators Update in `$PATH` von Linux enthalten.</span><span class="sxs-lookup"><span data-stu-id="03353-130">To make Windows executables easier to run, Windows path is included in the Linux `$PATH` in Fall Creators Update.</span></span>
+<span data-ttu-id="642e1-128">WSL kann Windows-Binärdateien direkt über die WSL-Befehlszeile mithilfe von `[binary name].exe` aufrufen.</span><span class="sxs-lookup"><span data-stu-id="642e1-128">WSL can invoke Windows binaries directly from the WSL command line using `[binary name].exe`.</span></span>  <span data-ttu-id="642e1-129">Beispiel: `notepad.exe`.</span><span class="sxs-lookup"><span data-stu-id="642e1-129">For example, `notepad.exe`.</span></span>  <span data-ttu-id="642e1-130">Damit ausführbare Windows-Dateien einfacher ausgeführt werden können, ist der Windows-Pfad im Fall Creators Update in `$PATH` von Linux enthalten.</span><span class="sxs-lookup"><span data-stu-id="642e1-130">To make Windows executables easier to run, Windows path is included in the Linux `$PATH` in Fall Creators Update.</span></span>
 
-<span data-ttu-id="03353-131">Anwendungen, die auf diese Weise ausgeführt werden, besitzen die folgenden Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="03353-131">Applications run this way have the following properties:</span></span>
+<span data-ttu-id="642e1-131">Anwendungen, die auf diese Weise ausgeführt werden, besitzen die folgenden Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="642e1-131">Applications run this way have the following properties:</span></span>
 
-1. <span data-ttu-id="03353-132">Sie behalten das Arbeitsverzeichnis als das Verzeichnis der WSL-Eingabeaufforderung bei (in den meisten Fällen, Ausnahmen werden unten erläutert).</span><span class="sxs-lookup"><span data-stu-id="03353-132">Retain the working directory as the WSL command prompt (for the most part -- exceptions are explained below).</span></span>
-1. <span data-ttu-id="03353-133">Sie verfügen über die gleichen Berechtigungen wie der WSL-Prozess.</span><span class="sxs-lookup"><span data-stu-id="03353-133">Have the same permission rights as the WSL process.</span></span>
-1. <span data-ttu-id="03353-134">Sie werden als aktiver Windows-Benutzer ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="03353-134">Run as the active Windows user.</span></span>
-1. <span data-ttu-id="03353-135">Sie werden im Task-Manager von Windows so angezeigt, als würden die direkt über die CMD-Eingabeaufforderung ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="03353-135">Appear in the Windows Task Manager as if directly executed from the CMD prompt.</span></span>
+1. <span data-ttu-id="642e1-132">Sie behalten das Arbeitsverzeichnis als das Verzeichnis der WSL-Eingabeaufforderung bei (in den meisten Fällen, Ausnahmen werden unten erläutert).</span><span class="sxs-lookup"><span data-stu-id="642e1-132">Retain the working directory as the WSL command prompt (for the most part -- exceptions are explained below).</span></span>
+1. <span data-ttu-id="642e1-133">Sie verfügen über die gleichen Berechtigungen wie der WSL-Prozess.</span><span class="sxs-lookup"><span data-stu-id="642e1-133">Have the same permission rights as the WSL process.</span></span>
+1. <span data-ttu-id="642e1-134">Sie werden als aktiver Windows-Benutzer ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="642e1-134">Run as the active Windows user.</span></span>
+1. <span data-ttu-id="642e1-135">Sie werden im Task-Manager von Windows so angezeigt, als würden die direkt über die CMD-Eingabeaufforderung ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="642e1-135">Appear in the Windows Task Manager as if directly executed from the CMD prompt.</span></span>
 
-<span data-ttu-id="03353-136">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="03353-136">Example:</span></span>
+<span data-ttu-id="642e1-136">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="642e1-136">Example:</span></span>
 
 ``` BASH
 $ notepad.exe
 ```
 
-<span data-ttu-id="03353-137">Ausführbare Windows-Dateien, die in WSL ausgeführt werden, werden ähnlich wie native ausführbare Linux-Dateien verarbeitet. Piping, Umleitungen und sogar Hintergrundverarbeitung funktionieren wie erwartet.</span><span class="sxs-lookup"><span data-stu-id="03353-137">Windows executables run in WSL are handled similarly to native Linux executables -- piping, redirects, and even backgrounding work as expected.</span></span>
+<span data-ttu-id="642e1-137">Ausführbare Windows-Dateien, die in WSL ausgeführt werden, werden ähnlich wie native ausführbare Linux-Dateien verarbeitet. Piping, Umleitungen und sogar Hintergrundverarbeitung funktionieren wie erwartet.</span><span class="sxs-lookup"><span data-stu-id="642e1-137">Windows executables run in WSL are handled similarly to native Linux executables -- piping, redirects, and even backgrounding work as expected.</span></span>
 
-<span data-ttu-id="03353-138">Beispiele für die Verwendung von Pipes:</span><span class="sxs-lookup"><span data-stu-id="03353-138">Examples using pipes:</span></span>
+<span data-ttu-id="642e1-138">Beispiele für die Verwendung von Pipes:</span><span class="sxs-lookup"><span data-stu-id="642e1-138">Examples using pipes:</span></span>
 
 ``` BASH
 $ ipconfig.exe | grep IPv4 | cut -d: -f2
@@ -105,7 +105,7 @@ $ ipconfig.exe | grep IPv4 | cut -d: -f2
 10.159.21.24
 ```
 
-<span data-ttu-id="03353-139">Beispiel für die Verwendung gemischter Windows- und WSL-Befehle:</span><span class="sxs-lookup"><span data-stu-id="03353-139">Example using mixed Windows and WSL commands:</span></span>
+<span data-ttu-id="642e1-139">Beispiel für die Verwendung gemischter Windows- und WSL-Befehle:</span><span class="sxs-lookup"><span data-stu-id="642e1-139">Example using mixed Windows and WSL commands:</span></span>
 
 ``` BASH
 $ ls -la | findstr.exe foo.txt
@@ -114,9 +114,9 @@ $ cmd.exe /c dir
 <- contents of C:\ ->
 ```
 
-<span data-ttu-id="03353-140">Windows-Binärdateien müssen die Dateierweiterung enthalten, der Groß-/Kleinschreibung der Datei Rechnung tragen und ausführbare Dateien sein.</span><span class="sxs-lookup"><span data-stu-id="03353-140">Windows binaries must include the file extension, match the file case, and be executable.</span></span>  <span data-ttu-id="03353-141">Nicht ausführbare Dateien, einschließlich Batchskripts.</span><span class="sxs-lookup"><span data-stu-id="03353-141">Non-executables including batch scripts.</span></span>  <span data-ttu-id="03353-142">Native CMD-Befehle wie `dir` können mit einem Befehl `cmd.exe /C` ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="03353-142">CMD native commands like `dir` can be run with `cmd.exe /C` command.</span></span>
+<span data-ttu-id="642e1-140">Windows-Binärdateien müssen die Dateierweiterung enthalten, der Groß-/Kleinschreibung der Datei Rechnung tragen und ausführbare Dateien sein.</span><span class="sxs-lookup"><span data-stu-id="642e1-140">Windows binaries must include the file extension, match the file case, and be executable.</span></span>  <span data-ttu-id="642e1-141">Nicht ausführbare Dateien, einschließlich Batchskripts.</span><span class="sxs-lookup"><span data-stu-id="642e1-141">Non-executables including batch scripts.</span></span>  <span data-ttu-id="642e1-142">Native CMD-Befehle wie `dir` können mit einem Befehl `cmd.exe /C` ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="642e1-142">CMD native commands like `dir` can be run with `cmd.exe /C` command.</span></span>
 
-<span data-ttu-id="03353-143">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="03353-143">Examples:</span></span>
+<span data-ttu-id="642e1-143">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="642e1-143">Examples:</span></span>
 
 ``` BASH
 $ cmd.exe /C dir
@@ -127,20 +127,20 @@ Pinging e1863.dspb.akamaiedge.net [2600:1409:a:5a2::747] with 32 bytes of data:
 Reply from 2600:1409:a:5a2::747: time=2ms
 ```
 
-<span data-ttu-id="03353-144">Parameter werden unverändert an die Windows-Binärdatei übergeben.</span><span class="sxs-lookup"><span data-stu-id="03353-144">Parameters are passed to the Windows binary unmodified.</span></span>
+<span data-ttu-id="642e1-144">Parameter werden unverändert an die Windows-Binärdatei übergeben.</span><span class="sxs-lookup"><span data-stu-id="642e1-144">Parameters are passed to the Windows binary unmodified.</span></span>
 
-<span data-ttu-id="03353-145">Beispielsweise öffnen die folgenden Befehle `C:\temp\foo.txt` in `notepad.exe`:</span><span class="sxs-lookup"><span data-stu-id="03353-145">As an example, the following commands will open `C:\temp\foo.txt` in `notepad.exe`:</span></span>
+<span data-ttu-id="642e1-145">Beispielsweise öffnen die folgenden Befehle `C:\temp\foo.txt` in `notepad.exe`:</span><span class="sxs-lookup"><span data-stu-id="642e1-145">As an example, the following commands will open `C:\temp\foo.txt` in `notepad.exe`:</span></span>
 
 ``` BASH
 $ notepad.exe "C:\temp\foo.txt"
 $ notepad.exe C:\\temp\\foo.txt
 ```
 
-<span data-ttu-id="03353-146">Das Ändern von Dateien in VolFs (Dateien nicht unter `/mnt/<x>`) mit einer Windows-Anwendung in WSL wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="03353-146">Modifying files located on VolFs (files not under `/mnt/<x>`) with a Windows application in WSL is not supported.</span></span>
+<span data-ttu-id="642e1-146">Das Ändern von Dateien in VolFs (Dateien nicht unter `/mnt/<x>`) mit einer Windows-Anwendung in WSL wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="642e1-146">Modifying files located on VolFs (files not under `/mnt/<x>`) with a Windows application in WSL is not supported.</span></span>
 
-<span data-ttu-id="03353-147">Standardmäßig versucht WSL, das Arbeitsverzeichnis der Windows-Binärdatei als aktuelles WSL-Verzeichnis beizubehalten, greift aber auf das Instanzerstellungsverzeichnis zurück, wenn sich das Arbeitsverzeichnis in VolFs befindet.</span><span class="sxs-lookup"><span data-stu-id="03353-147">By default, WSL tries to keep the working directory of the Windows binary as the current WSL directory, but will fall back on the instance creation directory if the working directory is on VolFs.</span></span>
+<span data-ttu-id="642e1-147">Standardmäßig versucht WSL, das Arbeitsverzeichnis der Windows-Binärdatei als aktuelles WSL-Verzeichnis beizubehalten, greift aber auf das Instanzerstellungsverzeichnis zurück, wenn sich das Arbeitsverzeichnis in VolFs befindet.</span><span class="sxs-lookup"><span data-stu-id="642e1-147">By default, WSL tries to keep the working directory of the Windows binary as the current WSL directory, but will fall back on the instance creation directory if the working directory is on VolFs.</span></span>
 
-<span data-ttu-id="03353-148">Beispiel: `wsl.exe` wird anfänglich von `C:\temp` gestartet, und das aktuelle WSL-Verzeichnis wird in das Basisverzeichnis des Benutzers geändert.</span><span class="sxs-lookup"><span data-stu-id="03353-148">As an example; `wsl.exe` is initially launched from `C:\temp` and the current WSL directory is changed to the user’s home.</span></span>  <span data-ttu-id="03353-149">Wenn `notepad.exe` aus dem Basisverzeichnis des Benutzers aufgerufen wird, setzt WSL automatisch auf `C:\temp` als das Arbeitsverzeichnis von „notepad.exe“ zurück:</span><span class="sxs-lookup"><span data-stu-id="03353-149">When `notepad.exe` is called from the user’s home directory, WSL automatically reverts to `C:\temp` as the notepad.exe working directory:</span></span>
+<span data-ttu-id="642e1-148">Beispiel: `wsl.exe` wird anfänglich von `C:\temp` gestartet, und das aktuelle WSL-Verzeichnis wird in das Basisverzeichnis des Benutzers geändert.</span><span class="sxs-lookup"><span data-stu-id="642e1-148">As an example; `wsl.exe` is initially launched from `C:\temp` and the current WSL directory is changed to the user’s home.</span></span>  <span data-ttu-id="642e1-149">Wenn `notepad.exe` aus dem Basisverzeichnis des Benutzers aufgerufen wird, setzt WSL automatisch auf `C:\temp` als das Arbeitsverzeichnis von „notepad.exe“ zurück:</span><span class="sxs-lookup"><span data-stu-id="642e1-149">When `notepad.exe` is called from the user’s home directory, WSL automatically reverts to `C:\temp` as the notepad.exe working directory:</span></span>
 
 ``` BASH
 C:\temp> wsl
@@ -154,76 +154,76 @@ C:\temp>dir | findstr foo.txt
 09/27/2016  02:15 PM                14 foo.txt
 ```
 
-## <a name="share-environment-variables-between-windows-and-wsl"></a><span data-ttu-id="03353-150">Freigeben von Umgebungsvariablen zwischen Windows und WSL</span><span class="sxs-lookup"><span data-stu-id="03353-150">Share environment variables between Windows and WSL</span></span>
+## <a name="share-environment-variables-between-windows-and-wsl"></a><span data-ttu-id="642e1-150">Freigeben von Umgebungsvariablen zwischen Windows und WSL</span><span class="sxs-lookup"><span data-stu-id="642e1-150">Share environment variables between Windows and WSL</span></span>
 
-> <span data-ttu-id="03353-151">Verfügbar in Windows Insider Build 17063 und höher.</span><span class="sxs-lookup"><span data-stu-id="03353-151">Available in Windows Insider builds 17063 and later.</span></span>
+> <span data-ttu-id="642e1-151">Verfügbar in Windows Insider Build 17063 und höher.</span><span class="sxs-lookup"><span data-stu-id="642e1-151">Available in Windows Insider builds 17063 and later.</span></span>
 
-<span data-ttu-id="03353-152">Vor 17063 war `PATH` die einzige Windows-Umgebungsvariable, auf die WSL zugreifen konnte (sodass Sie ausführbare Win32-Dateien unter WSL starten konnten).</span><span class="sxs-lookup"><span data-stu-id="03353-152">Prior to 17063, only Windows environment variable that WSL could access was `PATH` (so you could launch Win32 executables from under WSL).</span></span>
+<span data-ttu-id="642e1-152">Vor 17063 war `PATH` die einzige Windows-Umgebungsvariable, auf die WSL zugreifen konnte (sodass Sie ausführbare Win32-Dateien unter WSL starten konnten).</span><span class="sxs-lookup"><span data-stu-id="642e1-152">Prior to 17063, only Windows environment variable that WSL could access was `PATH` (so you could launch Win32 executables from under WSL).</span></span>
 
-<span data-ttu-id="03353-153">Ab 17063 verwenden WSL und Windows `WSLENV`, eine spezielle Umgebungsvariable, die entwickelt wurde, um Windows und Linux-Distributionen, die unter WSL ausgeführt werden, zu verbinden.</span><span class="sxs-lookup"><span data-stu-id="03353-153">Starting in 17063, WSL and Windows share `WSLENV`, a special environment variable created to bridge Windows and Linux distros running on WSL.</span></span>
+<span data-ttu-id="642e1-153">Ab 17063 verwenden WSL und Windows `WSLENV`, eine spezielle Umgebungsvariable, die entwickelt wurde, um Windows und Linux-Distributionen, die unter WSL ausgeführt werden, zu verbinden.</span><span class="sxs-lookup"><span data-stu-id="642e1-153">Starting in 17063, WSL and Windows share `WSLENV`, a special environment variable created to bridge Windows and Linux distros running on WSL.</span></span>
 
-<span data-ttu-id="03353-154">Eigenschaften von `WSLENV`:</span><span class="sxs-lookup"><span data-stu-id="03353-154">Properties of `WSLENV`:</span></span>
+<span data-ttu-id="642e1-154">Eigenschaften von `WSLENV`:</span><span class="sxs-lookup"><span data-stu-id="642e1-154">Properties of `WSLENV`:</span></span>
 
-* <span data-ttu-id="03353-155">Die Variable ist freigegeben, und sie ist sowohl in Windows- als auch in WSL-Umgebungen vorhanden.</span><span class="sxs-lookup"><span data-stu-id="03353-155">It is shared; it exists in both Windows and WSL environments.</span></span>
-* <span data-ttu-id="03353-156">Es handelt sich um eine Liste von Umgebungsvariablen, die von Windows und WSL gemeinsam genutzt werden können.</span><span class="sxs-lookup"><span data-stu-id="03353-156">It is a list of environment variables to share between Windows and WSL.</span></span>
-* <span data-ttu-id="03353-157">Sie kann Umgebungsvariablen so formatieren, dass sie in Windows und WSL gut funktionieren.</span><span class="sxs-lookup"><span data-stu-id="03353-157">It can format environment variables to work well in Windows and WSL.</span></span>
+* <span data-ttu-id="642e1-155">Die Variable ist freigegeben, und sie ist sowohl in Windows- als auch in WSL-Umgebungen vorhanden.</span><span class="sxs-lookup"><span data-stu-id="642e1-155">It is shared; it exists in both Windows and WSL environments.</span></span>
+* <span data-ttu-id="642e1-156">Es handelt sich um eine Liste von Umgebungsvariablen, die von Windows und WSL gemeinsam genutzt werden können.</span><span class="sxs-lookup"><span data-stu-id="642e1-156">It is a list of environment variables to share between Windows and WSL.</span></span>
+* <span data-ttu-id="642e1-157">Sie kann Umgebungsvariablen so formatieren, dass sie in Windows und WSL gut funktionieren.</span><span class="sxs-lookup"><span data-stu-id="642e1-157">It can format environment variables to work well in Windows and WSL.</span></span>
 
-<span data-ttu-id="03353-158">In `WSLENV` sind vier Flags verfügbar, die beeinflussen, wie diese Umgebungsvariable übersetzt wird.</span><span class="sxs-lookup"><span data-stu-id="03353-158">There are four flags available in `WSLENV` to influence how that environment variable is translated.</span></span>
+<span data-ttu-id="642e1-158">In `WSLENV` sind vier Flags verfügbar, die beeinflussen, wie diese Umgebungsvariable übersetzt wird.</span><span class="sxs-lookup"><span data-stu-id="642e1-158">There are four flags available in `WSLENV` to influence how that environment variable is translated.</span></span>
 
-<span data-ttu-id="03353-159">`WSLENV`-Flags:</span><span class="sxs-lookup"><span data-stu-id="03353-159">`WSLENV` flags:</span></span>
+<span data-ttu-id="642e1-159">`WSLENV`-Flags:</span><span class="sxs-lookup"><span data-stu-id="642e1-159">`WSLENV` flags:</span></span>
 
-* <span data-ttu-id="03353-160">`/p`: Übersetzt den Pfad zwischen Pfaden im WSL-/Linux-Stil und Win32-Pfaden.</span><span class="sxs-lookup"><span data-stu-id="03353-160">`/p` - translates the path between WSL/Linux style paths and Win32 paths.</span></span>
-* <span data-ttu-id="03353-161">`/l`: Gibt an, dass die Umgebungsvariable eine Liste von Pfaden ist.</span><span class="sxs-lookup"><span data-stu-id="03353-161">`/l` - indicates the environment variable is a list of paths.</span></span>
-* <span data-ttu-id="03353-162">`/u`: Gibt an, dass diese Umgebungsvariable nur beim Ausführen von WSL aus Win32 einbezogen werden soll.</span><span class="sxs-lookup"><span data-stu-id="03353-162">`/u` - indicates that this environment variable should only be included when running WSL from Win32.</span></span>
-* <span data-ttu-id="03353-163">`/w`: Gibt an, dass diese Umgebungsvariable nur beim Ausführen von Win32 aus WSL einbezogen werden soll.</span><span class="sxs-lookup"><span data-stu-id="03353-163">`/w` - indicates that this environment variable should only be included when running Win32 from WSL.</span></span>
+* <span data-ttu-id="642e1-160">`/p`: Übersetzt den Pfad zwischen Pfaden im WSL-/Linux-Stil und Win32-Pfaden.</span><span class="sxs-lookup"><span data-stu-id="642e1-160">`/p` - translates the path between WSL/Linux style paths and Win32 paths.</span></span>
+* <span data-ttu-id="642e1-161">`/l`: Gibt an, dass die Umgebungsvariable eine Liste von Pfaden ist.</span><span class="sxs-lookup"><span data-stu-id="642e1-161">`/l` - indicates the environment variable is a list of paths.</span></span>
+* <span data-ttu-id="642e1-162">`/u`: Gibt an, dass diese Umgebungsvariable nur beim Ausführen von WSL aus Win32 einbezogen werden soll.</span><span class="sxs-lookup"><span data-stu-id="642e1-162">`/u` - indicates that this environment variable should only be included when running WSL from Win32.</span></span>
+* <span data-ttu-id="642e1-163">`/w`: Gibt an, dass diese Umgebungsvariable nur beim Ausführen von Win32 aus WSL einbezogen werden soll.</span><span class="sxs-lookup"><span data-stu-id="642e1-163">`/w` - indicates that this environment variable should only be included when running Win32 from WSL.</span></span>
 
-<span data-ttu-id="03353-164">Diese Flags können nach Bedarf kombiniert werden.</span><span class="sxs-lookup"><span data-stu-id="03353-164">Flags can be combined as needed.</span></span>
+<span data-ttu-id="642e1-164">Diese Flags können nach Bedarf kombiniert werden.</span><span class="sxs-lookup"><span data-stu-id="642e1-164">Flags can be combined as needed.</span></span>
 
-## <a name="disable-interop"></a><span data-ttu-id="03353-165">Deaktivieren von Interop</span><span class="sxs-lookup"><span data-stu-id="03353-165">Disable Interop</span></span>
+## <a name="disable-interop"></a><span data-ttu-id="642e1-165">Deaktivieren von Interop</span><span class="sxs-lookup"><span data-stu-id="642e1-165">Disable Interop</span></span>
 
-<span data-ttu-id="03353-166">Benutzer können die Möglichkeit zum Ausführen von Windows-Binärdateien für eine einzelne WSL-Sitzung deaktivieren, indem Sie den folgenden Befehl als root ausführen:</span><span class="sxs-lookup"><span data-stu-id="03353-166">Users may disable the ability to run Windows binaries for a single WSL session by running the following command as root:</span></span>
+<span data-ttu-id="642e1-166">Benutzer können die Möglichkeit zum Ausführen von Windows-Binärdateien für eine einzelne WSL-Sitzung deaktivieren, indem Sie den folgenden Befehl als root ausführen:</span><span class="sxs-lookup"><span data-stu-id="642e1-166">Users may disable the ability to run Windows binaries for a single WSL session by running the following command as root:</span></span>
 
 ``` BASH
 $ echo 0 > /proc/sys/fs/binfmt_misc/WSLInterop
 ```
 
-<span data-ttu-id="03353-167">Zum erneuten Aktivieren von Windows-Binärdateien beenden Sie entweder alle WSL-Sitzungen und führen „bash.exe“ erneut aus, oder führen Sie den folgenden Befehl als root aus:</span><span class="sxs-lookup"><span data-stu-id="03353-167">To reenable Windows binaries either exit all WSL sessions and re-run bash.exe or run the following command as root:</span></span>
+<span data-ttu-id="642e1-167">Zum erneuten Aktivieren von Windows-Binärdateien beenden Sie entweder alle WSL-Sitzungen und führen „bash.exe“ erneut aus, oder führen Sie den folgenden Befehl als root aus:</span><span class="sxs-lookup"><span data-stu-id="642e1-167">To reenable Windows binaries either exit all WSL sessions and re-run bash.exe or run the following command as root:</span></span>
 
 ``` BASH
 $ echo 1 > /proc/sys/fs/binfmt_misc/WSLInterop
 ```
 
-<span data-ttu-id="03353-168">Die Deaktivierung von Interop wird nicht zwischen WSL-Sitzungen beibehalten. Interop wird erneut aktiviert, wenn eine neue Sitzung gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="03353-168">Disabling interop will not persist between WSL sessions -- interop will be enabled again when a new session is launched.</span></span>
+<span data-ttu-id="642e1-168">Die Deaktivierung von Interop wird nicht zwischen WSL-Sitzungen beibehalten. Interop wird erneut aktiviert, wenn eine neue Sitzung gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="642e1-168">Disabling interop will not persist between WSL sessions -- interop will be enabled again when a new session is launched.</span></span>
 
-## <a name="creators-update-and-anniversary-update"></a><span data-ttu-id="03353-169">Creators Update und Anniversary Update</span><span class="sxs-lookup"><span data-stu-id="03353-169">Creators Update and Anniversary Update</span></span>
+## <a name="creators-update-and-anniversary-update"></a><span data-ttu-id="642e1-169">Creators Update und Anniversary Update</span><span class="sxs-lookup"><span data-stu-id="642e1-169">Creators Update and Anniversary Update</span></span>
 
-<span data-ttu-id="03353-170">Während das Interopverhalten vor dem Fall Creators Update aktuellem Interopverhalten ähnelt, gibt es einige wichtige Unterschiede.</span><span class="sxs-lookup"><span data-stu-id="03353-170">While the interop experience pre-Fall Creators Update is similar to more recent interop experiences, there are a handful of major differences.</span></span>
+<span data-ttu-id="642e1-170">Während das Interopverhalten vor dem Fall Creators Update aktuellem Interopverhalten ähnelt, gibt es einige wichtige Unterschiede.</span><span class="sxs-lookup"><span data-stu-id="642e1-170">While the interop experience pre-Fall Creators Update is similar to more recent interop experiences, there are a handful of major differences.</span></span>
 
-<span data-ttu-id="03353-171">Zusammenfassung:</span><span class="sxs-lookup"><span data-stu-id="03353-171">To summarize:</span></span>
+<span data-ttu-id="642e1-171">Zusammenfassung:</span><span class="sxs-lookup"><span data-stu-id="642e1-171">To summarize:</span></span>
 
-* <span data-ttu-id="03353-172">`bash.exe` wurde als veraltet erklärt und durch `wsl.exe` ersetzt.</span><span class="sxs-lookup"><span data-stu-id="03353-172">`bash.exe` has been deprecated and replaced with `wsl.exe`.</span></span>
-* <span data-ttu-id="03353-173">Die `-c`-Option zum Ausführen eines einzelnen Befehls ist mit `wsl.exe` nicht erforderlich.</span><span class="sxs-lookup"><span data-stu-id="03353-173">`-c` option for running a single command isn't needed with `wsl.exe`.</span></span>
-* <span data-ttu-id="03353-174">Der Windows-Pfad ist in `$PATH` von WSL enthalten.</span><span class="sxs-lookup"><span data-stu-id="03353-174">Windows path is included in the WSL `$PATH`</span></span>
+* <span data-ttu-id="642e1-172">`bash.exe` wurde als veraltet erklärt und durch `wsl.exe` ersetzt.</span><span class="sxs-lookup"><span data-stu-id="642e1-172">`bash.exe` has been deprecated and replaced with `wsl.exe`.</span></span>
+* <span data-ttu-id="642e1-173">Die `-c`-Option zum Ausführen eines einzelnen Befehls ist mit `wsl.exe` nicht erforderlich.</span><span class="sxs-lookup"><span data-stu-id="642e1-173">`-c` option for running a single command isn't needed with `wsl.exe`.</span></span>
+* <span data-ttu-id="642e1-174">Der Windows-Pfad ist in `$PATH` von WSL enthalten.</span><span class="sxs-lookup"><span data-stu-id="642e1-174">Windows path is included in the WSL `$PATH`</span></span>
 
-<span data-ttu-id="03353-175">Der Prozess zum Deaktivieren von Interop ist unverändert.</span><span class="sxs-lookup"><span data-stu-id="03353-175">The process for disabling interop is unchanged.</span></span>
+<span data-ttu-id="642e1-175">Der Prozess zum Deaktivieren von Interop ist unverändert.</span><span class="sxs-lookup"><span data-stu-id="642e1-175">The process for disabling interop is unchanged.</span></span>
 
-### <a name="invoking-wsl-from-the-windows-command-line"></a><span data-ttu-id="03353-176">Aufrufen von WSL über die Windows-Befehlszeile</span><span class="sxs-lookup"><span data-stu-id="03353-176">Invoking WSL from the Windows Command Line</span></span>
+### <a name="invoking-wsl-from-the-windows-command-line"></a><span data-ttu-id="642e1-176">Aufrufen von WSL über die Windows-Befehlszeile</span><span class="sxs-lookup"><span data-stu-id="642e1-176">Invoking WSL from the Windows Command Line</span></span>
 
-<span data-ttu-id="03353-177">Linux-Binärdateien können über die Windows-Eingabeaufforderung oder aus PowerShell aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="03353-177">Linux binaries can be invoked from the Windows Command Prompt or from PowerShell.</span></span>  <span data-ttu-id="03353-178">Binärdateien, die auf diese Weise aufgerufen werden, besitzen die folgenden Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="03353-178">Binaries invoked in this way have the following properties:</span></span>
+<span data-ttu-id="642e1-177">Linux-Binärdateien können über die Windows-Eingabeaufforderung oder aus PowerShell aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="642e1-177">Linux binaries can be invoked from the Windows Command Prompt or from PowerShell.</span></span>  <span data-ttu-id="642e1-178">Binärdateien, die auf diese Weise aufgerufen werden, besitzen die folgenden Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="642e1-178">Binaries invoked in this way have the following properties:</span></span>
 
-1. <span data-ttu-id="03353-179">Sie verwenden das gleiche Arbeitsverzeichnis wie die CMD- oder PowerShell-Eingabeaufforderung.</span><span class="sxs-lookup"><span data-stu-id="03353-179">Use the same working directory as the CMD or PowerShell prompt.</span></span>
-1. <span data-ttu-id="03353-180">Sie werden als WSL-Standardbenutzer ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="03353-180">Run as the WSL default user.</span></span>
-1. <span data-ttu-id="03353-181">Sie verfügen über dieselben Windows-Administratorrechte wie der aufrufende Prozess und das Terminal.</span><span class="sxs-lookup"><span data-stu-id="03353-181">Have the same Windows administrative rights as the calling process and terminal.</span></span>
+1. <span data-ttu-id="642e1-179">Sie verwenden das gleiche Arbeitsverzeichnis wie die CMD- oder PowerShell-Eingabeaufforderung.</span><span class="sxs-lookup"><span data-stu-id="642e1-179">Use the same working directory as the CMD or PowerShell prompt.</span></span>
+1. <span data-ttu-id="642e1-180">Sie werden als WSL-Standardbenutzer ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="642e1-180">Run as the WSL default user.</span></span>
+1. <span data-ttu-id="642e1-181">Sie verfügen über dieselben Windows-Administratorrechte wie der aufrufende Prozess und das Terminal.</span><span class="sxs-lookup"><span data-stu-id="642e1-181">Have the same Windows administrative rights as the calling process and terminal.</span></span>
 
-<span data-ttu-id="03353-182">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="03353-182">Example:</span></span>
+<span data-ttu-id="642e1-182">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="642e1-182">Example:</span></span>
 
 ```console
 C:\temp> bash -c "ls -la"
 ```
 
-<span data-ttu-id="03353-183">Linux-Befehle, die auf diese Weise aufgerufen werden, werden wie jede andere Windows-Anwendung behandelt.</span><span class="sxs-lookup"><span data-stu-id="03353-183">Linux commands called in this way are handled like any other Windows application.</span></span>  <span data-ttu-id="03353-184">Dinge wie Eingabe, Piping und Dateiumleitung funktionieren erwartungsgemäß.</span><span class="sxs-lookup"><span data-stu-id="03353-184">Things such as input, piping, and file redirection work as expected.</span></span>
+<span data-ttu-id="642e1-183">Linux-Befehle, die auf diese Weise aufgerufen werden, werden wie jede andere Windows-Anwendung behandelt.</span><span class="sxs-lookup"><span data-stu-id="642e1-183">Linux commands called in this way are handled like any other Windows application.</span></span>  <span data-ttu-id="642e1-184">Dinge wie Eingabe, Piping und Dateiumleitung funktionieren erwartungsgemäß.</span><span class="sxs-lookup"><span data-stu-id="642e1-184">Things such as input, piping, and file redirection work as expected.</span></span>
 
-<span data-ttu-id="03353-185">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="03353-185">Examples:</span></span>
+<span data-ttu-id="642e1-185">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="642e1-185">Examples:</span></span>
 
 ```console
 C:\temp>bash -c "sudo apt-get update"
@@ -238,7 +238,7 @@ C:\temp> dir | bash -c "grep foo"
 C:\temp> bash -c "ls -la" > out.txt
 ```
 
-<span data-ttu-id="03353-186">Die an `bash -c` übergebenen WSL-Befehle werden ohne Änderung an den WSL-Prozess weitergeleitet.</span><span class="sxs-lookup"><span data-stu-id="03353-186">The WSL commands passed into `bash -c` are forwarded to the WSL process without modification.</span></span>  <span data-ttu-id="03353-187">Dateipfade müssen im WSL-Format angegeben werden, und es muss darauf geachtet werden, dass relevante Zeichen mit Escapezeichen versehen werden.</span><span class="sxs-lookup"><span data-stu-id="03353-187">File paths must be specified in the WSL format and care must be taken to escape relevant characters.</span></span> <span data-ttu-id="03353-188">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="03353-188">Example:</span></span>
+<span data-ttu-id="642e1-186">Die an `bash -c` übergebenen WSL-Befehle werden ohne Änderung an den WSL-Prozess weitergeleitet.</span><span class="sxs-lookup"><span data-stu-id="642e1-186">The WSL commands passed into `bash -c` are forwarded to the WSL process without modification.</span></span>  <span data-ttu-id="642e1-187">Dateipfade müssen im WSL-Format angegeben werden, und es muss darauf geachtet werden, dass relevante Zeichen mit Escapezeichen versehen werden.</span><span class="sxs-lookup"><span data-stu-id="642e1-187">File paths must be specified in the WSL format and care must be taken to escape relevant characters.</span></span> <span data-ttu-id="642e1-188">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="642e1-188">Example:</span></span>
 
 ```console
 C:\temp> bash -c "ls -la /proc/cpuinfo"
@@ -248,22 +248,22 @@ C:\temp> bash -c "ls -la \"/mnt/c/Program Files\""
 <- contents of C:\Program Files ->
 ```
 
-### <a name="invoking-windows-binaries-from-wsl"></a><span data-ttu-id="03353-189">Aufrufen von Windows-Binärdateien aus WSL</span><span class="sxs-lookup"><span data-stu-id="03353-189">Invoking Windows binaries from WSL</span></span>
+### <a name="invoking-windows-binaries-from-wsl"></a><span data-ttu-id="642e1-189">Aufrufen von Windows-Binärdateien aus WSL</span><span class="sxs-lookup"><span data-stu-id="642e1-189">Invoking Windows binaries from WSL</span></span>
 
-<span data-ttu-id="03353-190">Das Windows-Subsystem für Linux kann Windows-Binärdateien direkt über die WSL-Befehlszeile aufrufen.</span><span class="sxs-lookup"><span data-stu-id="03353-190">The Windows Subsystem for Linux can invoke Windows binaries directly from the WSL command line.</span></span>  <span data-ttu-id="03353-191">Anwendungen, die auf diese Weise ausgeführt werden, besitzen die folgenden Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="03353-191">Applications run this way have the following properties:</span></span>
+<span data-ttu-id="642e1-190">Das Windows-Subsystem für Linux kann Windows-Binärdateien direkt über die WSL-Befehlszeile aufrufen.</span><span class="sxs-lookup"><span data-stu-id="642e1-190">The Windows Subsystem for Linux can invoke Windows binaries directly from the WSL command line.</span></span>  <span data-ttu-id="642e1-191">Anwendungen, die auf diese Weise ausgeführt werden, besitzen die folgenden Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="642e1-191">Applications run this way have the following properties:</span></span>
 
-1. <span data-ttu-id="03353-192">Sie behalten das Arbeitsverzeichnis als das Verzeichnis der WSL-Eingabeaufforderung bei. Eine Ausnahme bildet das unten erläuterte Szenario.</span><span class="sxs-lookup"><span data-stu-id="03353-192">Retain the working directory as the WSL command prompt except in the scenario explained below.</span></span>
-1. <span data-ttu-id="03353-193">Sie verfügen über die gleichen Berechtigungen wie der `bash.exe`-Prozess.</span><span class="sxs-lookup"><span data-stu-id="03353-193">Have the same permission rights as the `bash.exe` process.</span></span> 
-1. <span data-ttu-id="03353-194">Sie werden als aktiver Windows-Benutzer ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="03353-194">Run as the active Windows user.</span></span>
-1. <span data-ttu-id="03353-195">Sie werden im Task-Manager von Windows so angezeigt, als würden die direkt über die CMD-Eingabeaufforderung ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="03353-195">Appear in the Windows Task Manager as if directly executed from the CMD prompt.</span></span>
+1. <span data-ttu-id="642e1-192">Sie behalten das Arbeitsverzeichnis als das Verzeichnis der WSL-Eingabeaufforderung bei. Eine Ausnahme bildet das unten erläuterte Szenario.</span><span class="sxs-lookup"><span data-stu-id="642e1-192">Retain the working directory as the WSL command prompt except in the scenario explained below.</span></span>
+1. <span data-ttu-id="642e1-193">Sie verfügen über die gleichen Berechtigungen wie der `bash.exe`-Prozess.</span><span class="sxs-lookup"><span data-stu-id="642e1-193">Have the same permission rights as the `bash.exe` process.</span></span> 
+1. <span data-ttu-id="642e1-194">Sie werden als aktiver Windows-Benutzer ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="642e1-194">Run as the active Windows user.</span></span>
+1. <span data-ttu-id="642e1-195">Sie werden im Task-Manager von Windows so angezeigt, als würden die direkt über die CMD-Eingabeaufforderung ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="642e1-195">Appear in the Windows Task Manager as if directly executed from the CMD prompt.</span></span>
 
-<span data-ttu-id="03353-196">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="03353-196">Example:</span></span>
+<span data-ttu-id="642e1-196">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="642e1-196">Example:</span></span>
 
 ``` BASH
 $ /mnt/c/Windows/System32/notepad.exe
 ```
 
-<span data-ttu-id="03353-197">In WSL werden diese ausführbaren Dateien ähnlich wie native ausführbare Linux-Dateien behandelt.</span><span class="sxs-lookup"><span data-stu-id="03353-197">In WSL, these executables are handled similar to native Linux executables.</span></span>  <span data-ttu-id="03353-198">Dies bedeutet, dass das Hinzufügen von Verzeichnissen zum Linux-Pfad und das Piping zwischen Befehlen erwartungsgemäß funktioniert.</span><span class="sxs-lookup"><span data-stu-id="03353-198">This means adding directories to the Linux path and piping between commands works as expected.</span></span>  <span data-ttu-id="03353-199">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="03353-199">Examples:</span></span>
+<span data-ttu-id="642e1-197">In WSL werden diese ausführbaren Dateien ähnlich wie native ausführbare Linux-Dateien behandelt.</span><span class="sxs-lookup"><span data-stu-id="642e1-197">In WSL, these executables are handled similar to native Linux executables.</span></span>  <span data-ttu-id="642e1-198">Dies bedeutet, dass das Hinzufügen von Verzeichnissen zum Linux-Pfad und das Piping zwischen Befehlen erwartungsgemäß funktioniert.</span><span class="sxs-lookup"><span data-stu-id="642e1-198">This means adding directories to the Linux path and piping between commands works as expected.</span></span>  <span data-ttu-id="642e1-199">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="642e1-199">Examples:</span></span>
 
 ``` BASH
 $ export PATH=$PATH:/mnt/c/Windows/System32
@@ -273,27 +273,27 @@ $ ls -la | findstr.exe foo.txt
 $ cmd.exe /c dir
 ```
 
-<span data-ttu-id="03353-200">Die Windows-Binärdatei muss die Dateierweiterung enthalten, der Groß-/Kleinschreibung der Datei Rechnung tragen und eine ausführbare Dateien sein.</span><span class="sxs-lookup"><span data-stu-id="03353-200">The Windows binary must include the file extension, match the file case, and be executable.</span></span>  <span data-ttu-id="03353-201">Nicht ausführbare Dateien einschließlich Batchskripts und Befehle wie `dir` können mit dem Befehl `/mnt/c/Windows/System32/cmd.exe /C` ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="03353-201">Non-executables including batch scripts and command like `dir` can be run with `/mnt/c/Windows/System32/cmd.exe /C` command.</span></span>
+<span data-ttu-id="642e1-200">Die Windows-Binärdatei muss die Dateierweiterung enthalten, der Groß-/Kleinschreibung der Datei Rechnung tragen und eine ausführbare Dateien sein.</span><span class="sxs-lookup"><span data-stu-id="642e1-200">The Windows binary must include the file extension, match the file case, and be executable.</span></span>  <span data-ttu-id="642e1-201">Nicht ausführbare Dateien einschließlich Batchskripts und Befehle wie `dir` können mit dem Befehl `/mnt/c/Windows/System32/cmd.exe /C` ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="642e1-201">Non-executables including batch scripts and command like `dir` can be run with `/mnt/c/Windows/System32/cmd.exe /C` command.</span></span>
 
-<span data-ttu-id="03353-202">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="03353-202">Examples:</span></span>
+<span data-ttu-id="642e1-202">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="642e1-202">Examples:</span></span>
 
 ``` BASH
 $ /mnt/c/Windows/System32/cmd.exe /C dir
 $ /mnt/c/Windows/System32/PING.EXE www.microsoft.com
 ```
 
-<span data-ttu-id="03353-203">Parameter werden unverändert an die Windows-Binärdatei übergeben.</span><span class="sxs-lookup"><span data-stu-id="03353-203">Parameters are passed to the Windows binary unmodified.</span></span>  
+<span data-ttu-id="642e1-203">Parameter werden unverändert an die Windows-Binärdatei übergeben.</span><span class="sxs-lookup"><span data-stu-id="642e1-203">Parameters are passed to the Windows binary unmodified.</span></span>  
 
-<span data-ttu-id="03353-204">Beispielsweise öffnen die folgenden Befehle `C:\temp\foo.txt` in `notepad.exe`:</span><span class="sxs-lookup"><span data-stu-id="03353-204">As an example, the following commands will open `C:\temp\foo.txt` in `notepad.exe`:</span></span>
+<span data-ttu-id="642e1-204">Beispielsweise öffnen die folgenden Befehle `C:\temp\foo.txt` in `notepad.exe`:</span><span class="sxs-lookup"><span data-stu-id="642e1-204">As an example, the following commands will open `C:\temp\foo.txt` in `notepad.exe`:</span></span>
 
 ``` BASH
 $ notepad.exe "C:\temp\foo.txt"
 $ notepad.exe C:\\temp\\foo.txt
 ```
 
-<span data-ttu-id="03353-205">Das Ändern von Dateien in VolFs (Dateien nicht unter `/mnt/<x>`) mit einer Windows-Anwendung wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="03353-205">Modifying files located on VolFs (files not under `/mnt/<x>`) with a Windows application is not supported.</span></span>  <span data-ttu-id="03353-206">Standardmäßig versucht WSL, das Arbeitsverzeichnis der Windows-Binärdatei als aktuelles WSL-Verzeichnis beizubehalten, greift aber auf das Instanzerstellungsverzeichnis zurück, wenn sich das Arbeitsverzeichnis in VolFs befindet.</span><span class="sxs-lookup"><span data-stu-id="03353-206">By default, WSL attempts to keep the working directory of the Windows binary as the current WSL directory, but will fall back on the instance creation directory if the working directory is on VolFs.</span></span>
+<span data-ttu-id="642e1-205">Das Ändern von Dateien in VolFs (Dateien nicht unter `/mnt/<x>`) mit einer Windows-Anwendung wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="642e1-205">Modifying files located on VolFs (files not under `/mnt/<x>`) with a Windows application is not supported.</span></span>  <span data-ttu-id="642e1-206">Standardmäßig versucht WSL, das Arbeitsverzeichnis der Windows-Binärdatei als aktuelles WSL-Verzeichnis beizubehalten, greift aber auf das Instanzerstellungsverzeichnis zurück, wenn sich das Arbeitsverzeichnis in VolFs befindet.</span><span class="sxs-lookup"><span data-stu-id="642e1-206">By default, WSL attempts to keep the working directory of the Windows binary as the current WSL directory, but will fall back on the instance creation directory if the working directory is on VolFs.</span></span>
 
-<span data-ttu-id="03353-207">Beispiel: `bash.exe` wird anfänglich von `C:\temp` gestartet, und das aktuelle WSL-Verzeichnis wird in das Basisverzeichnis des Benutzers geändert.</span><span class="sxs-lookup"><span data-stu-id="03353-207">As an example; `bash.exe` is initially launched from `C:\temp` and the current WSL directory is changed to the user’s home.</span></span>  <span data-ttu-id="03353-208">Wenn `notepad.exe` aus dem Basisverzeichnis des Benutzers aufgerufen wird, setzt WSL automatisch auf `C:\temp` als das Arbeitsverzeichnis von „notepad.exe“ zurück:</span><span class="sxs-lookup"><span data-stu-id="03353-208">When `notepad.exe` is called from the user’s home directory, WSL automatically reverts to `C:\temp` as the notepad.exe working directory:</span></span>
+<span data-ttu-id="642e1-207">Beispiel: `bash.exe` wird anfänglich von `C:\temp` gestartet, und das aktuelle WSL-Verzeichnis wird in das Basisverzeichnis des Benutzers geändert.</span><span class="sxs-lookup"><span data-stu-id="642e1-207">As an example; `bash.exe` is initially launched from `C:\temp` and the current WSL directory is changed to the user’s home.</span></span>  <span data-ttu-id="642e1-208">Wenn `notepad.exe` aus dem Basisverzeichnis des Benutzers aufgerufen wird, setzt WSL automatisch auf `C:\temp` als das Arbeitsverzeichnis von „notepad.exe“ zurück:</span><span class="sxs-lookup"><span data-stu-id="642e1-208">When `notepad.exe` is called from the user’s home directory, WSL automatically reverts to `C:\temp` as the notepad.exe working directory:</span></span>
 
 ``` BASH
 C:\temp> bash
