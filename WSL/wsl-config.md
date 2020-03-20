@@ -267,10 +267,10 @@ WSL unterstützt zwei Abschnitte: `automount` und `network`.
 Abschnitt: `[automount]`
 
 
-| key        | value                          | default      | notes                                                                                                                                                                                                                                                                                                                          |
+| key        | value                          | Standard      | notes                                                                                                                                                                                                                                                                                                                          |
 |:-----------|:-------------------------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| enabled    | boolean                        | true         | `true` bewirkt, dass lokale Festplattenlaufwerke (d.h. `C:/` oder `D:/`) mit DrvFs automatisch unter `/mnt` eingebunden werden.  `false` bedeutet, dass Laufwerke nicht automatisch eingebunden werden, aber Sie können sie dennoch manuell oder über `fstab` einbinden.                                                                                                             |
-| mountFsTab | boolean                        | true         | `true` legt fest, dass `/etc/fstab` beim WSL-Start verarbeitet wird. Bei „/etc/fstab“ handelt es sich um eine Datei, in der Sie andere Dateisysteme wie eine SMB-Freigabe deklarieren können. Daher können Sie diese Dateisysteme beim Start automatisch in WSL einbinden.                                                                                                                |
+| enabled    | boolean                        | wahr         | `true` bewirkt, dass lokale Festplattenlaufwerke (d.h. `C:/` oder `D:/`) mit DrvFs automatisch unter `/mnt` eingebunden werden.  `false` bedeutet, dass Laufwerke nicht automatisch eingebunden werden, aber Sie können sie dennoch manuell oder über `fstab` einbinden.                                                                                                             |
+| mountFsTab | boolean                        | wahr         | `true` legt fest, dass `/etc/fstab` beim WSL-Start verarbeitet wird. Bei „/etc/fstab“ handelt es sich um eine Datei, in der Sie andere Dateisysteme wie eine SMB-Freigabe deklarieren können. Daher können Sie diese Dateisysteme beim Start automatisch in WSL einbinden.                                                                                                                |
 | root       | Zeichenfolge                         | `/mnt/`      | Legt das Verzeichnis fest, in dem lokale Festplattenlaufwerke automatisch eingebunden werden. Wenn Sie z.B. ein Verzeichnis unter `/windir/` in WSL verwenden und Sie dieses als Stammverzeichnis angeben, erwarten Sie, dass die lokalen Festplattenlaufwerke unter `/windir/c` eingebunden werden.                                                                                              |
 | Optionen    | Durch Kommas getrennte Liste mit Werten | Leere Zeichenfolge | Dieser Wert wird an die Standardzeichenfolge der DrvFs-Einbindungsoptionen angefügt. **Es können nur DrvFs-spezifische Optionen angegeben werden.** Optionen, die die Einbindungsbinärdatei normalerweise in ein Flag analysieren würde, werden nicht unterstützt. Wenn Sie diese Optionen explizit angeben möchten, müssen Sie jedes Laufwerk, für das dies gelten soll, in „/etc/fstab“ einschließen. |
 
@@ -282,7 +282,7 @@ Standardmäßig legt WSL die UID und die GID auf den Wert des Standardbenutzers 
 
 Durch Festlegen verschiedener Einbindungsoptionen für Windows-Laufwerke (DrvFs) kann gesteuert werden, wie Dateiberechtigungen für Windows-Dateien berechnet werden. Die folgenden Optionen sind verfügbar:
 
-| Schlüssel | Beschreibung | Standard |
+| Schlüssel | Beschreibung | Standardwert |
 |:----|:----|:----|
 |uid| Die Benutzer-ID, die für den Besitzer aller Dateien verwendet wird | Die Standard-Benutzer-ID Ihrer WSL-Distribution (bei der erstmaligen Installation ist der Standardwert 1000)
 |gid| Die Gruppen-ID, die für den Besitzer aller Dateien verwendet wird | Die Standard-Gruppen-ID Ihrer WSL-Distribution (bei der erstmaligen Installation ist der Standardwert 1000)
@@ -296,7 +296,7 @@ Durch Festlegen verschiedener Einbindungsoptionen für Windows-Laufwerke (DrvFs)
 
 Abschnittsbezeichnung: `[network]`
 
-| key | value | default | notes|
+| key | value | Standard | notes|
 |:----|:----|:----|:----|
 | generateHosts | boolean | `true` | `true` legt fest, dass WSL `/etc/hosts` generiert. Die Datei `hosts` enthält eine statische Zuordnung der entsprechenden IP-Adresse von Hostnamen. |
 | generateResolvConf | boolean | `true` | `true` legt fest, dass WSL `/etc/resolv.conf` generiert. `resolv.conf` enthält eine DNS-Liste, mit der ein angegebener Hostnamen in seine IP-Adresse aufgelöst werden kann. | 
@@ -307,7 +307,7 @@ Abschnittsbezeichnung: `[interop]`
 
 Diese Optionen sind in Insider Build 17713 und höher verfügbar.
 
-| key | value | default | notes|
+| key | value | Standard | notes|
 |:----|:----|:----|:----|
 | enabled | boolean | `true` | Durch Festlegen dieses Schlüssels wird festgelegt, ob WSL das Starten von Windows-Prozessen unterstützt. |
 | appendWindowsPath | boolean | `true` | Durch Festlegen dieses Schlüssels wird festgelegt, ob WSL der $PATH-Umgebungsvariablen Windows-Pfadelemente hinzufügt. | 

@@ -968,7 +968,7 @@ Im folgenden finden Sie eine Liste der neuen oder verbesserten Systemaufrufe, di
 `prlimit64`<br/>
 
 ### <a name="known-issues"></a>Bekannte Probleme
-#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-httpsgithubcommicrosoftbashonwindowsissues2392"></a>[GitHub-Issue 2392: Windows-Ordner werden von WSL nicht erkannt (](https://github.com/Microsoft/BashOnWindows/issues/2392))
+#### <a name="github-issue-2392-windows-folders-not-recognized-by-wsl-"></a>[GitHub-Issue 2392: Windows-Ordner werden von WSL nicht erkannt (](https://github.com/Microsoft/BashOnWindows/issues/2392))
 In Build 16257 hat WSL beim Aufzählen von Windows-Dateien/-Ordnern über `/mnt/c/...` Probleme.
 Dieses Problem wurde behoben und sollte im Insider-Builds in der Woche ab dem 14.08.2017 veröffentlicht werden.
 

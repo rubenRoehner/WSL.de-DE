@@ -36,7 +36,7 @@ Auf diese Weise aufgerufene Binärdateien:
 1. Werden als WSL-Standardbenutzer aus geführt.
 1. Verfügen über dieselben Windows-Administratorrechte wie der aufrufende Prozess und das Terminal.
 
-Zum Beispiel:
+Beispiel:
 
 ```console
 C:\temp> wsl ls -la
