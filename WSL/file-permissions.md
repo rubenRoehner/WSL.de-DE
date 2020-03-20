@@ -25,7 +25,7 @@ Wenn Metadaten in WSL als Bereitstellungs Option aktiviert sind, können erweite
 
 WSL kann vier erweiterte NTFS-Attribute hinzufügen:
 
-| Attributname | Beschreibung |
+| Attribut Name | Beschreibung |
 | --- | --- |
 | $LXUID | Benutzer Besitzer-ID |
 | $LXGID | Gruppenbesitzer-ID |

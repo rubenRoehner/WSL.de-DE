@@ -29,7 +29,7 @@ Sie können ein benutzerdefiniertes Linux-Distributionspaket als Anwendung zum q
 Wenn Sie Ihren Computer zum querladen von apps einrichten möchten, müssen Sie diesen in den Systemeinstellungen unter "für Entwickler" aktivieren.  Stellen Sie sicher, dass Sie entweder den Entwicklermodus oder querladen von apps ausgewählt haben.
 
 ## <a name="for-linux-distro-maintainers"></a>Für Linux-Distribution-Betreuer
-Um die Veröffentlichung an den Store zu übermitteln, müssen Sie mit uns zusammenarbeiten, um die Genehmigung der Veröffentlichung zu erhalten. Wenn Sie ein Linux-Verteilungs Besitzer sind, der ihre Verteilung zum Microsoft Store hinzufügen möchte, wslpartners@microsoft.comwenden Sie sich bitte an.
+Um die Veröffentlichung an den Store zu übermitteln, müssen Sie mit uns zusammenarbeiten, um die Genehmigung der Veröffentlichung zu erhalten. Wenn Sie ein Linux-Verteilungs Besitzer sind, der Ihre Distribution dem Microsoft Store hinzufügen möchte, wenden Sie sich an wslpartners@microsoft.com.
 
 ## <a name="getting-started"></a>Erste Schritte
 Befolgen Sie die Anweisungen im [GitHub](https://github.com/Microsoft/WSL-DistroLauncher) -Repository "Distribution-Start Programm", um ein benutzerdefiniertes Linux-Distributionspaket zu erstellen.
@@ -39,7 +39,7 @@ Befolgen Sie die Anweisungen im [GitHub](https://github.com/Microsoft/WSL-Distro
 *  [Open Sourcing a WSL Sample for Linux Distribution Maintainer und Sideloading Custom Linux Distributionen](https://blogs.msdn.microsoft.com/commandline/2018/03/26/wsl-distro-launcher/)
 * [Befehlszeilenblog](https://blogs.msdn.microsoft.com/commandline/)
 
-## <a name="provide-feedback"></a>Senden von Feedback
+## <a name="provide-feedback"></a>Feedback bereitstellen
 * [GitHub-Repository für Distribution-Start Programm](https://github.com/Microsoft/WSL-DistroLauncher)
 * [GitHub Issue Tracker für WSL](https://github.com/Microsoft/BashOnWindows/issues)
-* [UserVoice-Portal der Befehlszeile](https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/category/161892-bash)
+* [UserVoice-Befehlszeilenportal](https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/category/161892-bash)

@@ -27,7 +27,7 @@ Wenn Sie kein Upgrade auf Fall Creators Update oder höher ausführen können, f
 
 1. Aktivieren Sie den Entwicklermodus, um WSL auf Windows 10 Anniversary Update oder Creators Update auszuführen. Sie müssen den Entwicklermodus aktivieren:
 
-    Öffnen von **Einstellungen** -> **aktualisieren und Sicherheit** -> **für Entwickler**
+    Öffnen von **Einstellungen** -> **Update-und Sicherheits** -> **für Entwickler**
 
     Wählen Sie das Optionsfeld Entwicklermodus aus.  
     ![Aktivieren des Entwicklermodus](media/updateAndSecurity.png)
@@ -43,7 +43,7 @@ Wenn Sie kein Upgrade auf Fall Creators Update oder höher ausführen können, f
     Wenn Sie bash unter Windows zum ersten Mal ausführen, werden Sie aufgefordert, einen UNIX-Benutzernamen und ein Kennwort zu erstellen. Befolgen Sie die [Anweisungen der neuen Distribution-Instanz](initialize-distro.md) , um die Installation abzuschließen.
 
 1. Starten Sie eine neue Ubuntu-Shell mit folgenden Optionen:
-    * Ausführen `bash` über eine Eingabeaufforderung
+    * Ausführen von `bash` über eine Eingabeaufforderung
     * Klicken auf das Startmenü "bash on Ubuntu on Windows"-Verknüpfung
 
     
@@ -56,14 +56,14 @@ Um die Legacy-Distribution von Ihrem Computer zu entfernen, führen Sie Folgende
 wsl --unregister Legacy
 ```
 
-Wenn Sie nicht Windows-Version 1903 oder höher verwenden, müssen Sie möglicherweise oder `wslconfig /u Legacy` `lxrun /uninstall /full` stattdessen ausführen. 
+Wenn Sie nicht Windows-Version 1903 oder höher verwenden, müssen Sie möglicherweise stattdessen `wslconfig /u Legacy` oder `lxrun /uninstall /full` ausführen. 
 
 ### <a name="manually-deleting-the-legacy-distro"></a>Manuelles Löschen der Legacy-Distribution
-Wenn Sie möchten, können Sie die Legacy Instanz manuell löschen. Dies ist möglicherweise erforderlich, wenn Probleme beim Deinstallieren der Legacy-Distribution `lxrun.exe`mithilfe von auftreten oder wenn Windows 10 Spring 2018 Update (oder höher) ausgeführt wird, das `lxrun.exe`nicht mit ausgeliefert wird.
+Wenn Sie möchten, können Sie die Legacy Instanz manuell löschen. Dies ist möglicherweise erforderlich, wenn Probleme beim Deinstallieren der Legacy-Distribution mithilfe von `lxrun.exe`auftreten oder wenn Windows 10 Spring 2018 Update (oder höher) ausgeführt wird, die nicht mit `lxrun.exe`ausgeliefert werden.
 
-Löschen Sie den Ordner (und dessen unter Inhalt) mit dem `%localappdata%\lxss\` Windows-Datei-Explorer oder der Befehlszeile, um das Löschen der alten WSL-Distribution zu erzwingen.
+Löschen Sie den `%localappdata%\lxss\` Ordner (und alle untergeordneten Inhalte) mit dem Windows-Datei-Explorer oder der Befehlszeile, um das Löschen der alten WSL-Distribution zu erzwingen.
 
-Mithilfe der PowerShell
+Verwenden von PowerShell
 ```powershell
 rm -Recurse $env:localappdata/lxss/
 ```

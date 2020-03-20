@@ -2,5 +2,5 @@ Beachten Sie, dass die Problemverfolgung dieses Repository nur zum Melden von Pr
 
 Weitere verwandte Issue-Themen:
 
-* WSL https://github.com/Microsoft/BashOnWindows/
+* WSL: https://github.com/Microsoft/BashOnWindows/
 * Windows-Konsole: https://github.com/Microsoft/Console/
