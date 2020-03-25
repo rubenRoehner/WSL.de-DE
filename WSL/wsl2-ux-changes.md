@@ -1,104 +1,104 @@
 ---
-title: UX-Änderungen zwischen WSL 1 und WSL 2
-description: Änderungen der Benutzeroberflächen zwischen WSL 1 und WSL 2
-keywords: Bashonwindows, bash, WSL, wsl2, Windows, Windows-Subsystem für Linux, windowssubsystem, Ubuntu, Debian, SuSE, Windows 10
+title: Änderungen der Benutzeroberfläche zwischen WSL 1 und WSL 2
+description: Änderungen der Benutzeroberfläche zwischen WSL 1 und WSL 2
+keywords: BashOnWindows, Bash, WSL, WSL2, Windows, Windows-Subsystem für Linux, Windows-Subsystem, Ubuntu, Debian, Suse, Windows 10
 ms.date: 05/30/2019
 ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.openlocfilehash: a8f298a69acf44f152da626a0ba571f6bba1970c
 ms.sourcegitcommit: 07eb5f2e1f4517928165dda4510012599b0d0e1e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/22/2020
 ms.locfileid: "76520559"
 ---
-# <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>Änderungen der Benutzeroberflächen zwischen WSL 1 und WSL 2
+# <a name="user-experience-changes-between-wsl-1-and-wsl-2"></a>Änderungen der Benutzeroberfläche zwischen WSL 1 und WSL 2
 
-Auf dieser Seite werden die Unterschiede bei der Benutzer Darstellung zwischen WSL 1 und der WSL 2-Vorschau angezeigt. Beachten Sie die folgenden wichtigen Änderungen:
+Auf dieser Seite werden die Unterschiede bei der Benutzeroberfläche zwischen WSL 1 und der WSL 2-Vorschauversion behandelt. Dies sind die wichtigsten Änderungen, die Sie beachten sollten:
 
-- Platzieren von Dateien, auf die Ihre Linux-apps in Ihrem Linux-Stammdatei System zugreifen, um die Geschwindigkeit der Datei Leistung zu beschleunigen
-- In anfänglichen Builds der WSL 2-Vorschauversion müssen Sie über eine IP-Adresse auf Netzwerkanwendungen zugreifen und dürfen nicht localhost verwenden.
+- Platzieren Sie Dateien, auf die Ihre Linux-Apps zugreifen, in Ihrem Linux-Stammdateisystem, um einen schnelleren Dateizugriff zu ermöglichen
+- In anfänglichen Builds der WSL 2-Vorschauversion müssen Sie über eine IP-Adresse auf Netzwerkanwendungen zugreifen und können nicht localhost verwenden
 
-Und im folgenden finden Sie eine vollständige Liste mit anderen Änderungen, die Sie möglicherweise bemerken:
+Nachfolgend finden Sie eine vollständige Liste mit sonstigen Änderungen, die Sie möglicherweise bemerken:
 
-- WSL 2 verwendet einen virtuellen Hardware Datenträger ( [Virtual Hard Disk](https://en.wikipedia.org/wiki/VHD_(file_format)) , VHD) zum Speichern von Dateien. Wenn Sie die maximale Größe erreichen, müssen Sie Sie möglicherweise erweitern.
-- Beim Starten von WSL 2 wird jetzt ein kleiner Anteil des Speichers verwendet.
-- Die systemübergreifende Datei Zugriffsgeschwindigkeit wird bei der ersten Vorschau der Builds langsamer
+- WSL 2 verwendet einen [virtuellen Hardwaredatenträger](https://en.wikipedia.org/wiki/VHD_(file_format)) (VHD) zum Speichern von Dateien. Wenn Sie dessen maximale Größe erreichen, müssen Sie ihn möglicherweise erweitern
+- Beim Starten verwendet WSL 2 jetzt einen kleinen Anteil des Arbeitsspeichers
+- Die betriebssystemübergreifende Zugriffsgeschwindigkeit auf Dateien ist bei den ersten Vorschaubuilds langsamer
 
-## <a name="place-your-linux-files-in-your-linux-root-file-system"></a>Platzieren Sie Ihre Linux-Dateien in Ihrem Linux-Stammdatei System.
-Stellen Sie sicher, dass Sie die Dateien, auf die Sie häufig zugreifen werden, mit Linux-Anwendungen in Ihrem Linux-Stammdatei System speichern, um die Vorteile der Datei Leistung zu nutzen. Diese Dateien müssen sich im Linux-Stammdatei System befinden, um den Zugriff auf das Dateisystem zu beschleunigen. Außerdem haben wir es Windows-Apps ermöglicht, auf das Linux-Stammdatei System zuzugreifen (z. b. Datei-Explorer). Führen Sie Folgendes aus: `explorer.exe .` im Stammverzeichnis Ihrer Linux-Distribution, und sehen Sie sich an, was passiert), wodurch diese Umstellung erheblich vereinfacht wird. 
+## <a name="place-your-linux-files-in-your-linux-root-file-system"></a>Platzieren Ihrer Linux-Dateien in Ihrem Linux-Stammdateisystem
+Achten Sie darauf, Dateien, auf die Sie häufig mit Linux-Anwendungen zugreifen, in Ihrem Linux-Stammdateisystem zu speichern, um die Vorteile bei der Dateileistung zu nutzen. Diese Dateien müssen sich im Linux-Stammdateisystem befinden, um einen schnelleren Zugriff auf das Dateisystem zu erreichen. Außerdem haben wir für Windows-Apps den Zugriff auf das Linux-Stammdateisystem ermöglicht (etwa dem Datei-Explorer! Versuchen Sie, `explorer.exe .` im Stammverzeichnis Ihrer Linux-Distribution auszuführen, und sehen Sie, was geschieht), wodurch sich diese Umstellung erheblich vereinfacht. 
 
-## <a name="accessing-network-applications"></a>Zugreifen auf Netzwerkanwendungen
-In den anfänglichen Builds von WSL 2 Preview müssen Sie unter Linux unter Verwendung der IP-Adresse des Host Computers auf jeden Windows-Server zugreifen.
+## <a name="accessing-network-applications"></a>Zugriff auf Netzwerkanwendungen
+In den anfänglichen Builds der WSL 2-Vorschauversion müssen Sie unter Linux mithilfe der IP-Adresse des Hostcomputers auf Windows-Server zugreifen.
 
 ### <a name="accessing-windows-applications-from-linux"></a>Zugreifen auf Windows-Anwendungen unter Linux
-Für den Zugriff auf eine Windows-Netzwerk Anwendung müssen Sie die IP-Adresse des Host Computers verwenden. Dies können Sie mit den folgenden Schritten tun:
+Um auf eine Windows-Netzwerkanwendung zuzugreifen, müssen Sie die IP-Adresse Ihres Hostcomputers verwenden. Dies können Sie anhand der folgenden Schritten tun:
 
-- Rufen Sie die IP-Adresse des Host Computers ab, indem Sie den Befehl `cat /etc/resolv.conf` ausführen und die IP-Adresse nach dem Begriff `nameserver`kopieren. 
-- Stellen Sie mithilfe der kopierten IP-Adresse eine Verbindung mit einem beliebigen Windows Server
+- Rufen Sie die IP-Adresse Ihres Hostcomputers ab, indem Sie den Befehl `cat /etc/resolv.conf` ausführen und die IP-Adresse kopieren, die sich an den Ausdruck `nameserver` anschließt. 
+- Stellen Sie mithilfe der kopierten IP-Adresse eine Verbindung zu jedem beliebigen Windows-Server her.
 
-Die folgende Abbildung zeigt ein Beispiel hierfür, indem eine Verbindung mit einem Node. js-Server hergestellt wird, der unter Windows über curl ausgeführt wird. 
+Die Abbildung zeigt ein Beispiel dafür – hier wird über curl eine Verbindung mit einem Node.js-Server hergestellt, der unter Windows ausgeführt wird. 
 
-![Zugreifen auf Linux-Netzwerkanwendungen über Windows](media/wsl2-network-l2w.png)
+![Zugreifen auf Linux-Netzwerkanwendungen aus Windows](media/wsl2-network-l2w.png)
 
-### <a name="accessing-linux-applications-from-windows"></a>Zugreifen auf Linux-Anwendungen von Windows aus
+### <a name="accessing-linux-applications-from-windows"></a>Zugreifen auf Windows-Anwendungen aus Linux
 
-Je nachdem, welche Windows-Version Sie verwenden, müssen Sie möglicherweise die IP-Adresse des virtuellen Computers abrufen. Wenn Ihr Build 18945 oder höher ist, können Sie `localhost` wie gewohnt verwenden. 
+Je nach der von Ihnen verwendeten Windows-Version müssen Sie möglicherweise die IP-Adresse des virtuellen Computers abrufen. Wenn Sie einen Build mit der Nummer 18945 oder höher benutzen, können Sie einfach wie gewohnt `localhost` verwenden. 
 
-#### <a name="accessing-linux-on-builds-lower-than-18945"></a>Der Zugriff auf Linux auf Builds unter [18945](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/)
+#### <a name="accessing-linux-on-builds-lower-than-18945"></a>Zugriff auf Linux aus Builds mit Nummern unter [18945](https://blogs.windows.com/windowsexperience/2019/07/26/announcing-windows-10-insider-preview-build-18945/)
 
-Wenn Sie über einen Server in einer WSL-Distribution verfügen, müssen Sie die IP-Adresse des virtuellen Computers ermitteln, der Ihre Distribution verwendet, und mit dieser IP-Adresse eine Verbindung mit ihm herstellen. Führen Sie dazu die folgenden Schritte aus:
+Wenn Sie einen Server in einer WSL-Distribution verwenden, müssen Sie die IP-Adresse des virtuellen Computers ermitteln, der Ihre Distribution ausführt, und mithilfe dieser IP-Adresse eine Verbindung mit ihm herstellen. Sie können dazu diese Schritte ausführen:
 
-- Rufen Sie die IP-Adresse Ihrer Distribution ab, indem Sie den Befehl `ip addr` in ihrer WSL-Distribution ausführen und ihn unter dem `inet` Wert der `eth0`-Schnittstelle finden.
-   - Dies können Sie leichter finden, indem Sie die Ausgabe des Befehls mit grep wie folgt filtern: `ip addr | grep eth0`.
-- Stellen Sie mithilfe der oben gefundenen IP-Adresse eine Verbindung mit dem Linux-Server her.
+- Rufen Sie die IP-Adresse Ihrer Distribution ab, indem Sie den Befehl `ip addr` in Ihrer WSL-Distribution ausführen und die Adresse unter dem `inet`-Wert der `eth0`-Schnittstelle finden.
+   - Sie können sich die Suche erleichtern, indem Sie die Ausgabe des Befehls mithilfe von grep filtern, wie hier zu sehen: `ip addr | grep eth0`.
+- Stellen Sie eine Verbindung mit Ihrem Linux-Server mithilfe der oben ermittelten IP-Adresse her.
 
-Die folgende Abbildung zeigt ein Beispiel dafür, dass Sie mithilfe des Microsoft Edge-Browsers eine Verbindung mit einem Node. js-Server herstellen.
+Die Abbildung zeigt ein Beispiel dafür – hier wird mithilfe des Edge-Browsers eine Verbindung mit einem Node.js-Server hergestellt.
 
-![Zugreifen auf Linux-Netzwerkanwendungen über Windows](media/wsl2-network-w2l.jpg)
+![Zugreifen auf Linux-Netzwerkanwendungen aus Windows](media/wsl2-network-w2l.jpg)
 
-### <a name="other-networking-considerations"></a>Weitere Netzwerk Aspekte
+### <a name="other-networking-considerations"></a>Weitere Netzwerküberlegungen
 
 #### <a name="connecting-via-remote-ip-addresses"></a>Verbinden über Remote-IP-Adressen
 
-Wenn Sie Remote-IP-Adressen verwenden, um eine Verbindung mit Ihren Anwendungen herzustellen, werden diese als Verbindungen aus dem LAN (Local Area Network) behandelt. Dies bedeutet, dass Sie sicherstellen müssen, dass Ihre Anwendung LAN-Verbindungen akzeptiert, d. h., Sie müssen die Anwendung möglicherweise an `0.0.0.0` anstatt an `127.0.0.1`binden. Beispielsweise kann in python mithilfe von Flask der folgende Befehl ausgeführt werden: `app.run(host='0.0.0.0')`. Behalten Sie die Sicherheit bei, wenn Sie diese Änderungen vornehmen, da dadurch Verbindungen von Ihrem LAN zugelassen werden. 
+Wenn Sie Remote-IP-Adressen verwenden, um Verbindungen mit Ihren Anwendungen herzustellen, werden diese als Verbindungen aus dem LAN (Local Area Network) behandelt. Dies bedeutet, Sie müssen sicherstellen, dass Ihre Anwendung LAN-Verbindungen akzeptieren kann, d. h.: Möglicherweise müssen Sie Ihre Anwendung an `0.0.0.0` statt an `127.0.0.1` binden. Beispielsweise kann das in Python mithilfe von Flask und diesem Befehl erfolgen: `app.run(host='0.0.0.0')`. Bitte beachten Sie bei diesen Änderungen die Sicherheit, da sie Verbindungen aus Ihrem LAN zulassen. 
 
-#### <a name="accessing-a-wsl2-distro-from-your-local-area-network-lan"></a>Zugreifen auf eine WSL2-Distribution über Ihr lokales Netzwerk (LAN)
+#### <a name="accessing-a-wsl2-distro-from-your-local-area-network-lan"></a>Zugreifen auf eine WSL 2-Distribution aus Ihrem LAN (Local Area Network)
 
-Wenn Sie eine WSL1-Distribution verwenden und Ihr Computer so eingerichtet wurde, dass in Ihrem LAN auf zugegriffen wird, können Sie auch in Ihrem LAN auf Anwendungen zugreifen, die in WSL ausgeführt werden. Dies ist nicht der Standardfall in WSL2, da WSL2 über einen virtualisierten Ethernet-Adapter mit einer eigenen IP-Adresse verfügt. Um diesen Workflow zu aktivieren, müssen Sie derzeit die gleichen Schritte durchlaufen wie bei einem regulären virtuellen Computer. Wir untersuchen Möglichkeiten, dieses Verhalten zu verbessern.
+Wenn Sie eine WSL 1-Distribution verwenden und Ihr Computer im LAN so eingerichtet wurde, dass auf ihn zugegriffen wird, kann auf Anwendungen, die in WSL ausgeführt werden, in Ihrem LAN ebenfalls zugegriffen werden. Dies ist standardmäßig in WSL 2 nicht der Fall, da WSL 2 über einen virtualisierten Ethernetadapter mit eigener IP-Adresse verfügt. Um diesen Workflow zu aktivieren, müssen Sie aktuell die gleichen Schritte wie bei einem gewöhnlichen virtuellen Computer durchlaufen. Wir untersuchen Möglichkeiten, dieses Verhalten zu verbessern!
 
 #### <a name="ipv6-access"></a>IPv6-Zugriff
 
-WSL2 Distributionen können derzeit nur IPv6-Adressen erreichen. Wir arbeiten daran, diese Funktion hinzuzufügen.
+WSL 2-Distributionen können aktuell keine reinen IPv6-Adressen erreichen. Wir arbeiten daran, diese Funktion hinzuzufügen.
 
-## <a name="understanding-wsl-2-uses-a-vhd-and-what-to-do-if-you-reach-its-max-size"></a>Verständnis von WSL 2 verwendet eine virtuelle Festplatte und was Sie tun sollten, wenn Sie die maximale Größe erreichen
-WSL 2 speichert alle Ihre Linux-Dateien in einer VHD, die das Ext4-Dateisystem verwendet. Diese VHD wird automatisch angepasst, um Ihre Speicheranforderungen zu erfüllen. Diese VHD weist auch eine anfängliche maximale Größe von 256 GB auf. Wenn sich Ihre Distribution um mehr als 256 GB vergrößert, werden Fehler angezeigt, die darauf hinweisen, dass kein Speicherplatz mehr zur Verfügung steht. Sie können diese Probleme beheben, indem Sie die VHD-Größe erweitern. Anweisungen dazu finden Sie unten:
+## <a name="understanding-wsl-2-uses-a-vhd-and-what-to-do-if-you-reach-its-max-size"></a>WSL 2 verwendet jetzt eine VHD, und so kann man vorgehen, wenn deren maximale Größe erreicht ist
+WSL 2 speichert alle Ihre Linux-Dateien auf einer VHD, die das Ext4-Dateisystem verwendet. Diese VHD passt ihre Größe automatisch an, um Ihren Speicheranforderungen zu genügen. Diese VHD weist außerdem anfänglich eine maximale Größe von 256 GB auf. Wenn Ihre Distribution über die Größe von 256 GB anwächst, werden Ihnen Fehler angezeigt, die besagen, dass kein Speicherplatz mehr zur Verfügung steht. Sie können dieses Problem beheben, indem Sie die Größe der VHD heraufsetzen. Anweisungen dazu finden Sie unten:
 
-1. Alle WSL-Instanzen mit dem `wsl --shutdown` Befehl beenden
-2. Suchen Sie den Namen des Distribution-Installationspakets "packagefamilyname".
-   - Geben Sie in einer PowerShell-Eingabeaufforderung (bei der "Distro" ihren Verteilungs Namen ist) Folgendes ein:
+1. Beenden Sie alle WSL-Instanzen mit dem `wsl --shutdown`-Befehl
+2. Suchen Sie das Installationspaket Ihrer Distribution mit dem Namen ‚PackageFamilyName‘
+   - Geben Sie an einer PowerShell-Eingabeaufforderung (in der ‚distro‘ für den Namen Ihrer Distribution steht) ein:
       - `Get-AppxPackage -Name "*<distro>*" | Select PackageFamilyName`
-3. Suchen Sie den vollständigen Pfad der VHD-Datei, der von der WSL 2-Installation verwendet wird. Dies ist Ihre "pathtovhd":
+3. Suchen Sie den vollständigen Pfad der VHD-Datei, die von Ihrer WSL 2-Installation verwendet wird, dies ist Ihr ‚pathToVHD‘:
      - `%LOCALAPPDATA%\Packages\<PackageFamilyName>\LocalState\<disk>.vhdx`
-4. Ändern Sie die Größe der WSL 2-VHD, indem Sie die folgenden Befehle ausführen:
-   - Öffnen Sie ein Eingabe Aufforderungs Fenster mit Administrator Berechtigungen, und führen Sie die folgenden Befehle aus:
+4. Ändern Sie die Größe Ihrer WSL 2-VHD, indem Sie die folgenden Befehle ausführen
+   - Öffnen Sie ein Eingabeaufforderungsfenster mit Administratorrechten, und führen Sie die folgenden Befehle aus:
       - `diskpart`
       - `Select vdisk file="<pathToVHD>"`
       - `expand vdisk maximum="<sizeInMegaBytes>"`
-5. Starten Sie Ihre WSL-Distribution.
-6. Legen Sie fest, dass WSL seine Größe des Dateisystems erweitern kann.
-   - Führen Sie diese Befehle in ihrer WSL-Distribution aus:
+5. Starten Sie Ihre WSL-Distribution
+6. WSL darüber informieren, dass es die Größe seines Dateisystems erweitern kann
+   - Führen Sie diese Befehle in Ihrer WSL-Distribution aus:
       - `sudo mount -t devtmpfs none /dev`
       - `mount | grep ext4`
-         - Kopieren Sie den Namen dieses Eintrags, der wie folgt aussieht:/dev/sdXX (wobei das X ein beliebiges anderes Zeichen darstellt).
+         - Kopieren Sie den Namen dieses Eintrags, der diese Form hat: /dev/sdXX (wobei X für ein beliebiges anderes Zeichen steht)
       - `sudo resize2fs /dev/sdXX`
-         - Stellen Sie sicher, dass Sie den Wert verwenden, den Sie zuvor kopiert haben, und Sie müssen möglicherweise Folgendes verwenden: `apt install resize2fs`.
+         - Achten Sie darauf, den Wert zu verwenden, den Sie zuvor kopiert hatten, und möglicherweise müssen Sie `apt install resize2fs` verwenden.
 
-Hinweis: im Allgemeinen können Sie die mit WSL verknüpften Dateien, die sich in Ihrem AppData-Ordner befinden, nicht mithilfe von Windows-Tools oder-Editoren ändern, verschieben oder darauf zugreifen. Dies könnte dazu führen, dass Ihre Linux-Distribution beschädigt wird.
+Bitte beachten: Im Allgemeinen sollten Sie die WSL-bezogenen Dateien, die sich in Ihrem AppData-Ordner befinden, nicht mithilfe von Windows-Tools oder-Editoren ändern, verschieben oder darauf zugreifen. Dies könnte zu einer Beschädigung Ihrer Linux-Distribution führen.
 
-## <a name="wsl-2-will-use-some-memory-on-startup"></a>WSL 2 verwendet Arbeitsspeicher beim Start
-WSL 2 verwendet einen einfachen virtuellen Computer für das Hilfsprogramm in einem echten Linux-Kernel, um eine hohe Leistung des Dateisystems und die vollständige System aufrufskompatibilität zu gewährleisten und gleichzeitig genauso schnell, schnell, integriert und reaktionsfähig wie WSL 1 Diese VM für das Hilfsprogramm weist eine geringe Speicher Beanspruchung auf und belegt beim Start den virtuellen Adress gesicherten Speicher. Er ist so konfiguriert, dass er mit einem kleinen Anteil des gesamten Arbeitsspeichers gestartet wird.
+## <a name="wsl-2-will-use-some-memory-on-startup"></a>WSL 2 belegt beim Starten eine gewisse Menge Arbeitsspeicher
+WSL 2 verwendet eine schlanke VM mit Hilfsprogrammen unter einem echten Linux-Kernel, um hervorragende Dateisystemleistung und vollständige Kompatibilität von Systemaufrufen zu bieten und dabei die Schlankheit, Schnelligkeit, Integration und Reaktionsfähigkeit von WSL 1 beizubehalten. Diese Hilfsprogramm-VM weist einen geringen Arbeitsspeicherbedarf auf und weist beim Starten von virtuellen Adressen gestützten Arbeitsspeicher zu. Sie ist so konfiguriert, dass sie mit einem kleinen Anteil Ihres gesamten Arbeitsspeichers startet.
 
-## <a name="cross-os-file-speed-will-be-slower-in-initial-preview-builds"></a>Die Kreuz Betriebssystem-Datei Geschwindigkeit wird bei der ersten Vorschau der Builds langsamer
-Beim Zugriff auf Windows-Dateien aus einer Linux-Anwendung oder beim Zugriff auf Linux-Dateien aus einer Windows-Anwendung bemerken Sie, dass im Vergleich zu WSL 1 langsamer Datei Geschwindigkeiten angezeigt werden. Das Ergebnis der Architektur Änderungen in WSL 2 ist, dass das WSL-Team aktiv untersucht, wie wir diese Vorgehensweise verbessern können.
+## <a name="cross-os-file-speed-will-be-slower-in-initial-preview-builds"></a>Die betriebssystemübergreifende Zugriffsgeschwindigkeit auf Dateien ist bei den ersten Vorschaubuilds langsamer
+Beim Zugriff auf Windows-Dateien aus einer Linux-Anwendung werden Sie im Vergleich zu WSL 1 geringere Zugriffsgeschwindigkeiten feststellen. Dies ist ein Ergebnis der Architekturänderungen in WSL 2 und stellt einen Punkt dar, den das WSL-Team aktiv untersucht, um eine Verbesserung dieses Verhaltens zu erreichen.
