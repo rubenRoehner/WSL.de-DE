@@ -55,7 +55,7 @@ Wenn Sie einen Server in einer WSL-Distribution verwenden, müssen Sie die IP-Ad
    - Sie können sich die Suche erleichtern, indem Sie die Ausgabe des Befehls mithilfe von grep filtern, wie hier zu sehen: `ip addr | grep eth0`.
 - Stellen Sie eine Verbindung mit Ihrem Linux-Server mithilfe der oben ermittelten IP-Adresse her.
 
-Die Abbildung zeigt ein Beispiel dafür – hier wird mithilfe des Edge-Browsers eine Verbindung mit einem Node.js-Server hergestellt.
+Die Abbildung zeigt ein Beispiel dafür – hier wird mithilfe des Microsoft Edge-Browsers eine Verbindung mit einem Node.js-Server hergestellt.
 
 ![Zugreifen auf Linux-Netzwerkanwendungen aus Windows](media/wsl2-network-w2l.jpg)
 
