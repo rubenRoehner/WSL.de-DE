@@ -4,12 +4,12 @@ description: Referenzliste und Konfigurieren mehrerer Linux-Distributionen, die 
 keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: 59419919be138a20ab57e1a6d26a411e1531bf9f
-ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
+ms.openlocfilehash: e72822bdec0ef5788bd384a5795a91d746428800
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83235904"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343893"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>WSL-Befehle und Start Konfigurationen
 
@@ -161,6 +161,17 @@ Zum erneuten Installieren suchen Sie die Distribution im Microsoft Store, und w�
 
 Führen Sie WSL als der angegebene Benutzer aus. Beachten Sie, dass der Benutzer in der WSL-Distribution vorhanden sein muss.
 
+## <a name="change-the-default-user-for-a-distribution"></a>Ändern des Standard Benutzers für eine Distribution
+
+`<DistributionName> config --default-user <Username>`
+
+Ändern Sie den Standardbenutzer für Ihre Verteilungs Anmeldung. Der Benutzer muss bereits innerhalb der Verteilung vorhanden sein, damit er der Standardbenutzer wird. 
+
+Beispiel: `ubuntu config --default-user johndoe` würde den Standardbenutzer für die Ubuntu-Distribution in den Benutzer "JohnDoe" ändern.
+
+> [!NOTE]
+> Wenn Sie Probleme haben, den Namen der Verteilung herauszufinden, finden Sie weitere Informationen unter [Auflisten von Verteilungen](https://docs.microsoft.com/windows/wsl/wsl-config#list-distributions) für den Befehl zum Auflisten des offiziellen Namens der installierten Verteilungen. 
+
 ## <a name="run-a-specific-distribution"></a>Ausführen als eine bestimmte Distribution
 
 `wsl -d <DistributionName>`, `wsl --distribution <DistributionName>`
@@ -247,22 +258,22 @@ WSL unterstützt zwei Abschnitte: `automount` und `network`.
 
 Abschnitt: `[automount]`
 
-| Schlüssel        | value                          | default      | notes                                                                                                                                                                                                                                                                                                                          |
+| key        | value                          | Standard      | notes                                                                                                                                                                                                                                                                                                                          |
 |:-----------|:-------------------------------|:-------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| enabled    | boolean                        | true         | `true` bewirkt, dass lokale Festplattenlaufwerke (d.h. `C:/` oder `D:/`) mit DrvFs automatisch unter `/mnt` eingebunden werden.  `false`bedeutet, dass Laufwerke nicht automatisch bereitgestellt werden, aber Sie können Sie trotzdem manuell oder über bereitstellen `fstab` .                                                                                                             |
-| mountFsTab | boolean                        | true         | `true` legt fest, dass `/etc/fstab` beim WSL-Start verarbeitet wird. Bei „/etc/fstab“ handelt es sich um eine Datei, in der Sie andere Dateisysteme wie eine SMB-Freigabe deklarieren können. Daher können Sie diese Dateisysteme beim Start automatisch in WSL einbinden.                                                                                                                |
-| root       | String                         | `/mnt/`      | Legt das Verzeichnis fest, in dem lokale Festplattenlaufwerke automatisch eingebunden werden. Wenn Sie z.B. ein Verzeichnis unter `/windir/` in WSL verwenden und Sie dieses als Stammverzeichnis angeben, erwarten Sie, dass die lokalen Festplattenlaufwerke unter `/windir/c` eingebunden werden.                                                                                              |
+| enabled    | boolean                        | wahr         | `true` bewirkt, dass lokale Festplattenlaufwerke (d.h. `C:/` oder `D:/`) mit DrvFs automatisch unter `/mnt` eingebunden werden.  `false`bedeutet, dass Laufwerke nicht automatisch bereitgestellt werden, aber Sie können Sie trotzdem manuell oder über bereitstellen `fstab` .                                                                                                             |
+| mountFsTab | boolean                        | wahr         | `true` legt fest, dass `/etc/fstab` beim WSL-Start verarbeitet wird. Bei „/etc/fstab“ handelt es sich um eine Datei, in der Sie andere Dateisysteme wie eine SMB-Freigabe deklarieren können. Daher können Sie diese Dateisysteme beim Start automatisch in WSL einbinden.                                                                                                                |
+| root       | Zeichenfolge                         | `/mnt/`      | Legt das Verzeichnis fest, in dem lokale Festplattenlaufwerke automatisch eingebunden werden. Wenn Sie z.B. ein Verzeichnis unter `/windir/` in WSL verwenden und Sie dieses als Stammverzeichnis angeben, erwarten Sie, dass die lokalen Festplattenlaufwerke unter `/windir/c` eingebunden werden.                                                                                              |
 | Optionen    | Durch Kommas getrennte Liste mit Werten | Leere Zeichenfolge | Dieser Wert wird an die Standardzeichenfolge der DrvFs-Einbindungsoptionen angefügt. **Es können nur DrvFs-spezifische Optionen angegeben werden.** Optionen, die die Einbindungsbinärdatei normalerweise in ein Flag analysieren würde, werden nicht unterstützt. Wenn Sie diese Optionen explizit angeben möchten, müssen Sie jedes Laufwerk, für das dies gelten soll, in „/etc/fstab“ einschließen. |
 
 Standardmäßig legt WSL die UID und die GID auf den Wert des Standardbenutzers fest (in der Ubuntu-Distribution wird der Standardbenutzer mit „uid=1000,gid=1000“ erstellt). Wenn der Benutzer eine GID-oder UID-Option explizit über diesen Schlüssel angibt, wird der zugehörige Wert überschrieben. Andernfalls wird der Standardwert immer angefügt.
 
-**Hinweis:** Diese Optionen werden als Einstellungsoptionen für alle automatisch bereitgestellten Laufwerke angewendet. Verwenden Sie stattdessen „/etc/fstab“, um die Optionen nur für ein bestimmtes Laufwerk zu ändern.
+**Hinweis:** Diese Optionen werden als Einbindungsoptionen für alle automatisch eingebundenen Laufwerke angewendet. Verwenden Sie stattdessen „/etc/fstab“, um die Optionen nur für ein bestimmtes Laufwerk zu ändern.
 
 #### <a name="mount-options"></a>Einbindungsoptionen
 
 Durch Festlegen verschiedener Einbindungsoptionen für Windows-Laufwerke (DrvFs) kann gesteuert werden, wie Dateiberechtigungen für Windows-Dateien berechnet werden. Die folgenden Optionen sind verfügbar:
 
-| Schlüssel | BESCHREIBUNG | Standard |
+| Schlüssel | Beschreibung | Standardwert |
 |:----|:----|:----|
 |uid| Die Benutzer-ID, die für den Besitzer aller Dateien verwendet wird | Die Standard-Benutzer-ID Ihrer WSL-Distribution (bei der erstmaligen Installation ist der Standardwert 1000)
 |gid| Die Gruppen-ID, die für den Besitzer aller Dateien verwendet wird | Die Standard-Gruppen-ID Ihrer WSL-Distribution (bei der erstmaligen Installation ist der Standardwert 1000)
@@ -270,13 +281,13 @@ Durch Festlegen verschiedener Einbindungsoptionen für Windows-Laufwerke (DrvFs)
 |fmask | Eine oktale Maske mit Berechtigungen, die für alle Dateien ausgeschlossen werden sollen | 000
 |dmask | Eine oktale Maske mit Berechtigungen, die für alle Verzeichnisse ausgeschlossen werden sollen | 000
 
-**Hinweis:** Die Berechtigungs Masken werden durch eine logische OR-Operation eingefügt, bevor Sie auf Dateien oder Verzeichnisse angewendet werden. 
+**Hinweis:** Die Berechtigungsmasken werden durch eine logische ODER-Operation festgelegt, bevor sie auf Dateien oder Verzeichnisse angewendet werden. 
 
 #### <a name="network"></a>Netzwerk
 
 Abschnittsbezeichnung: `[network]`
 
-| Schlüssel | value | default | notes|
+| key | value | Standard | notes|
 |:----|:----|:----|:----|
 | generateHosts | boolean | `true` | `true` legt fest, dass WSL `/etc/hosts` generiert. Die Datei `hosts` enthält eine statische Zuordnung der entsprechenden IP-Adresse von Hostnamen. |
 | generateResolvConf | boolean | `true` | `true` legt fest, dass WSL `/etc/resolv.conf` generiert. `resolv.conf` enthält eine DNS-Liste, mit der ein angegebener Hostnamen in seine IP-Adresse aufgelöst werden kann. | 
@@ -287,7 +298,7 @@ Abschnittsbezeichnung: `[interop]`
 
 Diese Optionen sind in Insider Build 17713 und höher verfügbar.
 
-| Schlüssel | value | default | notes|
+| key | value | Standard | notes|
 |:----|:----|:----|:----|
 | enabled | boolean | `true` | Durch Festlegen dieses Schlüssels wird festgelegt, ob WSL das Starten von Windows-Prozessen unterstützt. |
 | appendWindowsPath | boolean | `true` | Durch Festlegen dieses Schlüssels wird festgelegt, ob WSL der $PATH-Umgebungsvariablen Windows-Pfadelemente hinzufügt. |

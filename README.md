@@ -5,7 +5,7 @@ Wenn Sie doc-Probleme oder-Fehler oder eine Verbesserung finden, die Sie vorschl
 
 > **Hinweis:** Die Problemverfolgung dieses Repository dient nur zum Melden von Problemen mit der WSL-Dokumentation. Weitere verwandte Issue-Themen:
 > * WSLhttps://github.com/Microsoft/WSL/
-> * Windows-Konsole:https://github.com/Microsoft/Console/
+> * Windows-Konsole:https://github.com/Microsoft/Terminal/
 
 ## <a name="external-links"></a>Externe Links
 
