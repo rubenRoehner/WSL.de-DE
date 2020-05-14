@@ -4,12 +4,12 @@ description: Referenzliste und Konfigurieren mehrerer Linux-Distributionen, die 
 keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: e72822bdec0ef5788bd384a5795a91d746428800
-ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
+ms.openlocfilehash: 914bce22b789d379420823d44d063bc84ec39ac1
+ms.sourcegitcommit: 509691ed3d42c9e0171e6a44e09003d4eb24f9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "83343893"
+ms.locfileid: "83380427"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>WSL-Befehle und Start Konfigurationen
 
@@ -311,25 +311,38 @@ Diese Optionen sind in Build 18980 und höher verfügbar.
 
 | Schlüssel | value | default | notes|
 |:----|:----|:----|:----|
-| default | Zeichenfolge | Der anfängliche Benutzername, der bei der ersten Ausführen erstellt wurde | Durch Festlegen dieses Schlüssels wird angegeben, welcher Benutzer beim ersten Starten einer WSL-Sitzung ausgeführt werden soll. |
+| default | string | Der anfängliche Benutzername, der bei der ersten Ausführen erstellt wurde | Durch Festlegen dieses Schlüssels wird angegeben, welcher Benutzer beim ersten Starten einer WSL-Sitzung ausgeführt werden soll. |
 
 ## <a name="configure-global-options-with-wslconfig"></a>Konfigurieren globaler Optionen mit wslconfig
 
 > **Verfügbar in Windows Build 19041 und höher**
 
-Sie können globale WSL-Optionen konfigurieren, indem Sie eine `.wslconfig` Datei in das Stammverzeichnis Ihres Benutzer Ordners einfügen: `C:\Users\<yourUserName>\.wslconfig` . Diese Datei kann die folgenden Optionen enthalten:
+Sie können globale WSL-Optionen konfigurieren, indem Sie eine `.wslconfig` Datei in das Stammverzeichnis Ihres Benutzer Ordners einfügen: `C:\Users\<yourUserName>\.wslconfig` . 
+
+Im folgenden finden Sie eine wslconfig-Beispieldatei:
+
+```console
+[wsl2]
+kernel=C:\\temp\\myCustomKernel
+memory=4GB # Limits VM memory in WSL 2 to 4 GB
+processors=2 # Makes the WSL 2 VM use two virtual processors
+```
+
+Diese Datei kann die folgenden Optionen enthalten:
 
 ### <a name="wsl-2-settings"></a>WSL 2-Einstellungen
 
-Diese Einstellungen wirken sich auf die VM aus, die jede WSL 2-Distribution unterstützt. 
+Abschnittsbezeichnung: `[wsl2]`
+
+Diese Einstellungen wirken sich auf die VM aus, die jede WSL 2-Distribution unterstützt.
 
 | Schlüssel | value | default | notes|
 |:----|:----|:----|:----|
-| kernel | Zeichenfolge | Der von Microsoft bereitgestellte Posteingang | Ein absoluter Windows-Pfad zu einem benutzerdefinierten Linux-Kernel. |
+| kernel | string | Der von Microsoft bereitgestellte Posteingang | Ein absoluter Windows-Pfad zu einem benutzerdefinierten Linux-Kernel. |
 | memory | size | 80% ihres gesamten Arbeitsspeichers unter Windows | Wie viel Arbeitsspeicher für die WSL 2-VM zugewiesen werden soll. |
 | Prozessoren | number | Die gleiche Anzahl von Prozessoren unter Windows | Gibt an, wie viele Prozessoren der WSL 2-VM zugewiesen werden sollen. |
 | localhostforwarding | boolean | `true` | Boolescher Wert, der angibt, ob an den Platzhalter oder localhost in der WSL 2-VM gebundene Ports über localhost: Port vom Host aus verbunden werden sollen. |
-| kernelcommandline | Zeichenfolge | Leer | Zusätzliche Kernel-Befehlszeilenargumente. |
+| kernelcommandline | string | Leer | Zusätzliche Kernel-Befehlszeilenargumente. |
 | swap | size | 25% der Arbeitsspeicher Größe unter Windows auf das nächste GB aufgerundet | Wie viel Auslagerungs Bereich zum virtuellen WSL 2-Computer hinzugefügt werden soll, 0 für keine Auslagerungs Datei. |
 | Auslagerungs Datei | size | %UserProfile%\appdata\local\temp\tauap.vhdx | Ein absoluter Windows-Pfad zu der virtuellen Auslagerungs-Festplatte. |
 
