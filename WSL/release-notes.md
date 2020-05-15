@@ -1,19 +1,17 @@
 ---
 title: Anmerkungen zu dieser Version des Windows-Subsystems für Linux
 description: Anmerkungen zu dieser Version des Windows-Subsystems für Linux  Wöchentlich aktualisiert.
-keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu
+keywords: Versionshinweise, WSL, Windows, Windows Subsystem für Linux, Windows-Subsystem, Ubuntu
 author: benhillis
-ms.date: 07/31/2017
+ms.date: 05/15/2020
 ms.topic: article
-ms.assetid: 36ea641e-4d49-4881-84eb-a9ca85b1cdf4
-ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: 31bf975afb202a6cfd9a2879cff29a77b2969fce
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 3df4d4b4e0c542a3e87306c01a14b7073eb5e677
+ms.sourcegitcommit: 3fb40fd65b34a5eb26b213a0df6a3b2746b7a9b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76911704"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83235946"
 ---
 # <a name="release-notes-for-windows-subsystem-for-linux"></a>Anmerkungen zu dieser Version des Windows-Subsystems für Linux
 
@@ -291,7 +289,7 @@ Allgemeine Windows-Informationen zu Build 18277 finden Sie im [Windows-Blog](htt
 Allgemeine Windows-Informationen zu Build 18272 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2018/10/31/announcing-windows-10-insider-preview-build-18272/).
 
 ### <a name="wsl"></a>WSL
-* **WARNUNG:** In diesem Build liegt ein Problem vor, durch das WSL nicht funktionsfähig wird. Wenn Sie versuchen, die Distribution zu starten, wird der Fehler „No such interface supported“ angezeigt. Das Problem wurde behoben und ist im Insider Fast-Build der nächsten Woche nicht mehr enthalten. Wenn Sie diesen Build installiert haben, können Sie ein Rollback auf den vorherigen Windows-Build durchführen, indem Sie unter „Einstellungen > Update und Sicherheit > Wiederherstellung“ die Option „Zur vorherigen Version von Windows 10 zurückkehren“ auswählen.
+* **WARNUNG:** In diesem Build liegt ein Problem vor, durch das WSL nicht funktionsfähig wird. Wenn Sie versuchen, die Verteilung zu starten, wird der Fehler „Schnittstelle nicht unterstützt“ angezeigt. Das Problem wurde behoben und ist im Insider Fast-Build der nächsten Woche nicht mehr enthalten. Wenn Sie diesen Build installiert haben, können Sie ein Rollback auf den vorherigen Windows-Build durchführen, indem Sie unter „Einstellungen > Update und Sicherheit > Wiederherstellung“ die Option „Zur vorherigen Version von Windows 10 zurückkehren“ auswählen.
 
 ## <a name="build-18267"></a>Build 18267
 Allgemeine Windows-Informationen zu Build 18267 finden Sie im [Windows-Blog](https://blogs.windows.com/windowsexperience/2018/10/24/announcing-windows-10-insider-preview-build-18267/).
@@ -526,7 +524,7 @@ Allgemeine Windows-Informationen zu Build 17627 finden Sie im [Windows-Blog](htt
     * Beachten Sie, dass Prioritäten derzeit keine unterstützte WSL-Funktion sind, sodass Einschränkungen bestehen. Die Standardverwenund sollte jedoch aktiviert werden.
 * Windows-Firewallunterstützung für WSL-Prozesse. [GH 1852]
     * Um beispielsweise zuzulassen, dass der WSL python-Prozess an einem beliebigen Port lauschen kann, verwenden Sie Windows-CMD mit erhöhten Rechten: ```netsh.exe advfirewall firewall add rule name=wsl_python dir=in action=allow program="C:\users\<username>\appdata\local\packages\canonicalgrouplimited.ubuntuonwindows_79rhkp1fndgsc\localstate\rootfs\usr\bin\python2.7" enable=yes```
-    * Weitere Informationen zum Hinzufügen von Firewallregeln finden Sie unter [Link.](https://support.microsoft.com/en-us/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)
+    * Weitere Informationen zum Hinzufügen von Firewallregeln finden Sie unter [Link.](https://support.microsoft.com/help/947709/how-to-use-the-netsh-advfirewall-firewall-context-instead-of-the-netsh)
 * Beachten der Standardshell des Benutzers bei der Verwendung von „wsl.exe“. [GH 2372]
 * Melden aller Netzwerkschnittstellen als Ethernet. [GH 2996]
 * Bessere Verarbeitung von beschädigten /etc/passwd-Dateien. [GH 3001]
@@ -766,9 +764,9 @@ Allgemeine Windows-Informationen zu Build 17046 finden Sie im [Windows-Blog](htt
       -a    force result to absolute path format
       -u    translate from a Windows path to a WSL path (default)
       -w    translate from a WSL path to a Windows path
-      -m    translate from a WSL path to a Windows path, with ‘/’ instead of ‘\\’
+      -m    translate from a WSL path to a Windows path, with '/' instead of '\\'
 
-      EX: wslpath ‘c:\users’
+      EX: wslpath 'c:\users'
   ```
   #### <a name="console"></a>Konsole
 - Keine Korrekturen.
@@ -1544,7 +1542,7 @@ Windows-Binärdateien können jetzt direkt über die WSL-Befehlszeile aufgerufen
 Weitere Informationen finden Sie hier:
 
 - [WSL-Teamblog für Interop](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability/)<br/>
-- [MSDN-Interop-Dokumentation](https://msdn.microsoft.com/en-us/commandline/wsl/interop)<br/>
+- [MSDN-Interop-Dokumentation](https://msdn.microsoft.com/commandline/wsl/interop)<br/>
 
 ### <a name="fixed"></a>Fest
 
@@ -1816,7 +1814,7 @@ Allgemeine Windows-Informationen zu Build 14361 finden Sie im [Windows-Blog](htt
   - Benutzer können case.txt und CASE.TXT auf Ihren /mnt/c-Laufwerken verwenden
   - Die Beachtung von Groß-/Kleinschreibung wird nur in Bash unter Ubuntu unter Windows unterstützt. Außerhalb von Bash zeigt NTFS die Dateien richtig an, aber es kann zu unerwartetem Verhalten bei der Interaktion mit den Dateien von Windows kommen.
   - Für den Stamm der einzelnen Volumes (d.h. /mnt/c) wird die Groß-/Kleinschreibung nicht beachtet.
-  - Weitere Informationen zum Verarbeiten dieser Dateien in Windows finden Sie [hier](https://support.microsoft.com/en-us/kb/100625).
+  - Weitere Informationen zum Verarbeiten dieser Dateien in Windows finden Sie [hier](https://support.microsoft.com/kb/100625).
 - Stark verbesserte PTY-/TTY-Unterstützung.  Anwendungen wie TMUX werden jetzt unterstützt (GH #40)
 - Korrektur eines Installationsproblems, bei dem Benutzerkonten nicht immer erstellt wurden
 - Optimierte Befehlszeilen-Argumentstruktur, die eine extrem lange Argumentliste zulässt. (GH #153)
@@ -1865,7 +1863,7 @@ Allgemeine Windows-Informationen zu Build 14352 finden Sie im [Windows-Blog](htt
 - Verbesserte Unterstützung nicht-englischer Zeichen
 - Hinzufügen aktueller Windows-Zeitzonendaten und Festlegen als Standard
 - Eindeutige Geräte-IDs für jeden Einbindungspunkt (jre-Korrektur – GH #49)
-- Korrektur eines Problems mit Pfaden, die „.“ und „..“ enthalten.
+- Korrektur eines Problems mit Pfaden, die „.“ und „..“ enthalten
 - Hinzufügen von FIFO-Unterstützung (GH #71)
 - Aktualisiertes Format von „resolv.conf“ entsprechend dem nativen Ubuntu-Format
 - procfs-Bereinigung

@@ -1,38 +1,41 @@
 ---
 title: Aktualisieren des WSL2-Linux-Kernels
 description: Anweisungen zum manuellen Aktualisieren Ihres WSL2-Linux-Kernels
-keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu, wsl.conf, wslconfig
+keywords: WSL, Windows, Linux-Kernel, Windows-Subsystem für Linux, Kernel
 ms.date: 03/12/2020
 ms.topic: article
-ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.localizationpriority: high
-ms.custom: seodec18
-ms.openlocfilehash: a1a2f23fb05c426f80878e12e82026a96c71354e
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 89e5755699938b7797aa65a5f3131f93e3e31796
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "79447743"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343832"
 ---
 # <a name="updating-the-wsl-2-linux-kernel"></a>Aktualisieren des WSL2-Linux-Kernels
 
-Um den Linux-Kernel innerhalb von WSL2 manuell zu aktualisieren, führen Sie die folgenden Schritte aus. 
+Um den Linux-Kernel innerhalb von WSL2 manuell zu aktualisieren, führen Sie die folgenden Schritte aus.
+
+> [!NOTE] 
+> Wenn das Installationsprogramm WSL 1 nicht finden kann, klicken Sie mit der rechten Maustaste auf das Installationsprogramm für das Linux-Kernel-Update, Wählen Sie „Deinstallieren“ aus, und starten Sie das Installationsprogramm erneut.
 
 ## <a name="download-the-linux-kernel-update-package"></a>Herunterladen des Updatepakets für den Linux-Kernel
 
-Klicken Sie auf [diesen Link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi), um das neueste Updatepaket für den WSL2-Linux-Kernel für x64-Computer herunterzuladen.
+[Laden Sie das neueste Updatepaket für den WSL2-Linux-Kernel für x64-Computer herunter](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi).
 
-> [!NOTE] 
-> Wenn Sie einen ARM64-Computer verwenden, laden Sie stattdessen [dieses Paket](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi) herunter.
+> [!NOTE]
+> Wenn Sie einen ARM64-Computer verwenden, laden Sie stattdessen [das ARM64-Paket](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi) herunter.
 
 ## <a name="install-the-linux-kernel-update-package"></a>Installieren des Updatepakets für den Linux-Kernel
 
 So installieren Sie das Updatepaket für den Linux-Kernel
 
-    1. Führen Sie das im vorherigen Schritt heruntergeladene Updatepaket aus.
-    2. Sie werden zur Eingabe erhöhter Berechtigungen aufgefordert. Wählen Sie „Ja“, um diese Installation zu genehmigen.
-    3. Sobald die Installation abgeschlossen ist, können Sie mit der Nutzung von WSL2 beginnen!
+  1. Führen Sie das im vorherigen Schritt heruntergeladene Updatepaket aus.
+
+  2. Sie werden zur Eingabe erhöhter Berechtigungen aufgefordert. Wählen Sie „Ja“, um diese Installation zu genehmigen.
+
+  3. Sobald die Installation abgeschlossen ist, können Sie mit der Nutzung von WSL2 beginnen!
 
 ## <a name="future-plans-for-updating-the-wsl2-linux-kernel"></a>Zukünftige Pläne zur Aktualisierung des WSL2-Linux-Kernels
 
-Weitere Informationen über diese Änderungen finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004) im [Blog zur Windows-Befehlszeile](https://aka.ms/cliblog).
+Weitere Informationen finden Sie im Artikel über die [Änderungen an der Aktualisierung des WSL2 Linux-Kernels](https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004) im [Blog zur Windows-Befehlszeile](https://aka.ms/cliblog).

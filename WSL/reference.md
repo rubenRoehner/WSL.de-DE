@@ -4,20 +4,49 @@ description: Liste der Befehle, mit denen das Windows-Subsystem für Linux verwa
 keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu
 ms.date: 07/31/2017
 ms.topic: article
-ms.assetid: 82908295-a6bd-483c-a995-613674c2677e
-ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: d74a6926fd797f2e1ede0fd5d8d080d0f1ce3f6b
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 72b78a73bf68b28dd14b4826943a0c81ea04bbad
+ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "71269840"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83270874"
 ---
 # <a name="command-reference-for-windows-subsystem-for-linux"></a>Befehlsreferenz für das Windows-Subsystem für Linux
 
-Die beste Möglichkeit, mit dem Windows-Subsystem für Linux zu interagieren, ist die Verwendung des Befehls `wsl.exe`. 
+Die beste Möglichkeit, mit dem Windows-Subsystem für Linux zu interagieren, ist die Verwendung des Befehls `wsl.exe`.
 
+## <a name="set-wsl-2-as-your-default-version"></a>Festlegen von WSL 2 als Standardversion
+
+Führen Sie bei der Installation einer neuen Linux-Verteilung den folgenden Befehl in PowerShell aus, um WSL 2 als Standardversion festzulegen:
+
+```powershell
+wsl --set-default-version 2
+```
+
+## <a name="set-your-distribution-version-to-wsl-1-or-wsl-2"></a>Festlegen der Verteilungsversion auf WSL 1 oder WSL 2
+
+Sie können die den einzelnen installierten Linux-Verteilungen zugewiesenen WSL-Version überprüfen, indem Sie die PowerShell-Befehlszeile öffnen und den folgenden Befehl (nur verfügbar in [Windows Build 19041 oder höher](ms-settings:windowsupdate)) eingeben: `wsl -l -v`
+
+```bash
+wsl --list --verbose
+```
+
+Um eine Verteilung so einzurichten, dass sie von einer der beiden WSL-Versionen unterstützt wird, führen Sie Folgendes aus:
+
+```bash
+wsl --set-version <distribution name> <versionNumber>
+```
+
+Ersetzen Sie hierbei `<distribution name>` durch den tatsächlichen Namen Ihrer Verteilung und `<versionNumber>` durch die Ziffer „1“ oder „2“. Sie können jederzeit zu WSL 1 zurückwechseln, indem sie denselben Befehl wie oben ausführen, aber die 2 durch eine 1 ersetzen.
+
+Wenn Sie WSL 2 als Ihre Standardarchitektur festlegen möchten, ist dies über diesen Befehl möglich:
+
+```bash
+wsl --set-default-version 2
+```
+
+Dadurch wird die Version jeder neu installierten Verteilung auf WSL 2 festgelegt.
 
 ## `wsl.exe`
 
@@ -25,7 +54,7 @@ Unten finden Sie eine Liste mit allen Optionen, wenn Sie `wsl.exe` ab Windows Ve
 
 Syntax: `wsl [Argument] [Options...] [CommandLine]`
 
-### <a name="arguments-for-running-linux-binaries"></a>Argumente für das Ausführen von Linux-Binärdateien
+### <a name="arguments-for-running-linux-commands"></a>Argumente für das Ausführen von Linux-Befehlen
 
 * **Ohne Argumente**
 
@@ -65,11 +94,11 @@ Die oben genannten Befehle akzeptieren außerdem die folgenden Optionen:
 
   Optionen:
   * **--all**
-      
+
     Listet alle Distributionen auf, einschließlich Distributionen, die zurzeit installiert oder deinstalliert werden.
 
   * **--running**
-      
+
     Listet nur Distributionen auf, die zurzeit ausgeführt werden.
 
 * **--set-default, -s \<Distribution>**
@@ -82,13 +111,13 @@ Die oben genannten Befehle akzeptieren außerdem die folgenden Optionen:
 
 * **--unregister \<Distribution>**
   
-  Hebt die Registrierung der Distribution auf.
-   
+  Hebt die Registrierung der Verteilung auf.
+
 * **--help**: Zeigt Syntaxinformationen an.
 
 ## <a name="additional-commands"></a>Weitere Befehle
 
-Es gibt auch historische Befehle für die Interaktion mit dem Windows-Subsystem für Linux. Ihre Funktionalität ist in `wsl.exe` enthalten, sie sind jedoch weiterhin zur Verwendung verfügbar. 
+Es gibt auch historische Befehle für die Interaktion mit dem Windows-Subsystem für Linux. Ihre Funktionalität ist in `wsl.exe` enthalten, sie sind jedoch weiterhin zur Verwendung verfügbar.
 
 ### `wslconfig.exe`
 
@@ -97,34 +126,24 @@ Mit diesem Befehl können Sie Ihre WSL-Distribution konfigurieren. Es folgt eine
 Syntax: `wslconfig [Argument] [Options...]`
 
 #### <a name="arguments"></a>Argumente
+
 * **/l, /list [Optionen]**
   
   Listet registrierte Distributionen auf.
   
-  Optionen:
-    * **/all**
-    
-      Listet optional alle Distributionen auf, einschließlich Distributionen, die zurzeit installiert oder deinstalliert werden.
+Optionen:
 
-    * **/running**
-      
-      Listet nur Distributionen auf, die zurzeit ausgeführt werden.
+* **/all** Listet optional alle Verteilungen auf, einschließlich Verteilungen, die zurzeit installiert oder deinstalliert werden.
 
-* **/s, /setdefault \<Distribution>**
-  
-  Legt die Distribution als Standard fest.
+* **/running** Listet nur Verteilungen auf, die zurzeit ausgeführt werden.
 
-* **/t, /terminate \<Distribution>**
-  
-  Beendet die Distribution.
+* **/s, /setdefault \<Distro>** Legt die Verteilung als Standard fest.
 
-* **/u, /unregister \<Distribution>**
-  
-  Hebt die Registrierung der Distribution auf.
-   
-* **/upgrade \<Distribution>**
-  
-  Führt ein Upgrade der Distribution auf das WslFs-Dateisystemformat durch.
+* **/t, /terminate \<Distro>** Beendet die Verteilung.
+
+* **/u, /unregister \<Distro>** Hebt die Registrierung der Verteilung auf.
+
+* **/upgrade \<Distro>** Führt ein Upgrade der Verteilung auf das WslFs-Dateisystemformat durch.
 
 ### `bash.exe`
 
@@ -143,14 +162,14 @@ Syntax: `bash [Options...]`
 * **-c "\<Befehl>"**
   
   Führt den Befehl aus, gibt die Ausgabe aus, und kehrt zur Windows-Eingabeaufforderung zurück.
-    
+
   Beispiel: `bash -c "ls"`.
 
 ## <a name="deprecated-commands"></a>Veraltete Befehle
 
 `lxrun.exe` war der erste Befehl, der zum Installieren und Verwalten des Windows-Subsystems für Linux verwendet wurde. Er gilt ab Windows 10 Version 1803 und höher als veraltet.
 
-Der Befehl `lxrun.exe` kann verwendet werden, um direkt mit dem [Windows-Subsystem für Linux (WSL)](https://msdn.microsoft.com/en-us/commandline/wsl/faq#what-windows-subsystem-for-linux-wsl-) zu interagieren.  Diese Befehle werden im Verzeichnis `\Windows\System32` installiert und können in einer Windows-Eingabeaufforderung oder in PowerShell ausgeführt werden.
+Der Befehl `lxrun.exe` kann verwendet werden, um direkt mit dem [Windows-Subsystem für Linux (WSL)](https://msdn.microsoft.com/commandline/wsl/faq#what-windows-subsystem-for-linux-wsl-) zu interagieren.  Diese Befehle werden im Verzeichnis `\Windows\System32` installiert und können in einer Windows-Eingabeaufforderung oder in PowerShell ausgeführt werden.
 
 | Befehl                     | Beschreibung                     |
 |:----------------------------|:---------------------------|

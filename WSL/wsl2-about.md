@@ -7,12 +7,12 @@ ms.topic: article
 ms.assetid: 7afaeacf-435a-4e58-bff0-a9f0d75b8a51
 ms.custom: seodec18
 ms.localizationpriority: high
-ms.openlocfilehash: f11aed3a5583d1a68f4a0e095103eb0315ca2c45
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 70044105820dd485246ae3fc731cbd6f06183f8a
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "80256383"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343882"
 ---
 # <a name="about-wsl-2"></a>Informationen zu WSL 2
 
@@ -34,4 +34,4 @@ Dateiintensive Vorgänge, wie `git clone`, `npm install`, `apt update`, `apt upg
 
 ## <a name="full-system-call-compatibility"></a>Vollständige Kompatibilität von Systemaufrufen
 
-Linux-Binärdateien verwenden Systemaufrufe für viele Funktionen, wie den Zugriff auf Dateien, das Anfordern von Arbeitsspeicher, das Erstellen von Prozessen und mehr. Während WSL 1 eine Übersetzungsschicht verwendete, die vom WSL-Team erstellt wurde, enthält WSL 2 seinen eigenen Linux-Kernel mit vollständiger Kompatibilität der Systemaufrufe. Dadurch wird eine ganz neue Reihe von Apps eingeführt, die Sie in WSL ausführen können, wie etwa Docker und mehr. Darüber hinaus wurde erreicht, dass Updates des Linux-Kernels jetzt sofort zum Hinzufügen auf Ihrem Computer bereit sind, statt abwarten zu müssen, bis das WSL-Team die Änderungen implementiert und sie dann hinzufügt.
+Linux-Binärdateien verwenden Systemaufrufe für viele Funktionen, wie den Zugriff auf Dateien, das Anfordern von Arbeitsspeicher, das Erstellen von Prozessen und mehr. Während WSL 1 eine Übersetzungsschicht verwendete, die vom WSL-Team erstellt wurde, enthält WSL 2 seinen eigenen Linux-Kernel mit vollständiger Kompatibilität der Systemaufrufe. Dadurch wird eine ganz neue Reihe von Apps eingeführt, die Sie in WSL ausführen können, wie etwa Docker und mehr. Darüber hinaus wurde erreicht, dass Updates des Linux-Kernels jetzt sofort zu Ihrem Computer hinzugefügt werden können, statt abwarten zu müssen, bis das WSL-Team die Änderungen implementiert und sie dann hinzufügt.

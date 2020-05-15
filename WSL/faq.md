@@ -6,12 +6,12 @@ ms.date: 9/4/2018
 ms.topic: article
 ms.assetid: 129101ed-b88a-43c2-b6a2-cd2c4ff6fee1
 ms.localizationpriority: high
-ms.openlocfilehash: 5651b0869ff97899a768985ce6efa006afa77a9b
-ms.sourcegitcommit: 39d3a2f0f4184eaec8d8fec740aff800e8ea9ac7
+ms.openlocfilehash: 3c3681b0e0e8317917b4ec7c37c9bb2f0bbe9c95
+ms.sourcegitcommit: e6e888f2b88a2d9c105cee46e5ab5b70aa43dd80
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77624934"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83343900"
 ---
 # <a name="frequently-asked-questions-about-windows-subsystem-for-linux"></a>Häufig gestellte Fragen zum Windows-Subsystem für Linux
 
@@ -202,9 +202,9 @@ In einigen Fällen ermöglicht das Deaktivieren der Firewall den Zugriff. In ein
 ## <a name="how-do-i-access-a-port-from-wsl-in-windows"></a>Wie greife ich aus WSL unter Windows auf einen Port zu?
 WSL nutzt die IP-Adresse von Windows, da es unter Windows ausgeführt wird. Daher können Sie auf alle Ports auf localhost zugreifen. Wenn Sie z.B. Webinhalte an Port 1234 verwenden, können Sie https://localhost:1234 in Ihren Windows-Browser eingeben.
 
-## <a name="how-can-i-back-up-my-wsl-distros"></a>Wie kann ich meine WSL-Distributionen sichern?
+## <a name="how-can-i-back-up-my-wsl-distros-or-move-them-from-one-drive-to-another"></a>Wie kann ich meine WSL-Verteilungen sichern oder von einem Laufwerk auf ein anderes verschieben?
 
-Die beste Möglichkeit zum Sichern Ihrer Distributionen ist in Windows Version 1809 und höher verfügbar. Sie können die gesamte Distribution mithilfe des Befehls `wsl --export` in einen Tarball exportieren. Sie können diese Distribution dann mit dem Befehl `wsl --import` erneut in WSL importieren, sodass Sie Zustände Ihrer WSL-Distributionen sichern und speichern können. 
+Die beste Möglichkeit zum Sichern oder Verschieben Ihrer Verteilungen sind die in Windows Version 1809 und höher verfügbaren Export/Import-Befehle. Sie können die gesamte Distribution mithilfe des Befehls `wsl --export` in einen Tarball exportieren. Sie können diese Verteilung dann mit dem Befehl `wsl --import`, in dem ein neuer Speicherort für den Import angegeben werden kann, wieder in WSL importieren, wodurch Sie Zustände Ihrer WSL-Verteilungen sichern und speichern (oder verschieben) können. 
 
 Beachten Sie, dass herkömmliche Sicherungsdienste, die Dateien in ihren Appdata-Ordnern sichern (z.B. die Windows-Sicherung), Ihre Linux-Dateien nicht beschädigen.
 
