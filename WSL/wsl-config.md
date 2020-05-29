@@ -4,12 +4,12 @@ description: Referenzliste und Konfigurieren mehrerer Linux-Distributionen, die 
 keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, windowssubsystem, ubuntu, wsl.conf, wslconfig
 ms.date: 05/12/2020
 ms.topic: article
-ms.openlocfilehash: 914bce22b789d379420823d44d063bc84ec39ac1
-ms.sourcegitcommit: 509691ed3d42c9e0171e6a44e09003d4eb24f9ae
+ms.openlocfilehash: dc488ab988d8e158b5eff7a486a2fe707dbedfd7
+ms.sourcegitcommit: 90f7caeefe886bf6c0ba2b90c1b56b5f9795ad1b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83380427"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84153116"
 ---
 # <a name="wsl-commands-and-launch-configurations"></a>WSL-Befehle und Start Konfigurationen
 
@@ -311,7 +311,7 @@ Diese Optionen sind in Build 18980 und höher verfügbar.
 
 | Schlüssel | value | default | notes|
 |:----|:----|:----|:----|
-| default | string | Der anfängliche Benutzername, der bei der ersten Ausführen erstellt wurde | Durch Festlegen dieses Schlüssels wird angegeben, welcher Benutzer beim ersten Starten einer WSL-Sitzung ausgeführt werden soll. |
+| default | Zeichenfolge | Der anfängliche Benutzername, der bei der ersten Ausführen erstellt wurde | Durch Festlegen dieses Schlüssels wird angegeben, welcher Benutzer beim ersten Starten einer WSL-Sitzung ausgeführt werden soll. |
 
 ## <a name="configure-global-options-with-wslconfig"></a>Konfigurieren globaler Optionen mit wslconfig
 
@@ -338,13 +338,13 @@ Diese Einstellungen wirken sich auf die VM aus, die jede WSL 2-Distribution unte
 
 | Schlüssel | value | default | notes|
 |:----|:----|:----|:----|
-| kernel | string | Der von Microsoft bereitgestellte Posteingang | Ein absoluter Windows-Pfad zu einem benutzerdefinierten Linux-Kernel. |
+| kernel | Zeichenfolge | Der von Microsoft bereitgestellte Posteingang | Ein absoluter Windows-Pfad zu einem benutzerdefinierten Linux-Kernel. |
 | memory | size | 80% ihres gesamten Arbeitsspeichers unter Windows | Wie viel Arbeitsspeicher für die WSL 2-VM zugewiesen werden soll. |
-| Prozessoren | number | Die gleiche Anzahl von Prozessoren unter Windows | Gibt an, wie viele Prozessoren der WSL 2-VM zugewiesen werden sollen. |
+| Prozessoren | Zahl | Die gleiche Anzahl von Prozessoren unter Windows | Gibt an, wie viele Prozessoren der WSL 2-VM zugewiesen werden sollen. |
 | localhostforwarding | boolean | `true` | Boolescher Wert, der angibt, ob an den Platzhalter oder localhost in der WSL 2-VM gebundene Ports über localhost: Port vom Host aus verbunden werden sollen. |
-| kernelcommandline | string | Leer | Zusätzliche Kernel-Befehlszeilenargumente. |
+| kernelcommandline | Zeichenfolge | Leer | Zusätzliche Kernel-Befehlszeilenargumente. |
 | swap | size | 25% der Arbeitsspeicher Größe unter Windows auf das nächste GB aufgerundet | Wie viel Auslagerungs Bereich zum virtuellen WSL 2-Computer hinzugefügt werden soll, 0 für keine Auslagerungs Datei. |
-| Auslagerungs Datei | size | %UserProfile%\appdata\local\temp\tauap.vhdx | Ein absoluter Windows-Pfad zu der virtuellen Auslagerungs-Festplatte. |
+| Auslagerungs Datei | Zeichenfolge | %UserProfile%\appdata\local\temp\tauap.vhdx | Ein absoluter Windows-Pfad zu der virtuellen Auslagerungs-Festplatte. |
 
 Einträge mit dem `path` Wert müssen Windows-Pfade mit Escapezeichen mit Escapezeichen sein, z. b.:`C:\\Temp\\myCustomKernel`
 
