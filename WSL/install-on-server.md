@@ -5,12 +5,12 @@ keywords: BashOnWindows, bash, wsl, windows, windows subsystem for linux, window
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 86fd7de0ef45af760f46bb2a18932f513b813609
-ms.sourcegitcommit: 1b6191351bbf9e95f3c28fc67abe4bf1bcfd3336
+ms.openlocfilehash: 805b7d266020c62e0c6f58889541517d44db3726
+ms.sourcegitcommit: 90f7caeefe886bf6c0ba2b90c1b56b5f9795ad1b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83270884"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84153081"
 ---
 # <a name="windows-server-installation-guide"></a>Windows Server-Installationsleitfaden
 
@@ -29,7 +29,7 @@ Damit Sie Linux-Distributionen unter Windows ausführen können, müssen Sie das
 
 **Wenn Sie 100%ige Systemaufruf-Kompatibilität und schnellere E/A-Leistung suchen, lesen Sie die unten stehenden Informationen zur Installation von WSL 2.**
 
-WSL 2 ist nur in Windows 10, Version 2004, Build 19041 oder höher verfügbar. Sie müssen [Ihre Windows-Version aktualisieren](ms-settings:windowsupdate), dem [Windows Insider-Programm beitreten](https://insider.windows.com/insidersigninboth/) und am „Release Preview“-Ring teilnehmen, bis die öffentliche Version Ende Mai verfügbar ist.
+WSL 2 ist nur in Windows 10, Version 2004, Build 19041 oder höher verfügbar. Möglicherweise müssen Sie [Ihre Windows-Version aktualisieren](ms-settings:windowsupdate).
 
 **Falls Sie mit WSL 1 fortfahren, starten Sie Ihren Rechner neu, wenn Sie dazu aufgefordert werden, und setzen Sie die Installation [hier](./install-on-server.md#download-a-linux-distribution) fort.**
 

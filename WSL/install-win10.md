@@ -5,12 +5,12 @@ keywords: BashOnWindows, Bash, WSL, Windows, Windows-Subsystem für Linux, Windo
 ms.date: 05/12/2020
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: ec24bbe6ed3ecc4413e623d12d12f9a92c6db9e6
-ms.sourcegitcommit: f0b33cdd1ce7b461e7f657d44e9798094ef55b55
+ms.openlocfilehash: 3914e8d3be84f922424cba1000ea45ea8ce22cd8
+ms.sourcegitcommit: 09f5eb0f6062642e5c86deb1f34307ce3429163a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83683027"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "84211726"
 ---
 # <a name="windows-subsystem-for-linux-installation-guide-for-windows-10"></a>Windows-Subsystem für Linux: Installationsleitfaden für Windows 10
 
@@ -31,9 +31,6 @@ Um nur WSL 1 zu installieren, sollten Sie nun den Computer neu starten und mit d
 Um ein Update auf WSL 2 durchführen zu können, müssen die folgenden Kriterien erfüllt sein:
 
 - Ausgeführt unter Windows 10, [aktualisiert auf Version 2004](ms-settings:windowsupdate), **Build 19041** oder höher.
-
-> [!IMPORTANT]
-> Derzeit müssen Sie zum Aktualisieren auf Windows 10, Version 2004 (Build 19041), dem [Windows Insider-Programm beitreten](https://insider.windows.com/insidersigninboth/) und den Ring „Release Preview“ auswählen. Das öffentliche Release sollte Ende Mai verfügbar sein.
 
 - Überprüfen Sie Ihre Windows-Version, indem Sie die **Windows-Logo-Taste+R** auswählen, **winver** eingeben und **OK** auswählen. (Oder geben Sie den Befehl `ver` an der Windows-Eingabeaufforderung ein.) [Aktualisieren Sie auf die neueste Windows-Version](ms-settings:windowsupdate), wenn Ihr Build niedriger als 19041 ist. [Holen Sie sich den Windows Update-Assistenten](https://www.microsoft.com/software-download/windows10).
 
@@ -57,6 +54,9 @@ Führen Sie bei der Installation einer neuen Linux-Verteilung den folgenden Befe
 wsl --set-default-version 2
 ```
 
+> [!NOTE]
+> Die Aktualisierung von WSL 1 auf WSL 2 kann je nach Umfang Ihrer Zielverteilung mehrere Minuten dauern.
+
 ## <a name="install-your-linux-distribution-of-choice"></a>Installieren der Linux-Verteilung Ihrer Wahl
 
 1. Öffnen Sie den [Microsoft Store](https://aka.ms/wslstore), und wählen Sie Ihre bevorzugte Linux-Verteilung aus.
@@ -67,6 +67,7 @@ wsl --set-default-version 2
 
     - [Ubuntu 16.04 LTS](https://www.microsoft.com/store/apps/9pjn388hp8c9)
     - [Ubuntu 18.04 LTS](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)
+    - [Ubuntu 20.04 LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
     - [openSUSE Leap 15.1](https://www.microsoft.com/store/apps/9NJFZK00FGKV)
     - [SUSE Linux Enterprise Server 12 SP5](https://www.microsoft.com/store/apps/9MZ3D1TRP8T1)
     - [SUSE Linux Enterprise Server 15 SP1](https://www.microsoft.com/store/apps/9PN498VPMF3Z)
