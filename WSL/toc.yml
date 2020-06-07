@@ -16,6 +16,12 @@
       href: install-on-server.md
     - name: Erstellen eines Benutzerkontos und -Kennworts
       href: user-support.md
+- name: Lernprogramme
+  items:
+    - name: Erste Schritte mit VS Code
+      href: tutorials/wsl-vscode.md
+    - name: Erste Schritte mit Git
+      href: tutorials/wsl-git.md
 - name: Anleitungen
   items:
     - name: Interoperabilitätsbefehle
