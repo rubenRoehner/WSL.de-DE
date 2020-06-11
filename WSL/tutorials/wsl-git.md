@@ -5,12 +5,12 @@ keywords: WSL, Windows, windowssubsystem, GNU, Linux, bash, git, GitHub, Version
 ms.date: 06/04/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 94166371fc0928d6be3b3cfd6cb595c6fac76608
-ms.sourcegitcommit: d95bdbc2fea991ba14a4c9ec53ee0ec19d6bbdb4
+ms.openlocfilehash: 687a12186d11343a2d4131e0fdeeef3bcec902fb
+ms.sourcegitcommit: 5d3898772851e6ac9a310f219cc0d71278f95d22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84457792"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84671010"
 ---
 # <a name="get-started-using-git-on-windows-subsystem-for-linux"></a>Einstieg in die Verwendung von git unter Windows-Subsystem für Linux
 
@@ -18,12 +18,12 @@ Git ist das am häufigsten verwendete Versionskontrollsystem. Mit git können Si
 
 ## <a name="git-can-be-installed-on-windows-and-on-wsl"></a>Git kann unter Windows und auf WSL installiert werden.
 
-Ein wichtiger Aspekt: Wenn Sie WSL aktivieren und eine Linux-Distribution installieren, installieren Sie ein neues Dateisystem, das von Windows NTFS C:\ getrennt ist. Laufwerk auf Ihrem Computer. Unter Linux werden Laufwerke nicht als Buchstaben angegeben. Ihnen werden Einstellungspunkte zugewiesen. Der Stamm des Dateisystems `/` ist der Bereitstellungs Punkt der Stamm Partition (oder des Ordners) im Fall von WSL. Nicht alles unter `/` ist dasselbe Laufwerk. Auf meinem Laptop habe ich beispielsweise zwei Versionen von Ubuntu (20,04 und 18,01) sowie Debian installiert. Wenn Sie diese Verteilungen öffnen, wählen Sie das Stammverzeichnis mit dem Befehl aus `cd ~` , und geben Sie dann den Befehl ein `explorer.exe .` . der Windows-Datei-Explorer wird geöffnet und zeigt den Verzeichnispfad für die Verteilung an.
+Ein wichtiger Aspekt: Wenn Sie WSL aktivieren und eine Linux-Distribution installieren, installieren Sie ein neues Dateisystem, das von Windows NTFS C:\ getrennt ist. Laufwerk auf Ihrem Computer. Unter Linux werden Laufwerke nicht als Buchstaben angegeben. Ihnen werden Einstellungspunkte zugewiesen. Der Stamm des Dateisystems `/` ist der Bereitstellungs Punkt der Stamm Partition (oder des Ordners) im Fall von WSL. Nicht alles unter `/` ist dasselbe Laufwerk. Auf meinem Laptop habe ich beispielsweise zwei Versionen von Ubuntu (20,04 und 18,04) sowie Debian installiert. Wenn Sie diese Verteilungen öffnen, wählen Sie das Stammverzeichnis mit dem Befehl aus `cd ~` , und geben Sie dann den Befehl ein `explorer.exe .` . der Windows-Datei-Explorer wird geöffnet und zeigt den Verzeichnispfad für die Verteilung an.
 
 | Linux-Distribution | Windows-Pfad für den Zugriff auf den Basisordner |
 | ----------- | ----------- |
 | Ubuntu 20.04 | `\\wsl$\Ubuntu-20.04\home\username` |
-| Ubuntu 18,01 | `\\wsl$\Ubuntu-18.04\home\username` |
+| Ubuntu 18.04 | `\\wsl$\Ubuntu-18.04\home\username` |
 | Debian | `\\wsl$\Debian\home\username` |
 | Windows PowerShell | `C:\Users\username` |
 
