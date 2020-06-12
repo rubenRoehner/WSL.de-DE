@@ -43,4 +43,8 @@
 - name: Problembehandlung
   href: troubleshooting.md
 - name: Anmerkungen zu dieser Version
-  href: release-notes.md
+  items:
+    - name: Anmerkungen zur allgemein verfügbaren Version
+      href: release-notes.md
+    - name: Anmerkungen zur Linux-Kernel-Version
+      href: kernel-release-notes.md
