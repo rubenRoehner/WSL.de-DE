@@ -5,12 +5,12 @@ keywords: WSL, Windows, windowssubsystem, GNU, Linux, bash, git, GitHub, Version
 ms.date: 06/04/2020
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 687a12186d11343a2d4131e0fdeeef3bcec902fb
-ms.sourcegitcommit: 5d3898772851e6ac9a310f219cc0d71278f95d22
+ms.openlocfilehash: 550355ea77c97d68130c8d85e9aef2a6b49ffe63
+ms.sourcegitcommit: eaceda3589b9bd777e0fead5ef33bb16060a55d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84671010"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84978243"
 ---
 # <a name="get-started-using-git-on-windows-subsystem-for-linux"></a>Einstieg in die Verwendung von git unter Windows-Subsystem für Linux
 
@@ -36,13 +36,32 @@ Sie müssen git auf jedem Dateisystem installieren, mit dem Sie es verwenden mö
 
 ## <a name="installing-git"></a>Installieren von Git
 
-Git ist bereits mit dem größten Teil des Windows-Subsystems für Linux-Distributionen installiert, Sie möchten jedoch möglicherweise auf die neueste Version aktualisieren, und Sie müssen ihre git-Konfigurationsdatei einrichten.
+Git ist bereits mit dem größten Teil des Windows-Subsystems für Linux-Distributionen installiert, Sie möchten jedoch möglicherweise auf die neueste Version aktualisieren. Außerdem müssen Sie Ihre git-Konfigurationsdatei einrichten.
 
-Informationen zur Installation von git finden Sie auf der Website zum [git-Download für Linux](https://git-scm.com/download/linux) . Jede Linux-Distribution verfügt über einen eigenen Paket-Manager und Installations Befehl. Verwenden Sie beispielsweise zum Installieren von git in der alpinen Verteilung: `apk add git` . Möglicherweise möchten Sie auch [git für Windows installieren](https://git-scm.com/download/win) , falls Sie dies noch nicht getan haben.
+Informationen zur Installation von git finden Sie auf der Website zum [git-Download für Linux](https://git-scm.com/download/linux) . Jede Linux-Distribution verfügt über einen eigenen Paket-Manager und Installations Befehl.
+
+Geben Sie für die neueste stabile GIt-Version in Ubuntu/Debian den folgenden Befehl ein:
+
+```bash
+sudo apt-get install git
+```
+
+> [!NOTE]
+> Möglicherweise möchten Sie auch [git für Windows installieren](https://git-scm.com/download/win) , falls Sie dies noch nicht getan haben.
 
 ## <a name="git-config-file-setup"></a>Setup der git-Konfigurationsdatei
 
-Öffnen Sie zum Einrichten der git-Konfigurationsdatei eine Befehlszeile für die Distribution, in der Sie arbeiten, und geben Sie Folgendes ein: `git config --global user.name "Your Name"` und dann `git config --global user.email "youremail@domain.com"` . Ersetzen Sie den Inhalt in Anführungszeichen durch den Namen und die e-Mail-Adresse, mit der Sie Ihr git-Konto erstellt haben.
+Öffnen Sie zum Einrichten der git-Konfigurationsdatei eine Befehlszeile für die Distribution, in der Sie arbeiten, und legen Sie Ihren Namen mit diesem Befehl fest (ersetzen Sie "Your Name" durch ihren git-Benutzernamen):
+
+```bash
+ `git config --global user.name "Your Name"`
+```
+
+Legen Sie Ihre e-Mail mit diesem Befehl fest (ersetzen youremail@domain.com Sie "" durch die e-Mail, die Sie in Ihrem git-Konto verwenden):
+
+```bash
+`git config --global user.email "youremail@domain.com"`
+```
 
 > [!TIP]
 > Wenn du noch kein Git-Konto hast, kannst du [dich bei GitHub registrieren](https://github.com/join). Wenn Sie noch nie zuvor mit Git gearbeitet haben, können Sie [GitHub-Leitfäden](https://guides.github.com/) für den Einstieg nutzen. Wenn du die Git-Konfiguration bearbeiten möchtest, kannst du dafür einen integrierten Text-Editor wie nano verwenden: `nano ~/.gitconfig`.
@@ -61,9 +80,12 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec
 
 Nun wird für jeden Git-Vorgang, den Sie in der WSL-Distribution ausführen, die Anmeldeinformationsverwaltung verwendet. Wenn Sie bereits Anmeldeinformationen für einen Host zwischengespeichert haben, greifen Sie über die Anmeldeinformationsverwaltung auf diese zu. Andernfalls erhalten Sie eine Dialogfeldantwort, in der Ihre Anmeldeinformationen angefordert werden, auch wenn Sie sich in einer Linux-Konsole befinden.
 
+> [!NOTE]
+> Wenn Sie einen GPG-Schlüssel für die Code Signatur Sicherheit verwenden, müssen Sie [ggf. ihren GPG-Schlüssel Ihrer GitHub-e-Mail zuordnen](https://help.github.com/en/github/authenticating-to-github/associating-an-email-with-your-gpg-key).
+
 ## <a name="adding-a-git-ignore-file"></a>Hinzufügen einer git-Datei zum ignorieren
 
-Es wird empfohlen, Ihren Projekten eine [gitignore-Datei](https://help.github.com/en/articles/ignoring-files) hinzuzufügen. GitHub bietet [eine Sammlung nützlicher gitignore-Vorlagen](https://github.com/github/gitignore) mit empfohlenen gitignore-Datei Setups, die entsprechend Ihrem Anwendungsfall organisiert sind.
+Es wird empfohlen, Ihren Projekten eine [gitignore-Datei](https://help.github.com/en/articles/ignoring-files) hinzuzufügen. GitHub bietet [eine Sammlung nützlicher gitignore-Vorlagen](https://github.com/github/gitignore) mit empfohlenen gitignore-Datei Setups, die entsprechend Ihrem Anwendungsfall organisiert sind. Hier finden Sie beispielsweise [die gitignore-Standardvorlage von GitHub für ein Node.js Projekt](https://github.com/github/gitignore/blob/master/Node.gitignore).
 
 Wenn Sie [ein neues Repository mithilfe der GitHub-Website erstellen](https://help.github.com/articles/create-a-repo), sind Kontrollkästchen verfügbar, mit denen Sie Ihr Repository mit einer Infodatei, einer gitignore-Datei für Ihren spezifischen Projekttyp und den Optionen zum Hinzufügen einer Lizenz bei Bedarf initialisieren können.
 
